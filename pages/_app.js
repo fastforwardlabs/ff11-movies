@@ -30,7 +30,7 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    fetch('/static/data/' + algfiles[this.state.data_select])
+    fetch('static/data/' + algfiles[this.state.data_select])
       .then(r => r.json())
       .then(r => {
         this.setState({ data: r })
@@ -39,7 +39,7 @@ class MyApp extends App {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.data_select !== prevState.data_select) {
-      fetch('/static/data/' + algfiles[this.state.data_select])
+      fetch('static/data/' + algfiles[this.state.data_select])
         .then(r => r.json())
         .then(r => {
           this.setState({ data: r })
