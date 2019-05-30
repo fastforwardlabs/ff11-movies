@@ -1,6 +1,9 @@
 import React from 'react'
-import { data } from '../data/bert_lime_grouped_pretty'
-import { info } from '../data/sample_movie_info.js'
+// import { data } from '../data/nbsvm_lime_grouped_pretty_word'
+// import { data } from '../data/bert_lime_grouped_pretty'
+import { data } from '../data/nbsvm_lime_grouped_pretty'
+import { info } from '../data/sample_movie_info'
+import Link from 'next/link'
 import * as _ from 'lodash'
 import * as d3 from 'd3'
 import * as chroma from 'chroma-js'
@@ -49,167 +52,222 @@ class Index extends React.Component {
   }
 
   render() {
+    let { font_size, line_height, grem, analyze, data } = this.props
     let sorted = info.map(o => {
-      return { title: o.Title, id: o.og_id, children: [] }
+      return { title: o.Title, id: o.og_id, plot: o.Plot, children: [] }
     })
     let ids = sorted.map(o => o.id)
-    for (let i = 0; i < data.length; i++) {
-      let o = data[i]
-      let id = o.url
-      let index = ids.indexOf(id)
-      if (index === -1) {
-        console.log('miss')
-      } else {
-        sorted[index].children.push(o)
+    if (data !== null) {
+      for (let i = 0; i < data.length; i++) {
+        let o = data[i]
+        let id = o.url
+        let index = ids.indexOf(id)
+        if (index === -1) {
+          console.log('miss')
+        } else {
+          sorted[index].children.push(o)
+        }
       }
+      sorted = _.sortBy(sorted, [
+        function(o) {
+          return o.children.length
+        },
+      ])
+      sorted.reverse()
     }
-    sorted = _.sortBy(sorted, [
-      function(o) {
-        return o.children.length
-      },
-    ])
-    sorted = sorted.slice().reverse()
-    console.log(sorted)
-
     return (
       <div>
-        <style jsx global>{`
-          * {
-            box-sizing: border-box;
-            font-family: sans-serif;
-          }
-          body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-              'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-              'Helvetica Neue', sans-serif;
-            font-size: 16;
-            line-height: 1.5;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-          }
-          code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-              monospace;
-          }
-        `}</style>
-        <div
-          style={{ display: 'none', width: 20 * 20, margin: `20px auto 40px` }}
-        >
-          <div style={{ display: 'flex' }}>
-            {scaleRed
-              .colors(10)
-              .reverse()
-              .map(c => (
-                <div style={{ height: 20, width: 20, background: c }} />
-              ))}
-          </div>
-          <div style={{ display: 'flex' }}>
-            {scaleBlue.colors(10).map(c => (
-              <div style={{ height: 20, width: 20, background: c }} />
-            ))}
-          </div>
-        </div>
-        {sorted.map(o => (
-          <div
-            style={{
-              maxWidth: 660,
-              padding: `10px 20px`,
-              margin: `0 auto 20px`,
-              border: 'solid 1px black',
-              height: 400,
-              overflow: 'auto',
-            }}
-          >
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <div>
-                <strong>{o.title}</strong>
+        <div>
+          <div style={{ paddingTop: grem, paddingBottom: grem * 3 }}>
+            <div
+              style={{
+                maxWidth: 840,
+                border: 'solid 1px black',
+                borderBottom: 'none',
+                margin: `0 auto`,
+              }}
+            >
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: `1fr ${grem * 6}px`,
+                  borderBottom: 'solid 1px black',
+                  fontWeight: 700,
+                  fontSize: font_size * 0.875,
+                }}
+              >
+                <div
+                  style={{
+                    lineHeight: line_height,
+                    padding: grem / 2,
+                  }}
+                >
+                  TOPIC
+                </div>
+                <div
+                  style={{
+                    padding: grem / 2,
+                    textAlign: 'center',
+                  }}
+                >
+                  REVIEWS
+                </div>
               </div>
-              <div>{o.children.length}</div>
-            </div>
-            {o.children.map(r => {
-              let winner_name = r.class
-              let winner_index, scaleWinner, scaleLoser
-              if (r.class_probabilities[1] > r.class_probabilities[0]) {
-                winner_index = 1
-                scaleWinner = scaleBlue
-                scaleLoser = scaleRed
-              } else {
-                winner_index = 0
-                scaleWinner = scaleRed
-                scaleLoser = scaleBlue
-              }
 
-              let max = Math.max(
-                Math.abs(_.min(r.lime_scores)),
-                Math.abs(_.max(r.lime_scores))
-              )
+              {data ? (
+                <div>
+                  {sorted.map((o, i) => {
+                    let reviews = data.filter(r => r.url === o.id)
 
-              function scaleScore(value) {
-                if (value < 0) {
-                  return scaleRed(Math.abs(value) / max)
-                } else {
-                  return scaleBlue(Math.abs(value) / max)
-                }
-              }
+                    let counts = reviews.reduce(
+                      (counts, r) => {
+                        let slice = counts.slice()
+                        if (r.logits[1] > r.logits[0]) {
+                          slice[1] += 1
+                        } else {
+                          slice[0] += 1
+                        }
+                        return slice
+                      },
+                      [0, 0]
+                    )
 
-              return (
-                <div style={{}}>
-                  <div style={{ display: 'none' }}>
-                    <a
-                      href={`https://www.imdb.com/title/${r.url}`}
-                    >{`https://www.imdb.com/title/${r.url}`}</a>
-                  </div>
-                  <div style={{ padding: `10px 0 10px 0` }}>
-                    {r.lime_tokens.map((t, i) => {
-                      let score = r.lime_scores[i]
-                      return (
-                        <span>
-                          <span
+                    let actual = reviews.reduce(
+                      (counts, r) => {
+                        let slice = counts.slice()
+                        if (r.label === 'pos') {
+                          slice[1] += 1
+                        } else if (r.label === 'neg') {
+                          slice[0] += 1
+                        }
+                        return slice
+                      },
+                      [0, 0]
+                    )
+
+                    let rightwrong = reviews.reduce(
+                      (counts, r) => {
+                        let slice = counts.slice()
+                        if (r.label === r.class) {
+                          slice[1] += 1
+                        } else {
+                          slice[0] += 1
+                        }
+                        return slice
+                      },
+                      [0, 0]
+                    )
+                    let accuracy = rightwrong[1] / reviews.length
+
+                    let winner_count_index = 0
+                    if (counts[1] > counts[0]) winner_count_index = 1
+                    let winner_names = ['negative', 'positive']
+                    let winner_name = winner_names[winner_count_index]
+
+                    return (
+                      <Link href={`topic?id=${o.id}`}>
+                        <a
+                          className="no-underline gray-hover"
+                          style={{
+                            display: 'grid',
+                            gridTemplateColumns: `1fr ${grem * 6}px`,
+                            borderBottom: 'solid 1px black',
+                          }}
+                        >
+                          <div
                             style={{
-                              background: scaleScore(score),
+                              padding: grem / 2,
                             }}
                           >
-                            {t} ({r.lime_scores[i]})
-                          </span>{' '}
-                        </span>
-                      )
-                    })}
-                  </div>
-                  <div
-                    style={{
-                      marginBottom: 20,
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(2, 1fr)',
-                    }}
-                  >
-                    <div
-                      style={{
-                        padding: 10,
-                        background: scaleWinner(
-                          r.class_probabilities[winner_index]
-                        ),
-                      }}
-                    >
-                      {class_labels[winner_index]}:{' '}
-                      {Math.round(r.class_probabilities[winner_index] * 100)}%
-                    </div>
-                    <div
-                      style={{
-                        padding: 10,
-                        background:
-                          r.label === 'pos' ? scaleBlue(1) : scaleRed(1),
-                      }}
-                    >
-                      label: {r.label}
-                    </div>
-                  </div>
-                  <hr />
+                            <div
+                              style={{
+                                fontWeight: 700,
+                                textDecoration: 'underline',
+                              }}
+                            >
+                              {o.title}
+                            </div>
+                            <div
+                              style={{
+                                fontSize: font_size * 0.875,
+                                lineHeight: line_height,
+                              }}
+                            >
+                              {o.plot}
+                            </div>
+                          </div>
+                          <div
+                            style={{
+                              padding: grem / 2,
+                              fontSize: font_size * 0.875,
+                              textAlign: 'center',
+                              display: 'grid',
+                              alignItems: 'center',
+                              position: 'relative',
+                            }}
+                          >
+                            {analyze ? (
+                              <>
+                                <div
+                                  style={{
+                                    position: 'absolute',
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    width: `${(counts[1] / reviews.length) *
+                                      100}%`,
+                                    background: scaleBlue(1),
+                                  }}
+                                />
+                                <div
+                                  style={{
+                                    position: 'absolute',
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    width: `${(counts[0] / reviews.length) *
+                                      100}%`,
+                                    background: scaleRed(1),
+                                  }}
+                                />
+                              </>
+                            ) : null}
+
+                            <div style={{ position: 'relative' }}>
+                              <div>{o.children.length}</div>
+                              {analyze ? (
+                                <>
+                                  <div>
+                                    {Math.round(
+                                      (counts[winner_count_index] /
+                                        reviews.length) *
+                                        1000
+                                    ) / 10}
+                                    % {winner_name}
+                                  </div>
+                                  <div>
+                                    {counts[1]} | {counts[0]}
+                                  </div>
+                                  <div>
+                                    actual: {actual[1]} | {actual[0]}
+                                  </div>
+                                  <div>
+                                    accuracy: {Math.round(accuracy * 1000) / 10}
+                                    %
+                                  </div>
+                                </>
+                              ) : null}
+                            </div>
+                          </div>
+                        </a>
+                      </Link>
+                    )
+                  })}
                 </div>
-              )
-            })}
+              ) : null}
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     )
   }
