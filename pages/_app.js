@@ -1,5 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
 let { publicRuntimeConfig } = getConfig()
 let linkPrefix = publicRuntimeConfig.linkPrefix
@@ -112,6 +113,7 @@ class MyApp extends App {
               grem={grem}
               analyze={analyze}
               data={data}
+              info={info}
             />
           </Container>
         ) : (

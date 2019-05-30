@@ -1,8 +1,4 @@
 import React from 'react'
-// import { data } from '../data/nbsvm_lime_grouped_pretty_word'
-// import { data } from '../data/bert_lime_grouped_pretty'
-import { data } from '../data/nbsvm_lime_grouped_pretty'
-import { info } from '../data/sample_movie_info'
 import Link from '../parts/PrefixedLink'
 import * as _ from 'lodash'
 import * as d3 from 'd3'
@@ -52,7 +48,7 @@ class Index extends React.Component {
   }
 
   render() {
-    let { font_size, line_height, grem, analyze, data } = this.props
+    let { font_size, line_height, grem, analyze, data, info } = this.props
     let sorted = info.map(o => {
       return { title: o.Title, id: o.og_id, plot: o.Plot, children: [] }
     })

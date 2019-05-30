@@ -1,9 +1,10 @@
 import { withRouter } from 'next/router'
-import { info } from '../data/sample_movie_info.js'
-import { names } from '../data/first_names.js'
 import * as chroma from 'chroma-js'
 import * as _ from 'lodash'
 import { nouns, adjectives } from '../data/corpora.js'
+import getConfig from 'next-server/config'
+let { publicRuntimeConfig } = getConfig()
+let linkPrefix = publicRuntimeConfig.linkPrefix
 
 let class_labels = ['negative', 'positive']
 let red = chroma('red').luminance(0.35)
@@ -12,7 +13,7 @@ let scaleRed = chroma.scale(['white', red]).mode('lch')
 let scaleBlue = chroma.scale(['white', blue]).mode('lch')
 
 const Page = withRouter(
-  ({ font_size, line_height, grem, router, analyze, data }) => {
+  ({ font_size, line_height, grem, router, analyze, data, info }) => {
     let info_ids = info.map(o => o.og_id)
     let topic_info = info[info_ids.indexOf(router.query.id)]
 
@@ -157,7 +158,7 @@ const Page = withRouter(
                     }}
                   >
                     <img
-                      src={`/static/images/cifar_${Math.floor(
+                      src={`${linkPrefix}/static/images/cifar_${Math.floor(
                         Math.random() * 130
                       )}.png`}
                       style={{
