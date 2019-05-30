@@ -1,6 +1,9 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import Link from 'next/link'
+import getConfig from 'next-server/config'
+let { publicRuntimeConfig } = getConfig()
+let linkPrefix = publicRuntimeConfig.linkPrefix
+import Link from '../parts/PrefixedLink'
 
 let algnames = ['bert', 'nbsvm', 'nbsvm_words']
 let algfiles = [
@@ -30,7 +33,7 @@ class MyApp extends App {
   }
 
   componentDidMount() {
-    fetch('static/data/' + algfiles[this.state.data_select])
+    fetch(linkPrefix + '/static/data/' + algfiles[this.state.data_select])
       .then(r => r.json())
       .then(r => {
         this.setState({ data: r })
@@ -39,7 +42,7 @@ class MyApp extends App {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.data_select !== prevState.data_select) {
-      fetch('static/data/' + algfiles[this.state.data_select])
+      fetch(linkPrefix + '/static/data/' + algfiles[this.state.data_select])
         .then(r => r.json())
         .then(r => {
           this.setState({ data: r })
