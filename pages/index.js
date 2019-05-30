@@ -165,7 +165,7 @@ class Index extends React.Component {
                     let winner_name = winner_names[winner_count_index]
 
                     return (
-                      <Link href={`topic?id=${o.id}`}>
+                      <Link href={`/topic?id=${o.id}`}>
                         <a
                           className="no-underline gray-hover"
                           style={{
