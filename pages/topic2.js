@@ -161,8 +161,8 @@ class Page extends React.Component {
       return sorted[0]
     })
 
-    let top_pos = top_sentences.filter(s => s.class === 'pos')
-    let top_neg = top_sentences.filter(s => s.class === 'neg')
+    let top_pos = _.sortBy(top_sentences.filter(s => s.class === 'pos'), 'date')
+    let top_neg = _.sortBy(top_sentences.filter(s => s.class === 'neg'), 'date')
 
     let show_limit = 4
 

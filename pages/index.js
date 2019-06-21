@@ -10,9 +10,8 @@ import {
   scaleRed,
   scaleBlue,
   readableSentiment,
+  class_labels,
 } from '../parts/Static'
-
-let class_labels = ['negative', 'positive']
 
 class Index extends React.Component {
   componentDidMount() {

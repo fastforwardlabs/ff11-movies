@@ -36,7 +36,7 @@ class Bar extends React.Component {
           bottom: show_accuracy ? grem * 1 : grem * 1.5,
           paddingLeft: grem / 4,
           paddingRight: grem / 4,
-          zIndex: 99,
+          zIndex: 9999,
           width: analyze ? `calc(100% - ${grem}px)` : 'auto',
         }}
       >

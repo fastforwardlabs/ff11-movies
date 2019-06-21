@@ -61,7 +61,6 @@ class MyApp extends App {
 
               return new_r
             })
-            console.log(reviews)
             this.setState({ data: reviews })
           })
       })
@@ -84,7 +83,6 @@ class MyApp extends App {
 
                 return new_r
               })
-              console.log(reviews)
               this.setState({ data: reviews })
             })
         })
@@ -113,6 +111,9 @@ class MyApp extends App {
 
   render() {
     let { analyze, data, sort, review_sort, show_accuracy } = this.state
+
+    if (analyze === false) show_accuracy = false
+
     let { Component, pageProps } = this.props
     let font_size = 16
     let line_height = 1.5
@@ -271,8 +272,8 @@ class MyApp extends App {
         </div>
         <div
           style={{
-            minHeight: `calc(100vh - ${grem * 2}px)`,
-            paddingBottom: this.state.show_accuracy ? grem * 4.5 : grem * 4,
+            minHeight: `calc(100vh - ${grem * 2 + 1}px)`,
+            paddingBottom: show_accuracy ? grem * 4.5 : grem * 4,
           }}
         >
           {data ? (
@@ -293,7 +294,7 @@ class MyApp extends App {
                 setAlgo={this.setAlgo}
                 algnames={algnames}
                 data_select={this.state.data_select}
-                show_accuracy={this.state.show_accuracy}
+                show_accuracy={show_accuracy}
                 setAccuracy={this.setAccuracy}
               />
             </Container>
