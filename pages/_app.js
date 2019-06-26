@@ -3,11 +3,12 @@ import App, { Container } from 'next/app'
 import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
 import { nouns, adjectives } from '../data/corpora.js'
-import { red, blue } from '../parts/Static'
+import { red, blue, Border } from '../parts/Static'
 let { publicRuntimeConfig } = getConfig()
 let linkPrefix = publicRuntimeConfig.linkPrefix
 import Link from '../parts/PrefixedLink'
 import Bar from '../parts/Bar'
+import Header from '../parts/Header'
 import * as chroma from 'chroma-js'
 
 let algnames = ['NBSVM', 'BERT']
@@ -15,6 +16,10 @@ let algfiles = [
   'nbsvm_lime_grouped_pretty.json',
   'bert_lime_grouped_pretty.json',
   'nbsvm_lime_grouped_pretty_word.json',
+]
+let data_keys = [
+  ['nbsvm_data', 'nbsvm_lime_grouped_pretty.json', 'NBSVM'],
+  ['bert_data', 'bert_lime_grouped_pretty.json', 'BERT'],
 ]
 
 class MyApp extends App {
@@ -31,22 +36,26 @@ class MyApp extends App {
   constructor(props) {
     super(props)
     this.state = {
-      analyze: false,
-      data: null,
+      analyze: true,
       data_select: 1,
       show_accuracy: false,
       sort: 'reviews',
       review_sort: 'date',
+      nbsvm_data: null,
+      compare: false,
+      bert_data: null,
+      show_info: false,
     }
     this.setAnalyze = this.setAnalyze.bind(this)
     this.setReviewSort = this.setReviewSort.bind(this)
     this.setAccuracy = this.setAccuracy.bind(this)
     this.setSort = this.setSort.bind(this)
     this.setAlgo = this.setAlgo.bind(this)
+    this.setCompare = this.setCompare.bind(this)
   }
 
-  componentDidMount() {
-    fetch(linkPrefix + '/static/data/' + algfiles[this.state.data_select])
+  fetchData() {
+    fetch(linkPrefix + '/static/data/' + algfiles[0])
       .then(r => r.json())
       .then(r => {
         fetch(linkPrefix + '/static/data/names_and_dates.json')
@@ -54,39 +63,36 @@ class MyApp extends App {
           .then(nd => {
             let reviews = r.map((r, i) => {
               let new_r = Object.assign({}, r)
-
               new_r.index = i
               new_r.author = nd[i].author
               new_r.date = nd[i].date
-
               return new_r
             })
-            this.setState({ data: reviews })
+            let key = data_keys[0][0]
+            this.setState({ [key]: reviews })
+          })
+      })
+    fetch(linkPrefix + '/static/data/' + algfiles[1])
+      .then(r => r.json())
+      .then(r => {
+        fetch(linkPrefix + '/static/data/names_and_dates.json')
+          .then(nd => nd.json())
+          .then(nd => {
+            let reviews = r.map((r, i) => {
+              let new_r = Object.assign({}, r)
+              new_r.index = i
+              new_r.author = nd[i].author
+              new_r.date = nd[i].date
+              return new_r
+            })
+            let key = data_keys[1][0]
+            this.setState({ [key]: reviews })
           })
       })
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.data_select !== prevState.data_select) {
-      fetch(linkPrefix + '/static/data/' + algfiles[this.state.data_select])
-        .then(r => r.json())
-        .then(r => {
-          fetch(linkPrefix + '/static/data/names_and_dates.json')
-            .then(nd => nd.json())
-            .then(nd => {
-              let reviews = r.map((r, i) => {
-                let new_r = Object.assign({}, r)
-
-                new_r.index = i
-                new_r.author = nd[i].author
-                new_r.date = nd[i].date
-
-                return new_r
-              })
-              this.setState({ data: reviews })
-            })
-        })
-    }
+  componentDidMount() {
+    this.fetchData()
   }
 
   setAnalyze(value) {
@@ -109,8 +115,14 @@ class MyApp extends App {
     this.setState({ show_accuracy: value })
   }
 
+  setCompare(value) {
+    this.setState({ compare: value })
+  }
+
   render() {
-    let { analyze, data, sort, review_sort, show_accuracy } = this.state
+    let { analyze, sort, review_sort, show_accuracy, show_info } = this.state
+
+    let data = this.state[data_keys[this.state.data_select][0]]
 
     if (analyze === false) show_accuracy = false
 
@@ -150,6 +162,10 @@ class MyApp extends App {
             font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
               monospace;
           }
+          p {
+            margin: 0;
+            text-indent: 1.5rem;
+          }
           a,
           button {
             color: inherit;
@@ -186,97 +202,42 @@ class MyApp extends App {
           button:focus {
             outline: none;
           }
+          .hover-block {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+          }
           .hover-block-container .hover-block {
             display: block;
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.1s linear;
+            background: rgba(0, 0, 0, 0.0625);
           }
           .hover-block-container:hover .hover-block {
             display: block;
             opacity: 1;
           }
         `}</style>
+        <style jsx global>{`
+          body {
+            overflow: ${show_info ? 'hidden' : 'auto'};
+          }
+        `}</style>
+        <Header
+          is_front={is_front}
+          grem={grem}
+          analyze={analyze}
+          show_accuracy={show_accuracy}
+        />
         <div
           style={{
-            borderBottom: 'solid 1px black',
-            background: '#222',
-            color: 'white',
-            display: 'flex',
-            justifyContent: 'space-between',
+            minHeight: `calc(100vh - ${grem * 4 + 1}px)`,
           }}
         >
-          <Link href="/">
-            <a
-              className={is_topic ? '' : 'no-opacity-hover'}
-              style={{
-                padding: grem / 2,
-                display: 'block',
-                cursor: is_front ? 'default' : 'pointer',
-                textDecoration: 'none',
-                fontWeight: 700,
-                display: 'flex',
-              }}
-            >
-              <div
-                style={{
-                  width: grem,
-                  height: grem,
-                  marginRight: grem / 2,
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    top: 0,
-                    width: grem / 2,
-                    height: grem / 2,
-                    background: analyze ? blue : 'white',
-                  }}
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    left: grem / 2,
-                    top: 0,
-                    width: grem / 2,
-                    height: grem / 2,
-                    background: analyze ? red : 'white',
-                  }}
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    top: grem / 2,
-                    width: grem / 2,
-                    height: grem / 2,
-                    background: show_accuracy ? '#ddd' : 'white',
-                  }}
-                />
-              </div>
-              TextFlicks
-            </a>
-          </Link>
-          <button
-            style={{
-              padding: grem / 2,
-              textDecoration: 'underline',
-              display: 'none',
-            }}
-          >
-            Info
-          </button>
-        </div>
-        <div
-          style={{
-            minHeight: `calc(100vh - ${grem * 2 + 1}px)`,
-            paddingBottom: show_accuracy ? grem * 4.5 : grem * 4,
-          }}
-        >
-          {data ? (
+          {data && this.state.nbsvm_data ? (
             <Container>
               <Component
                 {...pageProps}
@@ -296,12 +257,134 @@ class MyApp extends App {
                 data_select={this.state.data_select}
                 show_accuracy={show_accuracy}
                 setAccuracy={this.setAccuracy}
+                compare={this.state.compare}
+                setCompare={this.setCompare}
+                nbsvm_data={this.state.nbsvm_data}
               />
             </Container>
           ) : (
             <div style={{ padding: grem / 2 }}>Loading...</div>
           )}
         </div>
+        <div
+          style={{
+            padding: grem / 2,
+            background: '#222',
+            color: 'white',
+            borderTop: 'solid 1px black',
+          }}
+        >
+          Textflicks is a natural language processing prototype by Cloudera Fast
+          Forward Labs
+        </div>
+        {show_info ? (
+          <div
+            style={{
+              position: 'fixed',
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0,0,0,0.125',
+              zIndex: 9999,
+              overflow: 'auto',
+            }}
+          >
+            <div style={{ position: 'fixed', left: 0, top: 0, right: 0 }}>
+              <div
+                style={{
+                  background: 'white',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                }}
+              >
+                <div
+                  style={{
+                    padding: grem / 2,
+                  }}
+                >
+                  Tour
+                </div>
+                <button
+                  style={{
+                    padding: grem / 2,
+                    textDecoration: 'underline',
+                  }}
+                >
+                  Pause
+                </button>
+              </div>
+              <Border />
+            </div>
+            <div
+              style={{
+                height: '400vh',
+                background: 'transparent',
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                right: 0,
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '100vh',
+                }}
+              >
+                <div
+                  style={{
+                    maxWidth: 700,
+                    margin: '0 auto',
+                    background: 'white',
+                    borderLeft: 'solid 2px black',
+                    borderTop: 'solid 1px black',
+                    borderRight: 'solid 3px black',
+                    borderBottom: 'solid 4px black',
+                    padding: grem / 2,
+                  }}
+                >
+                  <p>
+                    Textflicks is a sentiment analysis prototype by Cloudera
+                    Fast Forward Labs, built to accompany our report on transfer
+                    learning for natural language generation. It uses movie
+                    reviews to show how NLP techniques can unlock the data
+                    embedded in large amounts of unstructured text.
+                  </p>
+                  <p>
+                    50 movies, analyze lets you do this, options let you do
+                    more.
+                  </p>
+                </div>
+              </div>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '100vh',
+                }}
+              >
+                <div
+                  style={{
+                    maxWidth: 700,
+                    margin: '0 auto',
+                    background: 'white',
+                    borderLeft: 'solid 2px black',
+                    borderTop: 'solid 1px black',
+                    borderRight: 'solid 3px black',
+                    borderBottom: 'solid 4px black',
+                    padding: grem / 2,
+                  }}
+                >
+                  hey
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </div>
     )
   }

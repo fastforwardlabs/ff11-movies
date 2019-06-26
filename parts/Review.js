@@ -3,20 +3,28 @@ import * as _ from 'lodash'
 import {
   scaleRed,
   scaleBlue,
-  scaleTextRed,
   scaleTextBlue,
+  scaleTextRed,
   colorExtend,
   class_labels,
 } from '../parts/Static'
 
 class Review extends React.Component {
   render() {
-    let { r, i, grem, analyze, show_accuracy, is_review } = this.props
+    let {
+      r,
+      i,
+      grem,
+      analyze,
+      show_accuracy,
+      is_review,
+      threshold = 0.5,
+      hide_author = false,
+      classification_label = '',
+    } = this.props
 
-    console.log(is_review)
-
-    let winner_name = r.class
     let winner_index, scaleWinner, scaleLoser
+    let winner_name = r.class
     if (r.class_probabilities[1] > r.class_probabilities[0]) {
       winner_index = 1
       scaleWinner = scaleBlue
@@ -53,7 +61,11 @@ class Review extends React.Component {
                 background: scaleWinner(r.class_probabilities[winner_index]),
               }}
             >
-              <span>classification: {class_labels[winner_index]}</span> &middot;{' '}
+              <span>
+                {classification_label}classification:{' '}
+                {class_labels[winner_index]}
+              </span>{' '}
+              &middot;{' '}
               <span style={{}}>
                 {Math.floor(r.class_probabilities[winner_index] * 1000) / 10}%
                 certainty
@@ -76,16 +88,18 @@ class Review extends React.Component {
             ) : null}
           </div>
         ) : null}
-        <div style={{ textIndent: grem * 0 }}>
-          by {r.author} &middot;{' '}
-          {is_review ? (
-            <span>{r.date} days ago</span>
-          ) : (
-            <Link href={`/review?id=${r.index}`}>
-              <a>{r.date} days ago</a>
-            </Link>
-          )}
-        </div>
+        {!hide_author ? (
+          <div style={{ textIndent: grem * 0 }}>
+            by {r.author} &middot;{' '}
+            {is_review ? (
+              <span>{r.date} days ago</span>
+            ) : (
+              <Link href={`/review?id=${r.index}`}>
+                <a>{r.date} days ago</a>
+              </Link>
+            )}
+          </div>
+        ) : null}
 
         <div style={{ marginBottom: grem * 0 }}>
           <div>
@@ -94,7 +108,7 @@ class Review extends React.Component {
                 {r.lime_tokens.map((t, i) => {
                   let score = r.lime_scores[i]
                   let background = analyze
-                    ? Math.abs(score) / max > 0.5
+                    ? Math.abs(score) / max > threshold
                       ? scaleScore(score)
                       : 0
                     : 'transparent'

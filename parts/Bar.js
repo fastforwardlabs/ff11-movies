@@ -1,267 +1,444 @@
 import React from 'react'
 import * as chroma from 'chroma-js'
-import { scaleRed, scaleBlue } from './Static'
+import { scaleRed, scaleBlue, Border } from './Static'
 
 class Bar extends React.Component {
   render() {
     let {
+      data,
+      nbsvm_data,
       grem,
       analyze,
       setAnalyze,
-      combined,
       total,
       setAlgo,
-      accuracy,
-      rightwrong,
       show_accuracy,
       setAccuracy,
+      compare,
+      setCompare,
     } = this.props
+
+    let certainty_array = data.map(r => {
+      if (r.logits[1] > r.logits[0]) {
+        return {
+          class: r.class,
+          label: r.label,
+          certainty: r.class_probabilities[1],
+        }
+      } else {
+        return {
+          class: r.class,
+          label: r.label,
+          certainty: r.class_probabilities[0],
+        }
+      }
+    })
+    let pos = _.sortBy(
+      certainty_array.filter(r => r.class === 'pos'),
+      'certainty'
+    ).reverse()
+    let neg = _.sortBy(
+      certainty_array.filter(r => r.class === 'neg'),
+      'certainty'
+    )
+    let combined = [...pos, ...neg]
+
+    let rightwrong = data.reduce(
+      (counts, r) => {
+        let slice = counts.slice()
+        if (r.label === r.class) {
+          slice[1] += 1
+        } else {
+          slice[0] += 1
+        }
+        return slice
+      },
+      [0, 0]
+    )
+    let accuracy = rightwrong[1] / data.length
+
+    let ncertainty_array = nbsvm_data.map(r => {
+      if (r.logits[1] > r.logits[0]) {
+        return {
+          class: r.class,
+          label: r.label,
+          certainty: r.class_probabilities[1],
+        }
+      } else {
+        return {
+          class: r.class,
+          label: r.label,
+          certainty: r.class_probabilities[0],
+        }
+      }
+    })
+    let npos = _.sortBy(
+      ncertainty_array.filter(r => r.class === 'pos'),
+      'certainty'
+    ).reverse()
+    let nneg = _.sortBy(
+      ncertainty_array.filter(r => r.class === 'neg'),
+      'certainty'
+    )
+    let ncombined = [...npos, ...nneg]
+
+    let nrightwrong = nbsvm_data.reduce(
+      (counts, r) => {
+        let slice = counts.slice()
+        if (r.label === r.class) {
+          slice[1] += 1
+        } else {
+          slice[0] += 1
+        }
+        return slice
+      },
+      [0, 0]
+    )
+    let naccuracy = nrightwrong[1] / data.length
 
     let counts = [
       combined.filter(r => r.class === 'neg').length,
       combined.filter(r => r.class === 'pos').length,
     ]
+    let ncounts = [
+      ncombined.filter(r => r.class === 'neg').length,
+      ncombined.filter(r => r.class === 'pos').length,
+    ]
 
     return (
       <div
         style={{
-          // background: analyze ? chroma('orchid').luminance(0.25) : 'white',
-          // color: 'white',
-          border: 'solid 1px black',
-          borderBottom: 'solid 3px black',
-          borderRight: 'solid 2px black',
           background: 'white',
-          position: 'fixed',
-          left: grem / 2,
-          bottom: show_accuracy ? grem * 1 : grem * 1.5,
-          paddingLeft: grem / 4,
-          paddingRight: grem / 4,
-          zIndex: 9999,
-          width: analyze ? `calc(100% - ${grem}px)` : 'auto',
+          position: 'sticky',
+          zIndex: 999,
+          top: 0,
         }}
       >
-        <div
-          style={{
-            height: show_accuracy ? grem * 3 : grem * 2,
-            paddingTop: show_accuracy ? grem / 2 : 0,
-            // borderBottom: 'solid 1px black',
-            display: 'flex',
-            justifyContent: 'space-between',
-          }}
-        >
-          <div style={{ display: 'flex', height: grem }}>
+        <div>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'top',
+            }}
+          >
             <button
-              className="no-opacity-hover"
+              onClick={() => setAnalyze(!analyze)}
               style={{
-                paddingTop: grem / 2,
-                paddingBottom: grem / 2,
-                paddingLeft: grem / 4,
-                paddingRight: grem / 4,
                 display: 'flex',
+                paddingLeft: grem / 2,
+                paddingRight: grem / 2,
                 height: grem * 2,
               }}
-              onClick={() => {
-                if (analyze) {
-                  setAnalyze(false)
-                } else {
-                  setAnalyze(true)
-                }
-              }}
             >
-              <div style={{ paddingLeft: grem / 4, paddingRight: grem / 4 }}>
-                Analysis:
+              <div
+                style={{
+                  width: grem * 0.5,
+                  height: grem * 0.5,
+                  border: 'solid 1px black',
+                  marginTop: grem * (6 / 8),
+                  marginRight: grem * (2 / 8),
+                  background: analyze ? 'black' : 'white',
+                }}
+              />
+              <div
+                style={{
+                  paddingTop: grem / 2,
+                  paddingBottom: grem / 2,
+                  textDecoration: 'underline',
+                }}
+              >
+                Analyze
               </div>
-              {[['on', true], ['off', false]].map(a => (
-                <div
-                  className={analyze !== a[1] ? 'opacity-inner-hover' : ''}
-                  style={{
-                    paddingLeft: grem / 4,
-                    paddingRight: grem / 4,
-                    background: analyze === a[1] ? '#222' : 'none',
-                    color: analyze === a[1] ? 'white' : 'black',
-                    textDecoration: analyze === a[1] ? 'none' : 'underline',
-                  }}
-                >
-                  {a[0]}
-                </div>
-              ))}
             </button>
             {analyze ? (
               <>
                 <div
                   style={{
-                    display: 'flex',
-                    paddingRight: grem / 4,
                     paddingTop: grem / 2,
                     paddingBottom: grem / 2,
+                    display: 'none',
                   }}
                 >
-                  <div
-                    style={{ paddingLeft: grem / 4, paddingRight: grem / 4 }}
-                  >
-                    Model:
-                  </div>
-                  {this.props.algnames.map((n, i) =>
-                    this.props.data_select === i ? (
-                      <div
-                        style={{
-                          paddingLeft: grem / 4,
-                          paddingRight: grem / 4,
-                          height: grem,
-                          background: '#222',
-                          color: 'white',
-                        }}
-                      >
-                        {n}
-                      </div>
-                    ) : (
-                      <button
-                        onClick={() => {
-                          setAlgo(i)
-                        }}
-                        style={{
-                          paddingLeft: grem / 4,
-                          paddingRight: grem / 4,
-                          textDecoration: 'underline',
-                          height: grem,
-                        }}
-                      >
-                        {n}
-                      </button>
-                    )
-                  )}
+                  &ndash;
                 </div>
+
                 <div style={{ display: 'flex' }}>
-                  <button
-                    className="no-opacity-hover"
+                  <div
                     style={{
                       paddingTop: grem / 2,
                       paddingBottom: grem / 2,
-                      paddingLeft: grem / 4,
-                      paddingRight: grem / 4,
-                      height: grem * 2,
-                      display: 'flex',
-                    }}
-                    onClick={() => {
-                      if (show_accuracy) {
-                        setAccuracy(false)
-                      } else {
-                        setAccuracy(true)
-                      }
+                      paddingLeft: (grem / 2) * 0,
+                      paddingRight: grem / 8,
                     }}
                   >
-                    <div style={{ paddingLeft: grem / 4, paddingRight: 0 }}>
-                      Accuracy:
-                    </div>
+                    show:
+                  </div>
+                  <button
+                    onClick={() => setAccuracy(!show_accuracy)}
+                    style={{
+                      display: 'flex',
+                      paddingLeft: grem / 4,
+                      paddingRight: grem / 4,
+
+                      height: grem * 2,
+                    }}
+                  >
                     <div
-                      className={'opacity-inner-hover'}
                       style={{
-                        paddingLeft: grem / 4,
-                        paddingRight: grem / 4,
+                        width: grem * 0.5,
+                        height: grem * 0.5,
+                        border: 'solid 1px black',
+                        marginTop: grem * (6 / 8),
+                        marginRight: grem * (2 / 8),
+                        background: show_accuracy ? 'black' : 'white',
+                      }}
+                    />
+                    <div
+                      style={{
+                        paddingTop: grem / 2,
+                        paddingBottom: grem / 2,
                         textDecoration: 'underline',
                       }}
                     >
-                      {show_accuracy ? 'hide' : 'show'}
+                      accuracy
+                    </div>
+                  </button>
+                  <button
+                    onClick={() => setCompare(!compare)}
+                    style={{
+                      display: 'flex',
+                      paddingLeft: grem / 4,
+                      paddingRight: grem / 4,
+
+                      height: grem * 2,
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: grem * 0.5,
+                        height: grem * 0.5,
+                        border: 'solid 1px black',
+                        marginTop: grem * (6 / 8),
+                        marginRight: grem * (2 / 8),
+                        background: compare ? 'black' : 'white',
+                      }}
+                    />
+                    <div
+                      style={{
+                        paddingTop: grem / 2,
+                        paddingBottom: grem / 2,
+                        textDecoration: 'underline',
+                      }}
+                    >
+                      model comparison
                     </div>
                   </button>
                 </div>
               </>
             ) : null}
-          </div>
-
-          <div
-            style={{
-              paddingLeft: grem / 2,
-              paddingRight: grem / 2,
-              flexGrow: 1,
-              paddingTop: show_accuracy ? 0 : grem / 2,
-            }}
-          >
-            <div>
-              <div style={{ position: 'relative' }}>
-                {analyze ? (
-                  <div
-                    style={{
-                      position: 'absolute',
-                      left: 0,
-                      top: 0,
-                      right: 0,
-                      bottom: 0,
-                      mixBlendMode: 'multiply',
-                      overflow: 'hidden',
-                    }}
-                  >
-                    {combined.map((c, i) => (
-                      <div
-                        style={{
-                          position: 'absolute',
-                          left: `${(1 / combined.length) * i * 100}%`,
-                          top: 0,
-                          bottom: 0,
-                          width: `${(1 / combined.length) * 100 + 0.05}%`,
-                          background:
-                            c.class === 'pos'
-                              ? scaleBlue(c.certainty)
-                              : scaleRed(c.certainty),
-                        }}
-                      />
-                    ))}
-                  </div>
-                ) : null}
-                {combined.length} {total ? 'total ' : ''} review
-                {combined.length > 1 ? 's' : ''}
-                {analyze ? (
-                  <span>
-                    {' '}
-                    &middot; {counts[1]} positive (
-                    {Math.round((counts[1] / combined.length) * 100)}%)
-                  </span>
-                ) : null}
-              </div>
-            </div>
-            {show_accuracy ? (
-              <div>
-                <div
-                  style={{
-                    position: 'relative',
-                    overflow: 'hidden',
-                  }}
-                >
+            {analyze && !compare ? (
+              <div
+                style={{
+                  padding: `${show_accuracy && false ? 0 : grem / 2}px ${grem /
+                    2}px`,
+                  flexGrow: 1,
+                }}
+              >
+                <div style={{ position: 'relative', overflow: 'hidden' }}>
                   {combined.map((c, i) => (
                     <div
                       style={{
                         position: 'absolute',
                         left: `${(1 / combined.length) * i * 100}%`,
+                        top: 0,
                         bottom: 0,
-                        height: grem,
                         width: `${(1 / combined.length) * 100 + 0.05}%`,
                         background:
-                          c.label !== c.class
-                            ? c.label === 'pos'
-                              ? scaleBlue(1)
-                              : scaleRed(1)
-                            : '#ddd',
+                          c.class === 'pos'
+                            ? scaleBlue(c.certainty)
+                            : scaleRed(c.certainty),
                       }}
                     />
                   ))}
 
                   <div style={{ position: 'relative' }}>
-                    {rightwrong[0] > 0 ? (
+                    {combined.length} {total ? 'total ' : ''} review
+                    {combined.length > 1 ? 's' : ''}
+                    {analyze ? (
                       <span>
-                        {Math.floor((accuracy * 1000) / 10)}% accuracy (
-                        {rightwrong[0]} wrong)
+                        {' '}
+                        &middot; {counts[1]} positive (
+                        {Math.round((counts[1] / combined.length) * 100)}%)
                       </span>
-                    ) : (
-                      <span>
-                        {Math.floor((accuracy * 1000) / 10)}% accuracy
-                      </span>
-                    )}
+                    ) : null}
                   </div>
                 </div>
+                {show_accuracy ? (
+                  <div>
+                    <div
+                      style={{
+                        position: 'relative',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      {combined.map((c, i) => (
+                        <div
+                          style={{
+                            position: 'absolute',
+                            left: `${(1 / combined.length) * i * 100}%`,
+                            bottom: 0,
+                            height: grem,
+                            width: `${(1 / combined.length) * 100 + 0.05}%`,
+                            background:
+                              c.label !== c.class
+                                ? c.label === 'pos'
+                                  ? scaleBlue(1)
+                                  : scaleRed(1)
+                                : '#ddd',
+                          }}
+                        />
+                      ))}
+
+                      <div style={{ position: 'relative' }}>
+                        {rightwrong[0] > 0 ? (
+                          <span>
+                            {Math.floor((accuracy * 1000) / 10)}% accuracy (
+                            {rightwrong[0]} wrong)
+                          </span>
+                        ) : (
+                          <span>
+                            {Math.floor((accuracy * 1000) / 10)}% accuracy
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
               </div>
             ) : null}
           </div>
+          <Border />
         </div>
+        {compare && analyze ? (
+          <div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+              }}
+            >
+              {[['NBSVM'], ['BERT']].map((item, i) => {
+                let n = i === 0
+                let cert = n ? ncombined : combined
+                let co = n ? ncounts : counts
+                let rw = n ? nrightwrong : rightwrong
+                let acc = n ? naccuracy : accuracy
+                return (
+                  <div
+                    style={{
+                      borderLeft: i === 1 ? 'solid 2px black' : 'none',
+                      marginLeft: i === 1 ? -1 : 0,
+                      background: 'white',
+                      display: 'flex',
+                    }}
+                  >
+                    <div
+                      style={{
+                        paddingLeft: grem / 2,
+                        paddingTop: grem / 2,
+                        paddingBottom: grem / 2,
+                      }}
+                    >
+                      {item[0]}
+                    </div>
+                    <div
+                      style={{
+                        padding: `${
+                          show_accuracy && false ? 0 : grem / 2
+                        }px ${grem / 2}px`,
+                        flexGrow: 1,
+                      }}
+                    >
+                      <div style={{ position: 'relative', overflow: 'hidden' }}>
+                        {cert.map((c, i) => (
+                          <div
+                            style={{
+                              position: 'absolute',
+                              left: `${(1 / combined.length) * i * 100}%`,
+                              top: 0,
+                              bottom: 0,
+                              width: `${(1 / combined.length) * 100 + 0.05}%`,
+                              background:
+                                c.class === 'pos'
+                                  ? scaleBlue(c.certainty)
+                                  : scaleRed(c.certainty),
+                            }}
+                          />
+                        ))}
+
+                        <div style={{ position: 'relative' }}>
+                          {combined.length} {total ? 'total ' : ''} review
+                          {combined.length > 1 ? 's' : ''}
+                          {analyze ? (
+                            <span>
+                              {' '}
+                              &middot; {co[1]} positive (
+                              {Math.round((co[1] / combined.length) * 100)}
+                              %)
+                            </span>
+                          ) : null}
+                        </div>
+                      </div>
+                      {show_accuracy ? (
+                        <div>
+                          <div
+                            style={{
+                              position: 'relative',
+                              overflow: 'hidden',
+                            }}
+                          >
+                            {cert.map((c, i) => (
+                              <div
+                                style={{
+                                  position: 'absolute',
+                                  left: `${(1 / combined.length) * i * 100}%`,
+                                  bottom: 0,
+                                  height: grem,
+                                  width: `${(1 / combined.length) * 100 +
+                                    0.05}%`,
+                                  background:
+                                    c.label !== c.class
+                                      ? c.label === 'pos'
+                                        ? scaleBlue(1)
+                                        : scaleRed(1)
+                                      : '#ddd',
+                                }}
+                              />
+                            ))}
+
+                            <div style={{ position: 'relative' }}>
+                              {rw[0] > 0 ? (
+                                <span>
+                                  {Math.floor((acc * 1000) / 10)}% accuracy (
+                                  {rw[0]} wrong)
+                                </span>
+                              ) : (
+                                <span>
+                                  {Math.floor((acc * 1000) / 10)}% accuracy
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+            <Border />
+          </div>
+        ) : null}
       </div>
     )
   }

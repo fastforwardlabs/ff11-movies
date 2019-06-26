@@ -34,3 +34,15 @@ export function readableSentiment(value) {
 }
 
 export let class_labels = ['negative', 'positive']
+
+export let Border = () => (
+  <div
+    style={{
+      height: 1,
+      background: 'black',
+      position: 'relative',
+      marginBottom: -0.5,
+      marginTop: -0.5,
+    }}
+  />
+)
