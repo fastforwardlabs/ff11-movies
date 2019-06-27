@@ -9,7 +9,7 @@ let linkPrefix = publicRuntimeConfig.linkPrefix
 import Link from '../parts/PrefixedLink'
 import Bar from '../parts/Bar'
 import Header from '../parts/Header'
-import * as chroma from 'chroma-js'
+import Tour from '../parts/Tour'
 
 let algnames = ['NBSVM', 'BERT']
 let algfiles = [
@@ -166,6 +166,9 @@ class MyApp extends App {
             margin: 0;
             text-indent: 1.5rem;
           }
+          p:first-child {
+            text-indent: 0;
+          }
           a,
           button {
             color: inherit;
@@ -278,112 +281,29 @@ class MyApp extends App {
           Forward Labs
         </div>
         {show_info ? (
-          <div
-            style={{
-              position: 'fixed',
-              left: 0,
-              top: 0,
-              right: 0,
-              bottom: 0,
-              background: 'rgba(0,0,0,0.125',
-              zIndex: 9999,
-              overflow: 'auto',
-            }}
-          >
-            <div style={{ position: 'fixed', left: 0, top: 0, right: 0 }}>
-              <div
-                style={{
-                  background: 'white',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                }}
-              >
-                <div
-                  style={{
-                    padding: grem / 2,
-                  }}
-                >
-                  Tour
-                </div>
-                <button
-                  style={{
-                    padding: grem / 2,
-                    textDecoration: 'underline',
-                  }}
-                >
-                  Pause
-                </button>
-              </div>
-              <Border />
-            </div>
-            <div
-              style={{
-                height: '400vh',
-                background: 'transparent',
-                position: 'absolute',
-                left: 0,
-                top: 0,
-                right: 0,
-              }}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: '100vh',
-                }}
-              >
-                <div
-                  style={{
-                    maxWidth: 700,
-                    margin: '0 auto',
-                    background: 'white',
-                    borderLeft: 'solid 2px black',
-                    borderTop: 'solid 1px black',
-                    borderRight: 'solid 3px black',
-                    borderBottom: 'solid 4px black',
-                    padding: grem / 2,
-                  }}
-                >
-                  <p>
-                    Textflicks is a sentiment analysis prototype by Cloudera
-                    Fast Forward Labs, built to accompany our report on transfer
-                    learning for natural language generation. It uses movie
-                    reviews to show how NLP techniques can unlock the data
-                    embedded in large amounts of unstructured text.
-                  </p>
-                  <p>
-                    50 movies, analyze lets you do this, options let you do
-                    more.
-                  </p>
-                </div>
-              </div>
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: '100vh',
-                }}
-              >
-                <div
-                  style={{
-                    maxWidth: 700,
-                    margin: '0 auto',
-                    background: 'white',
-                    borderLeft: 'solid 2px black',
-                    borderTop: 'solid 1px black',
-                    borderRight: 'solid 3px black',
-                    borderBottom: 'solid 4px black',
-                    padding: grem / 2,
-                  }}
-                >
-                  hey
-                </div>
-              </div>
-            </div>
-          </div>
+          <Tour
+            router={this.props.router}
+            grem={grem}
+            font_size={font_size}
+            line_height={line_height}
+            grem={grem}
+            analyze={analyze}
+            data={data}
+            info={info}
+            sort={sort}
+            review_sort={review_sort}
+            setAnalyze={this.setAnalyze}
+            setSort={this.setSort}
+            setReviewSort={this.setReviewSort}
+            setAlgo={this.setAlgo}
+            algnames={algnames}
+            data_select={this.state.data_select}
+            show_accuracy={show_accuracy}
+            setAccuracy={this.setAccuracy}
+            compare={this.state.compare}
+            setCompare={this.setCompare}
+            nbsvm_data={this.state.nbsvm_data}
+          />
         ) : null}
       </div>
     )

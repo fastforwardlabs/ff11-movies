@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '../parts/PrefixedLink'
 import * as chroma from 'chroma-js'
 import { scaleRed, scaleBlue, Border } from './Static'
 
@@ -16,6 +17,7 @@ class Bar extends React.Component {
       setAccuracy,
       compare,
       setCompare,
+      is_front = false,
     } = this.props
 
     let certainty_array = data.map(r => {
@@ -121,6 +123,54 @@ class Bar extends React.Component {
               alignItems: 'top',
             }}
           >
+            {!is_front ? (
+              <Link href="/">
+                <a
+                  className="hover-block-container no-opacity-hover"
+                  style={{
+                    display: 'block',
+                    paddingTop: grem / 2 + grem * 0.125,
+                    paddingBottom: grem / 2 + grem * 0.125,
+                    paddingLeft: grem / 2,
+                    paddingRight: grem / 2,
+                    borderRight: 'solid 1px black',
+                    position: 'relative',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: grem * 0.75,
+                      height: grem * 0.75,
+                      border: 'solid 1px black',
+                      position: 'relative',
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: 'absolute',
+                        left: 0,
+                        top: 0,
+                        width: (grem * 0.75) / 2 - 1,
+                        height: grem * 0.75 - 2,
+                        borderRight: 'solid 1px black',
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: 'absolute',
+                        left: 0,
+                        top: 0,
+                        height: (grem * 0.75) / 2 - 1,
+                        width: grem * 0.75 - 2,
+                        borderBottom: 'solid 1px black',
+                      }}
+                    />
+                  </div>
+                  <div className="hover-block" />
+                </a>
+              </Link>
+            ) : null}
             <button
               onClick={() => setAnalyze(!analyze)}
               style={{

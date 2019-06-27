@@ -48,6 +48,9 @@ class Page extends React.Component {
       setCompare,
       nbsvm_data,
     } = this.props
+
+    console.log(this.props)
+
     let info_ids = info.map(o => o.og_id)
     let topic_info = info[info_ids.indexOf(router.query.id)]
     let reviews = data.filter(o => o.url === router.query.id)

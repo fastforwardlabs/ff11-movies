@@ -101,6 +101,7 @@ class Index extends React.Component {
           setCompare={setCompare}
           data={data}
           nbsvm_data={nbsvm_data}
+          is_front={true}
         />
 
         <div
