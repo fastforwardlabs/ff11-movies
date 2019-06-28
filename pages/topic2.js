@@ -137,14 +137,15 @@ class Page extends React.Component {
 
         <div
           style={{
-            position: 'sticky',
-            top: stick_top,
+            // position: 'sticky',
+            position: 'relative',
+            // top: stick_top,
             background: 'white',
           }}
         >
           <div
             style={{
-              maxWidth: compare ? 700 * 2 + grem : 700,
+              maxWidth: 700,
               margin: '0 auto',
               padding: grem / 2,
             }}
@@ -203,21 +204,33 @@ class Page extends React.Component {
               )}
             </div>
           </div>
-          <Border />
         </div>
 
-        <div
-          style={{
-            maxWidth: compare ? 700 * 2 + grem + 2 : 700,
-            margin: '0 auto',
-            display: compare ? 'grid' : 'block',
-            gridTemplateColumns: '1fr 1fr',
-          }}
-        >
-          {compare ? (
-            <div style={{ borderRight: 'solid 1px black' }}>
+        <div style={{ position: 'relative' }}>
+          {compare ? <Border /> : null}
+          <div
+            style={{
+              maxWidth: compare ? 700 * 2 + grem + 2 : 700,
+              margin: '0 auto',
+              display: compare ? 'grid' : 'block',
+              gridTemplateColumns: '1fr 1fr',
+            }}
+          >
+            {compare ? (
+              <div style={{ borderRight: 'solid 1px black' }}>
+                <Reviews
+                  reviews={nreviews}
+                  grem={grem}
+                  analyze={analyze}
+                  show_accuracy={show_accuracy}
+                  review_sort={review_sort}
+                  setReviewSort={setReviewSort}
+                />
+              </div>
+            ) : null}
+            <div style={{ borderLeft: compare ? 'solid 1px black' : 'none' }}>
               <Reviews
-                reviews={nreviews}
+                reviews={reviews}
                 grem={grem}
                 analyze={analyze}
                 show_accuracy={show_accuracy}
@@ -225,16 +238,6 @@ class Page extends React.Component {
                 setReviewSort={setReviewSort}
               />
             </div>
-          ) : null}
-          <div style={{ borderLeft: compare ? 'solid 1px black' : 'none' }}>
-            <Reviews
-              reviews={reviews}
-              grem={grem}
-              analyze={analyze}
-              show_accuracy={show_accuracy}
-              review_sort={review_sort}
-              setReviewSort={setReviewSort}
-            />
           </div>
         </div>
       </div>

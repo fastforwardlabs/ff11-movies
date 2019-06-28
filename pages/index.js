@@ -107,8 +107,8 @@ class Index extends React.Component {
 
         <div
           style={{
-            position: 'sticky',
-            top: stick_top,
+            position: 'relative',
+            // top: stick_top,
             background: 'white',
             zIndex: 99,
           }}
