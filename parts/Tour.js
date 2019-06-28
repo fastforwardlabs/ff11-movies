@@ -77,6 +77,9 @@ class Tour extends React.Component {
     if (step === 3) index_sort = 'positive'
     if (step === 4) index_sort = 'negative'
 
+    let hl_options = {}
+    if (step > 2) hl_options.highlight_first_in_grid = true
+
     return (
       <div
         style={{
@@ -98,6 +101,8 @@ class Tour extends React.Component {
               bottom: 0,
               background: 'white',
               overflow: 'hidden',
+              border: 'solid 6px red',
+              height: 'calc(100vh - 3rem)',
             }}
           >
             {data !== null && nbsvm_data !== null ? (
@@ -122,6 +127,7 @@ class Tour extends React.Component {
                     compare={compare}
                     setCompare={setCompare}
                     nbsvm_data={nbsvm_data}
+                    hl_options={hl_options}
                   />
                 ) : null}
 
@@ -145,6 +151,7 @@ class Tour extends React.Component {
                     compare={compare}
                     setCompare={setCompare}
                     nbsvm_data={nbsvm_data}
+                    hl_options={hl_options}
                   />
                 ) : null}
               </div>

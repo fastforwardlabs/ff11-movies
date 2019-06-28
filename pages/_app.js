@@ -38,7 +38,7 @@ class MyApp extends App {
     this.state = {
       analyze: true,
       data_select: 1,
-      show_accuracy: false,
+      show_accuracy: true,
       sort: 'reviews',
       review_sort: 'date',
       nbsvm_data: null,

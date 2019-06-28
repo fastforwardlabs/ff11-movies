@@ -69,6 +69,7 @@ class Index extends React.Component {
       compare,
       setCompare,
       nbsvm_data,
+      hl_options = {},
     } = this.props
 
     // compare and show_accuracy only when analyze is on
@@ -198,6 +199,7 @@ class Index extends React.Component {
                   sort={sort}
                   analyze={analyze}
                   show_accuracy={show_accuracy}
+                  hl_options={hl_options}
                 />
               </div>
             </div>
@@ -210,6 +212,7 @@ class Index extends React.Component {
             sort={sort}
             analyze={analyze}
             show_accuracy={show_accuracy}
+            hl_options={hl_options}
           />
         </div>
       </div>

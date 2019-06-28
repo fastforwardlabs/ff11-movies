@@ -12,7 +12,15 @@ import {
 
 class MovieGrid extends React.Component {
   render() {
-    let { data, info, sort, grem, analyze, show_accuracy } = this.props
+    let {
+      data,
+      info,
+      sort,
+      grem,
+      analyze,
+      show_accuracy,
+      hl_options,
+    } = this.props
 
     let sorted = info.map(o => {
       let new_o = Object.assign({}, o)
@@ -259,7 +267,7 @@ class MovieGrid extends React.Component {
                                 ? c.label === 'pos'
                                   ? scaleBlue(1)
                                   : scaleRed(1)
-                                : '#ddd',
+                                : '#fff',
                           }}
                         />
                       ))}
@@ -287,6 +295,8 @@ class MovieGrid extends React.Component {
                     right: 0,
                     bottom: 0,
                     background: 'rgba(0,0,0,0.0625)',
+                    opacity:
+                      hl_options.highlight_first_in_grid && i === 0 ? 1 : null,
                   }}
                 />
               </a>

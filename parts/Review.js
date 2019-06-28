@@ -74,12 +74,7 @@ class Review extends React.Component {
             {show_accuracy ? (
               <div
                 style={{
-                  background:
-                    r.label === r.class
-                      ? '#ddd'
-                      : r.label === 'pos'
-                      ? scaleBlue(1)
-                      : scaleRed(1),
+                  background: r.label === 'pos' ? scaleBlue(1) : scaleRed(1),
                 }}
               >
                 label: {r.label === 'pos' ? 'positive' : 'negative'} &middot;{' '}

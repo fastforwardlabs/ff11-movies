@@ -344,7 +344,7 @@ class Bar extends React.Component {
                                 ? c.label === 'pos'
                                   ? scaleBlue(1)
                                   : scaleRed(1)
-                                : '#ddd',
+                                : 'white',
                           }}
                         />
                       ))}
@@ -461,7 +461,7 @@ class Bar extends React.Component {
                                       ? c.label === 'pos'
                                         ? scaleBlue(1)
                                         : scaleRed(1)
-                                      : '#ddd',
+                                      : '#fff',
                                 }}
                               />
                             ))}
