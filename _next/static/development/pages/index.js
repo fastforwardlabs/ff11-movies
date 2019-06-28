@@ -59591,8 +59591,8 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
-          position: 'sticky',
-          top: stick_top,
+          position: 'relative',
+          // top: stick_top,
           background: 'white',
           zIndex: 99
         },

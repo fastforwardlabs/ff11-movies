@@ -30812,8 +30812,9 @@ function (_React$Component) {
         __self: this
       }) : null) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
-          position: 'sticky',
-          top: stick_top,
+          // position: 'sticky',
+          position: 'relative',
+          // top: stick_top,
           background: 'white'
         },
         __source: {
@@ -30823,13 +30824,13 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
-          maxWidth: compare ? 700 * 2 + grem : 700,
+          maxWidth: 700,
           margin: '0 auto',
           padding: grem / 2
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 146
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30840,7 +30841,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 153
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30850,7 +30851,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 160
         },
         __self: this
       }, reviews.length, " reviews sorted by most:"), (analyze ? show_accuracy ? [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative'], ['accurate', 'accurate'], ['inaccurate', 'inaccurate']] : [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative']] : [['recent', 'date']]).map(function (a) {
@@ -30863,7 +30864,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 179
+            lineNumber: 180
           },
           __self: this
         }, a[0]) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
@@ -30877,17 +30878,26 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 190
+            lineNumber: 191
           },
           __self: this
         }, a[0]);
-      }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
+      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          position: 'relative'
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 209
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 210
+        },
+        __self: this
+      }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
           maxWidth: compare ? 700 * 2 + grem + 2 : 700,
           margin: '0 auto',
@@ -30896,7 +30906,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 211
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30905,7 +30915,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 220
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -30917,7 +30927,7 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 219
+          lineNumber: 221
         },
         __self: this
       })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30926,7 +30936,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 231
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -30938,10 +30948,10 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 232
         },
         __self: this
-      }))));
+      })))));
     }
   }]);
 
