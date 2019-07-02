@@ -62401,6 +62401,276 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./pages/Disagreements.js":
+/*!********************************!*\
+  !*** ./pages/Disagreements.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _parts_PrefixedLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../parts/PrefixedLink */ "./parts/PrefixedLink.js");
+/* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! d3 */ "./node_modules/d3/index.js");
+/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! chroma-js */ "../../node_modules/chroma-js/chroma.js");
+/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(chroma_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _parts_Bar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../parts/Bar */ "./parts/Bar.js");
+/* harmony import */ var _parts_Static__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../parts/Static */ "./parts/Static.js");
+/* harmony import */ var next_server_config__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next-server/config */ "./node_modules/next-server/config.js");
+/* harmony import */ var next_server_config__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_server_config__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _parts_Reviews__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../parts/Reviews */ "./parts/Reviews.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
+
+
+var _jsxFileName = "/Users/grant.custer/Sites/next-movies/pages/Disagreements.js";
+
+
+
+
+
+
+
+
+var _getConfig = next_server_config__WEBPACK_IMPORTED_MODULE_11___default()(),
+    publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+
+var linkPrefix = publicRuntimeConfig.linkPrefix;
+
+
+
+var Disagree =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Disagree, _React$Component);
+
+  function Disagree(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Disagree);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Disagree).call(this, props));
+    _this.state = {
+      show_all: false
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Disagree, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          font_size = _this$props.font_size,
+          line_height = _this$props.line_height,
+          grem = _this$props.grem,
+          analyze = _this$props.analyze,
+          info = _this$props.info,
+          reviews = _this$props.reviews,
+          setAnalyze = _this$props.setAnalyze,
+          sort = _this$props.sort,
+          setSort = _this$props.setSort,
+          show_accuracy = _this$props.show_accuracy,
+          nbsvm_data = _this$props.nbsvm_data,
+          data = _this$props.data,
+          hl_options = _this$props.hl_options,
+          setAccuracy = _this$props.setAccuracy,
+          compare = _this$props.compare,
+          review_sort = _this$props.review_sort,
+          setReviewSort = _this$props.setReviewSort,
+          setCompare = _this$props.setCompare;
+      var show_all = this.state.show_all;
+      compare = true;
+      var disagreements = [];
+      var ndisagreements = [];
+
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].class !== nbsvm_data[i].class) {
+          disagreements.push(data[i]);
+          ndisagreements.push(nbsvm_data[i]);
+        }
+      }
+
+      disagreements = lodash__WEBPACK_IMPORTED_MODULE_13__["sortBy"](disagreements, 'date');
+      ndisagreements = lodash__WEBPACK_IMPORTED_MODULE_13__["sortBy"](ndisagreements, 'date');
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Bar__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        grem: grem,
+        setAnalyze: setAnalyze,
+        analyze: analyze,
+        setAlgo: this.props.setAlgo,
+        algnames: this.props.algnames,
+        data_select: this.props.data_select,
+        show_accuracy: true,
+        setAccuracy: setAccuracy,
+        compare: true,
+        setCompare: setCompare,
+        data: disagreements,
+        nbsvm_data: ndisagreements,
+        hl_options: hl_options,
+        analyze_locked: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          maxWidth: 700,
+          padding: grem / 2,
+          margin: "0 auto"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {},
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        },
+        __self: this
+      }, "Reviews where the NBSVM and BERT classification disagree:")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          position: 'relative',
+          background: hl_options.highlight_reviews_block ? '#eee' : 'white',
+          transition: 'background 0.1s linear'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_10__["Border"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
+      }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          maxWidth: compare ? 700 * 2 + grem + 2 : 700,
+          margin: '0 auto',
+          display: compare ? 'grid' : 'block',
+          gridTemplateColumns: '1fr 1fr'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106
+        },
+        __self: this
+      }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          borderRight: 'solid 1px black'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        reviews: show_all ? ndisagreements : ndisagreements.slice(0, 40),
+        grem: grem,
+        analyze: analyze,
+        show_accuracy: show_accuracy,
+        review_sort: 'date',
+        setReviewSort: setReviewSort,
+        info: info,
+        show_title: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116
+        },
+        __self: this
+      })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          borderLeft: compare ? 'solid 1px black' : 'none'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        reviews: show_all ? disagreements : disagreements.slice(0, 40),
+        grem: grem,
+        analyze: analyze,
+        show_accuracy: show_accuracy,
+        review_sort: 'date',
+        setReviewSort: setReviewSort,
+        info: info,
+        show_title: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131
+        },
+        __self: this
+      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_10__["Border"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 146
+        },
+        __self: this
+      })), !show_all ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        style: {
+          maxWidth: 700,
+          margin: '0 auto',
+          padding: grem / 2
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 149
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        style: {
+          textDecoration: 'underline'
+        },
+        onClick: function onClick() {
+          _this2.setState({
+            show_all: true
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 150
+        },
+        __self: this
+      }, "show all")) : null);
+    }
+  }]);
+
+  return Disagree;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Disagree);
+
+/***/ }),
+
 /***/ "./pages/Index.js":
 /*!************************!*\
   !*** ./pages/Index.js ***!
@@ -62547,6 +62817,7 @@ function (_React$Component) {
         data: data,
         nbsvm_data: nbsvm_data,
         is_front: true,
+        hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91
@@ -62561,7 +62832,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62570,7 +62841,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 117
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62582,7 +62853,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 122
         },
         __self: this
       }, data.length, " movies & shows sorted by most:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62594,7 +62865,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 132
         },
         __self: this
       }, (analyze ? show_accuracy ? [['reviews', 'reviews'], ['positive', 'positive'], ['negative', 'negative'], ['accurate', 'accurate'], ['inaccurate', 'inaccurate']] : [['reviews', 'reviews'], ['positive', 'positive'], ['negative', 'negative']] : [['reviews', 'reviews']]).map(function (a) {
@@ -62607,7 +62878,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 156
+            lineNumber: 157
           },
           __self: this
         }, a[0]) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
@@ -62621,14 +62892,14 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 167
+            lineNumber: 168
           },
           __self: this
         }, a[0]);
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 184
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62639,7 +62910,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 186
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62649,7 +62920,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 194
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62658,7 +62929,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 195
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_MovieGrid__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -62671,7 +62942,7 @@ function (_React$Component) {
         hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 196
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_MovieGrid__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -62684,7 +62955,7 @@ function (_React$Component) {
         hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 209
         },
         __self: this
       })));
@@ -62789,8 +63060,10 @@ function (_React$Component) {
           setAccuracy = _this$props.setAccuracy,
           compare = _this$props.compare,
           setCompare = _this$props.setCompare,
-          nbsvm_data = _this$props.nbsvm_data;
-      console.log(this.props);
+          nbsvm_data = _this$props.nbsvm_data,
+          hl_options = _this$props.hl_options,
+          _this$props$tour = _this$props.tour,
+          tour = _this$props$tour === void 0 ? false : _this$props$tour;
       var info_ids = info.map(function (o) {
         return o.og_id;
       });
@@ -62834,6 +63107,7 @@ function (_React$Component) {
         setCompare: setCompare,
         data: reviews,
         nbsvm_data: nreviews,
+        hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 75
@@ -62843,7 +63117,7 @@ function (_React$Component) {
         style: {},
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62854,7 +63128,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62863,13 +63137,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }, topic_info.Title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62878,7 +63152,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, topic_info.Year, " \xB7 ", topic_info.Runtime, " \xB7", ' ', topic_info.Rated), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62887,30 +63161,33 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 105
         },
         __self: this
       }, topic_info.Plot, ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "https://www.imdb.com/title/".concat(topic_info.imdbID),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 107
         },
         __self: this
       }, "IMDB \u2192"))))), analyze ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: tour ? 'sentences-block' : null,
         style: {
           zIndex: 998,
-          position: 'relative'
+          position: 'relative',
+          background: hl_options.highlight_sentences_block ? '#eee' : 'white',
+          transition: 'background 0.1s linear'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 116
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 127
         },
         __self: this
       }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62922,7 +63199,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 128
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62931,7 +63208,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 137
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Sentences__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -62940,7 +63217,7 @@ function (_React$Component) {
         analyze: analyze,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 138
         },
         __self: this
       })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62949,7 +63226,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 141
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Sentences__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -62958,25 +63235,26 @@ function (_React$Component) {
         analyze: analyze,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 142
         },
         __self: this
       }))), compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 145
         },
         __self: this
       }) : null) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: tour ? 'reviews-block' : null,
         style: {
           // position: 'sticky',
           position: 'relative',
           // top: stick_top,
-          background: 'white'
+          background: hl_options.highlight_reviews_block ? '#eee' : 'white'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62987,7 +63265,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 158
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -62998,7 +63276,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 165
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63008,7 +63286,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 172
         },
         __self: this
       }, reviews.length, " reviews sorted by most:"), (analyze ? show_accuracy ? [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative'], ['accurate', 'accurate'], ['inaccurate', 'inaccurate']] : [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative']] : [['recent', 'date']]).map(function (a) {
@@ -63021,7 +63299,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 180
+            lineNumber: 192
           },
           __self: this
         }, a[0]) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
@@ -63035,23 +63313,25 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 191
+            lineNumber: 203
           },
           __self: this
         }, a[0]);
       })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
-          position: 'relative'
+          position: 'relative',
+          background: hl_options.highlight_reviews_block ? '#eee' : 'white',
+          transition: 'background 0.1s linear'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 221
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 228
         },
         __self: this
       }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63063,7 +63343,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 229
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63072,7 +63352,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 238
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -63084,7 +63364,7 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 221
+          lineNumber: 239
         },
         __self: this
       })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63093,7 +63373,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 249
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -63105,7 +63385,7 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 250
         },
         __self: this
       })))));
@@ -63248,13 +63528,13 @@ function (_App) {
     _this.state = {
       analyze: true,
       data_select: 1,
-      show_accuracy: true,
+      show_accuracy: false,
       sort: 'reviews',
       review_sort: 'date',
       nbsvm_data: null,
       compare: false,
       bert_data: null,
-      show_info: false
+      show_info: true
     };
     _this.setAnalyze = _this.setAnalyze.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
     _this.setReviewSort = _this.setReviewSort.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
@@ -63262,6 +63542,7 @@ function (_App) {
     _this.setSort = _this.setSort.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
     _this.setAlgo = _this.setAlgo.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
     _this.setCompare = _this.setCompare.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
+    _this.showInfo = _this.showInfo.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this));
     return _this;
   }
 
@@ -63357,6 +63638,13 @@ function (_App) {
       });
     }
   }, {
+    key: "showInfo",
+    value: function showInfo(value) {
+      this.setState({
+        show_info: value
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _React$createElement;
@@ -63382,24 +63670,25 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 145
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
         id: "2343230763",
         __self: this
-      }, "*{box-sizing:border-box;font-family:sans-serif;}html{background:#222;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans', 'Helvetica Neue',sans-serif;font-size:16px;line-height:1.5;background:white;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}code{font-family:source-code-pro,Menlo,Monaco,Consolas,'Courier New', monospace;}p{margin:0;text-indent:1.5rem;}p:first-child{text-indent:0;}a,button{color:inherit;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover,button:hover{opacity:0.75;}a.no-opacity-hover:hover,button.no-opacity-hover:hover{opacity:1;}a.no-underline{-webkit-text-decoration:none;text-decoration:none;}.opacity-inner-hover{-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover .opacity-inner-hover,button:hover .opacity-inner-hover{opacity:0.75;}button{font:inherit;font-size:inherit;line-height:inherit;border:none;padding:0;margin:0;background:transparent;cursor:pointer;}button:focus{outline:none;}.hover-block{position:absolute;left:0;top:0;right:0;bottom:0;}.hover-block-container .hover-block{display:block;pointer-events:none;opacity:0;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;background:rgba(0,0,0,0.0625);}.hover-block-container:hover .hover-block{display:block;opacity:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0STJCLEFBR21DLEFBSU4sQUFHUCxBQWFFLEFBR0YsQUFJSyxBQUlBLEFBS0QsQUFJSCxBQUdXLEFBR1UsQUFJbEIsQUFHQSxBQVVBLEFBR0ssQUFPSixBQU9BLFNBdEVnQixBQWNYLENBaUJyQixHQUpBLEFBY0EsQUFHb0IsQUFVcEIsQ0FwQ0EsQUFJaUMsQUEwQ1gsQUFPVixFQTVFWixFQThEUyxJQWxFZ0IsRUFpRnpCLENBZFEsR0EzQ1IsR0E4QnNCLEFBY1osR0FNRSxLQUxELEtBTXNCLENBMUVqQyxHQXFFQSxFQTNCQSxDQVljLFlBQ0YsT0FWWixHQVdXLEVBckNYLE9Bc0N5QixFQTFCekIscUJBMkJpQixTQWlCa0IsTUFoQm5DLHdCQWlCQSxlQW5FaUIsZUFDQyxnQkFDQyxpQkFDQyxrQkFDaUIsbUNBQ0Qsa0NBQ3BDIiwiZmlsZSI6Ii9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBBcHAsIHsgQ29udGFpbmVyIH0gZnJvbSAnbmV4dC9hcHAnXG5pbXBvcnQgeyBpbmZvIH0gZnJvbSAnLi4vZGF0YS9zYW1wbGVfbW92aWVfaW5mby5qcydcbmltcG9ydCBnZXRDb25maWcgZnJvbSAnbmV4dC1zZXJ2ZXIvY29uZmlnJ1xuaW1wb3J0IHsgbm91bnMsIGFkamVjdGl2ZXMgfSBmcm9tICcuLi9kYXRhL2NvcnBvcmEuanMnXG5pbXBvcnQgeyByZWQsIGJsdWUsIEJvcmRlciB9IGZyb20gJy4uL3BhcnRzL1N0YXRpYydcbmxldCB7IHB1YmxpY1J1bnRpbWVDb25maWcgfSA9IGdldENvbmZpZygpXG5sZXQgbGlua1ByZWZpeCA9IHB1YmxpY1J1bnRpbWVDb25maWcubGlua1ByZWZpeFxuaW1wb3J0IExpbmsgZnJvbSAnLi4vcGFydHMvUHJlZml4ZWRMaW5rJ1xuaW1wb3J0IEJhciBmcm9tICcuLi9wYXJ0cy9CYXInXG5pbXBvcnQgSGVhZGVyIGZyb20gJy4uL3BhcnRzL0hlYWRlcidcbmltcG9ydCBUb3VyIGZyb20gJy4uL3BhcnRzL1RvdXInXG5cbmxldCBhbGduYW1lcyA9IFsnTkJTVk0nLCAnQkVSVCddXG5sZXQgYWxnZmlsZXMgPSBbXG4gICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLFxuICAnYmVydF9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLFxuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eV93b3JkLmpzb24nLFxuXVxubGV0IGRhdGFfa2V5cyA9IFtcbiAgWyduYnN2bV9kYXRhJywgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsICdOQlNWTSddLFxuICBbJ2JlcnRfZGF0YScsICdiZXJ0X2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsICdCRVJUJ10sXG5dXG5cbmNsYXNzIE15QXBwIGV4dGVuZHMgQXBwIHtcbiAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7IENvbXBvbmVudCwgY3R4IH0pIHtcbiAgICBsZXQgcGFnZVByb3BzID0ge31cblxuICAgIGlmIChDb21wb25lbnQuZ2V0SW5pdGlhbFByb3BzKSB7XG4gICAgICBwYWdlUHJvcHMgPSBhd2FpdCBDb21wb25lbnQuZ2V0SW5pdGlhbFByb3BzKGN0eClcbiAgICB9XG5cbiAgICByZXR1cm4geyBwYWdlUHJvcHMgfVxuICB9XG5cbiAgY29uc3RydWN0b3IocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgYW5hbHl6ZTogdHJ1ZSxcbiAgICAgIGRhdGFfc2VsZWN0OiAxLFxuICAgICAgc2hvd19hY2N1cmFjeTogdHJ1ZSxcbiAgICAgIHNvcnQ6ICdyZXZpZXdzJyxcbiAgICAgIHJldmlld19zb3J0OiAnZGF0ZScsXG4gICAgICBuYnN2bV9kYXRhOiBudWxsLFxuICAgICAgY29tcGFyZTogZmFsc2UsXG4gICAgICBiZXJ0X2RhdGE6IG51bGwsXG4gICAgICBzaG93X2luZm86IGZhbHNlLFxuICAgIH1cbiAgICB0aGlzLnNldEFuYWx5emUgPSB0aGlzLnNldEFuYWx5emUuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0UmV2aWV3U29ydCA9IHRoaXMuc2V0UmV2aWV3U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBY2N1cmFjeSA9IHRoaXMuc2V0QWNjdXJhY3kuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0U29ydCA9IHRoaXMuc2V0U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBbGdvID0gdGhpcy5zZXRBbGdvLmJpbmQodGhpcylcbiAgICB0aGlzLnNldENvbXBhcmUgPSB0aGlzLnNldENvbXBhcmUuYmluZCh0aGlzKVxuICB9XG5cbiAgZmV0Y2hEYXRhKCkge1xuICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhLycgKyBhbGdmaWxlc1swXSlcbiAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAudGhlbihyID0+IHtcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvbmFtZXNfYW5kX2RhdGVzLmpzb24nKVxuICAgICAgICAgIC50aGVuKG5kID0+IG5kLmpzb24oKSlcbiAgICAgICAgICAudGhlbihuZCA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1swXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgIH0pXG4gICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvJyArIGFsZ2ZpbGVzWzFdKVxuICAgICAgLnRoZW4ociA9PiByLmpzb24oKSlcbiAgICAgIC50aGVuKHIgPT4ge1xuICAgICAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS9uYW1lc19hbmRfZGF0ZXMuanNvbicpXG4gICAgICAgICAgLnRoZW4obmQgPT4gbmQuanNvbigpKVxuICAgICAgICAgIC50aGVuKG5kID0+IHtcbiAgICAgICAgICAgIGxldCByZXZpZXdzID0gci5tYXAoKHIsIGkpID0+IHtcbiAgICAgICAgICAgICAgbGV0IG5ld19yID0gT2JqZWN0LmFzc2lnbih7fSwgcilcbiAgICAgICAgICAgICAgbmV3X3IuaW5kZXggPSBpXG4gICAgICAgICAgICAgIG5ld19yLmF1dGhvciA9IG5kW2ldLmF1dGhvclxuICAgICAgICAgICAgICBuZXdfci5kYXRlID0gbmRbaV0uZGF0ZVxuICAgICAgICAgICAgICByZXR1cm4gbmV3X3JcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBsZXQga2V5ID0gZGF0YV9rZXlzWzFdWzBdXG4gICAgICAgICAgICB0aGlzLnNldFN0YXRlKHsgW2tleV06IHJldmlld3MgfSlcbiAgICAgICAgICB9KVxuICAgICAgfSlcbiAgfVxuXG4gIGNvbXBvbmVudERpZE1vdW50KCkge1xuICAgIHRoaXMuZmV0Y2hEYXRhKClcbiAgfVxuXG4gIHNldEFuYWx5emUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgYW5hbHl6ZTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldFJldmlld1NvcnQodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgcmV2aWV3X3NvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRBbGdvKGluZGV4KSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGRhdGFfc2VsZWN0OiBpbmRleCB9KVxuICB9XG5cbiAgc2V0QWNjdXJhY3kodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgc2hvd19hY2N1cmFjeTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldENvbXBhcmUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgY29tcGFyZTogdmFsdWUgfSlcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICBsZXQgeyBhbmFseXplLCBzb3J0LCByZXZpZXdfc29ydCwgc2hvd19hY2N1cmFjeSwgc2hvd19pbmZvIH0gPSB0aGlzLnN0YXRlXG5cbiAgICBsZXQgZGF0YSA9IHRoaXMuc3RhdGVbZGF0YV9rZXlzW3RoaXMuc3RhdGUuZGF0YV9zZWxlY3RdWzBdXVxuXG4gICAgaWYgKGFuYWx5emUgPT09IGZhbHNlKSBzaG93X2FjY3VyYWN5ID0gZmFsc2VcblxuICAgIGxldCB7IENvbXBvbmVudCwgcGFnZVByb3BzIH0gPSB0aGlzLnByb3BzXG4gICAgbGV0IGZvbnRfc2l6ZSA9IDE2XG4gICAgbGV0IGxpbmVfaGVpZ2h0ID0gMS41XG4gICAgbGV0IGdyZW0gPSBmb250X3NpemUgKiBsaW5lX2hlaWdodFxuXG4gICAgY29uc3QgeyBwYXRobmFtZSB9ID0gdGhpcy5wcm9wcy5yb3V0ZXJcblxuICAgIGxldCBpc19mcm9udCA9IHBhdGhuYW1lID09PSAnLydcbiAgICBsZXQgaXNfdG9waWMgPSBwYXRobmFtZS5zdGFydHNXaXRoKCcvdG9waWMnKVxuXG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXY+XG4gICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgKiB7XG4gICAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgICAgICAgfVxuICAgICAgICAgIGh0bWwge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzIyMjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJyxcbiAgICAgICAgICAgICAgJ094eWdlbicsICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJyxcbiAgICAgICAgICAgICAgJ0hlbHZldGljYSBOZXVlJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgICAgICAgICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICAgICAgICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAgICAgICAgICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgY29kZSB7XG4gICAgICAgICAgICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICAgICAgICAgICAgbW9ub3NwYWNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwIHtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAxLjVyZW07XG4gICAgICAgICAgfVxuICAgICAgICAgIHA6Zmlyc3QtY2hpbGQge1xuICAgICAgICAgICAgdGV4dC1pbmRlbnQ6IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEsXG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGNvbG9yOiBpbmhlcml0O1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYS5uby1vcGFjaXR5LWhvdmVyOmhvdmVyLFxuICAgICAgICAgIGJ1dHRvbi5uby1vcGFjaXR5LWhvdmVyOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tdW5kZXJsaW5lIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlciAub3BhY2l0eS1pbm5lci1ob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGZvbnQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBmb250LXNpemU6IGluaGVyaXQ7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogaW5oZXJpdDtcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uOmZvY3VzIHtcbiAgICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgICAgdG9wOiAwO1xuICAgICAgICAgICAgcmlnaHQ6IDA7XG4gICAgICAgICAgICBib3R0b206IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICAgICAgICBvcGFjaXR5OiAwO1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4wNjI1KTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmhvdmVyLWJsb2NrLWNvbnRhaW5lcjpob3ZlciAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgb3ZlcmZsb3c6ICR7c2hvd19pbmZvID8gJ2hpZGRlbicgOiAnYXV0byd9O1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8SGVhZGVyXG4gICAgICAgICAgaXNfZnJvbnQ9e2lzX2Zyb250fVxuICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIG1pbkhlaWdodDogYGNhbGMoMTAwdmggLSAke2dyZW0gKiA0ICsgMX1weClgLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICB7ZGF0YSAmJiB0aGlzLnN0YXRlLm5ic3ZtX2RhdGEgPyAoXG4gICAgICAgICAgICA8Q29udGFpbmVyPlxuICAgICAgICAgICAgICA8Q29tcG9uZW50XG4gICAgICAgICAgICAgICAgey4uLnBhZ2VQcm9wc31cbiAgICAgICAgICAgICAgICBmb250X3NpemU9e2ZvbnRfc2l6ZX1cbiAgICAgICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgICAgICBhbmFseXplPXthbmFseXplfVxuICAgICAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgICAgICBzb3J0PXtzb3J0fVxuICAgICAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICAgICAgc2V0U29ydD17dGhpcy5zZXRTb3J0fVxuICAgICAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICAgICAgYWxnbmFtZXM9e2FsZ25hbWVzfVxuICAgICAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgc2V0QWNjdXJhY3k9e3RoaXMuc2V0QWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgICAgICBuYnN2bV9kYXRhPXt0aGlzLnN0YXRlLm5ic3ZtX2RhdGF9XG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8L0NvbnRhaW5lcj5cbiAgICAgICAgICApIDogKFxuICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiBncmVtIC8gMiB9fT5Mb2FkaW5nLi4uPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgcGFkZGluZzogZ3JlbSAvIDIsXG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiAnIzIyMicsXG4gICAgICAgICAgICBjb2xvcjogJ3doaXRlJyxcbiAgICAgICAgICAgIGJvcmRlclRvcDogJ3NvbGlkIDFweCBibGFjaycsXG4gICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgIFRleHRmbGlja3MgaXMgYSBuYXR1cmFsIGxhbmd1YWdlIHByb2Nlc3NpbmcgcHJvdG90eXBlIGJ5IENsb3VkZXJhIEZhc3RcbiAgICAgICAgICBGb3J3YXJkIExhYnNcbiAgICAgICAgPC9kaXY+XG4gICAgICAgIHtzaG93X2luZm8gPyAoXG4gICAgICAgICAgPFRvdXJcbiAgICAgICAgICAgIHJvdXRlcj17dGhpcy5wcm9wcy5yb3V0ZXJ9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICBpbmZvPXtpbmZvfVxuICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgIHNldEFuYWx5emU9e3RoaXMuc2V0QW5hbHl6ZX1cbiAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgIHNldEFsZ289e3RoaXMuc2V0QWxnb31cbiAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgc2V0Q29tcGFyZT17dGhpcy5zZXRDb21wYXJlfVxuICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgIC8+XG4gICAgICAgICkgOiBudWxsfVxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwXG4iXX0= */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
+      }, "*{box-sizing:border-box;font-family:sans-serif;}html{background:#222;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans', 'Helvetica Neue',sans-serif;font-size:16px;line-height:1.5;background:white;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}code{font-family:source-code-pro,Menlo,Monaco,Consolas,'Courier New', monospace;}p{margin:0;text-indent:1.5rem;}p:first-child{text-indent:0;}a,button{color:inherit;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover,button:hover{opacity:0.75;}a.no-opacity-hover:hover,button.no-opacity-hover:hover{opacity:1;}a.no-underline{-webkit-text-decoration:none;text-decoration:none;}.opacity-inner-hover{-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover .opacity-inner-hover,button:hover .opacity-inner-hover{opacity:0.75;}button{font:inherit;font-size:inherit;line-height:inherit;border:none;padding:0;margin:0;background:transparent;cursor:pointer;}button:focus{outline:none;}.hover-block{position:absolute;left:0;top:0;right:0;bottom:0;}.hover-block-container .hover-block{display:block;pointer-events:none;opacity:0;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;background:rgba(0,0,0,0.0625);}.hover-block-container:hover .hover-block{display:block;opacity:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpSjJCLEFBR21DLEFBSU4sQUFHUCxBQWFFLEFBR0YsQUFJSyxBQUlBLEFBS0QsQUFJSCxBQUdXLEFBR1UsQUFJbEIsQUFHQSxBQVVBLEFBR0ssQUFPSixBQU9BLFNBdEVnQixBQWNYLENBaUJyQixHQUpBLEFBY0EsQUFHb0IsQUFVcEIsQ0FwQ0EsQUFJaUMsQUEwQ1gsQUFPVixFQTVFWixFQThEUyxJQWxFZ0IsRUFpRnpCLENBZFEsR0EzQ1IsR0E4QnNCLEFBY1osR0FNRSxLQUxELEtBTXNCLENBMUVqQyxHQXFFQSxFQTNCQSxDQVljLFlBQ0YsT0FWWixHQVdXLEVBckNYLE9Bc0N5QixFQTFCekIscUJBMkJpQixTQWlCa0IsTUFoQm5DLHdCQWlCQSxlQW5FaUIsZUFDQyxnQkFDQyxpQkFDQyxrQkFDaUIsbUNBQ0Qsa0NBQ3BDIiwiZmlsZSI6Ii9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBBcHAsIHsgQ29udGFpbmVyIH0gZnJvbSAnbmV4dC9hcHAnXG5pbXBvcnQgeyBpbmZvIH0gZnJvbSAnLi4vZGF0YS9zYW1wbGVfbW92aWVfaW5mby5qcydcbmltcG9ydCBnZXRDb25maWcgZnJvbSAnbmV4dC1zZXJ2ZXIvY29uZmlnJ1xuaW1wb3J0IHsgbm91bnMsIGFkamVjdGl2ZXMgfSBmcm9tICcuLi9kYXRhL2NvcnBvcmEuanMnXG5pbXBvcnQgeyByZWQsIGJsdWUsIEJvcmRlciB9IGZyb20gJy4uL3BhcnRzL1N0YXRpYydcbmxldCB7IHB1YmxpY1J1bnRpbWVDb25maWcgfSA9IGdldENvbmZpZygpXG5sZXQgbGlua1ByZWZpeCA9IHB1YmxpY1J1bnRpbWVDb25maWcubGlua1ByZWZpeFxuaW1wb3J0IExpbmsgZnJvbSAnLi4vcGFydHMvUHJlZml4ZWRMaW5rJ1xuaW1wb3J0IEJhciBmcm9tICcuLi9wYXJ0cy9CYXInXG5pbXBvcnQgSGVhZGVyIGZyb20gJy4uL3BhcnRzL0hlYWRlcidcbmltcG9ydCBUb3VyIGZyb20gJy4uL3BhcnRzL1RvdXInXG5cbmxldCBhbGduYW1lcyA9IFsnTkJTVk0nLCAnQkVSVCddXG5sZXQgYWxnZmlsZXMgPSBbXG4gICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLFxuICAnYmVydF9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLFxuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eV93b3JkLmpzb24nLFxuXVxubGV0IGRhdGFfa2V5cyA9IFtcbiAgWyduYnN2bV9kYXRhJywgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsICdOQlNWTSddLFxuICBbJ2JlcnRfZGF0YScsICdiZXJ0X2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsICdCRVJUJ10sXG5dXG5cbmNsYXNzIE15QXBwIGV4dGVuZHMgQXBwIHtcbiAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7IENvbXBvbmVudCwgY3R4IH0pIHtcbiAgICBsZXQgcGFnZVByb3BzID0ge31cblxuICAgIGlmIChDb21wb25lbnQuZ2V0SW5pdGlhbFByb3BzKSB7XG4gICAgICBwYWdlUHJvcHMgPSBhd2FpdCBDb21wb25lbnQuZ2V0SW5pdGlhbFByb3BzKGN0eClcbiAgICB9XG5cbiAgICByZXR1cm4geyBwYWdlUHJvcHMgfVxuICB9XG5cbiAgY29uc3RydWN0b3IocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgYW5hbHl6ZTogdHJ1ZSxcbiAgICAgIGRhdGFfc2VsZWN0OiAxLFxuICAgICAgc2hvd19hY2N1cmFjeTogZmFsc2UsXG4gICAgICBzb3J0OiAncmV2aWV3cycsXG4gICAgICByZXZpZXdfc29ydDogJ2RhdGUnLFxuICAgICAgbmJzdm1fZGF0YTogbnVsbCxcbiAgICAgIGNvbXBhcmU6IGZhbHNlLFxuICAgICAgYmVydF9kYXRhOiBudWxsLFxuICAgICAgc2hvd19pbmZvOiB0cnVlLFxuICAgIH1cbiAgICB0aGlzLnNldEFuYWx5emUgPSB0aGlzLnNldEFuYWx5emUuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0UmV2aWV3U29ydCA9IHRoaXMuc2V0UmV2aWV3U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBY2N1cmFjeSA9IHRoaXMuc2V0QWNjdXJhY3kuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0U29ydCA9IHRoaXMuc2V0U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBbGdvID0gdGhpcy5zZXRBbGdvLmJpbmQodGhpcylcbiAgICB0aGlzLnNldENvbXBhcmUgPSB0aGlzLnNldENvbXBhcmUuYmluZCh0aGlzKVxuICAgIHRoaXMuc2hvd0luZm8gPSB0aGlzLnNob3dJbmZvLmJpbmQodGhpcylcbiAgfVxuXG4gIGZldGNoRGF0YSgpIHtcbiAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMF0pXG4gICAgICAudGhlbihyID0+IHIuanNvbigpKVxuICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhL25hbWVzX2FuZF9kYXRlcy5qc29uJylcbiAgICAgICAgICAudGhlbihuZCA9PiBuZC5qc29uKCkpXG4gICAgICAgICAgLnRoZW4obmQgPT4ge1xuICAgICAgICAgICAgbGV0IHJldmlld3MgPSByLm1hcCgociwgaSkgPT4ge1xuICAgICAgICAgICAgICBsZXQgbmV3X3IgPSBPYmplY3QuYXNzaWduKHt9LCByKVxuICAgICAgICAgICAgICBuZXdfci5pbmRleCA9IGlcbiAgICAgICAgICAgICAgbmV3X3IuYXV0aG9yID0gbmRbaV0uYXV0aG9yXG4gICAgICAgICAgICAgIG5ld19yLmRhdGUgPSBuZFtpXS5kYXRlXG4gICAgICAgICAgICAgIHJldHVybiBuZXdfclxuICAgICAgICAgICAgfSlcbiAgICAgICAgICAgIGxldCBrZXkgPSBkYXRhX2tleXNbMF1bMF1cbiAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoeyBba2V5XTogcmV2aWV3cyB9KVxuICAgICAgICAgIH0pXG4gICAgICB9KVxuICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhLycgKyBhbGdmaWxlc1sxXSlcbiAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAudGhlbihyID0+IHtcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvbmFtZXNfYW5kX2RhdGVzLmpzb24nKVxuICAgICAgICAgIC50aGVuKG5kID0+IG5kLmpzb24oKSlcbiAgICAgICAgICAudGhlbihuZCA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1sxXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgIH0pXG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICB0aGlzLmZldGNoRGF0YSgpXG4gIH1cblxuICBzZXRBbmFseXplKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGFuYWx5emU6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRSZXZpZXdTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHJldmlld19zb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0U29ydCh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0QWxnbyhpbmRleCkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBkYXRhX3NlbGVjdDogaW5kZXggfSlcbiAgfVxuXG4gIHNldEFjY3VyYWN5KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfYWNjdXJhY3k6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRDb21wYXJlKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGNvbXBhcmU6IHZhbHVlIH0pXG4gIH1cblxuICBzaG93SW5mbyh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzaG93X2luZm86IHZhbHVlIH0pXG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgbGV0IHsgYW5hbHl6ZSwgc29ydCwgcmV2aWV3X3NvcnQsIHNob3dfYWNjdXJhY3ksIHNob3dfaW5mbyB9ID0gdGhpcy5zdGF0ZVxuXG4gICAgbGV0IGRhdGEgPSB0aGlzLnN0YXRlW2RhdGFfa2V5c1t0aGlzLnN0YXRlLmRhdGFfc2VsZWN0XVswXV1cblxuICAgIGlmIChhbmFseXplID09PSBmYWxzZSkgc2hvd19hY2N1cmFjeSA9IGZhbHNlXG5cbiAgICBsZXQgeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9ID0gdGhpcy5wcm9wc1xuICAgIGxldCBmb250X3NpemUgPSAxNlxuICAgIGxldCBsaW5lX2hlaWdodCA9IDEuNVxuICAgIGxldCBncmVtID0gZm9udF9zaXplICogbGluZV9oZWlnaHRcblxuICAgIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHRoaXMucHJvcHMucm91dGVyXG5cbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgbGV0IGlzX3RvcGljID0gcGF0aG5hbWUuc3RhcnRzV2l0aCgnL3RvcGljJylcblxuICAgIHJldHVybiAoXG4gICAgICA8ZGl2PlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICoge1xuICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgICAgICAgIH1cbiAgICAgICAgICBodG1sIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMyMjI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsXG4gICAgICAgICAgICAgICdPeHlnZW4nLCAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsXG4gICAgICAgICAgICAgICdIZWx2ZXRpY2EgTmV1ZScsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgICAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICAgICAgICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGNvZGUge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgICAgICAgICAgIG1vbm9zcGFjZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcCB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICB0ZXh0LWluZGVudDogMS41cmVtO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwOmZpcnN0LWNoaWxkIHtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLFxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBjb2xvcjogaW5oZXJpdDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tb3BhY2l0eS1ob3Zlcjpob3ZlcixcbiAgICAgICAgICBidXR0b24ubm8tb3BhY2l0eS1ob3Zlcjpob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLm5vLXVuZGVybGluZSB7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBmb250OiBpbmhlcml0O1xuICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xuICAgICAgICAgICAgbGluZS1oZWlnaHQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbjpmb2N1cyB7XG4gICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICAgIHJpZ2h0OiAwO1xuICAgICAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2stY29udGFpbmVyIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICAgICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMDYyNSk7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXI6aG92ZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIG92ZXJmbG93OiAke3Nob3dfaW5mbyA/ICdoaWRkZW4nIDogJ2F1dG8nfTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPEhlYWRlclxuICAgICAgICAgIGlzX2Zyb250PXtpc19mcm9udH1cbiAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICBzaG93SW5mbz17dGhpcy5zaG93SW5mb31cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICBtaW5IZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogNCArIDF9cHgpYCxcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAge2RhdGEgJiYgdGhpcy5zdGF0ZS5uYnN2bV9kYXRhID8gKFxuICAgICAgICAgICAgPENvbnRhaW5lcj5cbiAgICAgICAgICAgICAgPENvbXBvbmVudFxuICAgICAgICAgICAgICAgIHsuLi5wYWdlUHJvcHN9XG4gICAgICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgICAgIGluZm89e2luZm99XG4gICAgICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QW5hbHl6ZT17dGhpcy5zZXRBbmFseXplfVxuICAgICAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QWxnbz17dGhpcy5zZXRBbGdvfVxuICAgICAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgICAgICBzZXRDb21wYXJlPXt0aGlzLnNldENvbXBhcmV9XG4gICAgICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgICAgIGhsX29wdGlvbnM9e3t9fVxuICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgPC9Db250YWluZXI+XG4gICAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogZ3JlbSAvIDIgfX0+TG9hZGluZy4uLjwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIHBhZGRpbmc6IGdyZW0gLyAyLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJyMyMjInLFxuICAgICAgICAgICAgY29sb3I6ICd3aGl0ZScsXG4gICAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ3NwYWNlLWJldHdlZW4nLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgVGV4dGZsaXggaXMgYSBuYXR1cmFsIGxhbmd1YWdlIHByb2Nlc3NpbmcgcHJvdG90eXBlIGJ5IENsb3VkZXJhIEZhc3RcbiAgICAgICAgICAgIEZvcndhcmQgTGFic1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Rpc2FncmVlbWVudHNcIj5cbiAgICAgICAgICAgICAgPGEgc3R5bGU9e3sgdGV4dERlY29yYXRpb246ICd1bmRlcmxpbmUnIH19PkRpc2FncmVlbWVudHM8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICB7c2hvd19pbmZvID8gKFxuICAgICAgICAgIDxUb3VyXG4gICAgICAgICAgICByb3V0ZXI9e3RoaXMucHJvcHMucm91dGVyfVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGZvbnRfc2l6ZT17Zm9udF9zaXplfVxuICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgIHNvcnQ9e3NvcnR9XG4gICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICBzZXRTb3J0PXt0aGlzLnNldFNvcnR9XG4gICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICBhbGduYW1lcz17YWxnbmFtZXN9XG4gICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICBzZXRBY2N1cmFjeT17dGhpcy5zZXRBY2N1cmFjeX1cbiAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgIG5ic3ZtX2RhdGE9e3RoaXMuc3RhdGUubmJzdm1fZGF0YX1cbiAgICAgICAgICAgIHNob3dJbmZvPXt0aGlzLnNob3dJbmZvfVxuICAgICAgICAgIC8+XG4gICAgICAgICkgOiBudWxsfVxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwXG4iXX0= */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
         id: "107552866",
         dynamic: [show_info ? 'hidden' : 'auto'],
         __self: this
-      }, "body{overflow:".concat(show_info ? 'hidden' : 'auto', ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrTzJCLEFBR21ELHNDQUN4QyIsImZpbGUiOiIvVXNlcnMvZ3JhbnQuY3VzdGVyL1NpdGVzL25leHQtbW92aWVzL3BhZ2VzL19hcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgQXBwLCB7IENvbnRhaW5lciB9IGZyb20gJ25leHQvYXBwJ1xuaW1wb3J0IHsgaW5mbyB9IGZyb20gJy4uL2RhdGEvc2FtcGxlX21vdmllX2luZm8uanMnXG5pbXBvcnQgZ2V0Q29uZmlnIGZyb20gJ25leHQtc2VydmVyL2NvbmZpZydcbmltcG9ydCB7IG5vdW5zLCBhZGplY3RpdmVzIH0gZnJvbSAnLi4vZGF0YS9jb3Jwb3JhLmpzJ1xuaW1wb3J0IHsgcmVkLCBibHVlLCBCb3JkZXIgfSBmcm9tICcuLi9wYXJ0cy9TdGF0aWMnXG5sZXQgeyBwdWJsaWNSdW50aW1lQ29uZmlnIH0gPSBnZXRDb25maWcoKVxubGV0IGxpbmtQcmVmaXggPSBwdWJsaWNSdW50aW1lQ29uZmlnLmxpbmtQcmVmaXhcbmltcG9ydCBMaW5rIGZyb20gJy4uL3BhcnRzL1ByZWZpeGVkTGluaydcbmltcG9ydCBCYXIgZnJvbSAnLi4vcGFydHMvQmFyJ1xuaW1wb3J0IEhlYWRlciBmcm9tICcuLi9wYXJ0cy9IZWFkZXInXG5pbXBvcnQgVG91ciBmcm9tICcuLi9wYXJ0cy9Ub3VyJ1xuXG5sZXQgYWxnbmFtZXMgPSBbJ05CU1ZNJywgJ0JFUlQnXVxubGV0IGFsZ2ZpbGVzID0gW1xuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ2JlcnRfbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHlfd29yZC5qc29uJyxcbl1cbmxldCBkYXRhX2tleXMgPSBbXG4gIFsnbmJzdm1fZGF0YScsICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnTkJTVk0nXSxcbiAgWydiZXJ0X2RhdGEnLCAnYmVydF9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnQkVSVCddLFxuXVxuXG5jbGFzcyBNeUFwcCBleHRlbmRzIEFwcCB7XG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMoeyBDb21wb25lbnQsIGN0eCB9KSB7XG4gICAgbGV0IHBhZ2VQcm9wcyA9IHt9XG5cbiAgICBpZiAoQ29tcG9uZW50LmdldEluaXRpYWxQcm9wcykge1xuICAgICAgcGFnZVByb3BzID0gYXdhaXQgQ29tcG9uZW50LmdldEluaXRpYWxQcm9wcyhjdHgpXG4gICAgfVxuXG4gICAgcmV0dXJuIHsgcGFnZVByb3BzIH1cbiAgfVxuXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgIGFuYWx5emU6IHRydWUsXG4gICAgICBkYXRhX3NlbGVjdDogMSxcbiAgICAgIHNob3dfYWNjdXJhY3k6IHRydWUsXG4gICAgICBzb3J0OiAncmV2aWV3cycsXG4gICAgICByZXZpZXdfc29ydDogJ2RhdGUnLFxuICAgICAgbmJzdm1fZGF0YTogbnVsbCxcbiAgICAgIGNvbXBhcmU6IGZhbHNlLFxuICAgICAgYmVydF9kYXRhOiBudWxsLFxuICAgICAgc2hvd19pbmZvOiBmYWxzZSxcbiAgICB9XG4gICAgdGhpcy5zZXRBbmFseXplID0gdGhpcy5zZXRBbmFseXplLmJpbmQodGhpcylcbiAgICB0aGlzLnNldFJldmlld1NvcnQgPSB0aGlzLnNldFJldmlld1NvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWNjdXJhY3kgPSB0aGlzLnNldEFjY3VyYWN5LmJpbmQodGhpcylcbiAgICB0aGlzLnNldFNvcnQgPSB0aGlzLnNldFNvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWxnbyA9IHRoaXMuc2V0QWxnby5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRDb21wYXJlID0gdGhpcy5zZXRDb21wYXJlLmJpbmQodGhpcylcbiAgfVxuXG4gIGZldGNoRGF0YSgpIHtcbiAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMF0pXG4gICAgICAudGhlbihyID0+IHIuanNvbigpKVxuICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhL25hbWVzX2FuZF9kYXRlcy5qc29uJylcbiAgICAgICAgICAudGhlbihuZCA9PiBuZC5qc29uKCkpXG4gICAgICAgICAgLnRoZW4obmQgPT4ge1xuICAgICAgICAgICAgbGV0IHJldmlld3MgPSByLm1hcCgociwgaSkgPT4ge1xuICAgICAgICAgICAgICBsZXQgbmV3X3IgPSBPYmplY3QuYXNzaWduKHt9LCByKVxuICAgICAgICAgICAgICBuZXdfci5pbmRleCA9IGlcbiAgICAgICAgICAgICAgbmV3X3IuYXV0aG9yID0gbmRbaV0uYXV0aG9yXG4gICAgICAgICAgICAgIG5ld19yLmRhdGUgPSBuZFtpXS5kYXRlXG4gICAgICAgICAgICAgIHJldHVybiBuZXdfclxuICAgICAgICAgICAgfSlcbiAgICAgICAgICAgIGxldCBrZXkgPSBkYXRhX2tleXNbMF1bMF1cbiAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoeyBba2V5XTogcmV2aWV3cyB9KVxuICAgICAgICAgIH0pXG4gICAgICB9KVxuICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhLycgKyBhbGdmaWxlc1sxXSlcbiAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAudGhlbihyID0+IHtcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvbmFtZXNfYW5kX2RhdGVzLmpzb24nKVxuICAgICAgICAgIC50aGVuKG5kID0+IG5kLmpzb24oKSlcbiAgICAgICAgICAudGhlbihuZCA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1sxXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgIH0pXG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICB0aGlzLmZldGNoRGF0YSgpXG4gIH1cblxuICBzZXRBbmFseXplKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGFuYWx5emU6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRSZXZpZXdTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHJldmlld19zb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0U29ydCh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0QWxnbyhpbmRleCkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBkYXRhX3NlbGVjdDogaW5kZXggfSlcbiAgfVxuXG4gIHNldEFjY3VyYWN5KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfYWNjdXJhY3k6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRDb21wYXJlKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGNvbXBhcmU6IHZhbHVlIH0pXG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgbGV0IHsgYW5hbHl6ZSwgc29ydCwgcmV2aWV3X3NvcnQsIHNob3dfYWNjdXJhY3ksIHNob3dfaW5mbyB9ID0gdGhpcy5zdGF0ZVxuXG4gICAgbGV0IGRhdGEgPSB0aGlzLnN0YXRlW2RhdGFfa2V5c1t0aGlzLnN0YXRlLmRhdGFfc2VsZWN0XVswXV1cblxuICAgIGlmIChhbmFseXplID09PSBmYWxzZSkgc2hvd19hY2N1cmFjeSA9IGZhbHNlXG5cbiAgICBsZXQgeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9ID0gdGhpcy5wcm9wc1xuICAgIGxldCBmb250X3NpemUgPSAxNlxuICAgIGxldCBsaW5lX2hlaWdodCA9IDEuNVxuICAgIGxldCBncmVtID0gZm9udF9zaXplICogbGluZV9oZWlnaHRcblxuICAgIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHRoaXMucHJvcHMucm91dGVyXG5cbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgbGV0IGlzX3RvcGljID0gcGF0aG5hbWUuc3RhcnRzV2l0aCgnL3RvcGljJylcblxuICAgIHJldHVybiAoXG4gICAgICA8ZGl2PlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICoge1xuICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgICAgICAgIH1cbiAgICAgICAgICBodG1sIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMyMjI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsXG4gICAgICAgICAgICAgICdPeHlnZW4nLCAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsXG4gICAgICAgICAgICAgICdIZWx2ZXRpY2EgTmV1ZScsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgICAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICAgICAgICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGNvZGUge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgICAgICAgICAgIG1vbm9zcGFjZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcCB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICB0ZXh0LWluZGVudDogMS41cmVtO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwOmZpcnN0LWNoaWxkIHtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLFxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBjb2xvcjogaW5oZXJpdDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tb3BhY2l0eS1ob3Zlcjpob3ZlcixcbiAgICAgICAgICBidXR0b24ubm8tb3BhY2l0eS1ob3Zlcjpob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLm5vLXVuZGVybGluZSB7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBmb250OiBpbmhlcml0O1xuICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xuICAgICAgICAgICAgbGluZS1oZWlnaHQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbjpmb2N1cyB7XG4gICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICAgIHJpZ2h0OiAwO1xuICAgICAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2stY29udGFpbmVyIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICAgICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMDYyNSk7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXI6aG92ZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIG92ZXJmbG93OiAke3Nob3dfaW5mbyA/ICdoaWRkZW4nIDogJ2F1dG8nfTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPEhlYWRlclxuICAgICAgICAgIGlzX2Zyb250PXtpc19mcm9udH1cbiAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICBtaW5IZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogNCArIDF9cHgpYCxcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAge2RhdGEgJiYgdGhpcy5zdGF0ZS5uYnN2bV9kYXRhID8gKFxuICAgICAgICAgICAgPENvbnRhaW5lcj5cbiAgICAgICAgICAgICAgPENvbXBvbmVudFxuICAgICAgICAgICAgICAgIHsuLi5wYWdlUHJvcHN9XG4gICAgICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgICAgIGluZm89e2luZm99XG4gICAgICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QW5hbHl6ZT17dGhpcy5zZXRBbmFseXplfVxuICAgICAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QWxnbz17dGhpcy5zZXRBbGdvfVxuICAgICAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgICAgICBzZXRDb21wYXJlPXt0aGlzLnNldENvbXBhcmV9XG4gICAgICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgPC9Db250YWluZXI+XG4gICAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogZ3JlbSAvIDIgfX0+TG9hZGluZy4uLjwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIHBhZGRpbmc6IGdyZW0gLyAyLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJyMyMjInLFxuICAgICAgICAgICAgY29sb3I6ICd3aGl0ZScsXG4gICAgICAgICAgICBib3JkZXJUb3A6ICdzb2xpZCAxcHggYmxhY2snLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICBUZXh0ZmxpY2tzIGlzIGEgbmF0dXJhbCBsYW5ndWFnZSBwcm9jZXNzaW5nIHByb3RvdHlwZSBieSBDbG91ZGVyYSBGYXN0XG4gICAgICAgICAgRm9yd2FyZCBMYWJzXG4gICAgICAgIDwvZGl2PlxuICAgICAgICB7c2hvd19pbmZvID8gKFxuICAgICAgICAgIDxUb3VyXG4gICAgICAgICAgICByb3V0ZXI9e3RoaXMucHJvcHMucm91dGVyfVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGZvbnRfc2l6ZT17Zm9udF9zaXplfVxuICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgIHNvcnQ9e3NvcnR9XG4gICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICBzZXRTb3J0PXt0aGlzLnNldFNvcnR9XG4gICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICBhbGduYW1lcz17YWxnbmFtZXN9XG4gICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICBzZXRBY2N1cmFjeT17dGhpcy5zZXRBY2N1cmFjeX1cbiAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgIG5ic3ZtX2RhdGE9e3RoaXMuc3RhdGUubmJzdm1fZGF0YX1cbiAgICAgICAgICAvPlxuICAgICAgICApIDogbnVsbH1cbiAgICAgIDwvZGl2PlxuICAgIClcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBNeUFwcFxuIl19 */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */")), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_parts_Header__WEBPACK_IMPORTED_MODULE_20__["default"], {
+      }, "body{overflow:".concat(show_info ? 'hidden' : 'auto', ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1TzJCLEFBR21ELHNDQUN4QyIsImZpbGUiOiIvVXNlcnMvZ3JhbnQuY3VzdGVyL1NpdGVzL25leHQtbW92aWVzL3BhZ2VzL19hcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgQXBwLCB7IENvbnRhaW5lciB9IGZyb20gJ25leHQvYXBwJ1xuaW1wb3J0IHsgaW5mbyB9IGZyb20gJy4uL2RhdGEvc2FtcGxlX21vdmllX2luZm8uanMnXG5pbXBvcnQgZ2V0Q29uZmlnIGZyb20gJ25leHQtc2VydmVyL2NvbmZpZydcbmltcG9ydCB7IG5vdW5zLCBhZGplY3RpdmVzIH0gZnJvbSAnLi4vZGF0YS9jb3Jwb3JhLmpzJ1xuaW1wb3J0IHsgcmVkLCBibHVlLCBCb3JkZXIgfSBmcm9tICcuLi9wYXJ0cy9TdGF0aWMnXG5sZXQgeyBwdWJsaWNSdW50aW1lQ29uZmlnIH0gPSBnZXRDb25maWcoKVxubGV0IGxpbmtQcmVmaXggPSBwdWJsaWNSdW50aW1lQ29uZmlnLmxpbmtQcmVmaXhcbmltcG9ydCBMaW5rIGZyb20gJy4uL3BhcnRzL1ByZWZpeGVkTGluaydcbmltcG9ydCBCYXIgZnJvbSAnLi4vcGFydHMvQmFyJ1xuaW1wb3J0IEhlYWRlciBmcm9tICcuLi9wYXJ0cy9IZWFkZXInXG5pbXBvcnQgVG91ciBmcm9tICcuLi9wYXJ0cy9Ub3VyJ1xuXG5sZXQgYWxnbmFtZXMgPSBbJ05CU1ZNJywgJ0JFUlQnXVxubGV0IGFsZ2ZpbGVzID0gW1xuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ2JlcnRfbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHlfd29yZC5qc29uJyxcbl1cbmxldCBkYXRhX2tleXMgPSBbXG4gIFsnbmJzdm1fZGF0YScsICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnTkJTVk0nXSxcbiAgWydiZXJ0X2RhdGEnLCAnYmVydF9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnQkVSVCddLFxuXVxuXG5jbGFzcyBNeUFwcCBleHRlbmRzIEFwcCB7XG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMoeyBDb21wb25lbnQsIGN0eCB9KSB7XG4gICAgbGV0IHBhZ2VQcm9wcyA9IHt9XG5cbiAgICBpZiAoQ29tcG9uZW50LmdldEluaXRpYWxQcm9wcykge1xuICAgICAgcGFnZVByb3BzID0gYXdhaXQgQ29tcG9uZW50LmdldEluaXRpYWxQcm9wcyhjdHgpXG4gICAgfVxuXG4gICAgcmV0dXJuIHsgcGFnZVByb3BzIH1cbiAgfVxuXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgIGFuYWx5emU6IHRydWUsXG4gICAgICBkYXRhX3NlbGVjdDogMSxcbiAgICAgIHNob3dfYWNjdXJhY3k6IGZhbHNlLFxuICAgICAgc29ydDogJ3Jldmlld3MnLFxuICAgICAgcmV2aWV3X3NvcnQ6ICdkYXRlJyxcbiAgICAgIG5ic3ZtX2RhdGE6IG51bGwsXG4gICAgICBjb21wYXJlOiBmYWxzZSxcbiAgICAgIGJlcnRfZGF0YTogbnVsbCxcbiAgICAgIHNob3dfaW5mbzogdHJ1ZSxcbiAgICB9XG4gICAgdGhpcy5zZXRBbmFseXplID0gdGhpcy5zZXRBbmFseXplLmJpbmQodGhpcylcbiAgICB0aGlzLnNldFJldmlld1NvcnQgPSB0aGlzLnNldFJldmlld1NvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWNjdXJhY3kgPSB0aGlzLnNldEFjY3VyYWN5LmJpbmQodGhpcylcbiAgICB0aGlzLnNldFNvcnQgPSB0aGlzLnNldFNvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWxnbyA9IHRoaXMuc2V0QWxnby5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRDb21wYXJlID0gdGhpcy5zZXRDb21wYXJlLmJpbmQodGhpcylcbiAgICB0aGlzLnNob3dJbmZvID0gdGhpcy5zaG93SW5mby5iaW5kKHRoaXMpXG4gIH1cblxuICBmZXRjaERhdGEoKSB7XG4gICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvJyArIGFsZ2ZpbGVzWzBdKVxuICAgICAgLnRoZW4ociA9PiByLmpzb24oKSlcbiAgICAgIC50aGVuKHIgPT4ge1xuICAgICAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS9uYW1lc19hbmRfZGF0ZXMuanNvbicpXG4gICAgICAgICAgLnRoZW4obmQgPT4gbmQuanNvbigpKVxuICAgICAgICAgIC50aGVuKG5kID0+IHtcbiAgICAgICAgICAgIGxldCByZXZpZXdzID0gci5tYXAoKHIsIGkpID0+IHtcbiAgICAgICAgICAgICAgbGV0IG5ld19yID0gT2JqZWN0LmFzc2lnbih7fSwgcilcbiAgICAgICAgICAgICAgbmV3X3IuaW5kZXggPSBpXG4gICAgICAgICAgICAgIG5ld19yLmF1dGhvciA9IG5kW2ldLmF1dGhvclxuICAgICAgICAgICAgICBuZXdfci5kYXRlID0gbmRbaV0uZGF0ZVxuICAgICAgICAgICAgICByZXR1cm4gbmV3X3JcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBsZXQga2V5ID0gZGF0YV9rZXlzWzBdWzBdXG4gICAgICAgICAgICB0aGlzLnNldFN0YXRlKHsgW2tleV06IHJldmlld3MgfSlcbiAgICAgICAgICB9KVxuICAgICAgfSlcbiAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMV0pXG4gICAgICAudGhlbihyID0+IHIuanNvbigpKVxuICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhL25hbWVzX2FuZF9kYXRlcy5qc29uJylcbiAgICAgICAgICAudGhlbihuZCA9PiBuZC5qc29uKCkpXG4gICAgICAgICAgLnRoZW4obmQgPT4ge1xuICAgICAgICAgICAgbGV0IHJldmlld3MgPSByLm1hcCgociwgaSkgPT4ge1xuICAgICAgICAgICAgICBsZXQgbmV3X3IgPSBPYmplY3QuYXNzaWduKHt9LCByKVxuICAgICAgICAgICAgICBuZXdfci5pbmRleCA9IGlcbiAgICAgICAgICAgICAgbmV3X3IuYXV0aG9yID0gbmRbaV0uYXV0aG9yXG4gICAgICAgICAgICAgIG5ld19yLmRhdGUgPSBuZFtpXS5kYXRlXG4gICAgICAgICAgICAgIHJldHVybiBuZXdfclxuICAgICAgICAgICAgfSlcbiAgICAgICAgICAgIGxldCBrZXkgPSBkYXRhX2tleXNbMV1bMF1cbiAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoeyBba2V5XTogcmV2aWV3cyB9KVxuICAgICAgICAgIH0pXG4gICAgICB9KVxuICB9XG5cbiAgY29tcG9uZW50RGlkTW91bnQoKSB7XG4gICAgdGhpcy5mZXRjaERhdGEoKVxuICB9XG5cbiAgc2V0QW5hbHl6ZSh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBhbmFseXplOiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0UmV2aWV3U29ydCh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyByZXZpZXdfc29ydDogdmFsdWUgfSlcbiAgfVxuXG4gIHNldFNvcnQodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgc29ydDogdmFsdWUgfSlcbiAgfVxuXG4gIHNldEFsZ28oaW5kZXgpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgZGF0YV9zZWxlY3Q6IGluZGV4IH0pXG4gIH1cblxuICBzZXRBY2N1cmFjeSh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzaG93X2FjY3VyYWN5OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0Q29tcGFyZSh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBjb21wYXJlOiB2YWx1ZSB9KVxuICB9XG5cbiAgc2hvd0luZm8odmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgc2hvd19pbmZvOiB2YWx1ZSB9KVxuICB9XG5cbiAgcmVuZGVyKCkge1xuICAgIGxldCB7IGFuYWx5emUsIHNvcnQsIHJldmlld19zb3J0LCBzaG93X2FjY3VyYWN5LCBzaG93X2luZm8gfSA9IHRoaXMuc3RhdGVcblxuICAgIGxldCBkYXRhID0gdGhpcy5zdGF0ZVtkYXRhX2tleXNbdGhpcy5zdGF0ZS5kYXRhX3NlbGVjdF1bMF1dXG5cbiAgICBpZiAoYW5hbHl6ZSA9PT0gZmFsc2UpIHNob3dfYWNjdXJhY3kgPSBmYWxzZVxuXG4gICAgbGV0IHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSA9IHRoaXMucHJvcHNcbiAgICBsZXQgZm9udF9zaXplID0gMTZcbiAgICBsZXQgbGluZV9oZWlnaHQgPSAxLjVcbiAgICBsZXQgZ3JlbSA9IGZvbnRfc2l6ZSAqIGxpbmVfaGVpZ2h0XG5cbiAgICBjb25zdCB7IHBhdGhuYW1lIH0gPSB0aGlzLnByb3BzLnJvdXRlclxuXG4gICAgbGV0IGlzX2Zyb250ID0gcGF0aG5hbWUgPT09ICcvJ1xuICAgIGxldCBpc190b3BpYyA9IHBhdGhuYW1lLnN0YXJ0c1dpdGgoJy90b3BpYycpXG5cbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgICAqIHtcbiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgICAgICBmb250LWZhbWlseTogc2Fucy1zZXJpZjtcbiAgICAgICAgICB9XG4gICAgICAgICAgaHRtbCB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMjIyO1xuICAgICAgICAgIH1cbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLFxuICAgICAgICAgICAgICAnT3h5Z2VuJywgJ1VidW50dScsICdDYW50YXJlbGwnLCAnRmlyYSBTYW5zJywgJ0Ryb2lkIFNhbnMnLFxuICAgICAgICAgICAgICAnSGVsdmV0aWNhIE5ldWUnLCBzYW5zLXNlcmlmO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHdoaXRlO1xuICAgICAgICAgICAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICAgICAgICAgICAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gICAgICAgICAgICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICAgICAgICAgIH1cbiAgICAgICAgICBjb2RlIHtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgICAgICAgICAgICBtb25vc3BhY2U7XG4gICAgICAgICAgfVxuICAgICAgICAgIHAge1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgdGV4dC1pbmRlbnQ6IDEuNXJlbTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcDpmaXJzdC1jaGlsZCB7XG4gICAgICAgICAgICB0ZXh0LWluZGVudDogMDtcbiAgICAgICAgICB9XG4gICAgICAgICAgYSxcbiAgICAgICAgICBidXR0b24ge1xuICAgICAgICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuMXMgbGluZWFyO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhOmhvdmVyLFxuICAgICAgICAgIGJ1dHRvbjpob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAwLjc1O1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLm5vLW9wYWNpdHktaG92ZXI6aG92ZXIsXG4gICAgICAgICAgYnV0dG9uLm5vLW9wYWNpdHktaG92ZXI6aG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYS5uby11bmRlcmxpbmUge1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAub3BhY2l0eS1pbm5lci1ob3ZlciB7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuMXMgbGluZWFyO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhOmhvdmVyIC5vcGFjaXR5LWlubmVyLWhvdmVyLFxuICAgICAgICAgIGJ1dHRvbjpob3ZlciAub3BhY2l0eS1pbm5lci1ob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAwLjc1O1xuICAgICAgICAgIH1cbiAgICAgICAgICBidXR0b24ge1xuICAgICAgICAgICAgZm9udDogaW5oZXJpdDtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogaW5oZXJpdDtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiBpbmhlcml0O1xuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgIH1cbiAgICAgICAgICBidXR0b246Zm9jdXMge1xuICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgICAgIGxlZnQ6IDA7XG4gICAgICAgICAgICB0b3A6IDA7XG4gICAgICAgICAgICByaWdodDogMDtcbiAgICAgICAgICAgIGJvdHRvbTogMDtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmhvdmVyLWJsb2NrLWNvbnRhaW5lciAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgICAgICAgICAgIG9wYWNpdHk6IDA7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuMXMgbGluZWFyO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjA2MjUpO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2stY29udGFpbmVyOmhvdmVyIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgfVxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICBvdmVyZmxvdzogJHtzaG93X2luZm8gPyAnaGlkZGVuJyA6ICdhdXRvJ307XG4gICAgICAgICAgfVxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDxIZWFkZXJcbiAgICAgICAgICBpc19mcm9udD17aXNfZnJvbnR9XG4gICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICBhbmFseXplPXthbmFseXplfVxuICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgc2hvd0luZm89e3RoaXMuc2hvd0luZm99XG4gICAgICAgIC8+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgbWluSGVpZ2h0OiBgY2FsYygxMDB2aCAtICR7Z3JlbSAqIDQgKyAxfXB4KWAsXG4gICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgIHtkYXRhICYmIHRoaXMuc3RhdGUubmJzdm1fZGF0YSA/IChcbiAgICAgICAgICAgIDxDb250YWluZXI+XG4gICAgICAgICAgICAgIDxDb21wb25lbnRcbiAgICAgICAgICAgICAgICB7Li4ucGFnZVByb3BzfVxuICAgICAgICAgICAgICAgIGZvbnRfc2l6ZT17Zm9udF9zaXplfVxuICAgICAgICAgICAgICAgIGxpbmVfaGVpZ2h0PXtsaW5lX2hlaWdodH1cbiAgICAgICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgICAgICAgZGF0YT17ZGF0YX1cbiAgICAgICAgICAgICAgICBpbmZvPXtpbmZvfVxuICAgICAgICAgICAgICAgIHNvcnQ9e3NvcnR9XG4gICAgICAgICAgICAgICAgcmV2aWV3X3NvcnQ9e3Jldmlld19zb3J0fVxuICAgICAgICAgICAgICAgIHNldEFuYWx5emU9e3RoaXMuc2V0QW5hbHl6ZX1cbiAgICAgICAgICAgICAgICBzZXRTb3J0PXt0aGlzLnNldFNvcnR9XG4gICAgICAgICAgICAgICAgc2V0UmV2aWV3U29ydD17dGhpcy5zZXRSZXZpZXdTb3J0fVxuICAgICAgICAgICAgICAgIHNldEFsZ289e3RoaXMuc2V0QWxnb31cbiAgICAgICAgICAgICAgICBhbGduYW1lcz17YWxnbmFtZXN9XG4gICAgICAgICAgICAgICAgZGF0YV9zZWxlY3Q9e3RoaXMuc3RhdGUuZGF0YV9zZWxlY3R9XG4gICAgICAgICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICAgICAgICBzZXRBY2N1cmFjeT17dGhpcy5zZXRBY2N1cmFjeX1cbiAgICAgICAgICAgICAgICBjb21wYXJlPXt0aGlzLnN0YXRlLmNvbXBhcmV9XG4gICAgICAgICAgICAgICAgc2V0Q29tcGFyZT17dGhpcy5zZXRDb21wYXJlfVxuICAgICAgICAgICAgICAgIG5ic3ZtX2RhdGE9e3RoaXMuc3RhdGUubmJzdm1fZGF0YX1cbiAgICAgICAgICAgICAgICBobF9vcHRpb25zPXt7fX1cbiAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDwvQ29udGFpbmVyPlxuICAgICAgICAgICkgOiAoXG4gICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6IGdyZW0gLyAyIH19PkxvYWRpbmcuLi48L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICBwYWRkaW5nOiBncmVtIC8gMixcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICcjMjIyJyxcbiAgICAgICAgICAgIGNvbG9yOiAnd2hpdGUnLFxuICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLFxuICAgICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJyxcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIFRleHRmbGl4IGlzIGEgbmF0dXJhbCBsYW5ndWFnZSBwcm9jZXNzaW5nIHByb3RvdHlwZSBieSBDbG91ZGVyYSBGYXN0XG4gICAgICAgICAgICBGb3J3YXJkIExhYnNcbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9kaXNhZ3JlZW1lbnRzXCI+XG4gICAgICAgICAgICAgIDxhIHN0eWxlPXt7IHRleHREZWNvcmF0aW9uOiAndW5kZXJsaW5lJyB9fT5EaXNhZ3JlZW1lbnRzPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAge3Nob3dfaW5mbyA/IChcbiAgICAgICAgICA8VG91clxuICAgICAgICAgICAgcm91dGVyPXt0aGlzLnByb3BzLnJvdXRlcn1cbiAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICBmb250X3NpemU9e2ZvbnRfc2l6ZX1cbiAgICAgICAgICAgIGxpbmVfaGVpZ2h0PXtsaW5lX2hlaWdodH1cbiAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICBhbmFseXplPXthbmFseXplfVxuICAgICAgICAgICAgZGF0YT17ZGF0YX1cbiAgICAgICAgICAgIGluZm89e2luZm99XG4gICAgICAgICAgICBzb3J0PXtzb3J0fVxuICAgICAgICAgICAgcmV2aWV3X3NvcnQ9e3Jldmlld19zb3J0fVxuICAgICAgICAgICAgc2V0QW5hbHl6ZT17dGhpcy5zZXRBbmFseXplfVxuICAgICAgICAgICAgc2V0U29ydD17dGhpcy5zZXRTb3J0fVxuICAgICAgICAgICAgc2V0UmV2aWV3U29ydD17dGhpcy5zZXRSZXZpZXdTb3J0fVxuICAgICAgICAgICAgc2V0QWxnbz17dGhpcy5zZXRBbGdvfVxuICAgICAgICAgICAgYWxnbmFtZXM9e2FsZ25hbWVzfVxuICAgICAgICAgICAgZGF0YV9zZWxlY3Q9e3RoaXMuc3RhdGUuZGF0YV9zZWxlY3R9XG4gICAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgICAgc2V0QWNjdXJhY3k9e3RoaXMuc2V0QWNjdXJhY3l9XG4gICAgICAgICAgICBjb21wYXJlPXt0aGlzLnN0YXRlLmNvbXBhcmV9XG4gICAgICAgICAgICBzZXRDb21wYXJlPXt0aGlzLnNldENvbXBhcmV9XG4gICAgICAgICAgICBuYnN2bV9kYXRhPXt0aGlzLnN0YXRlLm5ic3ZtX2RhdGF9XG4gICAgICAgICAgICBzaG93SW5mbz17dGhpcy5zaG93SW5mb31cbiAgICAgICAgICAvPlxuICAgICAgICApIDogbnVsbH1cbiAgICAgIDwvZGl2PlxuICAgIClcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBNeUFwcFxuIl19 */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */")), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_parts_Header__WEBPACK_IMPORTED_MODULE_20__["default"], {
         is_front: is_front,
         grem: grem,
         analyze: analyze,
         show_accuracy: show_accuracy,
+        showInfo: this.showInfo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 237
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -63409,13 +63698,13 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 238
+          lineNumber: 244
         },
         __self: this
       }, data && this.state.nbsvm_data ? react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_13__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244
+          lineNumber: 250
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
@@ -63438,10 +63727,11 @@ function (_App) {
         compare: this.state.compare,
         setCompare: this.setCompare,
         nbsvm_data: this.state.nbsvm_data,
+        hl_options: {},
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]) + " " + (pageProps.className != null && pageProps.className || ""),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 251
         },
         __self: this
       }))) : react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -63451,7 +63741,7 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 276
         },
         __self: this
       }, "Loading...")), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
@@ -63459,22 +63749,54 @@ function (_App) {
           padding: grem / 2,
           background: '#222',
           color: 'white',
-          borderTop: 'solid 1px black'
+          display: 'flex',
+          justifyContent: 'space-between'
         },
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 279
         },
         __self: this
-      }, "Textflicks is a natural language processing prototype by Cloudera Fast Forward Labs"), show_info ? react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_parts_Tour__WEBPACK_IMPORTED_MODULE_21__["default"], (_React$createElement = {
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 288
+        },
+        __self: this
+      }, "Textflix is a natural language processing prototype by Cloudera Fast Forward Labs"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 292
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_parts_PrefixedLink__WEBPACK_IMPORTED_MODULE_18__["default"], {
+        href: "/disagreements",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 293
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        style: {
+          textDecoration: 'underline'
+        },
+        className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 294
+        },
+        __self: this
+      }, "Disagreements")))), show_info ? react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_parts_Tour__WEBPACK_IMPORTED_MODULE_21__["default"], (_React$createElement = {
         router: this.props.router,
         grem: grem,
         font_size: font_size,
         line_height: line_height
-      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "analyze", analyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "info", _data_sample_movie_info_js__WEBPACK_IMPORTED_MODULE_14__["info"]), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAnalyze", this.setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setSort", this.setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setReviewSort", this.setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAlgo", this.setAlgo), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "algnames", algnames), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "data_select", this.state.data_select), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "show_accuracy", show_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAccuracy", this.setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "compare", this.state.compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setCompare", this.setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "nbsvm_data", this.state.nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "__source", {
+      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "analyze", analyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "info", _data_sample_movie_info_js__WEBPACK_IMPORTED_MODULE_14__["info"]), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAnalyze", this.setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setSort", this.setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setReviewSort", this.setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAlgo", this.setAlgo), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "algnames", algnames), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "data_select", this.state.data_select), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "show_accuracy", show_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setAccuracy", this.setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "compare", this.state.compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "setCompare", this.setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "nbsvm_data", this.state.nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "showInfo", this.showInfo), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 284
+        lineNumber: 299
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$createElement, "__self", this), _React$createElement)) : null);
     }
   }]);
@@ -63546,7 +63868,10 @@ function (_React$Component) {
           compare = _this$props.compare,
           setCompare = _this$props.setCompare,
           _this$props$is_front = _this$props.is_front,
-          is_front = _this$props$is_front === void 0 ? false : _this$props$is_front;
+          is_front = _this$props$is_front === void 0 ? false : _this$props$is_front,
+          hl_options = _this$props.hl_options,
+          _this$props$analyze_l = _this$props.analyze_locked,
+          analyze_locked = _this$props$analyze_l === void 0 ? false : _this$props$analyze_l;
       var certainty_array = data.map(function (r) {
         if (r.logits[1] > r.logits[0]) {
           return {
@@ -63634,19 +63959,20 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           background: 'white',
+          transition: 'background 0.1s linear',
           position: 'sticky',
           zIndex: 999,
           top: 0
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 113
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 122
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63656,14 +63982,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 123
         },
         __self: this
       }, !is_front ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_parts_PrefixedLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -63680,7 +64006,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 131
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63692,7 +64018,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 144
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63706,7 +64032,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 152
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63720,29 +64046,31 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 162
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "hover-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 173
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setAnalyze(!analyze);
+          if (!analyze_locked) setAnalyze(!analyze);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 2,
           paddingRight: grem / 2,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 177
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63756,18 +64084,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 190
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 200
         },
         __self: this
       }, "Analyze")), analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63778,7 +64106,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 212
         },
         __self: this
       }, "\u2013"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63787,7 +64115,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 215
+          lineNumber: 222
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63799,22 +64127,24 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 223
         },
         __self: this
       }, "show:"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setAccuracy(!show_accuracy);
+          if (!analyze_locked) setAccuracy(!show_accuracy);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 4,
           paddingRight: grem / 4,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 233
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63828,33 +64158,35 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 246
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 246
+          lineNumber: 256
         },
         __self: this
       }, "accuracy")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setCompare(!compare);
+          if (!analyze_locked) setCompare(!compare);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 4,
           paddingRight: grem / 4,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63868,18 +64200,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 279
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 289
         },
         __self: this
       }, "model comparison")))) : null, analyze && !compare ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63889,7 +64221,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 303
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63899,7 +64231,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 310
         },
         __self: this
       }, combined.map(function (c, i) {
@@ -63914,7 +64246,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 299
+            lineNumber: 312
           },
           __self: this
         });
@@ -63924,19 +64256,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 314
+          lineNumber: 327
         },
         __self: this
       }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 318
+          lineNumber: 331
         },
         __self: this
       }, ' ', "\xB7 ", counts[1], " positive (", Math.round(counts[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 327
+          lineNumber: 340
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -63946,7 +64278,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 328
+          lineNumber: 341
         },
         __self: this
       }, combined.map(function (c, i) {
@@ -63961,7 +64293,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 335
+            lineNumber: 348
           },
           __self: this
         });
@@ -63971,31 +64303,31 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
+          lineNumber: 365
         },
         __self: this
       }, rightwrong[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 354
+          lineNumber: 367
         },
         __self: this
       }, Math.floor(accuracy * 1000 / 10), "% accuracy (", rightwrong[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 359
+          lineNumber: 372
         },
         __self: this
       }, Math.floor(accuracy * 1000 / 10), "% accuracy")))) : null) : null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 370
+          lineNumber: 383
         },
         __self: this
       })), compare && analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 373
+          lineNumber: 386
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -64005,7 +64337,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 374
+          lineNumber: 387
         },
         __self: this
       }, [['NBSVM'], ['BERT']].map(function (item, i) {
@@ -64023,7 +64355,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 387
+            lineNumber: 400
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -64034,7 +64366,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 395
+            lineNumber: 408
           },
           __self: this
         }, item[0]), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -64044,7 +64376,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 404
+            lineNumber: 417
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -64054,7 +64386,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 412
+            lineNumber: 425
           },
           __self: this
         }, cert.map(function (c, i) {
@@ -64069,7 +64401,7 @@ function (_React$Component) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 414
+              lineNumber: 427
             },
             __self: this
           });
@@ -64079,19 +64411,19 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 429
+            lineNumber: 442
           },
           __self: this
         }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 433
+            lineNumber: 446
           },
           __self: this
         }, ' ', "\xB7 ", co[1], " positive (", Math.round(co[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 443
+            lineNumber: 456
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -64101,7 +64433,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 444
+            lineNumber: 457
           },
           __self: this
         }, cert.map(function (c, i) {
@@ -64116,7 +64448,7 @@ function (_React$Component) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 451
+              lineNumber: 464
             },
             __self: this
           });
@@ -64126,26 +64458,26 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 469
+            lineNumber: 482
           },
           __self: this
         }, rw[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 471
+            lineNumber: 484
           },
           __self: this
         }, Math.floor(acc * 1000 / 10), "% accuracy (", rw[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 476
+            lineNumber: 489
           },
           __self: this
         }, Math.floor(acc * 1000 / 10), "% accuracy")))) : null));
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 489
+          lineNumber: 502
         },
         __self: this
       })) : null);
@@ -64207,7 +64539,8 @@ function (_React$Component) {
           is_front = _this$props.is_front,
           grem = _this$props.grem,
           analyze = _this$props.analyze,
-          show_accuracy = _this$props.show_accuracy;
+          show_accuracy = _this$props.show_accuracy,
+          showInfo = _this$props.showInfo;
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           position: 'relative',
@@ -64289,14 +64622,33 @@ function (_React$Component) {
           lineNumber: 57
         },
         __self: this
-      })), "Textflicks"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+      })), is_front ? 'Textflix' : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_parts_PrefixedLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        style: {
+          textDecoration: 'none'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, "Textflix"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+        onClick: function onClick() {
+          showInfo(true);
+        },
         style: {
           padding: grem / 2,
           textDecoration: 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 76
         },
         __self: this
       }, "Info"));
@@ -64795,12 +65147,15 @@ function (_React$Component) {
           analyze = _this$props.analyze,
           show_accuracy = _this$props.show_accuracy,
           is_review = _this$props.is_review,
+          info = _this$props.info,
           _this$props$threshold = _this$props.threshold,
           threshold = _this$props$threshold === void 0 ? 0.5 : _this$props$threshold,
           _this$props$hide_auth = _this$props.hide_author,
           hide_author = _this$props$hide_auth === void 0 ? false : _this$props$hide_auth,
           _this$props$classific = _this$props.classification_label,
-          classification_label = _this$props$classific === void 0 ? '' : _this$props$classific;
+          classification_label = _this$props$classific === void 0 ? '' : _this$props$classific,
+          _this$props$show_titl = _this$props.show_title,
+          show_title = _this$props$show_titl === void 0 ? false : _this$props$show_titl;
       var winner_index, scaleWinner, scaleLoser;
       var winner_name = r.class;
 
@@ -64824,13 +65179,21 @@ function (_React$Component) {
         }
       }
 
+      var topic_info = null;
+
+      if (show_title) {
+        topic_info = lodash__WEBPACK_IMPORTED_MODULE_7__["find"](info, {
+          og_id: r.url
+        });
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
           marginBottom: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 59
         },
         __self: this
       }, analyze ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64840,7 +65203,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64849,20 +65212,20 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 71
         },
         __self: this
       }, classification_label, "classification:", ' ', _parts_Static__WEBPACK_IMPORTED_MODULE_8__["class_labels"][winner_index]), ' ', "\xB7", ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         style: {},
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 76
         },
         __self: this
       }, Math.floor(r.class_probabilities[winner_index] * 1000) / 10, "% certainty")), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64871,7 +65234,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 82
         },
         __self: this
       }, "label: ", r.label === 'pos' ? 'positive' : 'negative', " \xB7", ' ', r.label === r.class ? 'accurate' : 'inaccurate', " classification") : null) : null, !hide_author ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64880,26 +65243,45 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 94
         },
         __self: this
-      }, "by ", r.author, " \xB7", ' ', is_review ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+      }, show_title ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 96
+        },
+        __self: this
+      }, "Review for", ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/topic2?id=".concat(topic_info.og_id),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }, topic_info.Title)), ' ') : null, "by ", r.author, " \xB7", ' ', is_review ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
         },
         __self: this
       }, r.date, " days ago") : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/review?id=".concat(r.index),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 107
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 108
         },
         __self: this
       }, r.date, " days ago"))) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64908,19 +65290,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -64929,7 +65311,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 117
         },
         __self: this
       }, r.lime_tokens.map(function (t, i) {
@@ -64938,7 +65320,7 @@ function (_React$Component) {
         return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 126
           },
           __self: this
         }, ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
@@ -64951,7 +65333,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 128
           },
           __self: this
         }, t), ' ');
@@ -65022,7 +65404,9 @@ function (_React$Component) {
           analyze = _this$props.analyze,
           show_accuracy = _this$props.show_accuracy,
           review_sort = _this$props.review_sort,
-          setReviewSort = _this$props.setReviewSort;
+          setReviewSort = _this$props.setReviewSort,
+          _this$props$show_titl = _this$props.show_title,
+          show_title = _this$props$show_titl === void 0 ? false : _this$props$show_titl;
       var sorted = reviews.slice();
 
       if (review_sort === 'date') {
@@ -65067,7 +65451,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       }, sorted.map(function (r, i) {
@@ -65077,9 +65461,11 @@ function (_React$Component) {
           grem: grem,
           analyze: analyze,
           show_accuracy: show_accuracy,
+          info: info,
+          show_title: show_title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 75
           },
           __self: this
         });
@@ -65139,7 +65525,9 @@ function (_React$Component) {
           _this$props$spacer = _this$props.spacer,
           spacer = _this$props$spacer === void 0 ? false : _this$props$spacer,
           _this$props$wh = _this$props.wh,
-          wh = _this$props$wh === void 0 ? null : _this$props$wh;
+          wh = _this$props$wh === void 0 ? null : _this$props$wh,
+          _this$props$trans = _this$props.trans,
+          trans = _this$props$trans === void 0 ? false : _this$props$trans;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "scene",
         style: {
@@ -65147,11 +65535,12 @@ function (_React$Component) {
           justifyContent: 'center',
           alignItems: one_screen ? 'center' : 'top',
           height: one_screen ? '100vh' : 'auto',
-          marginTop: spacer ? spacer * 100 + 'vh' : 'auto'
+          marginTop: spacer ? spacer * 100 + 'vh' : 'auto',
+          cursor: 'auto'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 13
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -65160,15 +65549,18 @@ function (_React$Component) {
           width: '100%',
           margin: '0 auto',
           background: 'white',
-          borderLeft: 'solid 2px black',
-          borderTop: 'solid 1px black',
-          borderRight: 'solid 4px black',
-          borderBottom: 'solid 4px black',
-          padding: grem / 2
+          border: 'solid 1px black',
+          boxShadow: '2px 2px rgba(0,0,0,1)',
+          padding: grem / 2,
+          opacity: trans ? 0 : 1 // boxShadow: trans ? 'none' : '0 2px 8px rgba(0,0,0,0.3)',
+
+        },
+        onClick: function onClick(e) {
+          e.stopPropagation();
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 24
         },
         __self: this
       }, this.props.children));
@@ -65498,6 +65890,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parts_Scene__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../parts/Scene */ "./parts/Scene.js");
 /* harmony import */ var _pages_Topic2__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/Topic2 */ "./pages/Topic2.js");
 /* harmony import */ var _pages_Index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/Index */ "./pages/Index.js");
+/* harmony import */ var _pages_Disagreements__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../pages/Disagreements */ "./pages/Disagreements.js");
 
 
 
@@ -65507,6 +65900,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/grant.custer/Sites/next-movies/parts/Tour.js";
+
 
 
 
@@ -65534,7 +65928,8 @@ function (_React$Component) {
       wh: null
     };
     _this.scrollRef = react__WEBPACK_IMPORTED_MODULE_8___default.a.createRef();
-    _this.overviewBlank = _this.overviewBlank.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.frameRef = react__WEBPACK_IMPORTED_MODULE_8___default.a.createRef();
+    _this.scrollNext = _this.scrollNext.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     return _this;
   }
 
@@ -65547,6 +65942,7 @@ function (_React$Component) {
         wh: window.innerHeight
       });
       var scroller = this.scrollRef.current;
+      var framer = this.frameRef.current;
       var wh = this.state.wh || window.innerHeight;
 
       var offsets = this.state.offsets || _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_1___default()(scroller.querySelectorAll('.scene')).map(function (n) {
@@ -65557,14 +65953,24 @@ function (_React$Component) {
         offsets: offsets
       });
       scroller.addEventListener('scroll', function () {
+        var last = offsets.length * wh;
+
         for (var i = 0; i < offsets.length; i++) {
           var r = offsets.length - 1 - i;
           var thresh = offsets[r];
 
-          if (scroller.scrollTop > thresh - wh * (7 / 8)) {
-            _this2.setState({
-              step: r
-            });
+          if (scroller.scrollTop > thresh - wh * (31 / 32)) {
+            if (r === offsets.length - 1) {
+              _this2.props.showInfo(false);
+
+              _this2.setState({
+                step: 0
+              });
+            } else {
+              _this2.setState({
+                step: r
+              });
+            }
 
             break;
           }
@@ -65572,16 +65978,87 @@ function (_React$Component) {
       });
     }
   }, {
-    key: "overviewBlank",
-    value: function overviewBlank() {
-      this.props.router.push('/test', {
-        shallow: true
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      var grem = this.props.grem;
+      var step = this.state.step;
+      var prev_step = prevState.step;
+      var smooth = 'smooth';
+
+      if (step !== 0 && step !== prev_step) {
+        var scroller = document.getElementById('frame-scroller');
+
+        if (step === 8) {
+          var scroll_to = document.getElementById('sentences-block').offsetTop - grem * 2;
+          scroller.scroll({
+            left: 0,
+            top: scroll_to,
+            behavior: smooth
+          });
+        } else if (step === 7) {
+          var _scroll_to = document.getElementById('reviews-block').offsetTop - grem * 2;
+
+          scroller.scroll({
+            left: 0,
+            top: _scroll_to,
+            behavior: smooth
+          });
+        } else if (step === 9) {
+          scroller.scroll({
+            left: 0,
+            top: 0
+          });
+        } else if (step === 12) {
+          var _scroll_to2 = document.getElementById('reviews-block').offsetTop - grem * 3;
+
+          scroller.scroll({
+            left: 0,
+            top: _scroll_to2,
+            behavior: smooth
+          });
+        } else if (step === 13) {
+          var _scroll_to3 = document.getElementById('reviews-block').offsetTop - grem * 5;
+
+          scroller.scroll({
+            left: 0,
+            top: _scroll_to3,
+            behavior: smooth
+          });
+        } else if (step === 14) {
+          var _scroll_to4 = document.getElementById('reviews-block').offsetTop - grem * 5;
+
+          scroller.scroll({
+            left: 0,
+            top: _scroll_to4,
+            behavior: smooth
+          });
+        } else if (step < 16) {
+          scroller.scroll({
+            left: 0,
+            top: 0,
+            behavior: 'auto'
+          });
+        }
+      }
+    }
+  }, {
+    key: "scrollNext",
+    value: function scrollNext() {
+      var current = this.state.step;
+      var scroller = this.scrollRef.current;
+      scroller.scroll({
+        left: 0,
+        top: this.state.offsets[current + 1] - this.state.wh * (10 / 16),
+        behavior: 'smooth'
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _React$createElement, _React$createElement2;
+      var _React$createElement,
+          _React$createElement2,
+          _React$createElement3,
+          _this3 = this;
 
       var _this$props = this.props,
           font_size = _this$props.font_size,
@@ -65601,6 +66078,7 @@ function (_React$Component) {
           setCompare = _this$props.setCompare,
           nbsvm_data = _this$props.nbsvm_data,
           sort = _this$props.sort,
+          showInfo = _this$props.showInfo,
           setSort = _this$props.setSort;
       var _this$props2 = this.props,
           show_info = _this$props2.show_info,
@@ -65612,8 +66090,103 @@ function (_React$Component) {
       var index_sort = 'reviews';
       if (step === 3) index_sort = 'positive';
       if (step === 4) index_sort = 'negative';
-      var hl_options = {};
-      if (step > 2) hl_options.highlight_first_in_grid = true;
+      var index_accuracy = false;
+      if (step > 9) index_accuracy = true;
+      var reviews_accuracy = false;
+      if (step > 9) reviews_accuracy = true;
+      var review_id = 'tt0384793';
+      if (step > 9) review_id = 'tt0069994';
+      var reviews_sort = 'date';
+      if (step > 11) reviews_sort = 'inaccurate';
+      if (step > 13) reviews_sort = 'date';
+      var reviews_compare = false;
+      if (step > 12) reviews_compare = true;
+      var hl_options = {}; // if (step === 2 || step === 6) hl_options.highlight_analysis_bar = true
+      // if (step === 3 || step === 4) hl_options.highlight_first_in_grid = true
+      // if (step === 7) hl_options.highlight_reviews_block = true
+      // if (step === 8) hl_options.highlight_sentences_block = true
+
+      var space = 0.75;
+      var next = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: grem * 1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        onClick: this.scrollNext,
+        style: {
+          textDecoration: 'underline'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 157
+        },
+        __self: this
+      }, "Next \u2193"));
+      var scene_bar = false ? undefined : function (num) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          style: {
+            marginTop: -grem / 2,
+            marginLeft: -grem / 2,
+            marginRight: -grem / 2,
+            marginBottom: grem / 2,
+            display: 'none'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 169
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          style: {
+            display: 'flex',
+            justifyContent: 'space-between'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 178
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          style: {
+            paddingTop: grem / 4,
+            paddingBottom: grem / 4,
+            paddingLeft: grem / 2,
+            paddingRight: grem / 2
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 184
+          },
+          __self: this
+        }, "Screen ", num), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          style: {
+            paddingTop: grem / 4,
+            paddingBottom: grem / 4,
+            paddingLeft: grem / 2,
+            paddingRight: grem / 2,
+            textDecoration: 'underline'
+          },
+          onClick: function onClick() {
+            showInfo(false);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 194
+          },
+          __self: this
+        }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 209
+          },
+          __self: this
+        }));
+      };
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'fixed',
@@ -65623,12 +66196,14 @@ function (_React$Component) {
           bottom: 0,
           zIndex: 9999
         },
+        ref: this.frameRef,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 214
         },
         __self: this
-      }, step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, step > 0 && step < 16 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        id: "frame-scroller",
         style: {
           position: 'fixed',
           left: 0,
@@ -65637,43 +66212,54 @@ function (_React$Component) {
           bottom: 0,
           background: 'white',
           overflow: 'hidden',
-          border: 'solid 6px red',
+          // borderLeft: `solid ${grem / 2}px #222`,
           height: 'calc(100vh - 3rem)'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 226
         },
         __self: this
       }, data !== null && nbsvm_data !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 241
         },
         __self: this
-      }, step > 0 && step < 5 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Index__WEBPACK_IMPORTED_MODULE_14__["default"], (_React$createElement = {
+      }, step > 0 && step < 5 || step > 8 && step < 11 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Index__WEBPACK_IMPORTED_MODULE_14__["default"], (_React$createElement = {
         grem: grem,
         font_size: font_size,
         line_height: line_height
-      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "analyze", step === 1 ? false : true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "info", info), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "sort", index_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAnalyze", setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setSort", setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setReviewSort", setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "show_accuracy", show_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAccuracy", setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "router", {
+      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "analyze", step === 1 ? false : true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "info", info), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "sort", index_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAnalyze", setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setSort", setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setReviewSort", setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "show_accuracy", index_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAccuracy", setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "router", {
         query: {
           id: 'tt0762073'
         }
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "compare", compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 111
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)) : null, step > 4 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Topic2__WEBPACK_IMPORTED_MODULE_13__["default"], (_React$createElement2 = {
+        lineNumber: 243
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)) : null, step > 4 && step < 15 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Topic2__WEBPACK_IMPORTED_MODULE_13__["default"], (_React$createElement2 = {
         grem: grem,
         font_size: font_size,
         line_height: line_height
-      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "analyze", step < 6 ? false : true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "info", info), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setAnalyze", setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setSort", setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setReviewSort", setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "show_accuracy", show_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setAccuracy", setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "router", {
+      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "analyze", step < 6 ? false : true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "info", info), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "review_sort", reviews_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setAnalyze", setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setSort", setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setReviewSort", setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "show_accuracy", reviews_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setAccuracy", setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "router", {
         query: {
-          id: 'tt0762073'
+          id: review_id
         }
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "compare", compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__source", {
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "tour", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 135
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__self", this), _React$createElement2)) : null) : null) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        lineNumber: 267
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__self", this), _React$createElement2)) : null, step === 15 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Disagreements__WEBPACK_IMPORTED_MODULE_15__["default"], (_React$createElement3 = {
+        grem: grem,
+        font_size: font_size,
+        line_height: line_height
+      }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "analyze", step < 6 ? false : true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "info", info), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "review_sort", reviews_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setAnalyze", setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setSort", setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setReviewSort", setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "show_accuracy", reviews_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setAccuracy", setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "router", {
+        query: {
+          id: review_id
+        }
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "__source", {
+        fileName: _jsxFileName,
+        lineNumber: 292
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "__self", this), _React$createElement3)) : null) : null) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'fixed',
           left: 0,
@@ -65681,12 +66267,58 @@ function (_React$Component) {
           right: 0,
           bottom: 0,
           zIndex: 9999,
-          overflow: 'auto'
+          overflow: 'auto',
+          background: 'rgba(100,100,100,0.08)',
+          cursor: step > 0 ? 's-resize' : 'pointer'
         },
         ref: this.scrollRef,
+        onClick: function onClick() {
+          if (step === 0) {
+            showInfo(false);
+          } else {
+            _this3.scrollNext();
+          }
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 319
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 340
+        },
+        __self: this
+      }, step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          position: 'fixed',
+          right: grem / 2,
+          top: grem / 2,
+          color: 'white',
+          zIndex: 999
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 342
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        style: {
+          textDecoration: 'underline'
+        },
+        onClick: function onClick() {
+          showInfo(false);
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 351
+        },
+        __self: this
+      }, "Quit")) : null), step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 364
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -65698,18 +66330,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 365
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
-          background: 'white',
+          background: '#222',
+          color: 'white',
           display: 'flex',
           justifyContent: 'space-between'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 366
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -65718,16 +66351,22 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182
+          lineNumber: 374
         },
         __self: this
-      }, "Tour"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 379
+        },
+        __self: this
+      }, "Tour")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           display: 'flex'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189
+          lineNumber: 381
         },
         __self: this
       }, wh !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -65737,26 +66376,26 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 383
         },
         __self: this
-      }, step) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+      }, step, " of 16") : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           padding: grem / 2,
-          textDecoration: 'underline'
+          opacity: 0
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 389
         },
         __self: this
-      }, "Pause"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
+      }, "Quit"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 392
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }))) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           background: 'transparent',
           position: 'absolute',
@@ -65767,7 +66406,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 207
+          lineNumber: 396
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -65775,7 +66414,29 @@ function (_React$Component) {
         one_screen: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 406
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: -grem / 2,
+          marginLeft: -grem / 2,
+          marginRight: -grem / 2,
+          marginBottom: grem / 2
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 407
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          display: 'flex',
+          justifyContent: 'space-between'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 415
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -65783,152 +66444,539 @@ function (_React$Component) {
           paddingTop: grem / 4,
           paddingBottom: grem / 4,
           paddingLeft: grem / 2,
-          paddingRight: grem / 2,
-          marginTop: -grem / 2,
-          marginLeft: -grem / 2,
-          marginRight: -grem / 2,
-          marginBottom: grem / 2,
-          background: '#222',
-          color: '#fff'
+          paddingRight: grem / 2
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 421
         },
         __self: this
-      }, "Info"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, "Info"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        style: {
+          paddingTop: grem / 4,
+          paddingBottom: grem / 4,
+          paddingLeft: grem / 2,
+          paddingRight: grem / 2,
+          textDecoration: 'underline'
+        },
+        onClick: function onClick() {
+          showInfo(false);
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 431
+        },
+        __self: this
+      }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 446
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 448
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 235
+          lineNumber: 449
         },
         __self: this
-      }, "Textflicks is a sentiment analysis prototype by Cloudera Fast Forward Labs, built to accompany our report on transfer learning for natural language generation. It uses movie reviews to show how NLP techniques can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "Textflix is a sentiment analysis prototype by Cloudera Fast Forward Labs, built to accompany our report on transfer learning for natural language processing. It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 242
+          lineNumber: 456
         },
         __self: this
-      }, "Textflicks features over 1,000 text reviews for 50 movies and TV shows. The \"Analyze\" function uses a neural network to classify each review as positive or negative. The \"accuracy\" option lets you check the model's predictions against each review's original label, and the \"model comparison\" option lets you compare this model to one trained without transfer learning. Sentence highlights in individual reviews show which sentences are driving the positive or negative classification."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "Textflix features over 1,000 text reviews for 50 movies and TV shows. The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          whiteSpace: 'nowrap'
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 459
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          width: grem * 0.5,
+          height: grem * 0.5,
+          border: 'solid 1px black',
+          background: analyze ? 'black' : 'white',
+          display: 'inline-block',
+          marginLeft: grem * (1 / 8),
+          marginRight: grem * (1 / 16)
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 460
+        },
+        __self: this
+      }), ' ', "Analyze"), ' ', "option uses a neural network to classify each review as", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          background: _parts_Static__WEBPACK_IMPORTED_MODULE_11__["blue"]
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 474
+        },
+        __self: this
+      }, "positive"), " or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          background: _parts_Static__WEBPACK_IMPORTED_MODULE_11__["red"]
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 475
+        },
+        __self: this
+      }, "negative"), ". Without analysis users are left to sift through the review text on their own. With analysis, you unlock the ability to see the general review sentiment for each movie. For the individual reviews we use interpretability techniques to underline the sentences driving the", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          backgroundImage: "linear-gradient(".concat(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["blue"], ", ").concat(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["blue"], ")"),
+          backgroundSize: '4px 5px',
+          backgroundRepeat: 'repeat-x',
+          backgroundPosition: "0 0.85em",
+          paddingBottom: 2
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 481
+        },
+        __self: this
+      }, "positive"), ' ', "or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          backgroundImage: "linear-gradient(".concat(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["red"], ", ").concat(_parts_Static__WEBPACK_IMPORTED_MODULE_11__["red"], ")"),
+          backgroundSize: '4px 5px',
+          backgroundRepeat: 'repeat-x',
+          backgroundPosition: "0 0.85em",
+          paddingBottom: 2
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 493
+        },
+        __self: this
+      }, "negative"), ' ', "classification."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 506
+        },
+        __self: this
+      }, "Additional options provide more info about the model's performance. The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          whiteSpace: 'nowrap'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 509
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          width: grem * 0.5,
+          height: grem * 0.5,
+          border: 'solid 1px black',
+          background: show_accuracy ? 'black' : 'white',
+          display: 'inline-block',
+          marginLeft: grem * (1 / 8),
+          marginRight: grem * (1 / 16)
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 510
+        },
+        __self: this
+      }), ' ', "accuracy option"), ' ', "lets you check the model's predictions against each review's original label, and the", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          whiteSpace: 'nowrap'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 525
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          width: grem * 0.5,
+          height: grem * 0.5,
+          border: 'solid 1px black',
+          background: show_accuracy ? 'black' : 'white',
+          display: 'inline-block',
+          marginLeft: grem * (1 / 8),
+          marginRight: grem * (1 / 16)
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 526
+        },
+        __self: this
+      }), ' ', "model comparison"), ' ', "option lets you compare this model to one trained without transfer learning."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 542
         },
         __self: this
       }, "You can", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         style: {
           textDecoration: 'underline'
         },
+        onClick: function onClick() {
+          showInfo(false);
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 544
         },
         __self: this
       }, "jump in now"), ' ', "or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         style: {
           textDecoration: 'underline'
         },
+        onClick: this.scrollNext,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 258
+          lineNumber: 553
         },
         __self: this
       }, "scroll to take the tour \u2193"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
         grem: grem,
-        spacer: 1,
+        spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265
+          lineNumber: 563
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 564
         },
         __self: this
-      }, "The overview page shows 50 movie and TV shows.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, "The overview page features an eclectic mix of fifty movie and TV shows. Without analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 571
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 572
+        },
+        __self: this
+      }, "With sentiment analysis, we can show the user how many of the reviews are", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          background: _parts_Static__WEBPACK_IMPORTED_MODULE_11__["blue"]
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 575
+        },
+        __self: this
+      }, "positive"), ' ', "or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        style: {
+          background: _parts_Static__WEBPACK_IMPORTED_MODULE_11__["red"]
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 583
+        },
+        __self: this
+      }, "negative"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 594
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 595
+        },
+        __self: this
+      }, "With that info uncovered you can sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 597
+        },
+        __self: this
+      }, "Just Before Dawn"), ", a slasher horror film from 1981, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 602
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 603
+        },
+        __self: this
+      }, "Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 604
+        },
+        __self: this
+      }, "The Box"), ", Richard Kelly's disastrous follow-up to ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 605
+        },
+        __self: this
+      }, "Donnie Darko"), ", is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 610
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 611
+        },
+        __self: this
+      }, "Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the movie", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 615
+        },
+        __self: this
+      }, "Accepted"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 619
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 620
+        },
+        __self: this
+      }, "With analysis you can immediately see that the reviews are", ' ', "generally (70%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 626
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 627
+        },
+        __self: this
+      }, "For each review you can see both the model's classification and certainty. The sentences that drove the classification are underlined."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 634
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 635
+        },
+        __self: this
+      }, "In addition to underlining important sentences within the review. We use them as highlights. Showing, at a glance, what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 642
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 643
+        },
+        __self: this
+      }, "So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at the options that show model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 650
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 651
+        },
+        __self: this
+      }, "The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 652
+        },
+        __self: this
+      }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 93% accuracy for the 1,021 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 659
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 660
+        },
+        __self: this
+      }, "On the topic page, you can examine the model's accuracy on a review by review basis."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 666
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 667
+        },
+        __self: this
+      }, "You can sort the reviews by ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 668
+        },
+        __self: this
+      }, "inaccurate"), " to focus on the ones it got wrong."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 673
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 674
+        },
+        __self: this
+      }, "Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 675
+        },
+        __self: this
+      }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline model on the left and our main model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 682
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 683
+        },
+        __self: this
+      }, "You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 690
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 691
+        },
+        __self: this
+      }, "If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 693
+        },
+        __self: this
+      }, "Disagreements"), " page, linked to at the bottom of each page, to see a list of all the reviews where the models disagreed. You'll notice that our model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 700
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 701
+        },
+        __self: this
+      }, "That's the end of our tour. Now you're ready to explore Textflix yourself."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: grem * 1
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 705
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        onClick: this.scrollNext,
+        style: {
+          textDecoration: 'underline'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 706
+        },
+        __self: this
+      }, "End tour \u2193"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
         grem: grem,
         spacer: 1,
         wh: wh,
+        trans: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 714
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 269
-        },
-        __self: this
-      }, "Analyze shows you the sentiment.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        grem: grem,
-        spacer: 1,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 271
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 272
-        },
-        __self: this
-      }, "Then you can see the most liked movie..")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        grem: grem,
-        spacer: 1,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 274
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 275
-        },
-        __self: this
-      }, "Or the most disliked.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        grem: grem,
-        spacer: 1,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 277
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 278
-        },
-        __self: this
-      }, "What about a review page?")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        grem: grem,
-        spacer: 1,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 280
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 281
-        },
-        __self: this
-      }, "Analyzed!")))));
+      }))));
     }
   }]);
 

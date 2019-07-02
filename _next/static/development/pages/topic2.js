@@ -30632,8 +30632,10 @@ function (_React$Component) {
           setAccuracy = _this$props.setAccuracy,
           compare = _this$props.compare,
           setCompare = _this$props.setCompare,
-          nbsvm_data = _this$props.nbsvm_data;
-      console.log(this.props);
+          nbsvm_data = _this$props.nbsvm_data,
+          hl_options = _this$props.hl_options,
+          _this$props$tour = _this$props.tour,
+          tour = _this$props$tour === void 0 ? false : _this$props$tour;
       var info_ids = info.map(function (o) {
         return o.og_id;
       });
@@ -30677,6 +30679,7 @@ function (_React$Component) {
         setCompare: setCompare,
         data: reviews,
         nbsvm_data: nreviews,
+        hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 75
@@ -30686,7 +30689,7 @@ function (_React$Component) {
         style: {},
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30697,7 +30700,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30706,13 +30709,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }, topic_info.Title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30721,7 +30724,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, topic_info.Year, " \xB7 ", topic_info.Runtime, " \xB7", ' ', topic_info.Rated), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30730,30 +30733,33 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 105
         },
         __self: this
       }, topic_info.Plot, ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "https://www.imdb.com/title/".concat(topic_info.imdbID),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 107
         },
         __self: this
       }, "IMDB \u2192"))))), analyze ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: tour ? 'sentences-block' : null,
         style: {
           zIndex: 998,
-          position: 'relative'
+          position: 'relative',
+          background: hl_options.highlight_sentences_block ? '#eee' : 'white',
+          transition: 'background 0.1s linear'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 116
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 127
         },
         __self: this
       }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30765,7 +30771,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 128
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30774,7 +30780,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 137
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Sentences__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -30783,7 +30789,7 @@ function (_React$Component) {
         analyze: analyze,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 138
         },
         __self: this
       })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30792,7 +30798,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 141
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Sentences__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -30801,25 +30807,26 @@ function (_React$Component) {
         analyze: analyze,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 142
         },
         __self: this
       }))), compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 145
         },
         __self: this
       }) : null) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: tour ? 'reviews-block' : null,
         style: {
           // position: 'sticky',
           position: 'relative',
           // top: stick_top,
-          background: 'white'
+          background: hl_options.highlight_reviews_block ? '#eee' : 'white'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30830,7 +30837,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 158
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30841,7 +30848,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 165
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30851,7 +30858,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 172
         },
         __self: this
       }, reviews.length, " reviews sorted by most:"), (analyze ? show_accuracy ? [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative'], ['accurate', 'accurate'], ['inaccurate', 'inaccurate']] : [['recent', 'date'], ['positive', 'positive'], ['negative', 'negative']] : [['recent', 'date']]).map(function (a) {
@@ -30864,7 +30871,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 180
+            lineNumber: 192
           },
           __self: this
         }, a[0]) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
@@ -30878,23 +30885,25 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 191
+            lineNumber: 203
           },
           __self: this
         }, a[0]);
       })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
-          position: 'relative'
+          position: 'relative',
+          background: hl_options.highlight_reviews_block ? '#eee' : 'white',
+          transition: 'background 0.1s linear'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 221
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_13__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 228
         },
         __self: this
       }) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30906,7 +30915,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 229
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30915,7 +30924,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 238
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -30927,7 +30936,7 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 221
+          lineNumber: 239
         },
         __self: this
       })) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30936,7 +30945,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 249
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Reviews__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -30948,7 +30957,7 @@ function (_React$Component) {
         setReviewSort: setReviewSort,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 250
         },
         __self: this
       })))));
@@ -31022,7 +31031,10 @@ function (_React$Component) {
           compare = _this$props.compare,
           setCompare = _this$props.setCompare,
           _this$props$is_front = _this$props.is_front,
-          is_front = _this$props$is_front === void 0 ? false : _this$props$is_front;
+          is_front = _this$props$is_front === void 0 ? false : _this$props$is_front,
+          hl_options = _this$props.hl_options,
+          _this$props$analyze_l = _this$props.analyze_locked,
+          analyze_locked = _this$props$analyze_l === void 0 ? false : _this$props$analyze_l;
       var certainty_array = data.map(function (r) {
         if (r.logits[1] > r.logits[0]) {
           return {
@@ -31110,19 +31122,20 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           background: 'white',
+          transition: 'background 0.1s linear',
           position: 'sticky',
           zIndex: 999,
           top: 0
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 113
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 122
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31132,14 +31145,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 123
         },
         __self: this
       }, !is_front ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_parts_PrefixedLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -31156,7 +31169,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 131
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31168,7 +31181,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 144
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31182,7 +31195,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 152
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31196,29 +31209,31 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 162
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "hover-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 173
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setAnalyze(!analyze);
+          if (!analyze_locked) setAnalyze(!analyze);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 2,
           paddingRight: grem / 2,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 177
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31232,18 +31247,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 190
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 200
         },
         __self: this
       }, "Analyze")), analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31254,7 +31269,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 212
         },
         __self: this
       }, "\u2013"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31263,7 +31278,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 215
+          lineNumber: 222
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31275,22 +31290,24 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 223
         },
         __self: this
       }, "show:"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setAccuracy(!show_accuracy);
+          if (!analyze_locked) setAccuracy(!show_accuracy);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 4,
           paddingRight: grem / 4,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 233
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31304,33 +31321,35 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 246
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 246
+          lineNumber: 256
         },
         __self: this
       }, "accuracy")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
         onClick: function onClick() {
-          return setCompare(!compare);
+          if (!analyze_locked) setCompare(!compare);
         },
         style: {
           display: 'flex',
           paddingLeft: grem / 4,
           paddingRight: grem / 4,
-          height: grem * 2
+          height: grem * 2,
+          opacity: analyze_locked ? 1 : null,
+          cursor: analyze_locked ? 'default' : 'pointer'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31344,18 +31363,18 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 279
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
           paddingTop: grem / 2,
           paddingBottom: grem / 2,
-          textDecoration: 'underline'
+          textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 289
         },
         __self: this
       }, "model comparison")))) : null, analyze && !compare ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31365,7 +31384,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 303
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31375,7 +31394,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 310
         },
         __self: this
       }, combined.map(function (c, i) {
@@ -31390,7 +31409,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 299
+            lineNumber: 312
           },
           __self: this
         });
@@ -31400,19 +31419,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 314
+          lineNumber: 327
         },
         __self: this
       }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 318
+          lineNumber: 331
         },
         __self: this
       }, ' ', "\xB7 ", counts[1], " positive (", Math.round(counts[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 327
+          lineNumber: 340
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31422,7 +31441,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 328
+          lineNumber: 341
         },
         __self: this
       }, combined.map(function (c, i) {
@@ -31437,7 +31456,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 335
+            lineNumber: 348
           },
           __self: this
         });
@@ -31447,31 +31466,31 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
+          lineNumber: 365
         },
         __self: this
       }, rightwrong[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 354
+          lineNumber: 367
         },
         __self: this
       }, Math.floor(accuracy * 1000 / 10), "% accuracy (", rightwrong[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 359
+          lineNumber: 372
         },
         __self: this
       }, Math.floor(accuracy * 1000 / 10), "% accuracy")))) : null) : null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 370
+          lineNumber: 383
         },
         __self: this
       })), compare && analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 373
+          lineNumber: 386
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31481,7 +31500,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 374
+          lineNumber: 387
         },
         __self: this
       }, [['NBSVM'], ['BERT']].map(function (item, i) {
@@ -31499,7 +31518,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 387
+            lineNumber: 400
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31510,7 +31529,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 395
+            lineNumber: 408
           },
           __self: this
         }, item[0]), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31520,7 +31539,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 404
+            lineNumber: 417
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31530,7 +31549,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 412
+            lineNumber: 425
           },
           __self: this
         }, cert.map(function (c, i) {
@@ -31545,7 +31564,7 @@ function (_React$Component) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 414
+              lineNumber: 427
             },
             __self: this
           });
@@ -31555,19 +31574,19 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 429
+            lineNumber: 442
           },
           __self: this
         }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 433
+            lineNumber: 446
           },
           __self: this
         }, ' ', "\xB7 ", co[1], " positive (", Math.round(co[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 443
+            lineNumber: 456
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -31577,7 +31596,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 444
+            lineNumber: 457
           },
           __self: this
         }, cert.map(function (c, i) {
@@ -31592,7 +31611,7 @@ function (_React$Component) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 451
+              lineNumber: 464
             },
             __self: this
           });
@@ -31602,26 +31621,26 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 469
+            lineNumber: 482
           },
           __self: this
         }, rw[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 471
+            lineNumber: 484
           },
           __self: this
         }, Math.floor(acc * 1000 / 10), "% accuracy (", rw[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 476
+            lineNumber: 489
           },
           __self: this
         }, Math.floor(acc * 1000 / 10), "% accuracy")))) : null));
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 489
+          lineNumber: 502
         },
         __self: this
       })) : null);
@@ -31744,12 +31763,15 @@ function (_React$Component) {
           analyze = _this$props.analyze,
           show_accuracy = _this$props.show_accuracy,
           is_review = _this$props.is_review,
+          info = _this$props.info,
           _this$props$threshold = _this$props.threshold,
           threshold = _this$props$threshold === void 0 ? 0.5 : _this$props$threshold,
           _this$props$hide_auth = _this$props.hide_author,
           hide_author = _this$props$hide_auth === void 0 ? false : _this$props$hide_auth,
           _this$props$classific = _this$props.classification_label,
-          classification_label = _this$props$classific === void 0 ? '' : _this$props$classific;
+          classification_label = _this$props$classific === void 0 ? '' : _this$props$classific,
+          _this$props$show_titl = _this$props.show_title,
+          show_title = _this$props$show_titl === void 0 ? false : _this$props$show_titl;
       var winner_index, scaleWinner, scaleLoser;
       var winner_name = r.class;
 
@@ -31773,13 +31795,21 @@ function (_React$Component) {
         }
       }
 
+      var topic_info = null;
+
+      if (show_title) {
+        topic_info = lodash__WEBPACK_IMPORTED_MODULE_7__["find"](info, {
+          og_id: r.url
+        });
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         style: {
           marginBottom: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 59
         },
         __self: this
       }, analyze ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31789,7 +31819,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31798,20 +31828,20 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 71
         },
         __self: this
       }, classification_label, "classification:", ' ', _parts_Static__WEBPACK_IMPORTED_MODULE_8__["class_labels"][winner_index]), ' ', "\xB7", ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         style: {},
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 76
         },
         __self: this
       }, Math.floor(r.class_probabilities[winner_index] * 1000) / 10, "% certainty")), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31820,7 +31850,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 82
         },
         __self: this
       }, "label: ", r.label === 'pos' ? 'positive' : 'negative', " \xB7", ' ', r.label === r.class ? 'accurate' : 'inaccurate', " classification") : null) : null, !hide_author ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31829,26 +31859,45 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 94
         },
         __self: this
-      }, "by ", r.author, " \xB7", ' ', is_review ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+      }, show_title ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 96
+        },
+        __self: this
+      }, "Review for", ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/topic2?id=".concat(topic_info.og_id),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }, topic_info.Title)), ' ') : null, "by ", r.author, " \xB7", ' ', is_review ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
         },
         __self: this
       }, r.date, " days ago") : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/review?id=".concat(r.index),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 107
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 108
         },
         __self: this
       }, r.date, " days ago"))) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31857,19 +31906,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -31878,7 +31927,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 117
         },
         __self: this
       }, r.lime_tokens.map(function (t, i) {
@@ -31887,7 +31936,7 @@ function (_React$Component) {
         return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 126
           },
           __self: this
         }, ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
@@ -31900,7 +31949,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 128
           },
           __self: this
         }, t), ' ');
@@ -31971,7 +32020,9 @@ function (_React$Component) {
           analyze = _this$props.analyze,
           show_accuracy = _this$props.show_accuracy,
           review_sort = _this$props.review_sort,
-          setReviewSort = _this$props.setReviewSort;
+          setReviewSort = _this$props.setReviewSort,
+          _this$props$show_titl = _this$props.show_title,
+          show_title = _this$props$show_titl === void 0 ? false : _this$props$show_titl;
       var sorted = reviews.slice();
 
       if (review_sort === 'date') {
@@ -32016,7 +32067,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       }, sorted.map(function (r, i) {
@@ -32026,9 +32077,11 @@ function (_React$Component) {
           grem: grem,
           analyze: analyze,
           show_accuracy: show_accuracy,
+          info: info,
+          show_title: show_title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 75
           },
           __self: this
         });
@@ -32332,7 +32385,7 @@ var Border = function Border() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftopic2&absolutePagePath=%2FUsers%2Fgrant.custer%2FSites%2Fnext-movies%2Fpages%2Ftopic2.js ***!
   \****************************************************************************************************************************************/
@@ -32355,5 +32408,5 @@ module.exports = dll_43fdc562a96c55866f3e;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=topic2.js.map
