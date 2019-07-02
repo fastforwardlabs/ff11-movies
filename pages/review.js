@@ -29,6 +29,7 @@ class ReviewPage extends React.Component {
       nbsvm_data,
       compare,
       setCompare,
+      hl_options = {},
     } = this.props
     let r = [data[router.query.id]]
     let nr = [nbsvm_data[router.query.id]]
@@ -53,6 +54,7 @@ class ReviewPage extends React.Component {
           setCompare={setCompare}
           data={r}
           nbsvm_data={nr}
+          hl_options={hl_options}
         />
         <div
           style={{

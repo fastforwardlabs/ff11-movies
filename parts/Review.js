@@ -18,9 +18,11 @@ class Review extends React.Component {
       analyze,
       show_accuracy,
       is_review,
+      info,
       threshold = 0.5,
       hide_author = false,
       classification_label = '',
+      show_title = false,
     } = this.props
 
     let winner_index, scaleWinner, scaleLoser
@@ -46,6 +48,11 @@ class Review extends React.Component {
       } else {
         return scaleTextBlue(Math.abs(value) / max)
       }
+    }
+
+    let topic_info = null
+    if (show_title) {
+      topic_info = _.find(info, { og_id: r.url })
     }
 
     return (
@@ -85,6 +92,14 @@ class Review extends React.Component {
         ) : null}
         {!hide_author ? (
           <div style={{ textIndent: grem * 0 }}>
+            {show_title ? (
+              <span>
+                Review for{' '}
+                <Link href={`/topic2?id=${topic_info.og_id}`}>
+                  <a>{topic_info.Title}</a>
+                </Link>{' '}
+              </span>
+            ) : null}
             by {r.author} &middot;{' '}
             {is_review ? (
               <span>{r.date} days ago</span>

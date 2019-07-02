@@ -47,9 +47,9 @@ class Page extends React.Component {
       compare,
       setCompare,
       nbsvm_data,
+      hl_options,
+      tour = false,
     } = this.props
-
-    console.log(this.props)
 
     let info_ids = info.map(o => o.og_id)
     let topic_info = info[info_ids.indexOf(router.query.id)]
@@ -85,6 +85,7 @@ class Page extends React.Component {
           setCompare={setCompare}
           data={reviews}
           nbsvm_data={nreviews}
+          hl_options={hl_options}
         />
 
         <div style={{}}>
@@ -112,7 +113,17 @@ class Page extends React.Component {
         </div>
 
         {analyze ? (
-          <div style={{ zIndex: 998, position: 'relative' }}>
+          <div
+            id={tour ? 'sentences-block' : null}
+            style={{
+              zIndex: 998,
+              position: 'relative',
+              background: hl_options.highlight_sentences_block
+                ? '#eee'
+                : 'white',
+              transition: 'background 0.1s linear',
+            }}
+          >
             {compare ? <Border /> : null}
             <div
               style={{
@@ -136,11 +147,12 @@ class Page extends React.Component {
         ) : null}
 
         <div
+          id={tour ? 'reviews-block' : null}
           style={{
             // position: 'sticky',
             position: 'relative',
             // top: stick_top,
-            background: 'white',
+            background: hl_options.highlight_reviews_block ? '#eee' : 'white',
           }}
         >
           <div
@@ -206,7 +218,13 @@ class Page extends React.Component {
           </div>
         </div>
 
-        <div style={{ position: 'relative' }}>
+        <div
+          style={{
+            position: 'relative',
+            background: hl_options.highlight_reviews_block ? '#eee' : 'white',
+            transition: 'background 0.1s linear',
+          }}
+        >
           {compare ? <Border /> : null}
           <div
             style={{

@@ -38,13 +38,13 @@ class MyApp extends App {
     this.state = {
       analyze: true,
       data_select: 1,
-      show_accuracy: true,
+      show_accuracy: false,
       sort: 'reviews',
       review_sort: 'date',
       nbsvm_data: null,
       compare: false,
       bert_data: null,
-      show_info: false,
+      show_info: true,
     }
     this.setAnalyze = this.setAnalyze.bind(this)
     this.setReviewSort = this.setReviewSort.bind(this)
@@ -52,6 +52,7 @@ class MyApp extends App {
     this.setSort = this.setSort.bind(this)
     this.setAlgo = this.setAlgo.bind(this)
     this.setCompare = this.setCompare.bind(this)
+    this.showInfo = this.showInfo.bind(this)
   }
 
   fetchData() {
@@ -117,6 +118,10 @@ class MyApp extends App {
 
   setCompare(value) {
     this.setState({ compare: value })
+  }
+
+  showInfo(value) {
+    this.setState({ show_info: value })
   }
 
   render() {
@@ -234,6 +239,7 @@ class MyApp extends App {
           grem={grem}
           analyze={analyze}
           show_accuracy={show_accuracy}
+          showInfo={this.showInfo}
         />
         <div
           style={{
@@ -263,6 +269,7 @@ class MyApp extends App {
                 compare={this.state.compare}
                 setCompare={this.setCompare}
                 nbsvm_data={this.state.nbsvm_data}
+                hl_options={{}}
               />
             </Container>
           ) : (
@@ -274,11 +281,19 @@ class MyApp extends App {
             padding: grem / 2,
             background: '#222',
             color: 'white',
-            borderTop: 'solid 1px black',
+            display: 'flex',
+            justifyContent: 'space-between',
           }}
         >
-          Textflicks is a natural language processing prototype by Cloudera Fast
-          Forward Labs
+          <div>
+            Textflix is a natural language processing prototype by Cloudera Fast
+            Forward Labs
+          </div>
+          <div>
+            <Link href="/disagreements">
+              <a style={{ textDecoration: 'underline' }}>Disagreements</a>
+            </Link>
+          </div>
         </div>
         {show_info ? (
           <Tour
@@ -303,6 +318,7 @@ class MyApp extends App {
             compare={this.state.compare}
             setCompare={this.setCompare}
             nbsvm_data={this.state.nbsvm_data}
+            showInfo={this.showInfo}
           />
         ) : null}
       </div>

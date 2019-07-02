@@ -18,6 +18,8 @@ class Bar extends React.Component {
       compare,
       setCompare,
       is_front = false,
+      hl_options,
+      analyze_locked = false,
     } = this.props
 
     let certainty_array = data.map(r => {
@@ -111,6 +113,7 @@ class Bar extends React.Component {
       <div
         style={{
           background: 'white',
+          transition: 'background 0.1s linear',
           position: 'sticky',
           zIndex: 999,
           top: 0,
@@ -172,12 +175,16 @@ class Bar extends React.Component {
               </Link>
             ) : null}
             <button
-              onClick={() => setAnalyze(!analyze)}
+              onClick={() => {
+                if (!analyze_locked) setAnalyze(!analyze)
+              }}
               style={{
                 display: 'flex',
                 paddingLeft: grem / 2,
                 paddingRight: grem / 2,
                 height: grem * 2,
+                opacity: analyze_locked ? 1 : null,
+                cursor: analyze_locked ? 'default' : 'pointer',
               }}
             >
               <div
@@ -194,7 +201,7 @@ class Bar extends React.Component {
                 style={{
                   paddingTop: grem / 2,
                   paddingBottom: grem / 2,
-                  textDecoration: 'underline',
+                  textDecoration: analyze_locked ? 'none' : 'underline',
                 }}
               >
                 Analyze
@@ -224,13 +231,16 @@ class Bar extends React.Component {
                     show:
                   </div>
                   <button
-                    onClick={() => setAccuracy(!show_accuracy)}
+                    onClick={() => {
+                      if (!analyze_locked) setAccuracy(!show_accuracy)
+                    }}
                     style={{
                       display: 'flex',
                       paddingLeft: grem / 4,
                       paddingRight: grem / 4,
-
                       height: grem * 2,
+                      opacity: analyze_locked ? 1 : null,
+                      cursor: analyze_locked ? 'default' : 'pointer',
                     }}
                   >
                     <div
@@ -247,20 +257,23 @@ class Bar extends React.Component {
                       style={{
                         paddingTop: grem / 2,
                         paddingBottom: grem / 2,
-                        textDecoration: 'underline',
+                        textDecoration: analyze_locked ? 'none' : 'underline',
                       }}
                     >
                       accuracy
                     </div>
                   </button>
                   <button
-                    onClick={() => setCompare(!compare)}
+                    onClick={() => {
+                      if (!analyze_locked) setCompare(!compare)
+                    }}
                     style={{
                       display: 'flex',
                       paddingLeft: grem / 4,
                       paddingRight: grem / 4,
-
                       height: grem * 2,
+                      opacity: analyze_locked ? 1 : null,
+                      cursor: analyze_locked ? 'default' : 'pointer',
                     }}
                   >
                     <div
@@ -277,7 +290,7 @@ class Bar extends React.Component {
                       style={{
                         paddingTop: grem / 2,
                         paddingBottom: grem / 2,
-                        textDecoration: 'underline',
+                        textDecoration: analyze_locked ? 'none' : 'underline',
                       }}
                     >
                       model comparison

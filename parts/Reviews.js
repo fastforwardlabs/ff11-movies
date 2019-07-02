@@ -23,6 +23,7 @@ class Reviews extends React.Component {
       show_accuracy,
       review_sort,
       setReviewSort,
+      show_title = false,
     } = this.props
 
     let sorted = reviews.slice()
@@ -77,6 +78,8 @@ class Reviews extends React.Component {
             grem={grem}
             analyze={analyze}
             show_accuracy={show_accuracy}
+            info={info}
+            show_title={show_title}
           />
         ))}
       </div>

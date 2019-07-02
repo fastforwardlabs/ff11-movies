@@ -10,53 +10,20 @@ import {
   scaleBlue,
   readableSentiment,
   class_labels,
+  Border,
 } from '../parts/Static'
 import getConfig from 'next-server/config'
 let { publicRuntimeConfig } = getConfig()
 let linkPrefix = publicRuntimeConfig.linkPrefix
-import Review from '../parts/Review'
+import Reviews from '../parts/Reviews'
 import * as _ from 'lodash'
-
-let algfiles = [
-  'nbsvm_lime_grouped_pretty.json',
-  'bert_lime_grouped_pretty.json',
-]
-
-let data_keys = [
-  ['nbsvm_data', 'nbsvm_lime_grouped_pretty.json', 'NBSVM'],
-  ['bert_data', 'bert_lime_grouped_pretty.json', 'BERT'],
-]
 
 class Disagree extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      nbsvm_data: null,
-      bert_data: null,
+      show_all: false,
     }
-  }
-
-  componentDidMount() {
-    data_keys.map(k => {
-      fetch(linkPrefix + '/static/data/' + k[1])
-        .then(r => r.json())
-        .then(r => {
-          fetch(linkPrefix + '/static/data/names_and_dates.json')
-            .then(nd => nd.json())
-            .then(nd => {
-              let reviews = r.map((r, i) => {
-                let new_r = Object.assign({}, r)
-
-                new_r.index = i
-                new_r.author = nd[i].author
-                new_r.date = nd[i].date
-
-                return new_r
-              })
-              this.setState({ [k[0]]: reviews })
-            })
-        })
-    })
   }
 
   render() {
@@ -71,124 +38,128 @@ class Disagree extends React.Component {
       sort,
       setSort,
       show_accuracy,
+      nbsvm_data,
+      data,
+      hl_options,
       setAccuracy,
+      compare,
+      review_sort,
+      setReviewSort,
+      setCompare,
     } = this.props
-    let { nbsvm_data, bert_data } = this.state
+    let { show_all } = this.state
 
-    let loaded = nbsvm_data && bert_data
+    compare = true
 
-    let combined, disagreements
-    if (loaded) {
-      combined = nbsvm_data.map((n, i) => {
-        return { nbsvm: n, bert: bert_data[i] }
-      })
-      disagreements = combined.filter(c => c.nbsvm.class !== c.bert.class)
+    let disagreements = []
+    let ndisagreements = []
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].class !== nbsvm_data[i].class) {
+        disagreements.push(data[i])
+        ndisagreements.push(nbsvm_data[i])
+      }
     }
 
-    return loaded ? (
+    disagreements = _.sortBy(disagreements, 'date')
+    ndisagreements = _.sortBy(ndisagreements, 'date')
+
+    return (
       <div>
+        <Bar
+          grem={grem}
+          setAnalyze={setAnalyze}
+          analyze={analyze}
+          setAlgo={this.props.setAlgo}
+          algnames={this.props.algnames}
+          data_select={this.props.data_select}
+          show_accuracy={true}
+          setAccuracy={setAccuracy}
+          compare={true}
+          setCompare={setCompare}
+          data={disagreements}
+          nbsvm_data={ndisagreements}
+          hl_options={hl_options}
+          analyze_locked={true}
+        />
+
         <div
           style={{
-            position: 'sticky',
-            zIndex: 99,
-            top: 0,
-            padding: grem / 2,
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gridColumnGap: grem,
-            borderBottom: 'solid 1px black',
-            background: 'white',
-            display: 'none',
-          }}
-        >
-          <div>NBSVM</div>
-          <div>BERT</div>
-        </div>
-        <div
-          style={{
-            maxWidth: 700 * 2 + grem * 2,
+            maxWidth: 700,
             padding: grem / 2,
             margin: `0 auto`,
           }}
         >
-          <div style={{ marginBottom: grem }}>
+          <div style={{}}>
             Reviews where the NBSVM and BERT classification disagree:
           </div>
-          {disagreements.map((d, i) => {
-            let review_info = _.find(info, { og_id: d.nbsvm.url })
-            return (
-              <div style={{ paddingBottom: grem }}>
-                <div>
-                  Review for{' '}
-                  <Link href={`/topic2?id=${review_info.id}`}>
-                    <a>{review_info.Title}</a>
-                  </Link>{' '}
-                  by {d.nbsvm.author} &middot;{' '}
-                  <Link href={`/review?id=${d.index}`}>
-                    <a>{d.nbsvm.date} days ago</a>
-                  </Link>
-                </div>
-
-                <div
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    margin: '0 auto',
-                    gridColumnGap: grem,
-                  }}
-                >
-                  <div style={{ padding: 0 }}>
-                    <Review
-                      r={d.nbsvm}
-                      i={i}
-                      grem={grem}
-                      analyze={true}
-                      show_accuracy={false}
-                      threshold={0}
-                      hide_author={true}
-                      classification_label="NBSVM "
-                    />
-                  </div>
-                  <div style={{ padding: 0 }}>
-                    <Review
-                      r={d.bert}
-                      i={i}
-                      grem={grem}
-                      analyze={true}
-                      show_accuracy={false}
-                      threshold={0}
-                      hide_author={true}
-                      classification_label="BERT "
-                    />
-                  </div>
-                </div>
-                <div
-                  style={{
-                    marginTop: -grem,
-                    marginBottom: grem,
-                    background:
-                      d.nbsvm.label === d.nbsvm.class
-                        ? d.nbsvm.label === 'pos'
-                          ? scaleBlue(1)
-                          : scaleRed(1)
-                        : d.bert.label === 'pos'
-                        ? scaleBlue(1)
-                        : scaleRed(1),
-                  }}
-                >
-                  label: {d.nbsvm.label === 'pos' ? 'positive' : 'negative'}{' '}
-                  &middot;{' '}
-                  {d.nbsvm.label === d.nbsvm.class
-                    ? 'NBSVM correct'
-                    : 'BERT correct'}
-                </div>
-              </div>
-            )
-          })}
         </div>
+
+        <div>
+          <div
+            style={{
+              position: 'relative',
+              background: hl_options.highlight_reviews_block ? '#eee' : 'white',
+              transition: 'background 0.1s linear',
+            }}
+          >
+            {compare ? <Border /> : null}
+            <div
+              style={{
+                maxWidth: compare ? 700 * 2 + grem + 2 : 700,
+                margin: '0 auto',
+                display: compare ? 'grid' : 'block',
+                gridTemplateColumns: '1fr 1fr',
+              }}
+            >
+              {compare ? (
+                <div style={{ borderRight: 'solid 1px black' }}>
+                  <Reviews
+                    reviews={
+                      show_all ? ndisagreements : ndisagreements.slice(0, 40)
+                    }
+                    grem={grem}
+                    analyze={analyze}
+                    show_accuracy={show_accuracy}
+                    review_sort={'date'}
+                    setReviewSort={setReviewSort}
+                    info={info}
+                    show_title={true}
+                  />
+                </div>
+              ) : null}
+              <div style={{ borderLeft: compare ? 'solid 1px black' : 'none' }}>
+                <Reviews
+                  reviews={
+                    show_all ? disagreements : disagreements.slice(0, 40)
+                  }
+                  grem={grem}
+                  analyze={analyze}
+                  show_accuracy={show_accuracy}
+                  review_sort={'date'}
+                  setReviewSort={setReviewSort}
+                  info={info}
+                  show_title={true}
+                />
+              </div>
+            </div>
+          </div>
+          <Border />
+        </div>
+        {!show_all ? (
+          <div style={{ maxWidth: 700, margin: '0 auto', padding: grem / 2 }}>
+            <button
+              style={{
+                textDecoration: 'underline',
+              }}
+              onClick={() => {
+                this.setState({ show_all: true })
+              }}
+            >
+              show all
+            </button>
+          </div>
+        ) : null}
       </div>
-    ) : (
-      <div style={{ padding: grem / 2 }}>Loading...</div>
     )
   }
 }

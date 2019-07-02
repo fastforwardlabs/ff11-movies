@@ -4,7 +4,7 @@ import { blue, red, Border } from './Static'
 
 class Header extends React.Component {
   render() {
-    let { is_front, grem, analyze, show_accuracy } = this.props
+    let { is_front, grem, analyze, show_accuracy, showInfo } = this.props
     return (
       <div
         style={{
@@ -65,9 +65,18 @@ class Header extends React.Component {
               }}
             />
           </div>
-          Textflicks
+          {is_front ? (
+            'Textflix'
+          ) : (
+            <Link href="/">
+              <a style={{ textDecoration: 'none' }}>Textflix</a>
+            </Link>
+          )}
         </div>
         <button
+          onClick={() => {
+            showInfo(true)
+          }}
           style={{
             padding: grem / 2,
             textDecoration: 'underline',

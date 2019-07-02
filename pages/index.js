@@ -103,6 +103,7 @@ class Index extends React.Component {
           data={data}
           nbsvm_data={nbsvm_data}
           is_front={true}
+          hl_options={hl_options}
         />
 
         <div
