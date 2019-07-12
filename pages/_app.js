@@ -4,12 +4,10 @@ import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
 import { nouns, adjectives } from '../data/corpora.js'
 import { red, blue, Border } from '../parts/Static'
-let { publicRuntimeConfig } = getConfig()
-let linkPrefix = publicRuntimeConfig.linkPrefix
-import Link from '../parts/PrefixedLink'
 import Bar from '../parts/Bar'
 import Header from '../parts/Header'
 import Tour from '../parts/Tour'
+import Link from 'next/Link'
 
 let algnames = ['NBSVM', 'BERT']
 let algfiles = [
@@ -22,17 +20,9 @@ let data_keys = [
   ['bert_data', 'bert_lime_grouped_pretty.json', 'BERT'],
 ]
 
+let linkPrefix = process.env.BACKEND_URL
+
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {}
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
-    }
-
-    return { pageProps }
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -56,6 +46,7 @@ class MyApp extends App {
   }
 
   fetchData() {
+    console.log(process)
     fetch(linkPrefix + '/static/data/' + algfiles[0])
       .then(r => r.json())
       .then(r => {
@@ -131,7 +122,7 @@ class MyApp extends App {
 
     if (analyze === false) show_accuracy = false
 
-    let { Component, pageProps } = this.props
+    let { Component } = this.props
     let font_size = 16
     let line_height = 1.5
     let grem = font_size * line_height
@@ -140,6 +131,8 @@ class MyApp extends App {
 
     let is_front = pathname === '/'
     let is_topic = pathname.startsWith('/topic')
+
+    console.log(data)
 
     return (
       <div>
@@ -249,7 +242,6 @@ class MyApp extends App {
           {data && this.state.nbsvm_data ? (
             <Container>
               <Component
-                {...pageProps}
                 font_size={font_size}
                 line_height={line_height}
                 grem={grem}
@@ -273,7 +265,14 @@ class MyApp extends App {
               />
             </Container>
           ) : (
-            <div style={{ padding: grem / 2 }}>Loading...</div>
+            <div
+              style={{
+                padding: grem / 2,
+                height: `calc(100vh - ${grem * 2}px`,
+              }}
+            >
+              Loading...
+            </div>
           )}
         </div>
         <div

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../parts/PrefixedLink'
+import Link from 'next/Link'
 import * as _ from 'lodash'
 import {
   red,
@@ -9,6 +9,8 @@ import {
   readableSentiment,
   class_labels,
 } from '../parts/Static'
+
+let link_prefix = process.env.BACKEND_URL
 
 class MovieGrid extends React.Component {
   render() {
@@ -169,7 +171,7 @@ class MovieGrid extends React.Component {
           let combined = [...pos, ...neg]
 
           return (
-            <Link href={`/topic2?id=${o.id}`}>
+            <Link href={link_prefix + `/topic2?id=${o.id}`}>
               <a
                 className="no-underline hover-block-container no-opacity-hover"
                 style={{

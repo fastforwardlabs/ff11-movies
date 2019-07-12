@@ -17,8 +17,7 @@ import {
 import Sentences from '../parts/Sentences'
 import Reviews from '../parts/Reviews'
 
-let { publicRuntimeConfig } = getConfig()
-let linkPrefix = publicRuntimeConfig.linkPrefix
+let link_prefix = process.env.BACKEND_URL
 
 class Page extends React.Component {
   constructor(props) {
@@ -51,10 +50,15 @@ class Page extends React.Component {
       tour = false,
     } = this.props
 
+    console.log(router)
+
     let info_ids = info.map(o => o.og_id)
     let topic_info = info[info_ids.indexOf(router.query.id)]
     let reviews = data.filter(o => o.url === router.query.id)
     let nreviews = nbsvm_data.filter(o => o.url === router.query.id)
+
+    console.log(topic_info)
+    console.log(reviews)
 
     // compare and show_accuracy only when analyze is on
     show_accuracy = show_accuracy && analyze

@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from '../parts/PrefixedLink'
-import * as d3 from 'd3'
+import Link from 'next/Link'
 import * as chroma from 'chroma-js'
 import Bar from '../parts/Bar'
 import {
@@ -13,10 +12,10 @@ import {
   Border,
 } from '../parts/Static'
 import getConfig from 'next-server/config'
-let { publicRuntimeConfig } = getConfig()
-let linkPrefix = publicRuntimeConfig.linkPrefix
 import Reviews from '../parts/Reviews'
 import * as _ from 'lodash'
+
+let linkPrefix = process.env.BACKEND_URL
 
 class Disagree extends React.Component {
   constructor(props) {

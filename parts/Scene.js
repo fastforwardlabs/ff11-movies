@@ -18,7 +18,7 @@ class Scene extends React.Component {
           alignItems: one_screen ? 'center' : 'top',
           height: one_screen ? '100vh' : 'auto',
           marginTop: spacer ? spacer * 100 + 'vh' : 'auto',
-          cursor: 'auto',
+          cursor: one_screen ? 'auto' : 'inherit',
         }}
       >
         <div
@@ -28,13 +28,16 @@ class Scene extends React.Component {
             margin: '0 auto',
             background: 'white',
             border: 'solid 1px black',
-            boxShadow: '2px 2px rgba(0,0,0,1)',
+            // boxShadow: '6px 8px #222',
             padding: grem / 2,
             opacity: trans ? 0 : 1,
+            background: one_screen ? 'white' : '#222',
+            color: one_screen ? 'black' : 'white',
             // boxShadow: trans ? 'none' : '0 2px 8px rgba(0,0,0,0.3)',
+            boxShadow: one_screen ? 'none' : '0 1px 3px #222',
           }}
           onClick={e => {
-            e.stopPropagation()
+            one_screen ? e.stopPropagation() : null
           }}
         >
           {this.props.children}

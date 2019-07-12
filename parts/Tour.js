@@ -153,7 +153,7 @@ class Tour extends React.Component {
     let space = 0.75
 
     let next = (
-      <div style={{ marginTop: grem * 1 }}>
+      <div style={{ marginTop: grem * 0 }}>
         <button
           onClick={this.scrollNext}
           style={{ textDecoration: 'underline' }}
@@ -325,7 +325,7 @@ class Tour extends React.Component {
             bottom: 0,
             zIndex: 9999,
             overflow: 'auto',
-            background: 'rgba(100,100,100,0.08)',
+            background: 'rgba(0,0,0,0.0625)',
             cursor: step > 0 ? 's-resize' : 'pointer',
           }}
           ref={this.scrollRef}
@@ -400,6 +400,8 @@ class Tour extends React.Component {
               left: 0,
               top: 0,
               right: 0,
+              paddingLeft: grem / 3,
+              paddingRight: grem / 3,
               paddingBottom: '100vh',
             }}
           >
@@ -410,6 +412,8 @@ class Tour extends React.Component {
                   marginLeft: -grem / 2,
                   marginRight: -grem / 2,
                   marginBottom: grem / 2,
+                  background: '#222',
+                  color: 'white',
                 }}
               >
                 <div
@@ -554,7 +558,7 @@ class Tour extends React.Component {
                     style={{ textDecoration: 'underline' }}
                     onClick={this.scrollNext}
                   >
-                    scroll to take the tour ↓
+                    scroll to take the interactive tour ↓
                   </button>
                   .
                 </p>
@@ -562,46 +566,30 @@ class Tour extends React.Component {
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                The overview page features an eclectic mix of fifty movie and TV
-                shows. Without analysis, the only thing we can tell you about
+                1. The overview page features an eclectic mix of fifty movie and
+                TV shows. Without analysis, the only thing we can tell you about
                 their reviews is how many there are.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                With sentiment analysis, we can show the user how many of the
-                reviews are{' '}
-                <span
-                  style={{
-                    background: blue,
-                  }}
-                >
-                  positive
-                </span>{' '}
-                or{' '}
-                <span
-                  style={{
-                    background: red,
-                  }}
-                >
-                  negative
-                </span>
-                .
+                2. With sentiment analysis, we can show the user how many of the
+                reviews are positive or negative.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                With that info uncovered you can sort by most positive reviews,
-                and find out that <i>Just Before Dawn</i>, a slasher horror film
-                from 1981, is the most liked movie.
+                3. With that info uncovered you can sort by most positive
+                reviews, and find out that <i>Just Before Dawn</i>, a slasher
+                horror film from 1981, is the most liked movie.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                Or sort by most negative and find out <i>The Box</i>, Richard
+                4. Or sort by most negative and find out <i>The Box</i>, Richard
                 Kelly's disastrous follow-up to <i>Donnie Darko</i>, is the most
                 disliked.
               </p>
@@ -609,7 +597,7 @@ class Tour extends React.Component {
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                Now let's look at an individual movie. Without sentiment
+                5. Now let's look at an individual movie. Without sentiment
                 analysis you would have to read through the reviews one-by-one
                 to get a sense for how people feel about the movie{' '}
                 <i>Accepted</i>.
@@ -618,38 +606,42 @@ class Tour extends React.Component {
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                With analysis you can immediately see that the reviews are{' '}
+                6. With analysis you can immediately see that the reviews are{' '}
                 generally (70%) positive.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                For each review you can see both the model's classification and
-                certainty. The sentences that drove the classification are
-                underlined.
+                7. For each review you can see both the model's classification
+                and certainty. We use an interpretability technique called SHAP
+                to determine how each sentence is affecting the classification.
+                We underline the sentences that contribute most strongly to the
+                classification. This added interpretability helps us understand
+                how the model is making its decisions.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                In addition to underlining important sentences within the
-                review. We use them as highlights. Showing, at a glance, what
-                people most liked and disliked about the movie.
+                8. In addition to underlining important sentences within the
+                review, we use the highest scoring sentences as highlights.
+                Showing, at a glance, what people most liked and disliked about
+                the movie.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                So far we've shown you how analysis can unlock the data embedded
-                within text. Now we're going to look at the options that show
-                model performance.
+                9. So far we've shown you how analysis can unlock the data
+                embedded within text. Now we're going to look at the options
+                that show model performance.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                The <i>show accuracy</i> option exposes how the model's
+                10. The <i>show accuracy</i> option exposes how the model's
                 classifications compare to the original rating entered by the
                 reviewer. Our model achieves 93% accuracy for the 1,021 reviews
                 in the dataset.
@@ -658,22 +650,22 @@ class Tour extends React.Component {
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                On the topic page, you can examine the model's accuracy on a
+                11. On the topic page, you can examine the model's accuracy on a
                 review by review basis.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                You can sort the reviews by <i>inaccurate</i> to focus on the
-                ones it got wrong.
+                12. You can sort the reviews by <i>inaccurate</i> to focus on
+                the ones it got wrong.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                Finally, you can use the <i>model comparison</i> option to see
-                how our model compares to one trained without the benefit of
+                13. Finally, you can use the <i>model comparison</i> option to
+                see how our model compares to one trained without the benefit of
                 transfer learning. This mode introduces a split-screen, with the
                 baseline model on the left and our main model on the right.
               </p>
@@ -681,28 +673,28 @@ class Tour extends React.Component {
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                You can sort the reviews by recent to get a view of each review
-                side-by-side. Often the underlined sentences can help you
+                14. You can sort the reviews by recent to get a view of each
+                review side-by-side. Often the underlined sentences can help you
                 understand disagreements between the two models.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                If you want to get a more thorough look at the disagreements,
-                check out the <i>Disagreements</i> page, linked to at the bottom
-                of each page, to see a list of all the reviews where the models
-                disagreed. You'll notice that our model is the winner of the
-                majority of the disagreements.
+                15. If you want to get a more thorough look at the
+                disagreements, check out the <i>Disagreements</i> page, linked
+                to at the bottom of each page, to see a list of all the reviews
+                where the models disagreed. You'll notice that our model is the
+                winner of the majority of the disagreements.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                That's the end of our tour. Now you're ready to explore Textflix
-                yourself.
+                Fin. That's the end of our tour. Now you're ready to explore
+                Textflix yourself.
               </p>
-              <div style={{ marginTop: grem * 1 }}>
+              <div style={{ marginTop: grem * 0 }}>
                 <button
                   onClick={this.scrollNext}
                   style={{ textDecoration: 'underline' }}

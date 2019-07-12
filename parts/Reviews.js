@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from '../parts/PrefixedLink'
 import * as _ from 'lodash'
 import {
   red,

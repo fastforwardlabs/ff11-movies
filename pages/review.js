@@ -1,7 +1,7 @@
 import { withRouter } from 'next/router'
 import Review from '../parts/Review'
-import Link from '../parts/PrefixedLink'
 import Bar from '../parts/Bar'
+import Link from 'next/Link'
 import {
   red,
   blue,
@@ -12,6 +12,8 @@ import {
   Border,
 } from '../parts/Static'
 import * as _ from 'lodash'
+
+let link_prefix = process.env.BACKEND_URL
 
 class ReviewPage extends React.Component {
   render() {
@@ -124,7 +126,7 @@ class ReviewPage extends React.Component {
               padding: grem / 2,
             }}
           >
-            <Link href={`/topic2?id=${r[0].url}`}>
+            <Link href={link_prefix + `/topic2?id=${r[0].url}`}>
               <a>See all reviews for {topic_info.Title}</a>
             </Link>
           </div>

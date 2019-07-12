@@ -1,12 +1,21 @@
-let isProduction = process.env.NODE_ENV === 'production'
+let isProduction = process.env.NODE_ENV === 'production' && false
 
 module.exports = {
-  assetPrefix: isProduction ? '/ff11-movies' : '',
-  publicRuntimeConfig: {
-    // used in '/parts/PrefixedLink.js/', for more details go to the component itself
-    linkPrefix: isProduction ? '/ff11-movies' : '',
-  },
+  assetPrefix: '',
   exportPathMap: function(defaultPathMap) {
     return defaultPathMap
+  },
+  webpack: (config, { dev }) => {
+    // Perform customizations to webpack config
+    // console.log('webpack');
+    // console.log(config.module.rules, dev);
+    config.module.rules = config.module.rules.map(rule => {
+      if (rule.loader === 'babel-loader') {
+        rule.options.cacheDirectory = false
+      }
+      return rule
+    })
+    // Important: return the modified config
+    return config
   },
 }

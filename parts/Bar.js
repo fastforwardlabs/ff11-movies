@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../parts/PrefixedLink'
+import Link from 'next/Link'
 import * as chroma from 'chroma-js'
 import { scaleRed, scaleBlue, Border } from './Static'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../parts/PrefixedLink'
+import Link from 'next/Link'
 import { blue, red, Border } from './Static'
 
 class Header extends React.Component {
