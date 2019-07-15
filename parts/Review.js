@@ -123,7 +123,7 @@ class Review extends React.Component {
                       : 0
                     : 'transparent'
                   return (
-                    <span>
+                    <span key={t}>
                       {' '}
                       <span
                         style={{

@@ -74,13 +74,13 @@ class Sentences extends React.Component {
             'show_all_negative',
           ],
         ].map((a, i) => (
-          <div style={{ marginBottom: i == 0 ? grem : 0 }}>
+          <div style={{ marginBottom: i == 0 ? grem : 0 }} key={a[0]}>
             <div>
               {a[1].length} {a[0]} review highlights
             </div>
             <div style={{ textIndent: grem }}>
               {a[1].slice(0, a[2] ? Infinity : show_limit).map((s, i) => (
-                <span style={{}}>
+                <span style={{}} key={s.token}>
                   <span
                     style={{
                       backgroundImage: `linear-gradient(${s.background}, ${

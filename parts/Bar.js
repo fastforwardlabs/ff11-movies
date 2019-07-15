@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/Link'
 import * as chroma from 'chroma-js'
 import { scaleRed, scaleBlue, Border } from './Static'
+import { p } from './Utils'
 
 class Bar extends React.Component {
   render() {
@@ -117,26 +118,31 @@ class Bar extends React.Component {
           position: 'sticky',
           zIndex: 999,
           top: 0,
+          minWidth: compare ? 600 : 'auto',
         }}
       >
         <div>
           <div
             style={{
               display: 'flex',
+              flexWrap: 'wrap',
+              padding: p(grem / 2, grem / 4),
               alignItems: 'top',
             }}
           >
-            {!is_front ? (
+            {!is_front && false ? (
               <Link href="/">
                 <a
                   className="hover-block-container no-opacity-hover"
                   style={{
                     display: 'block',
-                    paddingTop: grem / 2 + grem * 0.125,
-                    paddingBottom: grem / 2 + grem * 0.125,
-                    paddingLeft: grem / 2,
-                    paddingRight: grem / 2,
+                    padding: p(grem / 2 + grem * 0.125, grem / 2),
+                    marginLeft: -grem / 4,
+                    marginTop: -grem / 4,
+                    marginRight: grem / 4,
+                    marginBottom: -(grem / 4 + 1),
                     borderRight: 'solid 1px black',
+                    borderBottom: 'solid 1px black',
                     position: 'relative',
                     textDecoration: 'none',
                   }}
@@ -180,11 +186,11 @@ class Bar extends React.Component {
               }}
               style={{
                 display: 'flex',
-                paddingLeft: grem / 2,
-                paddingRight: grem / 2,
-                height: grem * 2,
+                alignItems: 'center',
+                padding: p(0, grem / 4),
                 opacity: analyze_locked ? 1 : null,
                 cursor: analyze_locked ? 'default' : 'pointer',
+                height: grem,
               }}
             >
               <div
@@ -192,71 +198,45 @@ class Bar extends React.Component {
                   width: grem * 0.5,
                   height: grem * 0.5,
                   border: 'solid 1px black',
-                  marginTop: grem * (6 / 8),
-                  marginRight: grem * (2 / 8),
                   background: analyze ? 'black' : 'white',
+                  marginRight: grem / 4,
                 }}
               />
               <div
                 style={{
-                  paddingTop: grem / 2,
-                  paddingBottom: grem / 2,
                   textDecoration: analyze_locked ? 'none' : 'underline',
                 }}
               >
-                Analyze
+                Analyze{analyze ? ':' : ''}
               </div>
             </button>
             {analyze ? (
               <>
-                <div
-                  style={{
-                    paddingTop: grem / 2,
-                    paddingBottom: grem / 2,
-                    display: 'none',
-                  }}
-                >
-                  &ndash;
-                </div>
-
                 <div style={{ display: 'flex' }}>
-                  <div
-                    style={{
-                      paddingTop: grem / 2,
-                      paddingBottom: grem / 2,
-                      paddingLeft: (grem / 2) * 0,
-                      paddingRight: grem / 8,
-                    }}
-                  >
-                    show:
-                  </div>
                   <button
                     onClick={() => {
                       if (!analyze_locked) setAccuracy(!show_accuracy)
                     }}
                     style={{
                       display: 'flex',
-                      paddingLeft: grem / 4,
-                      paddingRight: grem / 4,
-                      height: grem * 2,
                       opacity: analyze_locked ? 1 : null,
                       cursor: analyze_locked ? 'default' : 'pointer',
+                      padding: p(0, grem / 4),
+                      alignItems: 'center',
+                      height: grem,
                     }}
                   >
                     <div
                       style={{
                         width: grem * 0.5,
                         height: grem * 0.5,
+                        marginRight: grem / 4,
                         border: 'solid 1px black',
-                        marginTop: grem * (6 / 8),
-                        marginRight: grem * (2 / 8),
                         background: show_accuracy ? 'black' : 'white',
                       }}
                     />
                     <div
                       style={{
-                        paddingTop: grem / 2,
-                        paddingBottom: grem / 2,
                         textDecoration: analyze_locked ? 'none' : 'underline',
                       }}
                     >
@@ -269,11 +249,12 @@ class Bar extends React.Component {
                     }}
                     style={{
                       display: 'flex',
-                      paddingLeft: grem / 4,
-                      paddingRight: grem / 4,
-                      height: grem * 2,
                       opacity: analyze_locked ? 1 : null,
                       cursor: analyze_locked ? 'default' : 'pointer',
+                      padding: p(0, grem / 4),
+                      alignItems: 'center',
+
+                      height: grem,
                     }}
                   >
                     <div
@@ -281,15 +262,12 @@ class Bar extends React.Component {
                         width: grem * 0.5,
                         height: grem * 0.5,
                         border: 'solid 1px black',
-                        marginTop: grem * (6 / 8),
-                        marginRight: grem * (2 / 8),
                         background: compare ? 'black' : 'white',
+                        marginRight: grem / 4,
                       }}
                     />
                     <div
                       style={{
-                        paddingTop: grem / 2,
-                        paddingBottom: grem / 2,
                         textDecoration: analyze_locked ? 'none' : 'underline',
                       }}
                     >
@@ -302,14 +280,14 @@ class Bar extends React.Component {
             {analyze && !compare ? (
               <div
                 style={{
-                  padding: `${show_accuracy && false ? 0 : grem / 2}px ${grem /
-                    2}px`,
+                  padding: p(show_accuracy && false ? 0 : 0, grem / 4),
                   flexGrow: 1,
                 }}
               >
                 <div style={{ position: 'relative', overflow: 'hidden' }}>
                   {combined.map((c, i) => (
                     <div
+                      key={'certainty_' + i}
                       style={{
                         position: 'absolute',
                         left: `${(1 / combined.length) * i * 100}%`,
@@ -346,6 +324,7 @@ class Bar extends React.Component {
                     >
                       {combined.map((c, i) => (
                         <div
+                          key={'certainty2_' + i}
                           style={{
                             position: 'absolute',
                             left: `${(1 / combined.length) * i * 100}%`,
@@ -398,6 +377,7 @@ class Bar extends React.Component {
                 let acc = n ? naccuracy : accuracy
                 return (
                   <div
+                    key={'items_' + item[0]}
                     style={{
                       borderLeft: i === 1 ? 'solid 2px black' : 'none',
                       marginLeft: i === 1 ? -1 : 0,
@@ -425,6 +405,7 @@ class Bar extends React.Component {
                       <div style={{ position: 'relative', overflow: 'hidden' }}>
                         {cert.map((c, i) => (
                           <div
+                            key={'certaint3_' + i}
                             style={{
                               position: 'absolute',
                               left: `${(1 / combined.length) * i * 100}%`,
@@ -462,6 +443,7 @@ class Bar extends React.Component {
                           >
                             {cert.map((c, i) => (
                               <div
+                                key={'accuracy_' + i}
                                 style={{
                                   position: 'absolute',
                                   left: `${(1 / combined.length) * i * 100}%`,

@@ -50,15 +50,10 @@ class Page extends React.Component {
       tour = false,
     } = this.props
 
-    console.log(router)
-
     let info_ids = info.map(o => o.og_id)
     let topic_info = info[info_ids.indexOf(router.query.id)]
     let reviews = data.filter(o => o.url === router.query.id)
     let nreviews = nbsvm_data.filter(o => o.url === router.query.id)
-
-    console.log(topic_info)
-    console.log(reviews)
 
     // compare and show_accuracy only when analyze is on
     show_accuracy = show_accuracy && analyze
@@ -169,6 +164,7 @@ class Page extends React.Component {
             <div
               style={{
                 display: 'flex',
+                flexWrap: 'wrap',
                 paddingRight: grem / 4,
                 marginLeft: -grem / 4,
               }}
@@ -194,6 +190,7 @@ class Page extends React.Component {
               ).map(a =>
                 review_sort === a[1] ? (
                   <div
+                    key={a[0]}
                     style={{
                       paddingLeft: grem / 4,
                       paddingRight: grem / 4,
@@ -205,6 +202,7 @@ class Page extends React.Component {
                   </div>
                 ) : (
                   <button
+                    key={a[0]}
                     onClick={() => {
                       setReviewSort(a[1])
                     }}
@@ -247,6 +245,7 @@ class Page extends React.Component {
                   show_accuracy={show_accuracy}
                   review_sort={review_sort}
                   setReviewSort={setReviewSort}
+                  data_type="compare"
                 />
               </div>
             ) : null}

@@ -23,6 +23,7 @@ class Reviews extends React.Component {
       review_sort,
       setReviewSort,
       show_title = false,
+      data_type = 'base',
     } = this.props
 
     let sorted = reviews.slice()
@@ -72,6 +73,7 @@ class Reviews extends React.Component {
       <div style={{ padding: grem / 2 }}>
         {sorted.map((r, i) => (
           <Review
+            key={'reviews_' + r.index + '_' + data_type}
             r={r}
             i={i}
             grem={grem}

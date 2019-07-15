@@ -3,6 +3,7 @@ import * as _ from 'lodash'
 import * as d3 from 'd3'
 import * as chroma from 'chroma-js'
 import Bar from '../parts/Bar'
+import { p } from '../parts/Utils'
 import {
   red,
   blue,
@@ -116,14 +117,13 @@ class Index extends React.Component {
           <div
             style={{
               display: 'flex',
+              flexWrap: 'wrap',
+              padding: p(grem / 2, grem / 4),
             }}
           >
             <div
               style={{
-                paddingTop: grem / 2,
-                paddingBottom: grem / 2,
-                paddingLeft: grem / 2,
-                paddingRight: grem / 4,
+                padding: p(0, grem / 4),
               }}
             >
               {data.length} movies & shows sorted by most:
@@ -131,9 +131,8 @@ class Index extends React.Component {
             <div
               style={{
                 display: 'flex',
-                paddingRight: grem / 4,
-                paddingTop: grem / 2,
-                paddingBottom: grem / 2,
+                flexWrap: 'wrap',
+                alignItems: 'center',
               }}
             >
               {(analyze
@@ -154,24 +153,24 @@ class Index extends React.Component {
               ).map(a =>
                 sort === a[1] ? (
                   <div
+                    key={a[0]}
                     style={{
-                      paddingLeft: grem / 4,
-                      paddingRight: grem / 4,
                       background: '#222',
                       color: 'white',
+                      padding: p(0, grem / 4),
                     }}
                   >
                     {a[0]}
                   </div>
                 ) : (
                   <button
+                    key={a[0]}
                     onClick={() => {
                       setSort(a[1])
                     }}
                     style={{
-                      paddingLeft: grem / 4,
-                      paddingRight: grem / 4,
                       textDecoration: 'underline',
+                      padding: p(0, grem / 4),
                     }}
                   >
                     {a[0]}

@@ -62,6 +62,11 @@ class Disagree extends React.Component {
     disagreements = _.sortBy(disagreements, 'date')
     ndisagreements = _.sortBy(ndisagreements, 'date')
 
+    // overwrite
+    analyze = true
+    show_accuracy = true
+    compare = true
+
     return (
       <div>
         <Bar

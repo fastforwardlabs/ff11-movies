@@ -9,6 +9,7 @@ import {
   readableSentiment,
   class_labels,
 } from '../parts/Static'
+import { p } from './Utils'
 
 let link_prefix = process.env.BACKEND_URL
 
@@ -171,21 +172,21 @@ class MovieGrid extends React.Component {
           let combined = [...pos, ...neg]
 
           return (
-            <Link href={link_prefix + `/topic2?id=${o.id}`}>
+            <Link key={'link' + o.id} href={link_prefix + `/topic2?id=${o.id}`}>
               <a
                 className="no-underline hover-block-container no-opacity-hover"
                 style={{
                   position: 'relative',
                   height: 12 * grem,
                   cursor: 'zoom-in',
-                  padding: grem / 2,
                   outline: 'solid 1px black',
+                  padding: p(grem / 2, grem / 2),
                 }}
               >
                 <div
                   style={{
                     display: '-webkit-box',
-                    webkitBoxOrient: 'vertical',
+                    WebkitBoxOrient: 'vertical',
                     WebkitLineClamp: 7,
                     overflow: 'hidden',
                   }}
@@ -223,6 +224,7 @@ class MovieGrid extends React.Component {
                     >
                       {combined.map((c, i) => (
                         <div
+                          key={c.certainty}
                           style={{
                             position: 'absolute',
                             left: `${(1 / combined.length) * i * 100}%`,
@@ -258,6 +260,7 @@ class MovieGrid extends React.Component {
                     >
                       {combined.map((c, i) => (
                         <div
+                          key={'cert' + c.certainty}
                           style={{
                             position: 'absolute',
                             left: `${(1 / combined.length) * i * 100}%`,

@@ -4,6 +4,7 @@ import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
 import { nouns, adjectives } from '../data/corpora.js'
 import { red, blue, Border } from '../parts/Static'
+import { p } from '../parts/Utils'
 import Bar from '../parts/Bar'
 import Header from '../parts/Header'
 import Tour from '../parts/Tour'
@@ -34,7 +35,7 @@ class MyApp extends App {
       nbsvm_data: null,
       compare: false,
       bert_data: null,
-      show_info: true,
+      show_info: false,
     }
     this.setAnalyze = this.setAnalyze.bind(this)
     this.setReviewSort = this.setReviewSort.bind(this)
@@ -46,13 +47,12 @@ class MyApp extends App {
   }
 
   fetchData() {
-    console.log(process)
-    fetch(linkPrefix + '/static/data/' + algfiles[0])
-      .then(r => r.json())
-      .then(r => {
-        fetch(linkPrefix + '/static/data/names_and_dates.json')
-          .then(nd => nd.json())
-          .then(nd => {
+    fetch(linkPrefix + '/static/data/names_and_dates.json')
+      .then(nd => nd.json())
+      .then(nd => {
+        fetch(linkPrefix + '/static/data/' + algfiles[0])
+          .then(r => r.json())
+          .then(r => {
             let reviews = r.map((r, i) => {
               let new_r = Object.assign({}, r)
               new_r.index = i
@@ -63,13 +63,9 @@ class MyApp extends App {
             let key = data_keys[0][0]
             this.setState({ [key]: reviews })
           })
-      })
-    fetch(linkPrefix + '/static/data/' + algfiles[1])
-      .then(r => r.json())
-      .then(r => {
-        fetch(linkPrefix + '/static/data/names_and_dates.json')
-          .then(nd => nd.json())
-          .then(nd => {
+        fetch(linkPrefix + '/static/data/' + algfiles[1])
+          .then(r => r.json())
+          .then(r => {
             let reviews = r.map((r, i) => {
               let new_r = Object.assign({}, r)
               new_r.index = i
@@ -85,6 +81,9 @@ class MyApp extends App {
 
   componentDidMount() {
     this.fetchData()
+    const { pathname } = this.props.router
+    let is_front = pathname === '/'
+    if (is_front) this.setState({ show_info: true })
   }
 
   setAnalyze(value) {
@@ -131,8 +130,6 @@ class MyApp extends App {
 
     let is_front = pathname === '/'
     let is_topic = pathname.startsWith('/topic')
-
-    console.log(data)
 
     return (
       <div>
@@ -237,6 +234,8 @@ class MyApp extends App {
         <div
           style={{
             minHeight: `calc(100vh - ${grem * 4 + 1}px)`,
+            background: 'white',
+            minWidth: this.state.compare ? 600 : 'auto',
           }}
         >
           {data && this.state.nbsvm_data ? (
@@ -277,20 +276,24 @@ class MyApp extends App {
         </div>
         <div
           style={{
-            padding: grem / 2,
+            padding: p(grem / 2, grem / 4),
             background: '#222',
             color: 'white',
             display: 'flex',
             justifyContent: 'space-between',
           }}
         >
-          <div>
+          <div style={{ padding: p(0, grem / 4) }}>
             Textflix is a natural language processing prototype by Cloudera Fast
             Forward Labs
           </div>
           <div>
             <Link href="/disagreements">
-              <a style={{ textDecoration: 'underline' }}>Disagreements</a>
+              <a
+                style={{ textDecoration: 'underline', padding: p(0, grem / 4) }}
+              >
+                Disagreements
+              </a>
             </Link>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { withRouter } from 'next/router'
 import Review from '../parts/Review'
 import Bar from '../parts/Bar'
 import Link from 'next/Link'
+import { p } from '../parts/Utils'
 import {
   red,
   blue,
@@ -124,6 +125,7 @@ class ReviewPage extends React.Component {
               maxWidth: 700,
               margin: '0 auto',
               padding: grem / 2,
+              marginTop: -grem,
             }}
           >
             <Link href={link_prefix + `/topic2?id=${r[0].url}`}>
