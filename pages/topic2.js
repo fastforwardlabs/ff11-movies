@@ -1,6 +1,7 @@
 import { withRouter } from 'next/router'
 import Link from 'next/link'
 import * as chroma from 'chroma-js'
+import Head from 'next/head'
 import * as _ from 'lodash'
 import { nouns, adjectives } from '../data/corpora.js'
 import getConfig from 'next-server/config'
@@ -71,6 +72,10 @@ class Page extends React.Component {
 
     return (
       <div>
+        <Head>
+          <title>Textflix: {topic_info.Title}</title>
+        </Head>
+
         <Bar
           grem={grem}
           setAnalyze={setAnalyze}

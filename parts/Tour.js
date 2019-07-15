@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/Head'
 import App, { Container } from 'next/app'
 import { nouns, adjectives } from '../data/corpora.js'
 import { red, blue, Border } from '../parts/Static'
@@ -52,6 +53,10 @@ class Tour extends React.Component {
         }
       }
     })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, false)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -476,73 +481,10 @@ class Tour extends React.Component {
                   </span>{' '}
                   option uses a neural network to classify each review as{' '}
                   <span style={{ background: blue }}>positive</span> or{' '}
-                  <span style={{ background: red }}>negative</span>. Without
-                  analysis users are left to sift through the review text on
-                  their own. With analysis, you unlock the ability to see the
-                  general review sentiment for each movie. For the individual
-                  reviews we use interpretability techniques to underline the
-                  sentences driving the{' '}
-                  <span
-                    style={{
-                      backgroundImage: `linear-gradient(${blue}, ${blue})`,
-                      backgroundSize: '4px 5px',
-                      backgroundRepeat: 'repeat-x',
-                      backgroundPosition: `0 0.85em`,
-                      paddingBottom: 2,
-                    }}
-                  >
-                    positive
-                  </span>{' '}
-                  or{' '}
-                  <span
-                    style={{
-                      backgroundImage: `linear-gradient(${red}, ${red})`,
-                      backgroundSize: '4px 5px',
-                      backgroundRepeat: 'repeat-x',
-                      backgroundPosition: `0 0.85em`,
-                      paddingBottom: 2,
-                    }}
-                  >
-                    negative
-                  </span>{' '}
-                  classification.
-                </p>
-                <p>
-                  Additional options provide more info about the model's
-                  performance. The{' '}
-                  <span style={{ whiteSpace: 'nowrap' }}>
-                    <span
-                      style={{
-                        width: grem * 0.5,
-                        height: grem * 0.5,
-                        border: 'solid 1px black',
-                        background: show_accuracy ? 'black' : 'white',
-                        display: 'inline-block',
-                        marginLeft: grem * (1 / 8),
-                        marginRight: grem * (1 / 16),
-                      }}
-                    />{' '}
-                    accuracy option
-                  </span>{' '}
-                  lets you check the model's predictions against each review's
-                  original label, and the{' '}
-                  <span style={{ whiteSpace: 'nowrap' }}>
-                    <span
-                      style={{
-                        width: grem * 0.5,
-                        height: grem * 0.5,
-                        border: 'solid 1px black',
-                        background: show_accuracy ? 'black' : 'white',
-                        display: 'inline-block',
-                        marginLeft: grem * (1 / 8),
-                        marginRight: grem * (1 / 16),
-                      }}
-                    />{' '}
-                    model comparison
-                  </span>{' '}
-                  option lets you compare this model to one trained without
-                  transfer learning.
-                </p>
+                  <span style={{ background: red }}>negative</span>. More info
+                  about the main model here. Additional analysis options let you
+                  see the model's accuracy and compare it to a simpler approach.
+                </p>{' '}
                 <p>
                   You can{' '}
                   <button

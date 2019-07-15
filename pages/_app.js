@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import App, { Container } from 'next/app'
 import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
@@ -133,6 +134,7 @@ class MyApp extends App {
 
     return (
       <div>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <style jsx global>{`
           * {
             box-sizing: border-box;

@@ -58,7 +58,7 @@ class Review extends React.Component {
     return (
       <div
         style={{
-          marginBottom: grem,
+          marginBottom: is_review ? 0 : grem,
         }}
       >
         {analyze ? (

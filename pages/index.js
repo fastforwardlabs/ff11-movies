@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import * as _ from 'lodash'
 import * as d3 from 'd3'
 import * as chroma from 'chroma-js'
@@ -16,42 +17,6 @@ import {
 import MovieGrid from '../parts/MovieGrid'
 
 class Index extends React.Component {
-  componentDidMount() {
-    // let boxed = data.reduce((dict, current) => {
-    //   let slice = Object.assign({}, dict)
-    //   if (slice[current.url] === undefined) {
-    //     slice[current.url] = 'exists'
-    //   }
-    //   return slice
-    // }, {})
-    // let movie_keys = Object.keys(boxed)
-    // var promises = movie_keys.map((k, i) => {
-    //   return fetch(`http://www.omdbapi.com/?apikey=af4abd65&i=${k}`)
-    //     .then(r => r.json())
-    //     .then(json => {
-    //       let og_id = k
-    //       if (json.Title === '#DUPE#') {
-    //         return fetch(
-    //           `http://www.omdbapi.com/?apikey=af4abd65&i=${json.imdbID}`
-    //         )
-    //           .then(r => r.json())
-    //           .then(json => {
-    //             let json_mod = Object.assign({}, json)
-    //             json_mod.og_id = og_id
-    //             return json_mod
-    //           })
-    //       } else {
-    //         let json_mod = Object.assign({}, json)
-    //         json_mod.og_id = og_id
-    //         return json_mod
-    //       }
-    //     })
-    // })
-    // Promise.all(promises).then(function(results) {
-    //   console.log(JSON.stringify(results))
-    // })
-  }
-
   render() {
     let {
       font_size,
@@ -88,6 +53,9 @@ class Index extends React.Component {
 
     return (
       <div style={{ paddingBottom: grem / 2 }}>
+        <Head>
+          <title>Textflix</title>
+        </Head>
         <Bar
           grem={grem}
           setAnalyze={setAnalyze}

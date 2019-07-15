@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/Link'
 import * as chroma from 'chroma-js'
+import Head from 'next/Head'
 import Bar from '../parts/Bar'
 import {
   red,
@@ -69,6 +70,10 @@ class Disagree extends React.Component {
 
     return (
       <div>
+        <Head>
+          <title>Textflix: Disagreements</title>
+        </Head>
+
         <Bar
           grem={grem}
           setAnalyze={setAnalyze}
