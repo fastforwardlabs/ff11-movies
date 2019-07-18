@@ -3,7 +3,6 @@ import Head from 'next/head'
 import App, { Container } from 'next/app'
 import { info } from '../data/sample_movie_info.js'
 import getConfig from 'next-server/config'
-import { nouns, adjectives } from '../data/corpora.js'
 import { red, blue, Border } from '../parts/Static'
 import { p } from '../parts/Utils'
 import Bar from '../parts/Bar'
@@ -13,13 +12,13 @@ import Link from 'next/Link'
 
 let algnames = ['NBSVM', 'BERT']
 let algfiles = [
-  'nbsvm_lime_grouped_pretty.json',
-  'bert_lime_grouped_pretty.json',
+  'nbsvm_lime_500_prototype_pretty.json',
+  'bert_lime_500_prototype_pretty.json',
   'nbsvm_lime_grouped_pretty_word.json',
 ]
 let data_keys = [
-  ['nbsvm_data', 'nbsvm_lime_grouped_pretty.json', 'NBSVM'],
-  ['bert_data', 'bert_lime_grouped_pretty.json', 'BERT'],
+  ['nbsvm_data', 'nbsvm_lime_500_grouped_pretty.json', 'NBSVM'],
+  ['bert_data', 'bert_lime_500_prototype_pretty.json', 'BERT'],
 ]
 
 let linkPrefix = process.env.BACKEND_URL
@@ -59,6 +58,10 @@ class MyApp extends App {
               new_r.index = i
               new_r.author = nd[i].author
               new_r.date = nd[i].date
+              new_r.class =
+                r.class_probabilities[0] > r.class_probabilities[1]
+                  ? 'neg'
+                  : 'pos'
               return new_r
             })
             let key = data_keys[0][0]
@@ -72,6 +75,10 @@ class MyApp extends App {
               new_r.index = i
               new_r.author = nd[i].author
               new_r.date = nd[i].date
+              new_r.class =
+                r.class_probabilities[0] > r.class_probabilities[1]
+                  ? 'neg'
+                  : 'pos'
               return new_r
             })
             let key = data_keys[1][0]
