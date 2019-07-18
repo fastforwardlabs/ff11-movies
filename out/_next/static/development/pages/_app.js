@@ -3229,389 +3229,65 @@ var adjectives = ['Aristotelian', 'Arthurian', 'Bohemian', 'Brethren', 'Mosaic',
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "info", function() { return info; });
 var info = [{
-  Title: 'Thirst',
-  Year: '2009',
+  Title: 'The Shepherd',
+  Year: '2008',
   Rated: 'R',
-  Released: '30 Apr 2009',
-  Runtime: '135 min',
-  Genre: 'Drama, Horror, Romance',
-  Director: 'Chan-wook Park',
-  Writer: 'Émile Zola (inspired by "Thérèse Raquin"), Chan-wook Park (screenplay by), Seo-kyeong Jeong (screenplay by)',
-  Actors: 'Kang-ho Song, Hee-jin Choi, Dong-soo Seo, Hwa-ryong Lee',
-  Plot: 'Through a failed medical experiment, a priest is stricken with vampirism and is forced to abandon his ascetic ways.',
-  Language: 'Korean, English, French',
-  Country: 'South Korea, USA',
-  Awards: '12 wins & 18 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNDgwODY0MjM3OV5BMl5BanBnXkFtZTcwNzk3MTY2Mg@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.2/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '81%'
-  }, {
-    Source: 'Metacritic',
-    Value: '73/100'
-  }],
-  Metascore: '73',
-  imdbRating: '7.2',
-  imdbVotes: '37,525',
-  imdbID: 'tt0762073',
-  Type: 'movie',
-  DVD: '17 Nov 2009',
-  BoxOffice: '$296,441',
-  Production: 'Focus Features',
-  Website: 'http://www.thirstmovie.com/',
-  Response: 'True',
-  og_id: 'tt0762073'
-}, {
-  Title: 'Blade',
-  Year: '1998',
-  Rated: 'R',
-  Released: '21 Aug 1998',
-  Runtime: '120 min',
-  Genre: 'Action, Horror, Sci-Fi',
-  Director: 'Stephen Norrington',
-  Writer: 'David S. Goyer',
-  Actors: "Wesley Snipes, Stephen Dorff, Kris Kristofferson, N'Bushe Wright",
-  Plot: 'A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires.',
-  Language: 'English, Russian, Serbian',
-  Country: 'USA',
-  Awards: '4 wins & 8 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTQ4MzkzNjcxNV5BMl5BanBnXkFtZTcwNzk4NTU0Mg@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.1/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '54%'
-  }, {
-    Source: 'Metacritic',
-    Value: '45/100'
-  }],
-  Metascore: '45',
-  imdbRating: '7.1',
-  imdbVotes: '224,968',
-  imdbID: 'tt0120611',
-  Type: 'movie',
-  DVD: '22 Dec 1998',
-  BoxOffice: 'N/A',
-  Production: 'New Line Cinema',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0120611'
-}, {
-  Title: 'Anywhere But Here',
-  Year: '1999',
-  Rated: 'PG-13',
-  Released: '12 Nov 1999',
-  Runtime: '114 min',
-  Genre: 'Comedy, Drama',
-  Director: 'Wayne Wang',
-  Writer: 'Mona Simpson (book), Alvin Sargent (screenplay)',
-  Actors: 'Susan Sarandon, Natalie Portman, Hart Bochner, Eileen Ryan',
-  Plot: 'A mother and daughter search for success in Beverly Hills.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'Nominated for 1 Golden Globe. Another 3 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMmRhMGY4Y2QtYTdkOS00MzM2LWE1N2YtZjA5MDQzZmI2MWNjXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.2/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '64%'
-  }, {
-    Source: 'Metacritic',
-    Value: '59/100'
-  }],
-  Metascore: '59',
-  imdbRating: '6.2',
-  imdbVotes: '16,063',
-  imdbID: 'tt0149691',
-  Type: 'movie',
-  DVD: '02 May 2000',
-  BoxOffice: 'N/A',
-  Production: 'Twentieth Century Fox Home Entertainment',
-  Website: 'http://www.foxmovies.com/anywherebuthere',
-  Response: 'True',
-  og_id: 'tt0149691'
-}, {
-  Title: "Don't Look in the Basement",
-  Year: '1973',
-  Rated: 'R',
-  Released: '01 Sep 1973',
-  Runtime: '89 min',
-  Genre: 'Horror, Thriller',
-  Director: 'S.F. Brownrigg',
-  Writer: 'Tim Pope',
-  Actors: 'Bill McGhee, Jessie Lee Fulton, Robert Dracup, Harryette Warren',
-  Plot: 'A young psychiatric nurse goes to work at a lonesome asylum following a murder. There, she experiences varying degrees of torment from the patients.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNzU3NGUxNjUtYzE1Yy00OTNhLTgwZGMtYmVkMWVlN2RiNTYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '5.2/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '5.2',
-  imdbVotes: '2,531',
-  imdbID: 'tt0069994',
-  Type: 'movie',
-  DVD: '16 Dec 2014',
-  BoxOffice: 'N/A',
-  Production: 'VCI Entertainment',
-  Website: 'http://www.vcientertainment.com/Film-Categories?product_id=235',
-  Response: 'True',
-  og_id: 'tt0069994'
-}, {
-  Title: 'Driving Lessons',
-  Year: '2006',
-  Rated: 'PG-13',
-  Released: '13 Oct 2006',
-  Runtime: '98 min',
-  Genre: 'Comedy, Drama',
-  Director: 'Jeremy Brock',
-  Writer: 'Jeremy Brock',
-  Actors: 'Rupert Grint, Fay Cohen, Ruby Mortlock, Don Wetherhead',
-  Plot: 'A coming of age story about a shy teenage boy trying to escape from the influence of his domineering mother. His world changes when he begins to work for a retired actress.',
-  Language: 'English',
-  Country: 'UK',
-  Awards: '3 wins & 2 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTg4NzE5MDE3Ml5BMl5BanBnXkFtZTcwMDgxNjgzMQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.8/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '48%'
-  }, {
-    Source: 'Metacritic',
-    Value: '56/100'
-  }],
-  Metascore: '56',
-  imdbRating: '6.8',
-  imdbVotes: '10,286',
-  imdbID: 'tt0446687',
-  Type: 'movie',
-  DVD: '03 Jul 2007',
-  BoxOffice: 'N/A',
-  Production: 'Sony Pictures Classics',
-  Website: 'http://www.sonyclassics.com/drivinglessons/',
-  Response: 'True',
-  og_id: 'tt0446687'
-}, {
-  Title: 'Christmas in Connecticut',
-  Year: '1945',
-  Rated: 'Not Rated',
-  Released: '11 Aug 1945',
-  Runtime: '101 min',
-  Genre: 'Comedy, Romance',
-  Director: 'Peter Godfrey',
-  Writer: 'Lionel Houser (screenplay), Adele Comandini (screenplay), Aileen Hamilton (story)',
-  Actors: 'Barbara Stanwyck, Dennis Morgan, Sydney Greenstreet, Reginald Gardiner',
-  Plot: 'A food writer who has lied about being the perfect housewife must try to cover her deception when her boss and a returning war hero invite themselves to her home for a traditional family Christmas.',
-  Language: 'English, German',
-  Country: 'USA',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNDkyNmU2MzgtZWMyMy00YzM3LWI4ODYtMTNiYzA2MWQ1YTc2XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.4/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '88%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.4',
-  imdbVotes: '6,884',
-  imdbID: 'tt0037595',
-  Type: 'movie',
-  DVD: '08 Nov 2005',
-  BoxOffice: 'N/A',
-  Production: 'Warner Bros. Pictures',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0037595'
-}, {
-  Title: 'The Wind and the Lion',
-  Year: '1975',
-  Rated: 'PG',
-  Released: '26 Jun 1975',
-  Runtime: '119 min',
-  Genre: 'Action, Adventure, Drama',
-  Director: 'John Milius',
-  Writer: 'John Milius',
-  Actors: 'Sean Connery, Candice Bergen, Brian Keith, John Huston',
-  Plot: 'In early twentieth century Morocco, a Sharif kidnaps an American woman and her children, forcing President Theodore Roosevelt to send in forces to conduct a rescue mission.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'Nominated for 2 Oscars. Another 4 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYTNhODI4NWYtYzc1Zi00OGIxLTk5ZWUtOTA0MDZkNDM2OTA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.0/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '75%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.0',
-  imdbVotes: '7,488',
-  imdbID: 'tt0073906',
-  Type: 'movie',
-  DVD: '06 Jan 2004',
-  BoxOffice: 'N/A',
-  Production: 'MGM Home Entertainment',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0073906'
-}, {
-  Title: 'Hair',
-  Year: '1979',
-  Rated: 'PG',
-  Released: '09 May 1979',
-  Runtime: '121 min',
-  Genre: 'Comedy, Drama, Musical, Romance, War',
-  Director: 'Milos Forman',
-  Writer: 'Gerome Ragni (musical book), James Rado (musical book), Michael Weller',
-  Actors: "John Savage, Treat Williams, Beverly D'Angelo, Annie Golden",
-  Plot: "Claude Bukowski leaves the family ranch in Oklahoma for New York where he is rapidly embraced into the hippie group of youngsters led by Berger, yet he's already been drafted. He soon falls in love with Sheila Franklin, a rich girl but still a rebel inside.",
-  Language: 'English',
-  Country: 'West Germany, USA',
-  Awards: 'Nominated for 2 Golden Globes. Another 2 wins & 2 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BODUzNjUzNzIzM15BMl5BanBnXkFtZTcwMjc4MjkzNA@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.6/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '89%'
-  }, {
-    Source: 'Metacritic',
-    Value: '68/100'
-  }],
-  Metascore: '68',
-  imdbRating: '7.6',
-  imdbVotes: '32,079',
-  imdbID: 'tt0079261',
-  Type: 'movie',
-  DVD: '15 May 2001',
-  BoxOffice: 'N/A',
-  Production: 'United Artists',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0079261'
-}, {
-  Title: 'Armored',
-  Year: '2009',
-  Rated: 'PG-13',
-  Released: '04 Dec 2009',
-  Runtime: '88 min',
+  Released: '04 Mar 2008',
+  Runtime: '95 min',
   Genre: 'Action, Crime, Thriller',
-  Director: 'Nimród Antal',
-  Writer: 'James V. Simpson',
-  Actors: 'Matt Dillon, Jean Reno, Laurence Fishburne, Amaury Nolasco',
-  Plot: 'A newbie guard for an armored truck company is coerced by his veteran coworkers to steal a truck containing $42 million. But a wrinkle in their supposedly foolproof plan divides the group, leading to a potentially deadly resolution.',
+  Director: 'Isaac Florentine',
+  Writer: 'Joe Gayton, Cade Courtley',
+  Actors: 'Jean-Claude Van Damme, Stephen Lord, Natalie J. Robb, Gary McDonald',
+  Plot: 'A former New Orleans cop battles drug cartels and ex-Army Special Forces who are smuggling drugs from Mexico into U.S. through a Texas border town.',
   Language: 'English',
   Country: 'USA',
   Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTgyOTI4NzAyMF5BMl5BanBnXkFtZTcwOTk3Mjg3Mg@@._V1_SX300.jpg',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BODQ1Nzc2YzYtYTY0ZC00ZjQwLTljZDMtMDcyNTc0NDY5YTYyXkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
     Value: '5.7/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '40%'
-  }, {
-    Source: 'Metacritic',
-    Value: '50/100'
   }],
-  Metascore: '50',
+  Metascore: 'N/A',
   imdbRating: '5.7',
-  imdbVotes: '28,555',
-  imdbID: 'tt0913354',
+  imdbVotes: '6,030',
+  imdbID: 'tt0827521',
   Type: 'movie',
-  DVD: '16 Mar 2010',
-  BoxOffice: '$15,988,876',
-  Production: 'Sony/Screen Gems',
-  Website: 'http://www.armoredmovie.com/?hs308=AMD028',
-  Response: 'True',
-  og_id: 'tt0913354'
-}, {
-  Title: 'The Kid',
-  Year: '2000',
-  Rated: 'PG',
-  Released: '07 Jul 2000',
-  Runtime: '104 min',
-  Genre: 'Comedy, Family, Fantasy',
-  Director: 'Jon Turteltaub',
-  Writer: 'Audrey Wells',
-  Actors: 'Bruce Willis, Spencer Breslin, Emily Mortimer, Lily Tomlin',
-  Plot: 'An unhappy and disliked image consultant gets a second shot at life when he is mysteriously confronted by an eight-year-old version of himself.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: '1 win & 3 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYTYwM2JmNzgtNzVjMi00NzQ4LTk2MDQtOTE4N2U0ODU0YjYwXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.1/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '49%'
-  }, {
-    Source: 'Metacritic',
-    Value: '45/100'
-  }],
-  Metascore: '45',
-  imdbRating: '6.1',
-  imdbVotes: '38,001',
-  imdbID: 'tt0219854',
-  Type: 'movie',
-  DVD: '23 Jan 2003',
-  BoxOffice: '$68,493,389',
-  Production: 'Disney',
-  Website: 'http://disney.go.com/disneypictures/thekid/homepage.html',
-  Response: 'True',
-  og_id: 'tt0219854'
-}, {
-  Title: 'Following',
-  Year: '1998',
-  Rated: 'R',
-  Released: '05 Nov 1999',
-  Runtime: '69 min',
-  Genre: 'Crime, Mystery, Thriller',
-  Director: 'Christopher Nolan',
-  Writer: 'Christopher Nolan',
-  Actors: 'Jeremy Theobald, Alex Haw, Lucy Russell, John Nolan',
-  Plot: 'A young writer who follows strangers for material meets a thief who takes him under his wing.',
-  Language: 'English',
-  Country: 'UK',
-  Awards: '5 wins & 4 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMWZmNzk5M2QtOTM3MC00ZTg1LWJlYWMtMGIxZWVjODUwNTEzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.6/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '80%'
-  }, {
-    Source: 'Metacritic',
-    Value: '60/100'
-  }],
-  Metascore: '60',
-  imdbRating: '7.6',
-  imdbVotes: '77,869',
-  imdbID: 'tt0154506',
-  Type: 'movie',
-  DVD: '11 Dec 2001',
+  DVD: '04 Mar 2008',
   BoxOffice: 'N/A',
-  Production: 'IFC',
-  Website: 'N/A',
+  Production: 'Sony Pictures Entertainment',
+  Website: 'http://www.sonypictures.com/homevideo/catalog/catalogDetail_DVD043396227859.html',
   Response: 'True',
-  og_id: 'tt0154506'
+  og_id: 'tt0827521'
+}, {
+  Title: 'The Aztec Mummy Against the Humanoid Robot',
+  Year: '1958',
+  Rated: 'Approved',
+  Released: 'N/A',
+  Runtime: '65 min',
+  Genre: 'Adventure, Horror, Sci-Fi',
+  Director: 'Rafael Portillo',
+  Writer: 'Guillermo Calderón (original story), Alfredo Salazar (original story), Alfredo Salazar (adaptation)',
+  Actors: 'Ramón Gay, Rosita Arenas, Crox Alvarado, Luis Aceves Castañeda',
+  Plot: 'A mad doctor builds a robot in order to steal a valuable Aztec treasure from a tomb guarded by a centuries-old living mummy.',
+  Language: 'Spanish',
+  Country: 'Mexico',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BYTAyODI0N2YtYzMxMi00MDZlLTk4MjctOWQ3YjQ3NTIwZWVjXkEyXkFqcGdeQXVyNTc4Njg5MjA@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '2.3/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '2.3',
+  imdbVotes: '2,227',
+  imdbID: 'tt0050717',
+  Type: 'movie',
+  DVD: '23 Jan 2007',
+  BoxOffice: 'N/A',
+  Production: 'Clasa-Mohme Inc.',
+  Website: 'http://www.vcientertainment.com/Film-Categories/LA-MOMIA-AZTECA-CONTRA-EL-ROBOT-HUMANO',
+  Response: 'True',
+  og_id: 'tt0050717'
 }, {
   Title: "Ocean's Twelve",
   Year: '2004',
@@ -3639,7 +3315,7 @@ var info = [{
   }],
   Metascore: '58',
   imdbRating: '6.5',
-  imdbVotes: '329,778',
+  imdbVotes: '332,529',
   imdbID: 'tt0349903',
   Type: 'movie',
   DVD: '12 Apr 2005',
@@ -3648,72 +3324,6 @@ var info = [{
   Website: 'http://oceans12.warnerbros.com/',
   Response: 'True',
   og_id: 'tt0349903'
-}, {
-  Title: 'Closet Land',
-  Year: '1991',
-  Rated: 'R',
-  Released: '06 Mar 1991',
-  Runtime: '89 min',
-  Genre: 'Drama, Thriller',
-  Director: 'Radha Bharadwaj',
-  Writer: 'Radha Bharadwaj',
-  Actors: 'Alan Rickman, Madeleine Stowe',
-  Plot: "In a drab police state, a children's book writer is interrogated by a sadistic secret policeman under suspicion of embedding anti-government messages in her stories.",
-  Language: 'English',
-  Country: 'USA',
-  Awards: '1 win & 1 nomination.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTM1MjMxOTQ4N15BMl5BanBnXkFtZTcwNzI1MzMzMQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.2/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '44%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.2',
-  imdbVotes: '2,435',
-  imdbID: 'tt0101597',
-  Type: 'movie',
-  DVD: '12 Sep 1991',
-  BoxOffice: 'N/A',
-  Production: 'Media Home Entertainment',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0223005'
-}, {
-  Title: 'Death in Venice',
-  Year: '1971',
-  Rated: 'GP',
-  Released: '05 Mar 1971',
-  Runtime: '130 min',
-  Genre: 'Drama',
-  Director: 'Luchino Visconti',
-  Writer: 'Thomas Mann (novel), Luchino Visconti (screenplay), Nicola Badalucco (screenplay)',
-  Actors: 'Dirk Bogarde, Romolo Valli, Mark Burns, Nora Ricci',
-  Plot: 'While recovering in Venice, a sickly composer becomes dangerously fixated with a teenage boy.',
-  Language: 'English, Italian, Polish, French, Russian, German',
-  Country: 'Italy, France, USA',
-  Awards: 'Nominated for 1 Oscar. Another 18 wins & 6 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYjUwNDc3OWItODI5Yy00NzdkLTgxMzgtZGE5NWQ4OWQ3MTEzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.5/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '65%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.5',
-  imdbVotes: '16,430',
-  imdbID: 'tt0067445',
-  Type: 'movie',
-  DVD: '17 Feb 2004',
-  BoxOffice: 'N/A',
-  Production: 'WARNER BROTHERS PICTURES',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0067445'
 }, {
   Title: 'Angels & Demons',
   Year: '2009',
@@ -3741,7 +3351,7 @@ var info = [{
   }],
   Metascore: '48',
   imdbRating: '6.7',
-  imdbVotes: '251,902',
+  imdbVotes: '253,321',
   imdbID: 'tt0808151',
   Type: 'movie',
   DVD: '24 Nov 2009',
@@ -3750,102 +3360,6 @@ var info = [{
   Website: 'http://www.angelsanddemons.com/',
   Response: 'True',
   og_id: 'tt0808151'
-}, {
-  Title: 'An American Werewolf in Paris',
-  Year: '1997',
-  Rated: 'R',
-  Released: '25 Dec 1997',
-  Runtime: '105 min',
-  Genre: 'Comedy, Fantasy, Horror, Thriller',
-  Director: 'Anthony Waller',
-  Writer: 'John Landis (characters in An American Werewolf in London), Tim Burns, Tom Stern, Anthony Waller',
-  Actors: 'Tom Everett Scott, Julie Delpy, Vince Vieluf, Phil Buckman',
-  Plot: 'An American man unwittingly gets involved with French werewolves who have developed a serum allowing them to transform at will.',
-  Language: 'English, French, German',
-  Country: 'UK, Netherlands, Luxembourg, USA, France, Germany',
-  Awards: '3 wins & 1 nomination.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BN2U1YTU5MzEtNWJmNi00MDYyLTkwYjctNGMwZDZjY2UwYTQ4XkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '5.1/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '7%'
-  }, {
-    Source: 'Metacritic',
-    Value: '31/100'
-  }],
-  Metascore: '31',
-  imdbRating: '5.1',
-  imdbVotes: '21,569',
-  imdbID: 'tt0118604',
-  Type: 'movie',
-  DVD: '21 Jul 1998',
-  BoxOffice: 'N/A',
-  Production: 'Hollywood Pictures',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0118604'
-}, {
-  Title: 'Doctor Who',
-  Year: '2005–',
-  Rated: 'TV-PG',
-  Released: '17 Mar 2006',
-  Runtime: '45 min',
-  Genre: 'Adventure, Drama, Family, Mystery, Sci-Fi',
-  Director: 'N/A',
-  Writer: 'Sydney Newman',
-  Actors: 'Matt Smith, David Tennant, Peter Capaldi, Jenna Coleman',
-  Plot: 'The further adventures in time and space of the alien adventurer known as the Doctor and their companions from planet Earth.',
-  Language: 'English',
-  Country: 'UK, Canada',
-  Awards: '110 wins & 174 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNDY1YmZhZjEtY2E3NC00M2VkLThlZmUtODczMmNiZjMxMWRhXkEyXkFqcGdeQXVyNzA5NTYxMDg@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '8.7/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '8.7',
-  imdbVotes: '182,614',
-  imdbID: 'tt0436992',
-  Type: 'series',
-  totalSeasons: '12',
-  Response: 'True',
-  og_id: 'tt0436992'
-}, {
-  Title: 'Valley Girl',
-  Year: '1983',
-  Rated: 'R',
-  Released: '29 Apr 1983',
-  Runtime: '99 min',
-  Genre: 'Comedy, Romance',
-  Director: 'Martha Coolidge',
-  Writer: 'Andrew Lane, Wayne Crawford',
-  Actors: 'Nicolas Cage, Deborah Foreman, Elizabeth Daily, Michael Bowen',
-  Plot: 'Julie, a girl from the valley, meets Randy, a punk from the city. They are from different worlds and find love. Somehow they need to stay together in spite of her trendy, shallow friends.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMjA4NzI5OTgyMV5BMl5BanBnXkFtZTgwODgwNjU1MDE@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.4/10'
-  }, {
-    Source: 'Metacritic',
-    Value: '66/100'
-  }],
-  Metascore: '66',
-  imdbRating: '6.4',
-  imdbVotes: '11,806',
-  imdbID: 'tt0086525',
-  Type: 'movie',
-  DVD: '01 Mar 2005',
-  BoxOffice: 'N/A',
-  Production: 'MGM Home Entertainment',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0086525'
 }, {
   Title: 'Man with the Screaming Brain',
   Year: '2005',
@@ -3880,74 +3394,38 @@ var info = [{
   Response: 'True',
   og_id: 'tt0384312'
 }, {
-  Title: 'eXistenZ',
-  Year: '1999',
+  Title: 'Dolemite',
+  Year: '1975',
   Rated: 'R',
-  Released: '23 Apr 1999',
-  Runtime: '97 min',
-  Genre: 'Horror, Sci-Fi, Thriller',
-  Director: 'David Cronenberg',
-  Writer: 'David Cronenberg',
-  Actors: 'Jennifer Jason Leigh, Jude Law, Ian Holm, Willem Dafoe',
-  Plot: 'A game designer on the run from assassins must play her latest virtual reality creation with a marketing trainee to determine if the game has been damaged.',
-  Language: 'English',
-  Country: 'Canada, UK, France',
-  Awards: '3 wins & 7 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMmU1MTJkYWItMzM5Ny00NDgxLTgxOGEtNTkzNDdkZjkwNGI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.8/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '74%'
-  }, {
-    Source: 'Metacritic',
-    Value: '68/100'
-  }],
-  Metascore: '68',
-  imdbRating: '6.8',
-  imdbVotes: '87,464',
-  imdbID: 'tt0120907',
-  Type: 'movie',
-  DVD: '19 Oct 1999',
-  BoxOffice: 'N/A',
-  Production: 'Miramax',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0120907'
-}, {
-  Title: 'Rock Star',
-  Year: '2001',
-  Rated: 'R',
-  Released: '07 Sep 2001',
-  Runtime: '105 min',
-  Genre: 'Drama, Music',
-  Director: 'Stephen Herek',
-  Writer: 'John Stockwell',
-  Actors: 'Mark Wahlberg, Jennifer Aniston, Dominic West, Jason Bonham',
-  Plot: 'Lead singer of a tribute band becomes lead singer of the real band he idolizes.',
+  Released: '26 Apr 1975',
+  Runtime: '90 min',
+  Genre: 'Action, Comedy, Crime',
+  Director: "D'Urville Martin",
+  Writer: 'Jerry Jones (screenplay), Rudy Ray Moore (original adaptation)',
+  Actors: "Rudy Ray Moore, D'Urville Martin, Jerry Jones, Lady Reed",
+  Plot: 'Dolemite is a pimp who was set up by Willie Greene and the cops, who have planted drugs, stolen furs, and guns in his trunk and got him sentenced to 20 years in jail. One day, Queen B and a...',
   Language: 'English',
   Country: 'USA',
-  Awards: '1 nomination.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMzAxNzNmMzMtYTU4Ni00Y2IxLTk4MGEtZGExNmFiMzBjN2MyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMDc3MGIyZjktNGRhNS00MGMwLTllMGItZDkyNzMxNzYxZjUxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
-    Value: '6.3/10'
+    Value: '5.9/10'
   }, {
-    Source: 'Metacritic',
-    Value: '54/100'
+    Source: 'Rotten Tomatoes',
+    Value: '64%'
   }],
-  Metascore: '54',
-  imdbRating: '6.3',
-  imdbVotes: '38,675',
-  imdbID: 'tt0202470',
+  Metascore: 'N/A',
+  imdbRating: '5.9',
+  imdbVotes: '2,836',
+  imdbID: 'tt0072895',
   Type: 'movie',
-  DVD: '18 Dec 2001',
+  DVD: '27 Apr 1999',
   BoxOffice: 'N/A',
-  Production: 'N/A',
+  Production: 'Xenon',
   Website: 'N/A',
   Response: 'True',
-  og_id: 'tt0202470'
+  og_id: 'tt0072895'
 }, {
   Title: "Heaven's Gate",
   Year: '1980',
@@ -3975,7 +3453,7 @@ var info = [{
   }],
   Metascore: '57',
   imdbRating: '6.8',
-  imdbVotes: '11,975',
+  imdbVotes: '12,286',
   imdbID: 'tt0080855',
   Type: 'movie',
   DVD: '15 May 2001',
@@ -4008,7 +3486,7 @@ var info = [{
   }],
   Metascore: 'N/A',
   imdbRating: '5.4',
-  imdbVotes: '3,819',
+  imdbVotes: '3,872',
   imdbID: 'tt0166252',
   Type: 'movie',
   DVD: '23 Nov 1999',
@@ -4027,7 +3505,7 @@ var info = [{
   Director: 'Stanley Kubrick',
   Writer: 'Stanley Kubrick (screenplay), Arthur C. Clarke (screenplay)',
   Actors: 'Keir Dullea, Gary Lockwood, William Sylvester, Daniel Richter',
-  Plot: 'After discovering a mysterious artifact buried beneath the lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer HAL 9000.',
+  Plot: 'After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.',
   Language: 'English, Russian',
   Country: 'UK, USA',
   Awards: 'Won 1 Oscar. Another 13 wins & 10 nominations.',
@@ -4044,7 +3522,7 @@ var info = [{
   }],
   Metascore: '82',
   imdbRating: '8.3',
-  imdbVotes: '537,872',
+  imdbVotes: '543,796',
   imdbID: 'tt0062622',
   Type: 'movie',
   DVD: '25 Aug 1998',
@@ -4053,234 +3531,6 @@ var info = [{
   Website: 'https://www.warnerbros.com/2001-space-odyssey',
   Response: 'True',
   og_id: 'tt0062622'
-}, {
-  Title: 'The King of Queens',
-  Year: '1998–2007',
-  Rated: 'TV-PG',
-  Released: '21 Sep 1998',
-  Runtime: '22 min',
-  Genre: 'Comedy',
-  Director: 'N/A',
-  Writer: 'David Litt, Michael J. Weithorn',
-  Actors: 'Kevin James, Leah Remini, Jerry Stiller, Victor Williams',
-  Plot: "Delivery man Doug Heffernan has a good life: He has a pretty wife (Carrie), a big television, and friends with which to watch it. Then Carrie's goofy and annoying father Arthur moves in with them.",
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'Nominated for 1 Primetime Emmy. Another 14 wins & 4 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTI4NzcwODk1M15BMl5BanBnXkFtZTYwNjkxNTc2._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.3/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.3',
-  imdbVotes: '69,240',
-  imdbID: 'tt0165581',
-  Type: 'series',
-  totalSeasons: '9',
-  Response: 'True',
-  og_id: 'tt0165581'
-}, {
-  Title: "L'auberge espagnole",
-  Year: '2002',
-  Rated: 'R',
-  Released: '20 Jun 2003',
-  Runtime: '122 min',
-  Genre: 'Comedy, Drama, Romance',
-  Director: 'Cédric Klapisch',
-  Writer: 'Cédric Klapisch',
-  Actors: 'Romain Duris, Judith Godrèche, Audrey Tautou, Cécile de France',
-  Plot: 'A strait-laced French student moves into an apartment in Barcelona with a cast of six other characters from all over Europe. Together, they speak the international language of love and friendship.',
-  Language: 'French, Spanish, English, Catalan, Danish, German, Italian',
-  Country: 'France, Spain',
-  Awards: '8 wins & 9 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYzZkMWY5M2ItOTA1Yi00MWQ0LWE4OTgtNWY1YmE0NjQyOTdlXkEyXkFqcGdeQXVyMjc4MjcxNzI@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.3/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '76%'
-  }, {
-    Source: 'Metacritic',
-    Value: '65/100'
-  }],
-  Metascore: '65',
-  imdbRating: '7.3',
-  imdbVotes: '37,509',
-  imdbID: 'tt0283900',
-  Type: 'movie',
-  DVD: '23 Dec 2003',
-  BoxOffice: '$3,752,818',
-  Production: 'Fox Searchlight Pictures',
-  Website: 'http://www.foxsearchlight.com/lauberge',
-  Response: 'True',
-  og_id: 'tt0283900'
-}, {
-  Title: 'Nurse Betty',
-  Year: '2000',
-  Rated: 'R',
-  Released: '08 Sep 2000',
-  Runtime: '110 min',
-  Genre: 'Comedy, Crime, Drama, Romance',
-  Director: 'Neil LaBute',
-  Writer: 'John C. Richards (story), John C. Richards (screenplay), James Flamberg (screenplay)',
-  Actors: 'Morgan Freeman, Renée Zellweger, Chris Rock, Greg Kinnear',
-  Plot: "Comedy about a widow's post-traumatic obsession with a soap star.",
-  Language: 'English, Spanish',
-  Country: 'Germany, USA',
-  Awards: 'Won 1 Golden Globe. Another 4 wins & 14 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYjU2OGVhYjgtYWE3Zi00MzM5LWEwYjgtYjQxNzkxNzhhZGFjXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.2/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '83%'
-  }, {
-    Source: 'Metacritic',
-    Value: '69/100'
-  }],
-  Metascore: '69',
-  imdbRating: '6.2',
-  imdbVotes: '31,804',
-  imdbID: 'tt0171580',
-  Type: 'movie',
-  DVD: '03 Apr 2001',
-  BoxOffice: 'N/A',
-  Production: 'USA Films',
-  Website: 'http://www.nursebetty.com',
-  Response: 'True',
-  og_id: 'tt0171580'
-}, {
-  Title: 'See No Evil',
-  Year: '2006',
-  Rated: 'R',
-  Released: '19 May 2006',
-  Runtime: '84 min',
-  Genre: 'Action, Horror, Thriller',
-  Director: 'Gregory Dark',
-  Writer: 'Dan Madigan',
-  Actors: 'Glenn Jacobs, Christina Vidal, Michael J. Pagan, Samantha Noble',
-  Plot: "A group of delinquents are sent to clean the Blackwell Hotel. Little do they know reclusive psychopath Jacob Goodnight has holed away in the rotting hotel. When one of the teens is captured, those who remain - a group that includes the cop who put a bullet in Goodnight's head four years ago - band together to survive against the brutal killer.",
-  Language: 'English',
-  Country: 'USA, Australia',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTg3MTgxNDI1MV5BMl5BanBnXkFtZTcwMTkzMjYzMQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '5.1/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '9%'
-  }, {
-    Source: 'Metacritic',
-    Value: '17/100'
-  }],
-  Metascore: '17',
-  imdbRating: '5.1',
-  imdbVotes: '24,311',
-  imdbID: 'tt0437179',
-  Type: 'movie',
-  DVD: '28 Nov 2006',
-  BoxOffice: '$15,019,200',
-  Production: 'Lionsgate Films',
-  Website: 'http://www.seenoevilthemovie.com/',
-  Response: 'True',
-  og_id: 'tt0437179'
-}, {
-  Title: 'The Egyptian',
-  Year: '1954',
-  Rated: 'Approved',
-  Released: '17 Dec 1954',
-  Runtime: '139 min',
-  Genre: 'Biography, Drama, History',
-  Director: 'Michael Curtiz',
-  Writer: 'Philip Dunne (screen play), Casey Robinson (screen play), Mika Waltari (novel)',
-  Actors: 'Jean Simmons, Victor Mature, Gene Tierney, Michael Wilding',
-  Plot: "In ancient Egypt, a poor orphan becomes a genial physician and is eventually appointed at the Pharaoh's court where he witnesses palace intrigues and learns dangerous royal secrets.",
-  Language: 'English, Greek',
-  Country: 'USA',
-  Awards: 'Nominated for 1 Oscar. Another 1 win.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNzE3N2Y4NzAtNzY1Yi00MTliLTkxNzEtNGZhM2EyYWQ0MTdmXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.6/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '6.6',
-  imdbVotes: '3,182',
-  imdbID: 'tt0046949',
-  Type: 'movie',
-  DVD: 'N/A',
-  BoxOffice: 'N/A',
-  Production: '20th Century Fox Film Corporation',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0046949'
-}, {
-  Title: 'The Cell',
-  Year: '2000',
-  Rated: 'R',
-  Released: '18 Aug 2000',
-  Runtime: '107 min',
-  Genre: 'Horror, Sci-Fi, Thriller',
-  Director: 'Tarsem Singh',
-  Writer: 'Mark Protosevich',
-  Actors: 'Jennifer Lopez, Colton James, Dylan Baker, Marianne Jean-Baptiste',
-  Plot: 'An F.B.I. Agent persuades a social worker, who is adept with a new experimental technology, to enter the mind of a comatose serial killer in order to learn where he has hidden his latest kidnap victim.',
-  Language: 'English',
-  Country: 'USA, Germany',
-  Awards: 'Nominated for 1 Oscar. Another 6 wins & 23 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMDY1NmVmOTItYWU0NC00OGU2LWIyNTctYTU3NTY3ZjJkOWJjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.3/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '45%'
-  }, {
-    Source: 'Metacritic',
-    Value: '40/100'
-  }],
-  Metascore: '40',
-  imdbRating: '6.3',
-  imdbVotes: '89,303',
-  imdbID: 'tt0209958',
-  Type: 'movie',
-  DVD: '19 Dec 2000',
-  BoxOffice: 'N/A',
-  Production: 'New Line Cinema',
-  Website: 'http://www.cellmovie.com',
-  Response: 'True',
-  og_id: 'tt0209958'
-}, {
-  Title: 'Gilmore Girls',
-  Year: '2000–2007',
-  Rated: 'TV-PG',
-  Released: '05 Oct 2000',
-  Runtime: '44 min',
-  Genre: 'Comedy, Drama',
-  Director: 'N/A',
-  Writer: 'Amy Sherman-Palladino',
-  Actors: 'Lauren Graham, Alexis Bledel, Keiko Agena, Scott Patterson',
-  Plot: 'A dramedy centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.',
-  Language: 'English',
-  Country: 'USA',
-  Awards: 'Nominated for 1 Golden Globe. Another 22 wins & 81 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTQ3NDA1ZWYtYjBmMC00NmJjLWI1NjgtYjg2NDhmMTY2YWQ4XkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '8.2/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '8.2',
-  imdbVotes: '86,257',
-  imdbID: 'tt0238784',
-  Type: 'series',
-  totalSeasons: '7',
-  Response: 'True',
-  og_id: 'tt0238784'
 }, {
   Title: 'Northanger Abbey',
   Year: '1987',
@@ -4311,75 +3561,6 @@ var info = [{
   Response: 'True',
   og_id: 'tt0091649'
 }, {
-  Title: 'The Box',
-  Year: '2009',
-  Rated: 'PG-13',
-  Released: '06 Nov 2009',
-  Runtime: '115 min',
-  Genre: 'Drama, Fantasy, Mystery, Sci-Fi, Thriller',
-  Director: 'Richard Kelly',
-  Writer: 'Richard Kelly (screenplay), Richard Matheson (short story "Button,  Button")',
-  Actors: 'Cameron Diaz, James Marsden, Frank Langella, James Rebhorn',
-  Plot: "A small wooden box arrives on the doorstep of a married couple, who know that opening it will grant them a million dollars and kill someone they don't know.",
-  Language: 'English',
-  Country: 'USA',
-  Awards: '6 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTI4MDA5NjIwM15BMl5BanBnXkFtZTcwNTA2MjY0Mg@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '5.6/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '44%'
-  }, {
-    Source: 'Metacritic',
-    Value: '47/100'
-  }],
-  Metascore: '47',
-  imdbRating: '5.6',
-  imdbVotes: '84,465',
-  imdbID: 'tt0362478',
-  Type: 'movie',
-  DVD: '23 Feb 2010',
-  BoxOffice: '$114,882,598',
-  Production: 'Warner Bros. Pictures',
-  Website: 'http://thebox-movie.warnerbros.com/',
-  Response: 'True',
-  og_id: 'tt0362478'
-}, {
-  Title: 'Ali G Indahouse',
-  Year: '2002',
-  Rated: 'R',
-  Released: '22 Mar 2002',
-  Runtime: '85 min',
-  Genre: 'Comedy',
-  Director: 'Mark Mylod',
-  Writer: 'Sacha Baron Cohen, Dan Mazer',
-  Actors: 'Sacha Baron Cohen, Emilio Rivera, Gina La Piana, Dana de Celis',
-  Plot: "Ali G unwittingly becomes a pawn in the Chancellor's plot to overthrow the Prime Minister of Great Britain. However, Ali is embraced by the nation as a voice of the youth, making the PM and his government more popular than ever.",
-  Language: 'English, French, Spanish',
-  Country: 'France, UK, Germany',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTgxMTA5YmYtNTE0MC00Mzk1LWJkNTUtZjJiYzBjYjdlYTM4XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.2/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '56%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '6.2',
-  imdbVotes: '78,649',
-  imdbID: 'tt0284837',
-  Type: 'movie',
-  DVD: '02 Nov 2004',
-  BoxOffice: 'N/A',
-  Production: 'Universal Pictures',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0284953'
-}, {
   Title: "Captain Corelli's Mandolin",
   Year: '2001',
   Rated: 'R',
@@ -4406,7 +3587,7 @@ var info = [{
   }],
   Metascore: '36',
   imdbRating: '5.9',
-  imdbVotes: '31,072',
+  imdbVotes: '31,261',
   imdbID: 'tt0238112',
   Type: 'movie',
   DVD: '05 Feb 2002',
@@ -4415,39 +3596,6 @@ var info = [{
   Website: 'http://www.captain-corellis-mandolin.com',
   Response: 'True',
   og_id: 'tt0238112'
-}, {
-  Title: 'Unconditional Love',
-  Year: '2002',
-  Rated: 'PG-13',
-  Released: '23 Aug 2002',
-  Runtime: '124 min',
-  Genre: 'Comedy, Drama, Musical, Romance, Thriller',
-  Director: 'P.J. Hogan',
-  Writer: 'Jocelyn Moorhouse, P.J. Hogan',
-  Actors: 'Jonathan Pryce, Ashley Anne Ayer, Kaja Stiglic, Lisa Nicole Wilkerson',
-  Plot: 'After her husband unexpectedly leaves her, Grace Beasley (Kathy Bates) spontaneously travels to Great Britain to attend the funeral of Victor Fox, a singer she adored. There, she meets the ...',
-  Language: 'English',
-  Country: 'USA',
-  Awards: '1 nomination.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTIwNDU5MjEwOV5BMl5BanBnXkFtZTcwOTU3NjUyMQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.9/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '14%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '6.9',
-  imdbVotes: '3,402',
-  imdbID: 'tt0219374',
-  Type: 'movie',
-  DVD: '01 Jun 2004',
-  BoxOffice: 'N/A',
-  Production: 'New Line Cinema',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0219374'
 }, {
   Title: 'Nights in Rodanthe',
   Year: '2008',
@@ -4475,7 +3623,7 @@ var info = [{
   }],
   Metascore: '39',
   imdbRating: '6.0',
-  imdbVotes: '21,187',
+  imdbVotes: '21,256',
   imdbID: 'tt0956038',
   Type: 'movie',
   DVD: '10 Feb 2009',
@@ -4490,7 +3638,7 @@ var info = [{
   Rated: 'R',
   Released: '06 May 2005',
   Runtime: '108 min',
-  Genre: 'Horror, Mystery, Thriller',
+  Genre: 'Horror',
   Director: 'Jaume Collet-Serra',
   Writer: 'Charles Belden (story), Chad Hayes (screenplay), Carey W. Hayes (screenplay)',
   Actors: 'Elisha Cuthbert, Chad Michael Murray, Brian Van Holt, Paris Hilton',
@@ -4511,7 +3659,7 @@ var info = [{
   }],
   Metascore: '41',
   imdbRating: '5.3',
-  imdbVotes: '107,416',
+  imdbVotes: '107,950',
   imdbID: 'tt0397065',
   Type: 'movie',
   DVD: '25 Oct 2005',
@@ -4520,42 +3668,6 @@ var info = [{
   Website: 'http://houseofwaxmovie.warnerbros.com/',
   Response: 'True',
   og_id: 'tt0397065'
-}, {
-  Title: 'Accepted',
-  Year: '2006',
-  Rated: 'PG-13',
-  Released: '18 Aug 2006',
-  Runtime: '93 min',
-  Genre: 'Comedy',
-  Director: 'Steve Pink',
-  Writer: 'Adam Cooper (screenplay), Bill Collage (screenplay), Mark Perez (screenplay), Mark Perez (story)',
-  Actors: 'Justin Long, Jonah Hill, Adam Herschman, Columbus Short',
-  Plot: "A high school slacker who's rejected by every school he applies to opts to create his own institution of higher learning, the South Harmon Institute of Technology, on a rundown piece of property near his hometown.",
-  Language: 'English',
-  Country: 'USA',
-  Awards: '4 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTkzNzY5OTc3Nl5BMl5BanBnXkFtZTcwNjE4NDQzMQ@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.5/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '37%'
-  }, {
-    Source: 'Metacritic',
-    Value: '47/100'
-  }],
-  Metascore: '47',
-  imdbRating: '6.5',
-  imdbVotes: '116,153',
-  imdbID: 'tt0384793',
-  Type: 'movie',
-  DVD: '14 Nov 2006',
-  BoxOffice: '$36,300,285',
-  Production: 'Universal Pictures',
-  Website: 'http://www.acceptedmovie.com/',
-  Response: 'True',
-  og_id: 'tt0384793'
 }, {
   Title: 'Showtime',
   Year: '2002',
@@ -4583,7 +3695,7 @@ var info = [{
   }],
   Metascore: '32',
   imdbRating: '5.5',
-  imdbVotes: '57,464',
+  imdbVotes: '57,793',
   imdbID: 'tt0284490',
   Type: 'movie',
   DVD: '13 Aug 2002',
@@ -4592,102 +3704,6 @@ var info = [{
   Website: 'http://www2.warnerbros.com/showtime',
   Response: 'True',
   og_id: 'tt0284490'
-}, {
-  Title: 'Lost Horizon',
-  Year: '1973',
-  Rated: 'G',
-  Released: '17 Mar 1973',
-  Runtime: '150 min',
-  Genre: 'Adventure, Drama, Fantasy, Musical, Romance',
-  Director: 'Charles Jarrott',
-  Writer: 'Larry Kramer (screenplay), James Hilton (original novel)',
-  Actors: 'Peter Finch, Liv Ullmann, Sally Kellerman, George Kennedy',
-  Plot: 'While escaping war-torn China, a group of Europeans crash in the Himalayas, where they are rescued and taken to the mysterious Valley of the Blue Moon, Shangri-La. Hidden from the rest of ...',
-  Language: 'English, French',
-  Country: 'USA',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BZGMxOWM1ZGMtYjIzMy00NTUyLThmMWMtZjQzYTRhZTJmNjFmXkEyXkFqcGdeQXVyODU2MDg1NzU@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '5.3/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '5.3',
-  imdbVotes: '1,860',
-  imdbID: 'tt0070337',
-  Type: 'movie',
-  DVD: '04 Oct 2011',
-  BoxOffice: 'N/A',
-  Production: 'RCA Video',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0070337'
-}, {
-  Title: 'Head',
-  Year: '1968',
-  Rated: 'N/A',
-  Released: '20 Nov 1968',
-  Runtime: '86 min',
-  Genre: 'Comedy, Fantasy, Musical',
-  Director: 'Bob Rafelson',
-  Writer: 'Bob Rafelson, Jack Nicholson',
-  Actors: 'Peter Tork, Davy Jones, Micky Dolenz, Michael Nesmith',
-  Plot: 'The Monkees are tossed about in a psychedelic, surrealist, plotless, circular bit of fun fluff.',
-  Language: 'English, Italian',
-  Country: 'USA',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BZjMxYTIxOTItYzU4ZC00ZjA5LWFmOGUtYjFlMjM2MmEwM2VlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.6/10'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '6.6',
-  imdbVotes: '5,053',
-  imdbID: 'tt0063049',
-  Type: 'movie',
-  DVD: 'N/A',
-  BoxOffice: 'N/A',
-  Production: 'N/A',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0168077'
-}, {
-  Title: 'Separate Lies',
-  Year: '2005',
-  Rated: 'R',
-  Released: '18 Nov 2005',
-  Runtime: '85 min',
-  Genre: 'Drama, Romance, Thriller',
-  Director: 'Julian Fellowes',
-  Writer: 'Nigel Balchin (based on the novel by "A Way Through the Wood"), Julian Fellowes',
-  Actors: 'Tom Wilkinson, Emily Watson, Hermione Norris, John Warnaby',
-  Plot: "A couple's marriage is complicated by the introduction of a third party.",
-  Language: 'English, French',
-  Country: 'UK',
-  Awards: '1 win & 5 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMTI3NjI5OTE1Ml5BMl5BanBnXkFtZTYwMzU3NDQ3._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '6.5/10'
-  }, {
-    Source: 'Rotten Tomatoes',
-    Value: '71%'
-  }, {
-    Source: 'Metacritic',
-    Value: '71/100'
-  }],
-  Metascore: '71',
-  imdbRating: '6.5',
-  imdbVotes: '3,864',
-  imdbID: 'tt0369053',
-  Type: 'movie',
-  DVD: '21 Feb 2006',
-  BoxOffice: '$849,496',
-  Production: 'Fox Searchlight Pictures',
-  Website: 'http://www.foxsearchlight.com/separatelies/',
-  Response: 'True',
-  og_id: 'tt0369053'
 }, {
   Title: 'Death Wish 3',
   Year: '1985',
@@ -4700,7 +3716,7 @@ var info = [{
   Actors: 'Charles Bronson, Deborah Raffin, Ed Lauter, Martin Balsam',
   Plot: 'Architect/vigilante Paul Kersey arrives back in New York City and is forcibly recruited by a crooked police chief to fight street crime caused by a large gang terrorizing the neighborhoods.',
   Language: 'English',
-  Country: 'USA, Israel, UK',
+  Country: 'USA',
   Awards: 'N/A',
   Poster: 'https://m.media-amazon.com/images/M/MV5BYWE3ZGYzZmQtNjc0Yy00NTkzLTkxZTQtNTljNzE5NGU2ZjJlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
   Ratings: [{
@@ -4715,7 +3731,7 @@ var info = [{
   }],
   Metascore: '18',
   imdbRating: '5.9',
-  imdbVotes: '12,668',
+  imdbVotes: '12,751',
   imdbID: 'tt0089003',
   Type: 'movie',
   DVD: '03 Feb 2004',
@@ -4751,7 +3767,7 @@ var info = [{
   }],
   Metascore: '69',
   imdbRating: '7.8',
-  imdbVotes: '263,533',
+  imdbVotes: '265,147',
   imdbID: 'tt0190590',
   Type: 'movie',
   DVD: '12 Jun 2001',
@@ -4761,170 +3777,1133 @@ var info = [{
   Response: 'True',
   og_id: 'tt0215002'
 }, {
-  Title: "Don't Torture a Duckling",
-  Year: '1972',
-  Rated: 'Not Rated',
-  Released: '29 Sep 1972',
-  Runtime: '105 min',
-  Genre: 'Horror, Mystery, Thriller',
-  Director: 'Lucio Fulci',
-  Writer: 'Lucio Fulci (story), Roberto Gianviti (story), Lucio Fulci (screenplay), Roberto Gianviti (screenplay), Gianfranco Clerici (screenplay)',
-  Actors: 'Florinda Bolkan, Barbara Bouchet, Tomas Milian, Irene Papas',
-  Plot: 'A reporter and a promiscuous young woman try to solve a series of child killings in a remote southern Italian town rife with superstition and a distrust of outsiders.',
-  Language: 'Italian, English',
-  Country: 'Italy',
+  Title: 'Ed Gein: The Butcher of Plainfield',
+  Year: '2007',
+  Rated: 'R',
+  Released: '06 Mar 2007',
+  Runtime: '90 min',
+  Genre: 'Crime, Drama, Horror, Mystery, Thriller',
+  Director: 'Michael Feifer',
+  Writer: 'Michael Feifer',
+  Actors: 'Kane Hodder, Adrienne Frantz, Michael Berryman, Priscilla Barnes',
+  Plot: 'Inspired by the true story of one of the most gruesome killers in American history. Now, years after inspiring "Psycho\'s" Norman Bates, "The Silence Of The Lambs\'" Buffalo Bill and "The ...',
+  Language: 'English',
+  Country: 'USA',
   Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BMWNkMTMwNGYtM2E2YS00MjQzLTk5NWItNGMzMjc0MjI1NTM1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTI0MjkzNzk1Nl5BMl5BanBnXkFtZTcwOTc2Njc0MQ@@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
-    Value: '7.1/10'
+    Value: '3.8/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '3.8',
+  imdbVotes: '1,777',
+  imdbID: 'tt0858437',
+  Type: 'movie',
+  DVD: '06 Mar 2007',
+  BoxOffice: 'N/A',
+  Production: 'Lionsgate',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0858437'
+}, {
+  Title: 'Iron Eagle',
+  Year: '1986',
+  Rated: 'PG-13',
+  Released: '17 Jan 1986',
+  Runtime: '117 min',
+  Genre: 'Action, Thriller, War',
+  Director: 'Sidney J. Furie',
+  Writer: 'Kevin Alyn Elders, Sidney J. Furie',
+  Actors: 'Louis Gossett Jr., Jason Gedrick, David Suchet, Larry B. Scott',
+  Plot: 'A young pilot plans a rescue mission when his father, an Air Force Colonel, is shot down over enemy territory and captured.',
+  Language: 'English',
+  Country: 'USA, Israel, Canada',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZGY3MWIzZGYtOTliMy00YzQzLTgwNjgtNjlkYTA2Y2Y5YTVkL2ltYWdlXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.4/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '20%'
+  }, {
+    Source: 'Metacritic',
+    Value: '41/100'
+  }],
+  Metascore: '41',
+  imdbRating: '5.4',
+  imdbVotes: '12,397',
+  imdbID: 'tt0091278',
+  Type: 'movie',
+  DVD: '22 May 2001',
+  BoxOffice: 'N/A',
+  Production: 'TriStar Pictures',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0091278'
+}, {
+  Title: 'Comanche Moon',
+  Year: '2008',
+  Rated: 'TV-14',
+  Released: '13 Jan 2008',
+  Runtime: '360 min',
+  Genre: 'Drama, Western',
+  Director: 'N/A',
+  Writer: 'N/A',
+  Actors: 'Steve Zahn, Ryan Merriman, Keith Robinson, Wes Studi',
+  Plot: 'The adventures and love lives of young Texas Rangers Woodrow Call and Augustus McRae leading up to their retirement to the city of Lonesome Dove.',
+  Language: 'English, Shoshoni, Spanish, French',
+  Country: 'USA',
+  Awards: 'Nominated for 5 Primetime Emmys. Another 1 win & 8 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMzk3MzIzNTE5NF5BMl5BanBnXkFtZTcwMDY5MTE2MQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '7.2/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '7.2',
+  imdbVotes: '2,599',
+  imdbID: 'tt0783328',
+  Type: 'series',
+  totalSeasons: '1',
+  Response: 'True',
+  og_id: 'tt0783328'
+}, {
+  Title: 'Imaginary Heroes',
+  Year: '2004',
+  Rated: 'R',
+  Released: '10 Nov 2005',
+  Runtime: '111 min',
+  Genre: 'Comedy, Drama',
+  Director: 'Dan Harris',
+  Writer: 'Dan Harris',
+  Actors: 'Sigourney Weaver, Emile Hirsch, Jeff Daniels, Michelle Williams',
+  Plot: 'The Travis family façade is destroyed by an event incomprehensible to them -- an event which will open locked doors and finally reveal the secrets that have haunted them for decades.',
+  Language: 'English',
+  Country: 'USA, Germany, Belgium',
+  Awards: '1 win & 2 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTcyNjY5ODYzMF5BMl5BanBnXkFtZTYwMDg2MjY2._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '7.2/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '34%'
+  }, {
+    Source: 'Metacritic',
+    Value: '53/100'
+  }],
+  Metascore: '53',
+  imdbRating: '7.2',
+  imdbVotes: '9,110',
+  imdbID: 'tt0373024',
+  Type: 'movie',
+  DVD: '07 Jun 2005',
+  BoxOffice: 'N/A',
+  Production: 'Sony Pictures Classics',
+  Website: 'http://www.sonypictures.com/classics/imaginary/',
+  Response: 'True',
+  og_id: 'tt0373024'
+}, {
+  Title: 'Man of the Year',
+  Year: '2006',
+  Rated: 'PG-13',
+  Released: '13 Oct 2006',
+  Runtime: '115 min',
+  Genre: 'Comedy, Drama, Romance, Thriller',
+  Director: 'Barry Levinson',
+  Writer: 'Barry Levinson',
+  Actors: 'Robin Williams, Christopher Walken, Laura Linney, Lewis Black',
+  Plot: 'A comedian who hosts a news satire program decides to run for president, and a computerized voting machine malfunction gets him elected.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '1 nomination.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTM0NzQxMjk0OV5BMl5BanBnXkFtZTcwMDUyNDgzMQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.2/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '22%'
+  }, {
+    Source: 'Metacritic',
+    Value: '39/100'
+  }],
+  Metascore: '39',
+  imdbRating: '6.2',
+  imdbVotes: '30,474',
+  imdbID: 'tt0483726',
+  Type: 'movie',
+  DVD: '20 Feb 2007',
+  BoxOffice: '$37,442,180',
+  Production: 'Universal Pictures',
+  Website: 'http://www.manoftheyearmovie.net',
+  Response: 'True',
+  og_id: 'tt0483726'
+}, {
+  Title: 'Strangeland',
+  Year: '1998',
+  Rated: 'R',
+  Released: '02 Oct 1998',
+  Runtime: '85 min',
+  Genre: 'Horror, Thriller',
+  Director: 'John Pieplow',
+  Writer: 'Dee Snider',
+  Actors: 'Kevin Gage, Elizabeth Peña, Brett Harrelson, Robert Englund',
+  Plot: 'A detective pursues a sadist specializing in body modification rituals who lures teenagers through the internet.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMWI4NjExMjktNjBmYS00MDJiLTk3ODUtYWFjZjVkNjNkOWMyXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.0/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '6%'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '5.0',
+  imdbVotes: '6,259',
+  imdbID: 'tt0124102',
+  Type: 'movie',
+  DVD: '23 Mar 1999',
+  BoxOffice: 'N/A',
+  Production: 'The Shooting Gallery',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0124102'
+}, {
+  Title: 'American Movie',
+  Year: '1999',
+  Rated: 'R',
+  Released: '13 Apr 2000',
+  Runtime: '107 min',
+  Genre: 'Documentary, Comedy',
+  Director: 'Chris Smith',
+  Writer: 'N/A',
+  Actors: 'Mark Borchardt, Tom Schimmels, Monica Borchardt, Alex Borchardt',
+  Plot: "Documentary about an aspiring filmmaker's attempts to finance his dream project by finally completing the low-budget horror film he abandoned years before.",
+  Language: 'English',
+  Country: 'USA',
+  Awards: '6 wins & 6 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMjMxMDFhYzQtZDZmZS00ZDBjLWIzY2QtNDBiMDQ5YjBlNTk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '7.9/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '94%'
+  }, {
+    Source: 'Metacritic',
+    Value: '84/100'
+  }],
+  Metascore: '84',
+  imdbRating: '7.9',
+  imdbVotes: '15,540',
+  imdbID: 'tt0181288',
+  Type: 'movie',
+  DVD: '23 May 2000',
+  BoxOffice: 'N/A',
+  Production: 'Sony Pictures Classics',
+  Website: 'http://www.americanmovie.com',
+  Response: 'True',
+  og_id: 'tt0181288'
+}, {
+  Title: 'Pink Flamingos',
+  Year: '1972',
+  Rated: 'NC-17',
+  Released: '01 Oct 1979',
+  Runtime: '93 min',
+  Genre: 'Comedy, Crime',
+  Director: 'John Waters',
+  Writer: 'John Waters',
+  Actors: 'Divine, David Lochary, Mary Vivian Pearce, Mink Stole',
+  Plot: 'Notorious Baltimore criminal and underground figure Divine goes up against a sleazy married couple who make a passionate attempt to humiliate her and seize her tabloid-given title as "The Filthiest Person Alive".',
+  Language: 'English',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BYjc2NTM3ZTEtYzc0ZC00NjQ4LTk3MzktN2I4OWE1NTU3ZDFmXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.1/10'
   }, {
     Source: 'Rotten Tomatoes',
     Value: '80%'
-  }],
-  Metascore: 'N/A',
-  imdbRating: '7.1',
-  imdbVotes: '6,775',
-  imdbID: 'tt0069019',
-  Type: 'movie',
-  DVD: '06 Aug 2002',
-  BoxOffice: 'N/A',
-  Production: 'N/A',
-  Website: 'N/A',
-  Response: 'True',
-  og_id: 'tt0069019'
-}, {
-  Title: 'Fire',
-  Year: '1996',
-  Rated: 'Unrated',
-  Released: '22 Aug 1997',
-  Runtime: '104 min',
-  Genre: 'Drama, Romance',
-  Director: 'Deepa Mehta',
-  Writer: 'Deepa Mehta',
-  Actors: 'Karishma Jhalani, Ramanjeet Kaur, Dilip Mehta, Javed Jaffrey',
-  Plot: 'Two women who are abandoned by their husbands, find love and solace in each other.',
-  Language: 'English, Hindi',
-  Country: 'Canada, India',
-  Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BZDJlNjk0NDMtZGYxYy00ZGMxLTljOTUtYTgzZmQ0ODlhY2IzXkEyXkFqcGdeQXVyNTM0NTU5Mg@@._V1_SX300.jpg',
-  Ratings: [{
-    Source: 'Internet Movie Database',
-    Value: '7.3/10'
   }, {
     Source: 'Metacritic',
-    Value: '64/100'
+    Value: '47/100'
   }],
-  Metascore: '64',
-  imdbRating: '7.3',
-  imdbVotes: '5,327',
-  imdbID: 'tt0116308',
+  Metascore: '47',
+  imdbRating: '6.1',
+  imdbVotes: '20,024',
+  imdbID: 'tt0069089',
+  Type: 'movie',
+  DVD: '14 Jun 2005',
+  BoxOffice: 'N/A',
+  Production: 'New Line Cinema',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0069089'
+}, {
+  Title: 'The Blade Master',
+  Year: '1984',
+  Rated: 'PG',
+  Released: '15 Feb 1984',
+  Runtime: '92 min',
+  Genre: 'Action, Adventure, Fantasy',
+  Director: "Joe D'Amato",
+  Writer: "Joe D'Amato",
+  Actors: "Miles O'Keeffe, Lisa Foster, Charles Borromel, Kiro Wehara",
+  Plot: 'Muscle-bound Ator and his mute East Asian sidekick travel from the ends of the earth to save his aged mentor from the evil, mustachioed Zor.',
+  Language: 'Italian',
+  Country: 'Italy',
+  Awards: 'N/A',
+  Poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BZTY5MzRkNzEtM2IxZC00OWJjLWFiYjktMjA1NmRjZDY0NTYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '2.2/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '2.2',
+  imdbVotes: '3,158',
+  imdbID: 'tt0086972',
   Type: 'movie',
   DVD: 'N/A',
   BoxOffice: 'N/A',
   Production: 'N/A',
   Website: 'N/A',
   Response: 'True',
-  og_id: 'tt0184474'
+  og_id: 'tt0086972'
 }, {
-  Title: 'Big Fat Liar',
-  Year: '2002',
-  Rated: 'PG',
-  Released: '08 Feb 2002',
-  Runtime: '88 min',
-  Genre: 'Adventure, Comedy, Family',
-  Director: 'Shawn Levy',
-  Writer: 'Dan Schneider (story), Brian Robbins (story), Dan Schneider (screenplay)',
-  Actors: 'Frankie Muniz, Paul Giamatti, Amanda Bynes, Amanda Detmer',
-  Plot: "After a young boy's school essay erroneously finds its way into the hands of a Hollywood producer who turns the idea into a hit film, the boy travels to Los Angeles to claim his credit.",
-  Language: 'English',
-  Country: 'USA, Germany',
-  Awards: '1 win & 3 nominations.',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BNmEyNGFmODYtZjhjNC00NGViLTllMjQtYWYyZmQ1OGEzMzRlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Title: 'The Consequences of Love',
+  Year: '2004',
+  Rated: 'N/A',
+  Released: '24 Sep 2004',
+  Runtime: '100 min',
+  Genre: 'Crime, Drama, Romance',
+  Director: 'Paolo Sorrentino',
+  Writer: 'Paolo Sorrentino',
+  Actors: 'Toni Servillo, Olivia Magnani, Adriano Giannini, Antonio Ballerio',
+  Plot: "An introverted man's life changes completely when he finds himself attracted to a young bar-maid.",
+  Language: 'Italian',
+  Country: 'Italy',
+  Awards: '19 wins & 22 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BOWZkZDRmODUtYjhiNy00N2FkLWIyNzMtNTYzMWEzMDNjOGE4XkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
-    Value: '5.4/10'
+    Value: '7.6/10'
   }, {
     Source: 'Rotten Tomatoes',
-    Value: '42%'
+    Value: '83%'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '7.6',
+  imdbVotes: '13,290',
+  imdbID: 'tt0398883',
+  Type: 'movie',
+  DVD: 'N/A',
+  BoxOffice: 'N/A',
+  Production: 'The Works',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0398883'
+}, {
+  Title: 'Plunkett & Macleane',
+  Year: '1999',
+  Rated: 'R',
+  Released: '02 Apr 1999',
+  Runtime: '99 min',
+  Genre: 'Action, Adventure, Crime, Drama',
+  Director: 'Jake Scott',
+  Writer: 'Selwyn Roberts (earlier screenplay), Robert Wade (screenplay), Neal Purvis (screenplay), Charles McKeown (screenplay)',
+  Actors: 'Jonny Lee Miller, Iain Robertson, Robert Carlyle, Ken Stott',
+  Plot: 'Two robbers are persecuted by the law, whose servants are not much better and even worse.',
+  Language: 'English',
+  Country: 'UK',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTY2NDU2ODY2NV5BMl5BanBnXkFtZTcwNDEyNTIyMQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.4/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '24%'
   }, {
     Source: 'Metacritic',
-    Value: '36/100'
+    Value: '44/100'
   }],
-  Metascore: '36',
-  imdbRating: '5.4',
-  imdbVotes: '32,545',
-  imdbID: 'tt0265298',
+  Metascore: '44',
+  imdbRating: '6.4',
+  imdbVotes: '9,290',
+  imdbID: 'tt0134033',
   Type: 'movie',
-  DVD: '24 Sep 2002',
-  BoxOffice: '$47,811,275',
-  Production: 'Universal Pictures',
-  Website: 'http://www.bigfatliarmovie.com',
+  DVD: '01 May 2001',
+  BoxOffice: 'N/A',
+  Production: 'Nitestar Home Video',
+  Website: 'N/A',
   Response: 'True',
-  og_id: 'tt0265298'
+  og_id: 'tt0134033'
 }, {
-  Title: 'The Man with the Golden Arm',
-  Year: '1955',
-  Rated: 'PASSED',
-  Released: '16 Jan 1956',
-  Runtime: '119 min',
-  Genre: 'Crime, Drama, Film-Noir',
-  Director: 'Otto Preminger',
-  Writer: 'Walter Newman (screenplay), Lewis Meltzer (screenplay), Nelson Algren (from the novel by)',
-  Actors: 'Frank Sinatra, Eleanor Parker, Kim Novak, Arnold Stang',
-  Plot: 'A strung-out junkie deals with a demoralizing drug addiction while his crippled wife and card sharks pull him down.',
+  Title: 'Campfire Tales',
+  Year: '1997',
+  Rated: 'R',
+  Released: '28 Feb 1997',
+  Runtime: '88 min',
+  Genre: 'Horror',
+  Director: 'Matt Cooper, Martin Kunert, David Semel',
+  Writer: 'Martin Kunert (story), Eric Manes (story), Martin Kunert (screenplay), Eric Manes (screenplay), Matt Cooper (screenplay)',
+  Actors: 'James Marsden, Amy Smart, Frederick Lawrence, Christopher Masterson',
+  Plot: 'A group of teens entertain themselves by telling an anthology of famous urban legends with a modern twist; including make-out-point, monsters, psychopaths, and ghosts.',
   Language: 'English',
   Country: 'USA',
-  Awards: 'Nominated for 3 Oscars. Another 5 nominations.',
-  Poster: 'https://ia.media-imdb.com/images/M/MV5BNzkzODY5YTctZmE5Yy00ZmQyLWE2NzQtNzVlNjc3MTYxZTBiXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMGYxZGJhNmUtYTc2Zi00ZTdiLTg0NTYtNGNhMjQ2MjQyMGM1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.9/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '5.9',
+  imdbVotes: '3,471',
+  imdbID: 'tt0115813',
+  Type: 'movie',
+  DVD: 'N/A',
+  BoxOffice: 'N/A',
+  Production: 'N/A',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0115813'
+}, {
+  Title: 'Jack Frost 2: Revenge of the Mutant Killer Snowman',
+  Year: '2000',
+  Rated: 'R',
+  Released: '09 Feb 2006',
+  Runtime: '91 min',
+  Genre: 'Comedy, Fantasy, Horror',
+  Director: 'Michael Cooney',
+  Writer: 'Michael Cooney',
+  Actors: 'Christopher Allport, Eileen Seeley, Chip Heller, Marsha Clark',
+  Plot: 'The Mutant Killer Snowman returns to kill more people during Christmas',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '1 nomination.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZmMzOGEwMDUtNTQ0ZC00NzQ3LWJjMmYtNDk1MTVmMTJhODhmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '3.8/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '3.8',
+  imdbVotes: '2,561',
+  imdbID: 'tt0239496',
+  Type: 'movie',
+  DVD: '01 Jan 2000',
+  BoxOffice: 'N/A',
+  Production: 'A-Pix',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0246709'
+}, {
+  Title: 'Final Fantasy VII: Advent Children',
+  Year: '2005',
+  Rated: 'PG-13',
+  Released: '14 Sep 2005',
+  Runtime: '101 min',
+  Genre: 'Animation, Action, Adventure, Fantasy, Sci-Fi, Thriller',
+  Director: 'Tetsuya Nomura, Takeshi Nozue(co-director)',
+  Writer: 'Kazushige Nojima, Brian Gray (English screenplay)',
+  Actors: 'Takahiro Sakurai, Ayumi Itô, Shotaro Morikubo, Maaya Sakamoto',
+  Plot: "An ex-mercenary is forced out of isolation when three mysterious men kidnap and brainwash the city's children afflicted with the Geostigma disease.",
+  Language: 'Japanese',
+  Country: 'Japan',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BNTk4NjBhZTUtN2MwMy00MzIyLWFhN2ItMmUwYzQ4MWQxODM3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '7.3/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '33%'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '7.3',
+  imdbVotes: '53,266',
+  imdbID: 'tt0385700',
+  Type: 'movie',
+  DVD: '25 Apr 2006',
+  BoxOffice: 'N/A',
+  Production: 'Destination Films',
+  Website: 'http://na.square-enix.com/dvd/ff7ac/',
+  Response: 'True',
+  og_id: 'tt0385700'
+}, {
+  Title: 'Dracula 3000',
+  Year: '2004',
+  Rated: 'R',
+  Released: '09 Aug 2004',
+  Runtime: '86 min',
+  Genre: 'Horror, Sci-Fi',
+  Director: 'Darrell Roodt',
+  Writer: 'Ivan Milborrow, Darrell Roodt',
+  Actors: 'Casper Van Dien, Erika Eleniak, Coolio, Alexandra Kamp',
+  Plot: 'Count Dracula terrorizes the crew of a spaceship.',
+  Language: 'English',
+  Country: 'Germany, South Africa',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTQxMmE4MDgtMDc5YS00N2YxLThhYzQtMDRmMmJlYjViYWVkXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '2.1/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '2.1',
+  imdbVotes: '5,616',
+  imdbID: 'tt0367677',
+  Type: 'movie',
+  DVD: '07 Dec 2004',
+  BoxOffice: 'N/A',
+  Production: 'LionsGate Entertainment',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0367677'
+}, {
+  Title: 'Snakes on a Train',
+  Year: '2006',
+  Rated: 'R',
+  Released: '15 Aug 2006',
+  Runtime: '91 min',
+  Genre: 'Horror',
+  Director: 'Peter Mervis',
+  Writer: 'Eric Forsberg',
+  Actors: 'A.J. Castro, Julia Ruiz, Giovanni Bejarano, Al Galvez',
+  Plot: 'A Zombie curse is placed upon a woman, which causes her to have living snakes inside her. Brujo, who is looking after her, attempts to take her to Los Angeles on the train. After several ...',
+  Language: 'English, Spanish',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMjA5OTgyMzE0Nl5BMl5BanBnXkFtZTgwMDczNjg4MDE@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '2.3/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '2.3',
+  imdbVotes: '2,119',
+  imdbID: 'tt0843873',
+  Type: 'movie',
+  DVD: '01 Jan 2006',
+  BoxOffice: 'N/A',
+  Production: 'Warner Home Video',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0843873'
+}, {
+  Title: 'Throw Momma from the Train',
+  Year: '1987',
+  Rated: 'PG-13',
+  Released: '11 Dec 1987',
+  Runtime: '88 min',
+  Genre: 'Comedy, Crime, Thriller',
+  Director: 'Danny DeVito',
+  Writer: 'Stu Silver',
+  Actors: 'Danny DeVito, Billy Crystal, Kim Greist, Anne Ramsey',
+  Plot: "A bitter ex-husband wants his former spouse dead. A put-upon momma's boy wants his mother dead. Who will pull it off?",
+  Language: 'English',
+  Country: 'USA',
+  Awards: 'Nominated for 1 Oscar. Another 2 wins & 3 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BOGI0ODZhMDYtYjNhYy00MjZlLWFiMzQtMTdkYjM3MWM4YWRkXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.2/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '62%'
+  }, {
+    Source: 'Metacritic',
+    Value: '56/100'
+  }],
+  Metascore: '56',
+  imdbRating: '6.2',
+  imdbVotes: '30,908',
+  imdbID: 'tt0094142',
+  Type: 'movie',
+  DVD: '08 May 2001',
+  BoxOffice: 'N/A',
+  Production: 'Orion',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0094142'
+}, {
+  Title: 'Tenacious D in The Pick of Destiny',
+  Year: '2006',
+  Rated: 'R',
+  Released: '22 Nov 2006',
+  Runtime: '93 min',
+  Genre: 'Adventure, Comedy, Music, Musical',
+  Director: 'Liam Lynch',
+  Writer: 'Jack Black, Kyle Gass, Liam Lynch',
+  Actors: 'Jack Black, Kyle Gass, JR Reed, Ronnie James Dio',
+  Plot: 'To become the greatest band of all time, two slacker, wannabe-rockers set out on a quest to steal a legendary guitar pick that gives its holders incredible guitar skills, from a maximum security Rock and Roll museum.',
+  Language: 'English',
+  Country: 'USA, Germany',
+  Awards: '2 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTUyMDA3OTc4MV5BMl5BanBnXkFtZTcwNzE5NjkzMQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.8/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '53%'
+  }, {
+    Source: 'Metacritic',
+    Value: '55/100'
+  }],
+  Metascore: '55',
+  imdbRating: '6.8',
+  imdbVotes: '96,792',
+  imdbID: 'tt0365830',
+  Type: 'movie',
+  DVD: '27 Feb 2007',
+  BoxOffice: '$8,199,999',
+  Production: 'New Line Cinema',
+  Website: 'http://tenaciousdmovie.com/',
+  Response: 'True',
+  og_id: 'tt0365830'
+}, {
+  Title: 'The Patriot',
+  Year: '1998',
+  Rated: 'R',
+  Released: '10 Jul 1998',
+  Runtime: '90 min',
+  Genre: 'Action, Thriller',
+  Director: 'Dean Semler',
+  Writer: 'William Heine (novel), M. Sussman (screen story), M. Sussman (screenplay), John Kingswell (screenplay)',
+  Actors: 'Steven Seagal, Gailard Sartain, L.Q. Jones, Silas Weir Mitchell',
+  Plot: 'A respected doctor must race against time to find a cure for a lethal virus, unleashed by a paramilitary militia leader.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BN2YyOTQwMTMtMGVlYy00MmUzLThmMzAtMTQ5ZDk3MDQ3YWRhXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '4.2/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '22%'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '4.2',
+  imdbVotes: '11,141',
+  imdbID: 'tt0120786',
+  Type: 'movie',
+  DVD: '28 Aug 2001',
+  BoxOffice: 'N/A',
+  Production: 'Seagal/Nasso Productions',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0120786'
+}, {
+  Title: 'Random Hearts',
+  Year: '1999',
+  Rated: 'R',
+  Released: '08 Oct 1999',
+  Runtime: '133 min',
+  Genre: 'Drama, Mystery, Romance',
+  Director: 'Sydney Pollack',
+  Writer: 'Warren Adler (novel), Darryl Ponicsan (adaptation), Kurt Luedtke (screenplay)',
+  Actors: 'Harrison Ford, Kristin Scott Thomas, Charles S. Dutton, Bonnie Hunt',
+  Plot: 'A police sergeant and a congresswoman both lose their spouses in a plane crash, and they soon discover that their spouses were having an affair with each other.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BYWM1YmRkOWEtNDcyNS00ODE2LTkwNDAtOTA3OTA4ZTVlZTIwL2ltYWdlXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.1/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '15%'
+  }, {
+    Source: 'Metacritic',
+    Value: '38/100'
+  }],
+  Metascore: '38',
+  imdbRating: '5.1',
+  imdbVotes: '18,781',
+  imdbID: 'tt0156934',
+  Type: 'movie',
+  DVD: '30 Oct 2001',
+  BoxOffice: 'N/A',
+  Production: 'Columbia Pictures',
+  Website: 'http://www.spe.sony.com/movies/randomhearts/index.html',
+  Response: 'True',
+  og_id: 'tt0156934'
+}, {
+  Title: 'Checking Out',
+  Year: '2005',
+  Rated: 'PG-13',
+  Released: '19 Dec 2006',
+  Runtime: '94 min',
+  Genre: 'Comedy',
+  Director: 'Jeff Hare',
+  Writer: 'Richard Marcus (screenplay), Allen Swift (play)',
+  Actors: 'Peter Falk, Laura San Giacomo, David Paymer, Judge Reinhold',
+  Plot: 'A famed stage actor reunites his family for a party, and plans to commit suicide after-wards, unless they are able to convince him not to.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '5 wins.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTM0Mjk2NjAxMF5BMl5BanBnXkFtZTcwMDA2OTI3Nw@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.1/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '43%'
+  }, {
+    Source: 'Metacritic',
+    Value: '44/100'
+  }],
+  Metascore: '44',
+  imdbRating: '6.1',
+  imdbVotes: '610',
+  imdbID: 'tt0417532',
+  Type: 'movie',
+  DVD: '19 Dec 2006',
+  BoxOffice: 'N/A',
+  Production: 'Allumination FilmWorks',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0417532'
+}, {
+  Title: 'The Piano Teacher',
+  Year: '2001',
+  Rated: 'R',
+  Released: '05 Sep 2001',
+  Runtime: '131 min',
+  Genre: 'Drama, Music',
+  Director: 'Michael Haneke',
+  Writer: 'Michael Haneke, Elfriede Jelinek (novel)',
+  Actors: 'Isabelle Huppert, Annie Girardot, Benoît Magimel, Susanne Lothar',
+  Plot: 'A young man romantically pursues his masochistic piano teacher.',
+  Language: 'French, German',
+  Country: 'Austria, France, Germany',
+  Awards: 'Nominated for 1 BAFTA Film Award. Another 17 wins & 21 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZDBkYjYxYjUtMTdmMS00MDJhLWEyNzktYzg2OWY5NWY0Y2QyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
     Value: '7.5/10'
   }, {
     Source: 'Rotten Tomatoes',
-    Value: '86%'
+    Value: '73%'
+  }, {
+    Source: 'Metacritic',
+    Value: '79/100'
+  }],
+  Metascore: '79',
+  imdbRating: '7.5',
+  imdbVotes: '49,594',
+  imdbID: 'tt0254686',
+  Type: 'movie',
+  DVD: '09 Jan 2007',
+  BoxOffice: 'N/A',
+  Production: 'MK2 Diffusion',
+  Website: 'http://www.kino.com/pianoteacher/index.htm',
+  Response: 'True',
+  og_id: 'tt0266699'
+}, {
+  Title: 'The Falcon and the Snowman',
+  Year: '1985',
+  Rated: 'R',
+  Released: '08 Feb 1985',
+  Runtime: '131 min',
+  Genre: 'Biography, Crime, Drama, Thriller',
+  Director: 'John Schlesinger',
+  Writer: 'Robert Lindsey (book), Steven Zaillian',
+  Actors: 'Timothy Hutton, Sean Penn, Pat Hingle, Joyce Van Patten',
+  Plot: 'The true story of a disillusioned military contractor employee and his drug pusher childhood friend who became walk-in spies for the Soviet Union.',
+  Language: 'English',
+  Country: 'UK, USA, Mexico',
+  Awards: '1 nomination.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BNjM4NTI0MjUzNV5BMl5BanBnXkFtZTcwMTMzNzYzNA@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.8/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '80%'
+  }, {
+    Source: 'Metacritic',
+    Value: '68/100'
+  }],
+  Metascore: '68',
+  imdbRating: '6.8',
+  imdbVotes: '9,642',
+  imdbID: 'tt0087231',
+  Type: 'movie',
+  DVD: '15 Aug 2001',
+  BoxOffice: 'N/A',
+  Production: 'Orion',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0087231'
+}, {
+  Title: 'Fame',
+  Year: '1980',
+  Rated: 'R',
+  Released: '16 May 1980',
+  Runtime: '134 min',
+  Genre: 'Drama, Music, Musical',
+  Director: 'Alan Parker',
+  Writer: 'Christopher Gore',
+  Actors: 'Eddie Barth, Irene Cara, Lee Curreri, Laura Dean',
+  Plot: 'A chronicle of the lives of several teenagers who attend a New York high school for students gifted in the performing arts.',
+  Language: 'English, Spanish, French, Russian',
+  Country: 'USA',
+  Awards: 'Won 2 Oscars. Another 4 wins & 17 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMzk2NzA4NjQ4NV5BMl5BanBnXkFtZTgwMzE4OTI1MDE@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.6/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '83%'
+  }, {
+    Source: 'Metacritic',
+    Value: '58/100'
+  }],
+  Metascore: '58',
+  imdbRating: '6.6',
+  imdbVotes: '18,676',
+  imdbID: 'tt0080716',
+  Type: 'movie',
+  DVD: '01 Jun 2004',
+  BoxOffice: 'N/A',
+  Production: 'WARNER BROTHERS PICTURES',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0080716'
+}, {
+  Title: 'Northfork',
+  Year: '2003',
+  Rated: 'PG-13',
+  Released: '01 Aug 2003',
+  Runtime: '103 min',
+  Genre: 'Drama, Fantasy',
+  Director: 'Michael Polish',
+  Writer: 'Mark Polish, Michael Polish',
+  Actors: 'James Woods, Nick Nolte, Douglas Sebern, Claire Forlani',
+  Plot: 'Set in 1955, the residents of a small Montana community are forced to move their homes to make way for a new dam.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '3 wins & 3 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTQ4ODE3ODEyMl5BMl5BanBnXkFtZTYwNTYwOTk2._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.4/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '56%'
+  }, {
+    Source: 'Metacritic',
+    Value: '64/100'
+  }],
+  Metascore: '64',
+  imdbRating: '6.4',
+  imdbVotes: '5,108',
+  imdbID: 'tt0322659',
+  Type: 'movie',
+  DVD: '30 Dec 2003',
+  BoxOffice: '$1,278,868',
+  Production: 'Paramount Classics',
+  Website: 'http://www.paramountclassics.com/northfork',
+  Response: 'True',
+  og_id: 'tt0340874'
+}, {
+  Title: 'Crazy Six',
+  Year: '1997',
+  Rated: 'R',
+  Released: '01 Nov 1997',
+  Runtime: '94 min',
+  Genre: 'Action, Crime',
+  Director: 'Albert Pyun',
+  Writer: 'Galen Yuen',
+  Actors: 'Rob Lowe, Mario Van Peebles, Ice-T, Burt Reynolds',
+  Plot: 'In a crumbling Europe, powerful mafia families have emerged from the anarchy to vie for control of the lucrative arms trade.',
+  Language: 'English, Slovak',
+  Country: 'USA, Slovakia',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMjAwMjYxNDE3Nl5BMl5BanBnXkFtZTcwMzMwMTYyMQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '3.9/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '3.9',
+  imdbVotes: '1,394',
+  imdbID: 'tt0118897',
+  Type: 'movie',
+  DVD: '15 Sep 1998',
+  BoxOffice: 'N/A',
+  Production: 'N/A',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0118897'
+}, {
+  Title: 'Barney & Friends',
+  Year: '1992–2009',
+  Rated: 'TV-Y',
+  Released: '06 Apr 1992',
+  Runtime: '30 min',
+  Genre: 'Family',
+  Director: 'N/A',
+  Writer: 'Dennis DeShazer, Sheryl Leach, Kathy Parker',
+  Actors: 'Bob West, Dean Wendt, Julie Johnson, David Joyner',
+  Plot: "From pretending to be a pilot on a make-believe airplane to pretending to be a pirate in search of buried treasure, Barney's friends discover that creativity lets them soar in the wings of imagination!",
+  Language: 'English',
+  Country: 'USA',
+  Awards: '1 win & 14 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTIyNjUyMTU1NF5BMl5BanBnXkFtZTcwMDg4ODIzMQ@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '3.7/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '3.7',
+  imdbVotes: '3,919',
+  imdbID: 'tt0144701',
+  Type: 'series',
+  totalSeasons: '14',
+  Response: 'True',
+  og_id: 'tt0144701'
+}, {
+  Title: "One Night at McCool's",
+  Year: '2001',
+  Rated: 'R',
+  Released: '27 Apr 2001',
+  Runtime: '93 min',
+  Genre: 'Comedy, Crime',
+  Director: 'Harald Zwart',
+  Writer: 'Stan Seidel',
+  Actors: 'Matt Dillon, Mary Jo Smith, Michael Douglas, Paul Reiser',
+  Plot: 'Every man has a different recollection of the beautiful young woman who wreaked havoc on their lives during one heated night.',
+  Language: 'English, Spanish',
+  Country: 'USA',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZmE1OTg1ZmItNGMyOC00MzA5LTgyMWEtYmE0MzcwNjE3Y2MwXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.1/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '33%'
+  }, {
+    Source: 'Metacritic',
+    Value: '46/100'
+  }],
+  Metascore: '46',
+  imdbRating: '6.1',
+  imdbVotes: '27,521',
+  imdbID: 'tt0203755',
+  Type: 'movie',
+  DVD: '09 Oct 2001',
+  BoxOffice: '$5,689,784',
+  Production: 'USA Films',
+  Website: 'http://onenightatmccools.com',
+  Response: 'True',
+  og_id: 'tt0203755'
+}, {
+  Title: 'The War at Home',
+  Year: '2005–2007',
+  Rated: 'TV-14',
+  Released: '11 Sep 2005',
+  Runtime: '30 min',
+  Genre: 'Comedy, Romance',
+  Director: 'N/A',
+  Writer: 'Rob Lotterstein',
+  Actors: 'Michael Rapaport, Anita Barone, Kaylee DeFer, Kyle Sullivan',
+  Plot: 'Parents struggle to raise their teens.',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '8 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMWNhMmIzY2ItZjNlNC00NjY4LWE2NmItOWE3Zjg3Mzg0ZTAzXkEyXkFqcGdeQXVyNTg4MDc2NTQ@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '7.5/10'
   }],
   Metascore: 'N/A',
   imdbRating: '7.5',
-  imdbVotes: '7,913',
-  imdbID: 'tt0048347',
+  imdbVotes: '8,346',
+  imdbID: 'tt0460692',
+  Type: 'series',
+  totalSeasons: '2',
+  Response: 'True',
+  og_id: 'tt0460692'
+}, {
+  Title: 'Queen of the Damned',
+  Year: '2002',
+  Rated: 'R',
+  Released: '22 Feb 2002',
+  Runtime: '101 min',
+  Genre: 'Drama, Fantasy, Horror',
+  Director: 'Michael Rymer',
+  Writer: 'Anne Rice (novels), Scott Abbott (screenplay), Michael Petroni (screenplay)',
+  Actors: 'Aaliyah, Stuart Townsend, Marguerite Moreau, Vincent Perez',
+  Plot: 'The vampire Lestat becomes a rock star whose music wakes up the queen of all vampires.',
+  Language: 'English',
+  Country: 'USA, Australia',
+  Awards: '7 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTYxNDEyMzEzMV5BMl5BanBnXkFtZTYwMDM1NjA3._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.3/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '17%'
+  }, {
+    Source: 'Metacritic',
+    Value: '30/100'
+  }],
+  Metascore: '30',
+  imdbRating: '5.3',
+  imdbVotes: '49,789',
+  imdbID: 'tt0238546',
   Type: 'movie',
-  DVD: '16 May 2000',
+  DVD: '27 Aug 2002',
+  BoxOffice: '$31,000,000',
+  Production: 'Warner Bros. Pictures',
+  Website: 'http://queenofthedamned.warnerbros.com',
+  Response: 'True',
+  og_id: 'tt0238546'
+}, {
+  Title: 'Pola X',
+  Year: '1999',
+  Rated: 'N/A',
+  Released: '09 Oct 1999',
+  Runtime: '134 min',
+  Genre: 'Drama, Romance',
+  Director: 'Leos Carax',
+  Writer: 'Leos Carax, Jean-Pol Fargeau, Herman Melville (novel), Lauren Sedofsky',
+  Actors: 'Guillaume Depardieu, Yekaterina Golubeva, Catherine Deneuve, Delphine Chuillot',
+  Plot: 'A young writer becomes intrigued with a mysterious dark-haired woman who claims to be his long-lost sister and he begin an unusual relationship with her prompting a downward spiral involving his domineering mother and lovely fiancée',
+  Language: 'French',
+  Country: 'France, Switzerland, Germany, Japan',
+  Awards: 'N/A',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZDZhNTY4MzgtNzU0My00YjM3LTg2MzMtMTFiZjAyOGVmNWI0XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '5.8/10'
+  }, {
+    Source: 'Metacritic',
+    Value: '65/100'
+  }],
+  Metascore: '65',
+  imdbRating: '5.8',
+  imdbVotes: '3,996',
+  imdbID: 'tt0152015',
+  Type: 'movie',
+  DVD: 'N/A',
   BoxOffice: 'N/A',
-  Production: 'United Artists',
+  Production: 'N/A',
   Website: 'N/A',
   Response: 'True',
-  og_id: 'tt0048347'
+  og_id: 'tt0233094'
 }, {
-  Title: 'Just Before Dawn',
-  Year: '1981',
+  Title: 'Jack Frost 2: Revenge of the Mutant Killer Snowman',
+  Year: '2000',
   Rated: 'R',
-  Released: '27 Nov 1981',
-  Runtime: '90 min',
-  Genre: 'Horror, Thriller',
-  Director: 'Jeff Lieberman',
-  Writer: 'Mark Arywitz (screenplay), Jeff Lieberman (screenplay), Jonas Middleton (story)',
-  Actors: 'George Kennedy, Mike Kellin, Chris Lemmon, Gregg Henry',
-  Plot: 'Five campers arrive in the mountains to examine some property they have bought, but are warned by Forest Ranger Roy McLean that a huge machete-wielding maniac has been terrorising the area....',
+  Released: '09 Feb 2006',
+  Runtime: '91 min',
+  Genre: 'Comedy, Fantasy, Horror',
+  Director: 'Michael Cooney',
+  Writer: 'Michael Cooney',
+  Actors: 'Christopher Allport, Eileen Seeley, Chip Heller, Marsha Clark',
+  Plot: 'The Mutant Killer Snowman returns to kill more people during Christmas',
+  Language: 'English',
+  Country: 'USA',
+  Awards: '1 nomination.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BZmMzOGEwMDUtNTQ0ZC00NzQ3LWJjMmYtNDk1MTVmMTJhODhmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '3.8/10'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '3.8',
+  imdbVotes: '2,561',
+  imdbID: 'tt0239496',
+  Type: 'movie',
+  DVD: '01 Jan 2000',
+  BoxOffice: 'N/A',
+  Production: 'A-Pix',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0239496'
+}, {
+  Title: 'Monster Man',
+  Year: '2003',
+  Rated: 'R',
+  Released: '11 Mar 2005',
+  Runtime: '95 min',
+  Genre: 'Adventure, Comedy, Horror',
+  Director: 'Michael Davis',
+  Writer: 'Michael Davis',
+  Actors: 'Eric Jungmann, Justin Urich, Aimee Brooks, Michael Bailey Smith',
+  Plot: 'Two guys and a female hitchhiker are terrorized by a monstrous looking man driving a giant monster truck.',
   Language: 'English',
   Country: 'USA',
   Awards: 'N/A',
-  Poster: 'https://m.media-amazon.com/images/M/MV5BYTc5YjNiN2MtM2JjYy00NDRmLThlNWUtMmFiNDFkNmRlMTA2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
+  Poster: 'https://ia.media-imdb.com/images/M/MV5BNzI5MzYwODU2M15BMl5BanBnXkFtZTcwMTUxMzcyMQ@@._V1_SX300.jpg',
   Ratings: [{
     Source: 'Internet Movie Database',
-    Value: '6.3/10'
+    Value: '5.9/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '60%'
   }],
   Metascore: 'N/A',
-  imdbRating: '6.3',
-  imdbVotes: '4,438',
-  imdbID: 'tt0082592',
+  imdbRating: '5.9',
+  imdbVotes: '4,070',
+  imdbID: 'tt0365513',
   Type: 'movie',
-  DVD: '26 Jul 2005',
+  DVD: '12 Oct 2004',
   BoxOffice: 'N/A',
-  Production: 'Picturemedia Ltd.',
+  Production: 'LionsGate Entertainment',
   Website: 'N/A',
   Response: 'True',
-  og_id: 'tt0082592'
+  og_id: 'tt0365513'
+}, {
+  Title: 'Greystoke: The Legend of Tarzan, Lord of the Apes',
+  Year: '1984',
+  Rated: 'PG',
+  Released: '30 Mar 1984',
+  Runtime: '135 min',
+  Genre: 'Adventure, Drama',
+  Director: 'Hugh Hudson',
+  Writer: 'Edgar Rice Burroughs (novel), Robert Towne, Michael Austin',
+  Actors: 'Ralph Richardson, Ian Holm, James Fox, Christopher Lambert',
+  Plot: 'A shipping disaster in the nineteenth century has stranded a man and woman in the wilds of Africa. The lady is pregnant, and gives birth to a son in their tree house. The mother dies soon ...',
+  Language: 'English, French',
+  Country: 'UK, USA',
+  Awards: 'Nominated for 3 Oscars. Another 3 wins & 13 nominations.',
+  Poster: 'https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg',
+  Ratings: [{
+    Source: 'Internet Movie Database',
+    Value: '6.4/10'
+  }, {
+    Source: 'Rotten Tomatoes',
+    Value: '69%'
+  }],
+  Metascore: 'N/A',
+  imdbRating: '6.4',
+  imdbVotes: '16,651',
+  imdbID: 'tt0087365',
+  Type: 'movie',
+  DVD: '08 Jun 2004',
+  BoxOffice: 'N/A',
+  Production: 'Warner Home Video',
+  Website: 'N/A',
+  Response: 'True',
+  og_id: 'tt0087365'
 }];
 
 /***/ }),
@@ -63329,6 +63308,43 @@ function (_React$Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {// let data = this.props.data
+      // let boxed = data.reduce((dict, current) => {
+      //   let slice = Object.assign({}, dict)
+      //   if (slice[current.url] === undefined) {
+      //     slice[current.url] = 'exists'
+      //   }
+      //   return slice
+      // }, {})
+      // let movie_keys = Object.keys(boxed)
+      // var promises = movie_keys.map((k, i) => {
+      //   return fetch(`http://www.omdbapi.com/?apikey=af4abd65&i=${k}`)
+      //     .then(r => r.json())
+      //     .then(json => {
+      //       let og_id = k
+      //       if (json.Title === '#DUPE#') {
+      //         return fetch(
+      //           `http://www.omdbapi.com/?apikey=af4abd65&i=${json.imdbID}`
+      //         )
+      //           .then(r => r.json())
+      //           .then(json => {
+      //             let json_mod = Object.assign({}, json)
+      //             json_mod.og_id = og_id
+      //             return json_mod
+      //           })
+      //       } else {
+      //         let json_mod = Object.assign({}, json)
+      //         json_mod.og_id = og_id
+      //         return json_mod
+      //       }
+      //     })
+      // })
+      // Promise.all(promises).then(function(results) {
+      //   console.log(JSON.stringify(results))
+      // })
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -63369,19 +63385,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 94
         },
         __self: this
       }, "Textflix")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Bar__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -63402,7 +63418,7 @@ function (_React$Component) {
         hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 96
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63414,7 +63430,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63425,7 +63441,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 122
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63434,7 +63450,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 129
         },
         __self: this
       }, data.length, " movies & shows sorted by most:"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63445,7 +63461,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 136
         },
         __self: this
       }, (analyze ? show_accuracy ? [['reviews', 'reviews'], ['positive', 'positive'], ['negative', 'negative'], ['accurate', 'accurate'], ['inaccurate', 'inaccurate']] : [['reviews', 'reviews'], ['positive', 'positive'], ['negative', 'negative']] : [['reviews', 'reviews']]).map(function (a) {
@@ -63458,7 +63474,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123
+            lineNumber: 160
           },
           __self: this
         }, a[0]) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
@@ -63472,14 +63488,14 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 171
           },
           __self: this
         }, a[0]);
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 187
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63490,7 +63506,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 189
         },
         __self: this
       }, compare ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63500,7 +63516,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 197
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -63509,7 +63525,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 161
+          lineNumber: 198
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_MovieGrid__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -63522,7 +63538,7 @@ function (_React$Component) {
         hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 199
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_parts_MovieGrid__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -63535,7 +63551,7 @@ function (_React$Component) {
         hl_options: hl_options,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 212
         },
         __self: this
       })));
@@ -64023,14 +64039,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_sample_movie_info_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../data/sample_movie_info.js */ "./data/sample_movie_info.js");
 /* harmony import */ var next_server_config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next-server/config */ "./node_modules/next-server/config.js");
 /* harmony import */ var next_server_config__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_server_config__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _data_corpora_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../data/corpora.js */ "./data/corpora.js");
-/* harmony import */ var _parts_Static__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../parts/Static */ "./parts/Static.js");
-/* harmony import */ var _parts_Utils__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../parts/Utils */ "./parts/Utils.js");
-/* harmony import */ var _parts_Bar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../parts/Bar */ "./parts/Bar.js");
-/* harmony import */ var _parts_Header__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../parts/Header */ "./parts/Header.js");
-/* harmony import */ var _parts_Tour__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../parts/Tour */ "./parts/Tour.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _parts_Static__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../parts/Static */ "./parts/Static.js");
+/* harmony import */ var _parts_Utils__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../parts/Utils */ "./parts/Utils.js");
+/* harmony import */ var _parts_Bar__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../parts/Bar */ "./parts/Bar.js");
+/* harmony import */ var _parts_Header__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../parts/Header */ "./parts/Header.js");
+/* harmony import */ var _parts_Tour__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../parts/Tour */ "./parts/Tour.js");
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_19__);
 
 
 
@@ -64052,10 +64067,9 @@ var _jsxFileName = "/Users/grant.custer/Sites/next-movies/pages/_app.js";
 
 
 
-
 var algnames = ['NBSVM', 'BERT'];
-var algfiles = ['nbsvm_lime_grouped_pretty.json', 'bert_lime_grouped_pretty.json', 'nbsvm_lime_grouped_pretty_word.json'];
-var data_keys = [['nbsvm_data', 'nbsvm_lime_grouped_pretty.json', 'NBSVM'], ['bert_data', 'bert_lime_grouped_pretty.json', 'BERT']];
+var algfiles = ['nbsvm_lime_500_prototype_pretty.json', 'bert_lime_500_prototype_pretty.json', 'nbsvm_lime_grouped_pretty_word.json'];
+var data_keys = [['nbsvm_data', 'nbsvm_lime_500_grouped_pretty.json', 'NBSVM'], ['bert_data', 'bert_lime_500_prototype_pretty.json', 'BERT']];
 var linkPrefix = "";
 
 var MyApp =
@@ -64107,6 +64121,7 @@ function (_App) {
             new_r.index = i;
             new_r.author = nd[i].author;
             new_r.date = nd[i].date;
+            new_r["class"] = r.class_probabilities[0] > r.class_probabilities[1] ? 'neg' : 'pos';
             return new_r;
           });
           var key = data_keys[0][0];
@@ -64122,6 +64137,7 @@ function (_App) {
             new_r.index = i;
             new_r.author = nd[i].author;
             new_r.date = nd[i].date;
+            new_r["class"] = r.class_probabilities[0] > r.class_probabilities[1] ? 'neg' : 'pos';
             return new_r;
           });
           var key = data_keys[1][0];
@@ -64213,7 +64229,7 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 143
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("meta", {
@@ -64222,17 +64238,17 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 144
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
         id: "2343230763",
         __self: this
-      }, "*{box-sizing:border-box;font-family:sans-serif;}html{background:#222;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans', 'Helvetica Neue',sans-serif;font-size:16px;line-height:1.5;background:white;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}code{font-family:source-code-pro,Menlo,Monaco,Consolas,'Courier New', monospace;}p{margin:0;text-indent:1.5rem;}p:first-child{text-indent:0;}a,button{color:inherit;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover,button:hover{opacity:0.75;}a.no-opacity-hover:hover,button.no-opacity-hover:hover{opacity:1;}a.no-underline{-webkit-text-decoration:none;text-decoration:none;}.opacity-inner-hover{-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover .opacity-inner-hover,button:hover .opacity-inner-hover{opacity:0.75;}button{font:inherit;font-size:inherit;line-height:inherit;border:none;padding:0;margin:0;background:transparent;cursor:pointer;}button:focus{outline:none;}.hover-block{position:absolute;left:0;top:0;right:0;bottom:0;}.hover-block-container .hover-block{display:block;pointer-events:none;opacity:0;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;background:rgba(0,0,0,0.0625);}.hover-block-container:hover .hover-block{display:block;opacity:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5STJCLEFBR21DLEFBSU4sQUFHUCxBQWFFLEFBR0YsQUFJSyxBQUlBLEFBS0QsQUFJSCxBQUdXLEFBR1UsQUFJbEIsQUFHQSxBQVVBLEFBR0ssQUFPSixBQU9BLFNBdEVnQixBQWNYLENBaUJyQixHQUpBLEFBY0EsQUFHb0IsQUFVcEIsQ0FwQ0EsQUFJaUMsQUEwQ1gsQUFPVixFQTVFWixFQThEUyxJQWxFZ0IsRUFpRnpCLENBZFEsR0EzQ1IsR0E4QnNCLEFBY1osR0FNRSxLQUxELEtBTXNCLENBMUVqQyxHQXFFQSxFQTNCQSxDQVljLFlBQ0YsT0FWWixHQVdXLEVBckNYLE9Bc0N5QixFQTFCekIscUJBMkJpQixTQWlCa0IsTUFoQm5DLHdCQWlCQSxlQW5FaUIsZUFDQyxnQkFDQyxpQkFDQyxrQkFDaUIsbUNBQ0Qsa0NBQ3BDIiwiZmlsZSI6Ii9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBBcHAsIHsgQ29udGFpbmVyIH0gZnJvbSAnbmV4dC9hcHAnXG5pbXBvcnQgeyBpbmZvIH0gZnJvbSAnLi4vZGF0YS9zYW1wbGVfbW92aWVfaW5mby5qcydcbmltcG9ydCBnZXRDb25maWcgZnJvbSAnbmV4dC1zZXJ2ZXIvY29uZmlnJ1xuaW1wb3J0IHsgbm91bnMsIGFkamVjdGl2ZXMgfSBmcm9tICcuLi9kYXRhL2NvcnBvcmEuanMnXG5pbXBvcnQgeyByZWQsIGJsdWUsIEJvcmRlciB9IGZyb20gJy4uL3BhcnRzL1N0YXRpYydcbmltcG9ydCB7IHAgfSBmcm9tICcuLi9wYXJ0cy9VdGlscydcbmltcG9ydCBCYXIgZnJvbSAnLi4vcGFydHMvQmFyJ1xuaW1wb3J0IEhlYWRlciBmcm9tICcuLi9wYXJ0cy9IZWFkZXInXG5pbXBvcnQgVG91ciBmcm9tICcuLi9wYXJ0cy9Ub3VyJ1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9MaW5rJ1xuXG5sZXQgYWxnbmFtZXMgPSBbJ05CU1ZNJywgJ0JFUlQnXVxubGV0IGFsZ2ZpbGVzID0gW1xuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ2JlcnRfbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJyxcbiAgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHlfd29yZC5qc29uJyxcbl1cbmxldCBkYXRhX2tleXMgPSBbXG4gIFsnbmJzdm1fZGF0YScsICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnTkJTVk0nXSxcbiAgWydiZXJ0X2RhdGEnLCAnYmVydF9saW1lX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnQkVSVCddLFxuXVxuXG5sZXQgbGlua1ByZWZpeCA9IHByb2Nlc3MuZW52LkJBQ0tFTkRfVVJMXG5cbmNsYXNzIE15QXBwIGV4dGVuZHMgQXBwIHtcbiAgY29uc3RydWN0b3IocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgYW5hbHl6ZTogdHJ1ZSxcbiAgICAgIGRhdGFfc2VsZWN0OiAxLFxuICAgICAgc2hvd19hY2N1cmFjeTogZmFsc2UsXG4gICAgICBzb3J0OiAncmV2aWV3cycsXG4gICAgICByZXZpZXdfc29ydDogJ2RhdGUnLFxuICAgICAgbmJzdm1fZGF0YTogbnVsbCxcbiAgICAgIGNvbXBhcmU6IGZhbHNlLFxuICAgICAgYmVydF9kYXRhOiBudWxsLFxuICAgICAgc2hvd19pbmZvOiBmYWxzZSxcbiAgICB9XG4gICAgdGhpcy5zZXRBbmFseXplID0gdGhpcy5zZXRBbmFseXplLmJpbmQodGhpcylcbiAgICB0aGlzLnNldFJldmlld1NvcnQgPSB0aGlzLnNldFJldmlld1NvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWNjdXJhY3kgPSB0aGlzLnNldEFjY3VyYWN5LmJpbmQodGhpcylcbiAgICB0aGlzLnNldFNvcnQgPSB0aGlzLnNldFNvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWxnbyA9IHRoaXMuc2V0QWxnby5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRDb21wYXJlID0gdGhpcy5zZXRDb21wYXJlLmJpbmQodGhpcylcbiAgICB0aGlzLnNob3dJbmZvID0gdGhpcy5zaG93SW5mby5iaW5kKHRoaXMpXG4gIH1cblxuICBmZXRjaERhdGEoKSB7XG4gICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvbmFtZXNfYW5kX2RhdGVzLmpzb24nKVxuICAgICAgLnRoZW4obmQgPT4gbmQuanNvbigpKVxuICAgICAgLnRoZW4obmQgPT4ge1xuICAgICAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMF0pXG4gICAgICAgICAgLnRoZW4ociA9PiByLmpzb24oKSlcbiAgICAgICAgICAudGhlbihyID0+IHtcbiAgICAgICAgICAgIGxldCByZXZpZXdzID0gci5tYXAoKHIsIGkpID0+IHtcbiAgICAgICAgICAgICAgbGV0IG5ld19yID0gT2JqZWN0LmFzc2lnbih7fSwgcilcbiAgICAgICAgICAgICAgbmV3X3IuaW5kZXggPSBpXG4gICAgICAgICAgICAgIG5ld19yLmF1dGhvciA9IG5kW2ldLmF1dGhvclxuICAgICAgICAgICAgICBuZXdfci5kYXRlID0gbmRbaV0uZGF0ZVxuICAgICAgICAgICAgICByZXR1cm4gbmV3X3JcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBsZXQga2V5ID0gZGF0YV9rZXlzWzBdWzBdXG4gICAgICAgICAgICB0aGlzLnNldFN0YXRlKHsgW2tleV06IHJldmlld3MgfSlcbiAgICAgICAgICB9KVxuICAgICAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMV0pXG4gICAgICAgICAgLnRoZW4ociA9PiByLmpzb24oKSlcbiAgICAgICAgICAudGhlbihyID0+IHtcbiAgICAgICAgICAgIGxldCByZXZpZXdzID0gci5tYXAoKHIsIGkpID0+IHtcbiAgICAgICAgICAgICAgbGV0IG5ld19yID0gT2JqZWN0LmFzc2lnbih7fSwgcilcbiAgICAgICAgICAgICAgbmV3X3IuaW5kZXggPSBpXG4gICAgICAgICAgICAgIG5ld19yLmF1dGhvciA9IG5kW2ldLmF1dGhvclxuICAgICAgICAgICAgICBuZXdfci5kYXRlID0gbmRbaV0uZGF0ZVxuICAgICAgICAgICAgICByZXR1cm4gbmV3X3JcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBsZXQga2V5ID0gZGF0YV9rZXlzWzFdWzBdXG4gICAgICAgICAgICB0aGlzLnNldFN0YXRlKHsgW2tleV06IHJldmlld3MgfSlcbiAgICAgICAgICB9KVxuICAgICAgfSlcbiAgfVxuXG4gIGNvbXBvbmVudERpZE1vdW50KCkge1xuICAgIHRoaXMuZmV0Y2hEYXRhKClcbiAgICBjb25zdCB7IHBhdGhuYW1lIH0gPSB0aGlzLnByb3BzLnJvdXRlclxuICAgIGxldCBpc19mcm9udCA9IHBhdGhuYW1lID09PSAnLydcbiAgICBpZiAoaXNfZnJvbnQpIHRoaXMuc2V0U3RhdGUoeyBzaG93X2luZm86IHRydWUgfSlcbiAgfVxuXG4gIHNldEFuYWx5emUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgYW5hbHl6ZTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldFJldmlld1NvcnQodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgcmV2aWV3X3NvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRBbGdvKGluZGV4KSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGRhdGFfc2VsZWN0OiBpbmRleCB9KVxuICB9XG5cbiAgc2V0QWNjdXJhY3kodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgc2hvd19hY2N1cmFjeTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldENvbXBhcmUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgY29tcGFyZTogdmFsdWUgfSlcbiAgfVxuXG4gIHNob3dJbmZvKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfaW5mbzogdmFsdWUgfSlcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICBsZXQgeyBhbmFseXplLCBzb3J0LCByZXZpZXdfc29ydCwgc2hvd19hY2N1cmFjeSwgc2hvd19pbmZvIH0gPSB0aGlzLnN0YXRlXG5cbiAgICBsZXQgZGF0YSA9IHRoaXMuc3RhdGVbZGF0YV9rZXlzW3RoaXMuc3RhdGUuZGF0YV9zZWxlY3RdWzBdXVxuXG4gICAgaWYgKGFuYWx5emUgPT09IGZhbHNlKSBzaG93X2FjY3VyYWN5ID0gZmFsc2VcblxuICAgIGxldCB7IENvbXBvbmVudCB9ID0gdGhpcy5wcm9wc1xuICAgIGxldCBmb250X3NpemUgPSAxNlxuICAgIGxldCBsaW5lX2hlaWdodCA9IDEuNVxuICAgIGxldCBncmVtID0gZm9udF9zaXplICogbGluZV9oZWlnaHRcblxuICAgIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHRoaXMucHJvcHMucm91dGVyXG5cbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgbGV0IGlzX3RvcGljID0gcGF0aG5hbWUuc3RhcnRzV2l0aCgnL3RvcGljJylcblxuICAgIHJldHVybiAoXG4gICAgICA8ZGl2PlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwiaW5pdGlhbC1zY2FsZT0xLjAsIHdpZHRoPWRldmljZS13aWR0aFwiIC8+XG4gICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgKiB7XG4gICAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgICAgICAgfVxuICAgICAgICAgIGh0bWwge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzIyMjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJyxcbiAgICAgICAgICAgICAgJ094eWdlbicsICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJyxcbiAgICAgICAgICAgICAgJ0hlbHZldGljYSBOZXVlJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgICAgICAgICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICAgICAgICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAgICAgICAgICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgY29kZSB7XG4gICAgICAgICAgICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICAgICAgICAgICAgbW9ub3NwYWNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwIHtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAxLjVyZW07XG4gICAgICAgICAgfVxuICAgICAgICAgIHA6Zmlyc3QtY2hpbGQge1xuICAgICAgICAgICAgdGV4dC1pbmRlbnQ6IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEsXG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGNvbG9yOiBpbmhlcml0O1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYS5uby1vcGFjaXR5LWhvdmVyOmhvdmVyLFxuICAgICAgICAgIGJ1dHRvbi5uby1vcGFjaXR5LWhvdmVyOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tdW5kZXJsaW5lIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlciAub3BhY2l0eS1pbm5lci1ob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGZvbnQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBmb250LXNpemU6IGluaGVyaXQ7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogaW5oZXJpdDtcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uOmZvY3VzIHtcbiAgICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgICAgdG9wOiAwO1xuICAgICAgICAgICAgcmlnaHQ6IDA7XG4gICAgICAgICAgICBib3R0b206IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICAgICAgICBvcGFjaXR5OiAwO1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4wNjI1KTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmhvdmVyLWJsb2NrLWNvbnRhaW5lcjpob3ZlciAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgb3ZlcmZsb3c6ICR7c2hvd19pbmZvID8gJ2hpZGRlbicgOiAnYXV0byd9O1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8SGVhZGVyXG4gICAgICAgICAgaXNfZnJvbnQ9e2lzX2Zyb250fVxuICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgIHNob3dJbmZvPXt0aGlzLnNob3dJbmZvfVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIG1pbkhlaWdodDogYGNhbGMoMTAwdmggLSAke2dyZW0gKiA0ICsgMX1weClgLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJ3doaXRlJyxcbiAgICAgICAgICAgIG1pbldpZHRoOiB0aGlzLnN0YXRlLmNvbXBhcmUgPyA2MDAgOiAnYXV0bycsXG4gICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgIHtkYXRhICYmIHRoaXMuc3RhdGUubmJzdm1fZGF0YSA/IChcbiAgICAgICAgICAgIDxDb250YWluZXI+XG4gICAgICAgICAgICAgIDxDb21wb25lbnRcbiAgICAgICAgICAgICAgICBmb250X3NpemU9e2ZvbnRfc2l6ZX1cbiAgICAgICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgICAgICBhbmFseXplPXthbmFseXplfVxuICAgICAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgICAgICBzb3J0PXtzb3J0fVxuICAgICAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICAgICAgc2V0U29ydD17dGhpcy5zZXRTb3J0fVxuICAgICAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICAgICAgYWxnbmFtZXM9e2FsZ25hbWVzfVxuICAgICAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgc2V0QWNjdXJhY3k9e3RoaXMuc2V0QWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgICAgICBuYnN2bV9kYXRhPXt0aGlzLnN0YXRlLm5ic3ZtX2RhdGF9XG4gICAgICAgICAgICAgICAgaGxfb3B0aW9ucz17e319XG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8L0NvbnRhaW5lcj5cbiAgICAgICAgICApIDogKFxuICAgICAgICAgICAgPGRpdlxuICAgICAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgICAgIHBhZGRpbmc6IGdyZW0gLyAyLFxuICAgICAgICAgICAgICAgIGhlaWdodDogYGNhbGMoMTAwdmggLSAke2dyZW0gKiAyfXB4YCxcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgTG9hZGluZy4uLlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgcGFkZGluZzogcChncmVtIC8gMiwgZ3JlbSAvIDQpLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJyMyMjInLFxuICAgICAgICAgICAgY29sb3I6ICd3aGl0ZScsXG4gICAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ3NwYWNlLWJldHdlZW4nLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6IHAoMCwgZ3JlbSAvIDQpIH19PlxuICAgICAgICAgICAgVGV4dGZsaXggaXMgYSBuYXR1cmFsIGxhbmd1YWdlIHByb2Nlc3NpbmcgcHJvdG90eXBlIGJ5IENsb3VkZXJhIEZhc3RcbiAgICAgICAgICAgIEZvcndhcmQgTGFic1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Rpc2FncmVlbWVudHNcIj5cbiAgICAgICAgICAgICAgPGFcbiAgICAgICAgICAgICAgICBzdHlsZT17eyB0ZXh0RGVjb3JhdGlvbjogJ3VuZGVybGluZScsIHBhZGRpbmc6IHAoMCwgZ3JlbSAvIDQpIH19XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICBEaXNhZ3JlZW1lbnRzXG4gICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIHtzaG93X2luZm8gPyAoXG4gICAgICAgICAgPFRvdXJcbiAgICAgICAgICAgIHJvdXRlcj17dGhpcy5wcm9wcy5yb3V0ZXJ9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICBpbmZvPXtpbmZvfVxuICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgIHNldEFuYWx5emU9e3RoaXMuc2V0QW5hbHl6ZX1cbiAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgIHNldEFsZ289e3RoaXMuc2V0QWxnb31cbiAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgc2V0Q29tcGFyZT17dGhpcy5zZXRDb21wYXJlfVxuICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgc2hvd0luZm89e3RoaXMuc2hvd0luZm99XG4gICAgICAgICAgLz5cbiAgICAgICAgKSA6IG51bGx9XG4gICAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgTXlBcHBcbiJdfQ== */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
+      }, "*{box-sizing:border-box;font-family:sans-serif;}html{background:#222;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans', 'Helvetica Neue',sans-serif;font-size:16px;line-height:1.5;background:white;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}code{font-family:source-code-pro,Menlo,Monaco,Consolas,'Courier New', monospace;}p{margin:0;text-indent:1.5rem;}p:first-child{text-indent:0;}a,button{color:inherit;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover,button:hover{opacity:0.75;}a.no-opacity-hover:hover,button.no-opacity-hover:hover{opacity:1;}a.no-underline{-webkit-text-decoration:none;text-decoration:none;}.opacity-inner-hover{-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;}a:hover .opacity-inner-hover,button:hover .opacity-inner-hover{opacity:0.75;}button{font:inherit;font-size:inherit;line-height:inherit;border:none;padding:0;margin:0;background:transparent;cursor:pointer;}button:focus{outline:none;}.hover-block{position:absolute;left:0;top:0;right:0;bottom:0;}.hover-block-container .hover-block{display:block;pointer-events:none;opacity:0;-webkit-transition:opacity 0.1s linear;transition:opacity 0.1s linear;background:rgba(0,0,0,0.0625);}.hover-block-container:hover .hover-block{display:block;opacity:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnSjJCLEFBR21DLEFBSU4sQUFHUCxBQWFFLEFBR0YsQUFJSyxBQUlBLEFBS0QsQUFJSCxBQUdXLEFBR1UsQUFJbEIsQUFHQSxBQVVBLEFBR0ssQUFPSixBQU9BLFNBdEVnQixBQWNYLENBaUJyQixHQUpBLEFBY0EsQUFHb0IsQUFVcEIsQ0FwQ0EsQUFJaUMsQUEwQ1gsQUFPVixFQTVFWixFQThEUyxJQWxFZ0IsRUFpRnpCLENBZFEsR0EzQ1IsR0E4QnNCLEFBY1osR0FNRSxLQUxELEtBTXNCLENBMUVqQyxHQXFFQSxFQTNCQSxDQVljLFlBQ0YsT0FWWixHQVdXLEVBckNYLE9Bc0N5QixFQTFCekIscUJBMkJpQixTQWlCa0IsTUFoQm5DLHdCQWlCQSxlQW5FaUIsZUFDQyxnQkFDQyxpQkFDQyxrQkFDaUIsbUNBQ0Qsa0NBQ3BDIiwiZmlsZSI6Ii9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBBcHAsIHsgQ29udGFpbmVyIH0gZnJvbSAnbmV4dC9hcHAnXG5pbXBvcnQgeyBpbmZvIH0gZnJvbSAnLi4vZGF0YS9zYW1wbGVfbW92aWVfaW5mby5qcydcbmltcG9ydCBnZXRDb25maWcgZnJvbSAnbmV4dC1zZXJ2ZXIvY29uZmlnJ1xuaW1wb3J0IHsgcmVkLCBibHVlLCBCb3JkZXIgfSBmcm9tICcuLi9wYXJ0cy9TdGF0aWMnXG5pbXBvcnQgeyBwIH0gZnJvbSAnLi4vcGFydHMvVXRpbHMnXG5pbXBvcnQgQmFyIGZyb20gJy4uL3BhcnRzL0JhcidcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vcGFydHMvSGVhZGVyJ1xuaW1wb3J0IFRvdXIgZnJvbSAnLi4vcGFydHMvVG91cidcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvTGluaydcblxubGV0IGFsZ25hbWVzID0gWydOQlNWTScsICdCRVJUJ11cbmxldCBhbGdmaWxlcyA9IFtcbiAgJ25ic3ZtX2xpbWVfNTAwX3Byb3RvdHlwZV9wcmV0dHkuanNvbicsXG4gICdiZXJ0X2xpbWVfNTAwX3Byb3RvdHlwZV9wcmV0dHkuanNvbicsXG4gICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5X3dvcmQuanNvbicsXG5dXG5sZXQgZGF0YV9rZXlzID0gW1xuICBbJ25ic3ZtX2RhdGEnLCAnbmJzdm1fbGltZV81MDBfZ3JvdXBlZF9wcmV0dHkuanNvbicsICdOQlNWTSddLFxuICBbJ2JlcnRfZGF0YScsICdiZXJ0X2xpbWVfNTAwX3Byb3RvdHlwZV9wcmV0dHkuanNvbicsICdCRVJUJ10sXG5dXG5cbmxldCBsaW5rUHJlZml4ID0gcHJvY2Vzcy5lbnYuQkFDS0VORF9VUkxcblxuY2xhc3MgTXlBcHAgZXh0ZW5kcyBBcHAge1xuICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgIHN1cGVyKHByb3BzKVxuICAgIHRoaXMuc3RhdGUgPSB7XG4gICAgICBhbmFseXplOiB0cnVlLFxuICAgICAgZGF0YV9zZWxlY3Q6IDEsXG4gICAgICBzaG93X2FjY3VyYWN5OiBmYWxzZSxcbiAgICAgIHNvcnQ6ICdyZXZpZXdzJyxcbiAgICAgIHJldmlld19zb3J0OiAnZGF0ZScsXG4gICAgICBuYnN2bV9kYXRhOiBudWxsLFxuICAgICAgY29tcGFyZTogZmFsc2UsXG4gICAgICBiZXJ0X2RhdGE6IG51bGwsXG4gICAgICBzaG93X2luZm86IGZhbHNlLFxuICAgIH1cbiAgICB0aGlzLnNldEFuYWx5emUgPSB0aGlzLnNldEFuYWx5emUuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0UmV2aWV3U29ydCA9IHRoaXMuc2V0UmV2aWV3U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBY2N1cmFjeSA9IHRoaXMuc2V0QWNjdXJhY3kuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0U29ydCA9IHRoaXMuc2V0U29ydC5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRBbGdvID0gdGhpcy5zZXRBbGdvLmJpbmQodGhpcylcbiAgICB0aGlzLnNldENvbXBhcmUgPSB0aGlzLnNldENvbXBhcmUuYmluZCh0aGlzKVxuICAgIHRoaXMuc2hvd0luZm8gPSB0aGlzLnNob3dJbmZvLmJpbmQodGhpcylcbiAgfVxuXG4gIGZldGNoRGF0YSgpIHtcbiAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS9uYW1lc19hbmRfZGF0ZXMuanNvbicpXG4gICAgICAudGhlbihuZCA9PiBuZC5qc29uKCkpXG4gICAgICAudGhlbihuZCA9PiB7XG4gICAgICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhLycgKyBhbGdmaWxlc1swXSlcbiAgICAgICAgICAudGhlbihyID0+IHIuanNvbigpKVxuICAgICAgICAgIC50aGVuKHIgPT4ge1xuICAgICAgICAgICAgbGV0IHJldmlld3MgPSByLm1hcCgociwgaSkgPT4ge1xuICAgICAgICAgICAgICBsZXQgbmV3X3IgPSBPYmplY3QuYXNzaWduKHt9LCByKVxuICAgICAgICAgICAgICBuZXdfci5pbmRleCA9IGlcbiAgICAgICAgICAgICAgbmV3X3IuYXV0aG9yID0gbmRbaV0uYXV0aG9yXG4gICAgICAgICAgICAgIG5ld19yLmRhdGUgPSBuZFtpXS5kYXRlXG4gICAgICAgICAgICAgIG5ld19yLmNsYXNzID1cbiAgICAgICAgICAgICAgICByLmNsYXNzX3Byb2JhYmlsaXRpZXNbMF0gPiByLmNsYXNzX3Byb2JhYmlsaXRpZXNbMV1cbiAgICAgICAgICAgICAgICAgID8gJ25lZydcbiAgICAgICAgICAgICAgICAgIDogJ3BvcydcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1swXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvJyArIGFsZ2ZpbGVzWzFdKVxuICAgICAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgbmV3X3IuY2xhc3MgPVxuICAgICAgICAgICAgICAgIHIuY2xhc3NfcHJvYmFiaWxpdGllc1swXSA+IHIuY2xhc3NfcHJvYmFiaWxpdGllc1sxXVxuICAgICAgICAgICAgICAgICAgPyAnbmVnJ1xuICAgICAgICAgICAgICAgICAgOiAncG9zJ1xuICAgICAgICAgICAgICByZXR1cm4gbmV3X3JcbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICBsZXQga2V5ID0gZGF0YV9rZXlzWzFdWzBdXG4gICAgICAgICAgICB0aGlzLnNldFN0YXRlKHsgW2tleV06IHJldmlld3MgfSlcbiAgICAgICAgICB9KVxuICAgICAgfSlcbiAgfVxuXG4gIGNvbXBvbmVudERpZE1vdW50KCkge1xuICAgIHRoaXMuZmV0Y2hEYXRhKClcbiAgICBjb25zdCB7IHBhdGhuYW1lIH0gPSB0aGlzLnByb3BzLnJvdXRlclxuICAgIGxldCBpc19mcm9udCA9IHBhdGhuYW1lID09PSAnLydcbiAgICBpZiAoaXNfZnJvbnQpIHRoaXMuc2V0U3RhdGUoeyBzaG93X2luZm86IHRydWUgfSlcbiAgfVxuXG4gIHNldEFuYWx5emUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgYW5hbHl6ZTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldFJldmlld1NvcnQodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgcmV2aWV3X3NvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNvcnQ6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRBbGdvKGluZGV4KSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGRhdGFfc2VsZWN0OiBpbmRleCB9KVxuICB9XG5cbiAgc2V0QWNjdXJhY3kodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgc2hvd19hY2N1cmFjeTogdmFsdWUgfSlcbiAgfVxuXG4gIHNldENvbXBhcmUodmFsdWUpIHtcbiAgICB0aGlzLnNldFN0YXRlKHsgY29tcGFyZTogdmFsdWUgfSlcbiAgfVxuXG4gIHNob3dJbmZvKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfaW5mbzogdmFsdWUgfSlcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICBsZXQgeyBhbmFseXplLCBzb3J0LCByZXZpZXdfc29ydCwgc2hvd19hY2N1cmFjeSwgc2hvd19pbmZvIH0gPSB0aGlzLnN0YXRlXG5cbiAgICBsZXQgZGF0YSA9IHRoaXMuc3RhdGVbZGF0YV9rZXlzW3RoaXMuc3RhdGUuZGF0YV9zZWxlY3RdWzBdXVxuXG4gICAgaWYgKGFuYWx5emUgPT09IGZhbHNlKSBzaG93X2FjY3VyYWN5ID0gZmFsc2VcblxuICAgIGxldCB7IENvbXBvbmVudCB9ID0gdGhpcy5wcm9wc1xuICAgIGxldCBmb250X3NpemUgPSAxNlxuICAgIGxldCBsaW5lX2hlaWdodCA9IDEuNVxuICAgIGxldCBncmVtID0gZm9udF9zaXplICogbGluZV9oZWlnaHRcblxuICAgIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHRoaXMucHJvcHMucm91dGVyXG5cbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgbGV0IGlzX3RvcGljID0gcGF0aG5hbWUuc3RhcnRzV2l0aCgnL3RvcGljJylcblxuICAgIHJldHVybiAoXG4gICAgICA8ZGl2PlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwiaW5pdGlhbC1zY2FsZT0xLjAsIHdpZHRoPWRldmljZS13aWR0aFwiIC8+XG4gICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgKiB7XG4gICAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XG4gICAgICAgICAgfVxuICAgICAgICAgIGh0bWwge1xuICAgICAgICAgICAgYmFja2dyb3VuZDogIzIyMjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJyxcbiAgICAgICAgICAgICAgJ094eWdlbicsICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJyxcbiAgICAgICAgICAgICAgJ0hlbHZldGljYSBOZXVlJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgICAgICAgICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICAgICAgICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAgICAgICAgICAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgY29kZSB7XG4gICAgICAgICAgICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICAgICAgICAgICAgbW9ub3NwYWNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwIHtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAxLjVyZW07XG4gICAgICAgICAgfVxuICAgICAgICAgIHA6Zmlyc3QtY2hpbGQge1xuICAgICAgICAgICAgdGV4dC1pbmRlbnQ6IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEsXG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGNvbG9yOiBpbmhlcml0O1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYS5uby1vcGFjaXR5LWhvdmVyOmhvdmVyLFxuICAgICAgICAgIGJ1dHRvbi5uby1vcGFjaXR5LWhvdmVyOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tdW5kZXJsaW5lIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYTpob3ZlciAub3BhY2l0eS1pbm5lci1ob3ZlcixcbiAgICAgICAgICBidXR0b246aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIge1xuICAgICAgICAgICAgb3BhY2l0eTogMC43NTtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICAgIGZvbnQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBmb250LXNpemU6IGluaGVyaXQ7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogaW5oZXJpdDtcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICB9XG4gICAgICAgICAgYnV0dG9uOmZvY3VzIHtcbiAgICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgICAgdG9wOiAwO1xuICAgICAgICAgICAgcmlnaHQ6IDA7XG4gICAgICAgICAgICBib3R0b206IDA7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICAgICAgICBvcGFjaXR5OiAwO1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjFzIGxpbmVhcjtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4wNjI1KTtcbiAgICAgICAgICB9XG4gICAgICAgICAgLmhvdmVyLWJsb2NrLWNvbnRhaW5lcjpob3ZlciAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgb3ZlcmZsb3c6ICR7c2hvd19pbmZvID8gJ2hpZGRlbicgOiAnYXV0byd9O1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8SGVhZGVyXG4gICAgICAgICAgaXNfZnJvbnQ9e2lzX2Zyb250fVxuICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgIHNob3dJbmZvPXt0aGlzLnNob3dJbmZvfVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIG1pbkhlaWdodDogYGNhbGMoMTAwdmggLSAke2dyZW0gKiA0ICsgMX1weClgLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJ3doaXRlJyxcbiAgICAgICAgICAgIG1pbldpZHRoOiB0aGlzLnN0YXRlLmNvbXBhcmUgPyA2MDAgOiAnYXV0bycsXG4gICAgICAgICAgfX1cbiAgICAgICAgPlxuICAgICAgICAgIHtkYXRhICYmIHRoaXMuc3RhdGUubmJzdm1fZGF0YSA/IChcbiAgICAgICAgICAgIDxDb250YWluZXI+XG4gICAgICAgICAgICAgIDxDb21wb25lbnRcbiAgICAgICAgICAgICAgICBmb250X3NpemU9e2ZvbnRfc2l6ZX1cbiAgICAgICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgICAgICBhbmFseXplPXthbmFseXplfVxuICAgICAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgICAgICBzb3J0PXtzb3J0fVxuICAgICAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICAgICAgc2V0U29ydD17dGhpcy5zZXRTb3J0fVxuICAgICAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICAgICAgYWxnbmFtZXM9e2FsZ25hbWVzfVxuICAgICAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgc2V0QWNjdXJhY3k9e3RoaXMuc2V0QWNjdXJhY3l9XG4gICAgICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgICAgICBuYnN2bV9kYXRhPXt0aGlzLnN0YXRlLm5ic3ZtX2RhdGF9XG4gICAgICAgICAgICAgICAgaGxfb3B0aW9ucz17e319XG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8L0NvbnRhaW5lcj5cbiAgICAgICAgICApIDogKFxuICAgICAgICAgICAgPGRpdlxuICAgICAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgICAgIHBhZGRpbmc6IGdyZW0gLyAyLFxuICAgICAgICAgICAgICAgIGhlaWdodDogYGNhbGMoMTAwdmggLSAke2dyZW0gKiAyfXB4YCxcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgTG9hZGluZy4uLlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgcGFkZGluZzogcChncmVtIC8gMiwgZ3JlbSAvIDQpLFxuICAgICAgICAgICAgYmFja2dyb3VuZDogJyMyMjInLFxuICAgICAgICAgICAgY29sb3I6ICd3aGl0ZScsXG4gICAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ3NwYWNlLWJldHdlZW4nLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6IHAoMCwgZ3JlbSAvIDQpIH19PlxuICAgICAgICAgICAgVGV4dGZsaXggaXMgYSBuYXR1cmFsIGxhbmd1YWdlIHByb2Nlc3NpbmcgcHJvdG90eXBlIGJ5IENsb3VkZXJhIEZhc3RcbiAgICAgICAgICAgIEZvcndhcmQgTGFic1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Rpc2FncmVlbWVudHNcIj5cbiAgICAgICAgICAgICAgPGFcbiAgICAgICAgICAgICAgICBzdHlsZT17eyB0ZXh0RGVjb3JhdGlvbjogJ3VuZGVybGluZScsIHBhZGRpbmc6IHAoMCwgZ3JlbSAvIDQpIH19XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICBEaXNhZ3JlZW1lbnRzXG4gICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIHtzaG93X2luZm8gPyAoXG4gICAgICAgICAgPFRvdXJcbiAgICAgICAgICAgIHJvdXRlcj17dGhpcy5wcm9wcy5yb3V0ZXJ9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICBsaW5lX2hlaWdodD17bGluZV9oZWlnaHR9XG4gICAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgIGRhdGE9e2RhdGF9XG4gICAgICAgICAgICBpbmZvPXtpbmZvfVxuICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgIHJldmlld19zb3J0PXtyZXZpZXdfc29ydH1cbiAgICAgICAgICAgIHNldEFuYWx5emU9e3RoaXMuc2V0QW5hbHl6ZX1cbiAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgIHNldFJldmlld1NvcnQ9e3RoaXMuc2V0UmV2aWV3U29ydH1cbiAgICAgICAgICAgIHNldEFsZ289e3RoaXMuc2V0QWxnb31cbiAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgIGRhdGFfc2VsZWN0PXt0aGlzLnN0YXRlLmRhdGFfc2VsZWN0fVxuICAgICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgY29tcGFyZT17dGhpcy5zdGF0ZS5jb21wYXJlfVxuICAgICAgICAgICAgc2V0Q29tcGFyZT17dGhpcy5zZXRDb21wYXJlfVxuICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgc2hvd0luZm89e3RoaXMuc2hvd0luZm99XG4gICAgICAgICAgLz5cbiAgICAgICAgKSA6IG51bGx9XG4gICAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgTXlBcHBcbiJdfQ== */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
         id: "107552866",
         dynamic: [show_info ? 'hidden' : 'auto'],
         __self: this
-      }, "body{overflow:".concat(show_info ? 'hidden' : 'auto', ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUErTjJCLEFBR21ELHNDQUN4QyIsImZpbGUiOiIvVXNlcnMvZ3JhbnQuY3VzdGVyL1NpdGVzL25leHQtbW92aWVzL3BhZ2VzL19hcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgQXBwLCB7IENvbnRhaW5lciB9IGZyb20gJ25leHQvYXBwJ1xuaW1wb3J0IHsgaW5mbyB9IGZyb20gJy4uL2RhdGEvc2FtcGxlX21vdmllX2luZm8uanMnXG5pbXBvcnQgZ2V0Q29uZmlnIGZyb20gJ25leHQtc2VydmVyL2NvbmZpZydcbmltcG9ydCB7IG5vdW5zLCBhZGplY3RpdmVzIH0gZnJvbSAnLi4vZGF0YS9jb3Jwb3JhLmpzJ1xuaW1wb3J0IHsgcmVkLCBibHVlLCBCb3JkZXIgfSBmcm9tICcuLi9wYXJ0cy9TdGF0aWMnXG5pbXBvcnQgeyBwIH0gZnJvbSAnLi4vcGFydHMvVXRpbHMnXG5pbXBvcnQgQmFyIGZyb20gJy4uL3BhcnRzL0JhcidcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vcGFydHMvSGVhZGVyJ1xuaW1wb3J0IFRvdXIgZnJvbSAnLi4vcGFydHMvVG91cidcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvTGluaydcblxubGV0IGFsZ25hbWVzID0gWydOQlNWTScsICdCRVJUJ11cbmxldCBhbGdmaWxlcyA9IFtcbiAgJ25ic3ZtX2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsXG4gICdiZXJ0X2xpbWVfZ3JvdXBlZF9wcmV0dHkuanNvbicsXG4gICduYnN2bV9saW1lX2dyb3VwZWRfcHJldHR5X3dvcmQuanNvbicsXG5dXG5sZXQgZGF0YV9rZXlzID0gW1xuICBbJ25ic3ZtX2RhdGEnLCAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJywgJ05CU1ZNJ10sXG4gIFsnYmVydF9kYXRhJywgJ2JlcnRfbGltZV9ncm91cGVkX3ByZXR0eS5qc29uJywgJ0JFUlQnXSxcbl1cblxubGV0IGxpbmtQcmVmaXggPSBwcm9jZXNzLmVudi5CQUNLRU5EX1VSTFxuXG5jbGFzcyBNeUFwcCBleHRlbmRzIEFwcCB7XG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgIGFuYWx5emU6IHRydWUsXG4gICAgICBkYXRhX3NlbGVjdDogMSxcbiAgICAgIHNob3dfYWNjdXJhY3k6IGZhbHNlLFxuICAgICAgc29ydDogJ3Jldmlld3MnLFxuICAgICAgcmV2aWV3X3NvcnQ6ICdkYXRlJyxcbiAgICAgIG5ic3ZtX2RhdGE6IG51bGwsXG4gICAgICBjb21wYXJlOiBmYWxzZSxcbiAgICAgIGJlcnRfZGF0YTogbnVsbCxcbiAgICAgIHNob3dfaW5mbzogZmFsc2UsXG4gICAgfVxuICAgIHRoaXMuc2V0QW5hbHl6ZSA9IHRoaXMuc2V0QW5hbHl6ZS5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRSZXZpZXdTb3J0ID0gdGhpcy5zZXRSZXZpZXdTb3J0LmJpbmQodGhpcylcbiAgICB0aGlzLnNldEFjY3VyYWN5ID0gdGhpcy5zZXRBY2N1cmFjeS5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRTb3J0ID0gdGhpcy5zZXRTb3J0LmJpbmQodGhpcylcbiAgICB0aGlzLnNldEFsZ28gPSB0aGlzLnNldEFsZ28uYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0Q29tcGFyZSA9IHRoaXMuc2V0Q29tcGFyZS5iaW5kKHRoaXMpXG4gICAgdGhpcy5zaG93SW5mbyA9IHRoaXMuc2hvd0luZm8uYmluZCh0aGlzKVxuICB9XG5cbiAgZmV0Y2hEYXRhKCkge1xuICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhL25hbWVzX2FuZF9kYXRlcy5qc29uJylcbiAgICAgIC50aGVuKG5kID0+IG5kLmpzb24oKSlcbiAgICAgIC50aGVuKG5kID0+IHtcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvJyArIGFsZ2ZpbGVzWzBdKVxuICAgICAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1swXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvJyArIGFsZ2ZpbGVzWzFdKVxuICAgICAgICAgIC50aGVuKHIgPT4gci5qc29uKCkpXG4gICAgICAgICAgLnRoZW4ociA9PiB7XG4gICAgICAgICAgICBsZXQgcmV2aWV3cyA9IHIubWFwKChyLCBpKSA9PiB7XG4gICAgICAgICAgICAgIGxldCBuZXdfciA9IE9iamVjdC5hc3NpZ24oe30sIHIpXG4gICAgICAgICAgICAgIG5ld19yLmluZGV4ID0gaVxuICAgICAgICAgICAgICBuZXdfci5hdXRob3IgPSBuZFtpXS5hdXRob3JcbiAgICAgICAgICAgICAgbmV3X3IuZGF0ZSA9IG5kW2ldLmRhdGVcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1sxXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgIH0pXG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICB0aGlzLmZldGNoRGF0YSgpXG4gICAgY29uc3QgeyBwYXRobmFtZSB9ID0gdGhpcy5wcm9wcy5yb3V0ZXJcbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgaWYgKGlzX2Zyb250KSB0aGlzLnNldFN0YXRlKHsgc2hvd19pbmZvOiB0cnVlIH0pXG4gIH1cblxuICBzZXRBbmFseXplKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGFuYWx5emU6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRSZXZpZXdTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHJldmlld19zb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0U29ydCh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0QWxnbyhpbmRleCkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBkYXRhX3NlbGVjdDogaW5kZXggfSlcbiAgfVxuXG4gIHNldEFjY3VyYWN5KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfYWNjdXJhY3k6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRDb21wYXJlKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGNvbXBhcmU6IHZhbHVlIH0pXG4gIH1cblxuICBzaG93SW5mbyh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzaG93X2luZm86IHZhbHVlIH0pXG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgbGV0IHsgYW5hbHl6ZSwgc29ydCwgcmV2aWV3X3NvcnQsIHNob3dfYWNjdXJhY3ksIHNob3dfaW5mbyB9ID0gdGhpcy5zdGF0ZVxuXG4gICAgbGV0IGRhdGEgPSB0aGlzLnN0YXRlW2RhdGFfa2V5c1t0aGlzLnN0YXRlLmRhdGFfc2VsZWN0XVswXV1cblxuICAgIGlmIChhbmFseXplID09PSBmYWxzZSkgc2hvd19hY2N1cmFjeSA9IGZhbHNlXG5cbiAgICBsZXQgeyBDb21wb25lbnQgfSA9IHRoaXMucHJvcHNcbiAgICBsZXQgZm9udF9zaXplID0gMTZcbiAgICBsZXQgbGluZV9oZWlnaHQgPSAxLjVcbiAgICBsZXQgZ3JlbSA9IGZvbnRfc2l6ZSAqIGxpbmVfaGVpZ2h0XG5cbiAgICBjb25zdCB7IHBhdGhuYW1lIH0gPSB0aGlzLnByb3BzLnJvdXRlclxuXG4gICAgbGV0IGlzX2Zyb250ID0gcGF0aG5hbWUgPT09ICcvJ1xuICAgIGxldCBpc190b3BpYyA9IHBhdGhuYW1lLnN0YXJ0c1dpdGgoJy90b3BpYycpXG5cbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICoge1xuICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgICAgICAgIH1cbiAgICAgICAgICBodG1sIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMyMjI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsXG4gICAgICAgICAgICAgICdPeHlnZW4nLCAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsXG4gICAgICAgICAgICAgICdIZWx2ZXRpY2EgTmV1ZScsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgICAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICAgICAgICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGNvZGUge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgICAgICAgICAgIG1vbm9zcGFjZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcCB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICB0ZXh0LWluZGVudDogMS41cmVtO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwOmZpcnN0LWNoaWxkIHtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLFxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBjb2xvcjogaW5oZXJpdDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tb3BhY2l0eS1ob3Zlcjpob3ZlcixcbiAgICAgICAgICBidXR0b24ubm8tb3BhY2l0eS1ob3Zlcjpob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLm5vLXVuZGVybGluZSB7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBmb250OiBpbmhlcml0O1xuICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xuICAgICAgICAgICAgbGluZS1oZWlnaHQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbjpmb2N1cyB7XG4gICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICAgIHJpZ2h0OiAwO1xuICAgICAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2stY29udGFpbmVyIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICAgICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMDYyNSk7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXI6aG92ZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIG92ZXJmbG93OiAke3Nob3dfaW5mbyA/ICdoaWRkZW4nIDogJ2F1dG8nfTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPEhlYWRlclxuICAgICAgICAgIGlzX2Zyb250PXtpc19mcm9udH1cbiAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICBzaG93SW5mbz17dGhpcy5zaG93SW5mb31cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICBtaW5IZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogNCArIDF9cHgpYCxcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICd3aGl0ZScsXG4gICAgICAgICAgICBtaW5XaWR0aDogdGhpcy5zdGF0ZS5jb21wYXJlID8gNjAwIDogJ2F1dG8nLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICB7ZGF0YSAmJiB0aGlzLnN0YXRlLm5ic3ZtX2RhdGEgPyAoXG4gICAgICAgICAgICA8Q29udGFpbmVyPlxuICAgICAgICAgICAgICA8Q29tcG9uZW50XG4gICAgICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgICAgIGluZm89e2luZm99XG4gICAgICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QW5hbHl6ZT17dGhpcy5zZXRBbmFseXplfVxuICAgICAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QWxnbz17dGhpcy5zZXRBbGdvfVxuICAgICAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgICAgICBzZXRDb21wYXJlPXt0aGlzLnNldENvbXBhcmV9XG4gICAgICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgICAgIGhsX29wdGlvbnM9e3t9fVxuICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgPC9Db250YWluZXI+XG4gICAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiBncmVtIC8gMixcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogMn1weGAsXG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIExvYWRpbmcuLi5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIHBhZGRpbmc6IHAoZ3JlbSAvIDIsIGdyZW0gLyA0KSxcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICcjMjIyJyxcbiAgICAgICAgICAgIGNvbG9yOiAnd2hpdGUnLFxuICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLFxuICAgICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJyxcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiBwKDAsIGdyZW0gLyA0KSB9fT5cbiAgICAgICAgICAgIFRleHRmbGl4IGlzIGEgbmF0dXJhbCBsYW5ndWFnZSBwcm9jZXNzaW5nIHByb3RvdHlwZSBieSBDbG91ZGVyYSBGYXN0XG4gICAgICAgICAgICBGb3J3YXJkIExhYnNcbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9kaXNhZ3JlZW1lbnRzXCI+XG4gICAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgICAgc3R5bGU9e3sgdGV4dERlY29yYXRpb246ICd1bmRlcmxpbmUnLCBwYWRkaW5nOiBwKDAsIGdyZW0gLyA0KSB9fVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgRGlzYWdyZWVtZW50c1xuICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICB7c2hvd19pbmZvID8gKFxuICAgICAgICAgIDxUb3VyXG4gICAgICAgICAgICByb3V0ZXI9e3RoaXMucHJvcHMucm91dGVyfVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGZvbnRfc2l6ZT17Zm9udF9zaXplfVxuICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgIHNvcnQ9e3NvcnR9XG4gICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICBzZXRTb3J0PXt0aGlzLnNldFNvcnR9XG4gICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICBhbGduYW1lcz17YWxnbmFtZXN9XG4gICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICBzZXRBY2N1cmFjeT17dGhpcy5zZXRBY2N1cmFjeX1cbiAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgIG5ic3ZtX2RhdGE9e3RoaXMuc3RhdGUubmJzdm1fZGF0YX1cbiAgICAgICAgICAgIHNob3dJbmZvPXt0aGlzLnNob3dJbmZvfVxuICAgICAgICAgIC8+XG4gICAgICAgICkgOiBudWxsfVxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwXG4iXX0= */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_parts_Header__WEBPACK_IMPORTED_MODULE_18__["default"], {
+      }, "body{overflow:".concat(show_info ? 'hidden' : 'auto', ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ncmFudC5jdXN0ZXIvU2l0ZXMvbmV4dC1tb3ZpZXMvcGFnZXMvX2FwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFzTzJCLEFBR21ELHNDQUN4QyIsImZpbGUiOiIvVXNlcnMvZ3JhbnQuY3VzdGVyL1NpdGVzL25leHQtbW92aWVzL3BhZ2VzL19hcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgQXBwLCB7IENvbnRhaW5lciB9IGZyb20gJ25leHQvYXBwJ1xuaW1wb3J0IHsgaW5mbyB9IGZyb20gJy4uL2RhdGEvc2FtcGxlX21vdmllX2luZm8uanMnXG5pbXBvcnQgZ2V0Q29uZmlnIGZyb20gJ25leHQtc2VydmVyL2NvbmZpZydcbmltcG9ydCB7IHJlZCwgYmx1ZSwgQm9yZGVyIH0gZnJvbSAnLi4vcGFydHMvU3RhdGljJ1xuaW1wb3J0IHsgcCB9IGZyb20gJy4uL3BhcnRzL1V0aWxzJ1xuaW1wb3J0IEJhciBmcm9tICcuLi9wYXJ0cy9CYXInXG5pbXBvcnQgSGVhZGVyIGZyb20gJy4uL3BhcnRzL0hlYWRlcidcbmltcG9ydCBUb3VyIGZyb20gJy4uL3BhcnRzL1RvdXInXG5pbXBvcnQgTGluayBmcm9tICduZXh0L0xpbmsnXG5cbmxldCBhbGduYW1lcyA9IFsnTkJTVk0nLCAnQkVSVCddXG5sZXQgYWxnZmlsZXMgPSBbXG4gICduYnN2bV9saW1lXzUwMF9wcm90b3R5cGVfcHJldHR5Lmpzb24nLFxuICAnYmVydF9saW1lXzUwMF9wcm90b3R5cGVfcHJldHR5Lmpzb24nLFxuICAnbmJzdm1fbGltZV9ncm91cGVkX3ByZXR0eV93b3JkLmpzb24nLFxuXVxubGV0IGRhdGFfa2V5cyA9IFtcbiAgWyduYnN2bV9kYXRhJywgJ25ic3ZtX2xpbWVfNTAwX2dyb3VwZWRfcHJldHR5Lmpzb24nLCAnTkJTVk0nXSxcbiAgWydiZXJ0X2RhdGEnLCAnYmVydF9saW1lXzUwMF9wcm90b3R5cGVfcHJldHR5Lmpzb24nLCAnQkVSVCddLFxuXVxuXG5sZXQgbGlua1ByZWZpeCA9IHByb2Nlc3MuZW52LkJBQ0tFTkRfVVJMXG5cbmNsYXNzIE15QXBwIGV4dGVuZHMgQXBwIHtcbiAgY29uc3RydWN0b3IocHJvcHMpIHtcbiAgICBzdXBlcihwcm9wcylcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgYW5hbHl6ZTogdHJ1ZSxcbiAgICAgIGRhdGFfc2VsZWN0OiAxLFxuICAgICAgc2hvd19hY2N1cmFjeTogZmFsc2UsXG4gICAgICBzb3J0OiAncmV2aWV3cycsXG4gICAgICByZXZpZXdfc29ydDogJ2RhdGUnLFxuICAgICAgbmJzdm1fZGF0YTogbnVsbCxcbiAgICAgIGNvbXBhcmU6IGZhbHNlLFxuICAgICAgYmVydF9kYXRhOiBudWxsLFxuICAgICAgc2hvd19pbmZvOiBmYWxzZSxcbiAgICB9XG4gICAgdGhpcy5zZXRBbmFseXplID0gdGhpcy5zZXRBbmFseXplLmJpbmQodGhpcylcbiAgICB0aGlzLnNldFJldmlld1NvcnQgPSB0aGlzLnNldFJldmlld1NvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWNjdXJhY3kgPSB0aGlzLnNldEFjY3VyYWN5LmJpbmQodGhpcylcbiAgICB0aGlzLnNldFNvcnQgPSB0aGlzLnNldFNvcnQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0QWxnbyA9IHRoaXMuc2V0QWxnby5iaW5kKHRoaXMpXG4gICAgdGhpcy5zZXRDb21wYXJlID0gdGhpcy5zZXRDb21wYXJlLmJpbmQodGhpcylcbiAgICB0aGlzLnNob3dJbmZvID0gdGhpcy5zaG93SW5mby5iaW5kKHRoaXMpXG4gIH1cblxuICBmZXRjaERhdGEoKSB7XG4gICAgZmV0Y2gobGlua1ByZWZpeCArICcvc3RhdGljL2RhdGEvbmFtZXNfYW5kX2RhdGVzLmpzb24nKVxuICAgICAgLnRoZW4obmQgPT4gbmQuanNvbigpKVxuICAgICAgLnRoZW4obmQgPT4ge1xuICAgICAgICBmZXRjaChsaW5rUHJlZml4ICsgJy9zdGF0aWMvZGF0YS8nICsgYWxnZmlsZXNbMF0pXG4gICAgICAgICAgLnRoZW4ociA9PiByLmpzb24oKSlcbiAgICAgICAgICAudGhlbihyID0+IHtcbiAgICAgICAgICAgIGxldCByZXZpZXdzID0gci5tYXAoKHIsIGkpID0+IHtcbiAgICAgICAgICAgICAgbGV0IG5ld19yID0gT2JqZWN0LmFzc2lnbih7fSwgcilcbiAgICAgICAgICAgICAgbmV3X3IuaW5kZXggPSBpXG4gICAgICAgICAgICAgIG5ld19yLmF1dGhvciA9IG5kW2ldLmF1dGhvclxuICAgICAgICAgICAgICBuZXdfci5kYXRlID0gbmRbaV0uZGF0ZVxuICAgICAgICAgICAgICBuZXdfci5jbGFzcyA9XG4gICAgICAgICAgICAgICAgci5jbGFzc19wcm9iYWJpbGl0aWVzWzBdID4gci5jbGFzc19wcm9iYWJpbGl0aWVzWzFdXG4gICAgICAgICAgICAgICAgICA/ICduZWcnXG4gICAgICAgICAgICAgICAgICA6ICdwb3MnXG4gICAgICAgICAgICAgIHJldHVybiBuZXdfclxuICAgICAgICAgICAgfSlcbiAgICAgICAgICAgIGxldCBrZXkgPSBkYXRhX2tleXNbMF1bMF1cbiAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoeyBba2V5XTogcmV2aWV3cyB9KVxuICAgICAgICAgIH0pXG4gICAgICAgIGZldGNoKGxpbmtQcmVmaXggKyAnL3N0YXRpYy9kYXRhLycgKyBhbGdmaWxlc1sxXSlcbiAgICAgICAgICAudGhlbihyID0+IHIuanNvbigpKVxuICAgICAgICAgIC50aGVuKHIgPT4ge1xuICAgICAgICAgICAgbGV0IHJldmlld3MgPSByLm1hcCgociwgaSkgPT4ge1xuICAgICAgICAgICAgICBsZXQgbmV3X3IgPSBPYmplY3QuYXNzaWduKHt9LCByKVxuICAgICAgICAgICAgICBuZXdfci5pbmRleCA9IGlcbiAgICAgICAgICAgICAgbmV3X3IuYXV0aG9yID0gbmRbaV0uYXV0aG9yXG4gICAgICAgICAgICAgIG5ld19yLmRhdGUgPSBuZFtpXS5kYXRlXG4gICAgICAgICAgICAgIG5ld19yLmNsYXNzID1cbiAgICAgICAgICAgICAgICByLmNsYXNzX3Byb2JhYmlsaXRpZXNbMF0gPiByLmNsYXNzX3Byb2JhYmlsaXRpZXNbMV1cbiAgICAgICAgICAgICAgICAgID8gJ25lZydcbiAgICAgICAgICAgICAgICAgIDogJ3BvcydcbiAgICAgICAgICAgICAgcmV0dXJuIG5ld19yXG4gICAgICAgICAgICB9KVxuICAgICAgICAgICAgbGV0IGtleSA9IGRhdGFfa2V5c1sxXVswXVxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IFtrZXldOiByZXZpZXdzIH0pXG4gICAgICAgICAgfSlcbiAgICAgIH0pXG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICB0aGlzLmZldGNoRGF0YSgpXG4gICAgY29uc3QgeyBwYXRobmFtZSB9ID0gdGhpcy5wcm9wcy5yb3V0ZXJcbiAgICBsZXQgaXNfZnJvbnQgPSBwYXRobmFtZSA9PT0gJy8nXG4gICAgaWYgKGlzX2Zyb250KSB0aGlzLnNldFN0YXRlKHsgc2hvd19pbmZvOiB0cnVlIH0pXG4gIH1cblxuICBzZXRBbmFseXplKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGFuYWx5emU6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRSZXZpZXdTb3J0KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHJldmlld19zb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0U29ydCh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzb3J0OiB2YWx1ZSB9KVxuICB9XG5cbiAgc2V0QWxnbyhpbmRleCkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBkYXRhX3NlbGVjdDogaW5kZXggfSlcbiAgfVxuXG4gIHNldEFjY3VyYWN5KHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IHNob3dfYWNjdXJhY3k6IHZhbHVlIH0pXG4gIH1cblxuICBzZXRDb21wYXJlKHZhbHVlKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7IGNvbXBhcmU6IHZhbHVlIH0pXG4gIH1cblxuICBzaG93SW5mbyh2YWx1ZSkge1xuICAgIHRoaXMuc2V0U3RhdGUoeyBzaG93X2luZm86IHZhbHVlIH0pXG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgbGV0IHsgYW5hbHl6ZSwgc29ydCwgcmV2aWV3X3NvcnQsIHNob3dfYWNjdXJhY3ksIHNob3dfaW5mbyB9ID0gdGhpcy5zdGF0ZVxuXG4gICAgbGV0IGRhdGEgPSB0aGlzLnN0YXRlW2RhdGFfa2V5c1t0aGlzLnN0YXRlLmRhdGFfc2VsZWN0XVswXV1cblxuICAgIGlmIChhbmFseXplID09PSBmYWxzZSkgc2hvd19hY2N1cmFjeSA9IGZhbHNlXG5cbiAgICBsZXQgeyBDb21wb25lbnQgfSA9IHRoaXMucHJvcHNcbiAgICBsZXQgZm9udF9zaXplID0gMTZcbiAgICBsZXQgbGluZV9oZWlnaHQgPSAxLjVcbiAgICBsZXQgZ3JlbSA9IGZvbnRfc2l6ZSAqIGxpbmVfaGVpZ2h0XG5cbiAgICBjb25zdCB7IHBhdGhuYW1lIH0gPSB0aGlzLnByb3BzLnJvdXRlclxuXG4gICAgbGV0IGlzX2Zyb250ID0gcGF0aG5hbWUgPT09ICcvJ1xuICAgIGxldCBpc190b3BpYyA9IHBhdGhuYW1lLnN0YXJ0c1dpdGgoJy90b3BpYycpXG5cbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxuICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICoge1xuICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgICAgICAgIH1cbiAgICAgICAgICBodG1sIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMyMjI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJvZHkge1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsXG4gICAgICAgICAgICAgICdPeHlnZW4nLCAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsXG4gICAgICAgICAgICAgICdIZWx2ZXRpY2EgTmV1ZScsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgICAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICAgICAgICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGNvZGUge1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXG4gICAgICAgICAgICAgIG1vbm9zcGFjZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcCB7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICB0ZXh0LWluZGVudDogMS41cmVtO1xuICAgICAgICAgIH1cbiAgICAgICAgICBwOmZpcnN0LWNoaWxkIHtcbiAgICAgICAgICAgIHRleHQtaW5kZW50OiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLFxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBjb2xvcjogaW5oZXJpdDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGEubm8tb3BhY2l0eS1ob3Zlcjpob3ZlcixcbiAgICAgICAgICBidXR0b24ubm8tb3BhY2l0eS1ob3Zlcjpob3ZlciB7XG4gICAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgICBhLm5vLXVuZGVybGluZSB7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGE6aG92ZXIgLm9wYWNpdHktaW5uZXItaG92ZXIsXG4gICAgICAgICAgYnV0dG9uOmhvdmVyIC5vcGFjaXR5LWlubmVyLWhvdmVyIHtcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzU7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBmb250OiBpbmhlcml0O1xuICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xuICAgICAgICAgICAgbGluZS1oZWlnaHQ6IGluaGVyaXQ7XG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgfVxuICAgICAgICAgIGJ1dHRvbjpmb2N1cyB7XG4gICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2sge1xuICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICAgICAgbGVmdDogMDtcbiAgICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICAgIHJpZ2h0OiAwO1xuICAgICAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuaG92ZXItYmxvY2stY29udGFpbmVyIC5ob3Zlci1ibG9jayB7XG4gICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICAgICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC4xcyBsaW5lYXI7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMDYyNSk7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ob3Zlci1ibG9jay1jb250YWluZXI6aG92ZXIgLmhvdmVyLWJsb2NrIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIG92ZXJmbG93OiAke3Nob3dfaW5mbyA/ICdoaWRkZW4nIDogJ2F1dG8nfTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPEhlYWRlclxuICAgICAgICAgIGlzX2Zyb250PXtpc19mcm9udH1cbiAgICAgICAgICBncmVtPXtncmVtfVxuICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgc2hvd19hY2N1cmFjeT17c2hvd19hY2N1cmFjeX1cbiAgICAgICAgICBzaG93SW5mbz17dGhpcy5zaG93SW5mb31cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICBtaW5IZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogNCArIDF9cHgpYCxcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICd3aGl0ZScsXG4gICAgICAgICAgICBtaW5XaWR0aDogdGhpcy5zdGF0ZS5jb21wYXJlID8gNjAwIDogJ2F1dG8nLFxuICAgICAgICAgIH19XG4gICAgICAgID5cbiAgICAgICAgICB7ZGF0YSAmJiB0aGlzLnN0YXRlLm5ic3ZtX2RhdGEgPyAoXG4gICAgICAgICAgICA8Q29udGFpbmVyPlxuICAgICAgICAgICAgICA8Q29tcG9uZW50XG4gICAgICAgICAgICAgICAgZm9udF9zaXplPXtmb250X3NpemV9XG4gICAgICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgICAgIGdyZW09e2dyZW19XG4gICAgICAgICAgICAgICAgYW5hbHl6ZT17YW5hbHl6ZX1cbiAgICAgICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgICAgIGluZm89e2luZm99XG4gICAgICAgICAgICAgICAgc29ydD17c29ydH1cbiAgICAgICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QW5hbHl6ZT17dGhpcy5zZXRBbmFseXplfVxuICAgICAgICAgICAgICAgIHNldFNvcnQ9e3RoaXMuc2V0U29ydH1cbiAgICAgICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICAgICAgc2V0QWxnbz17dGhpcy5zZXRBbGdvfVxuICAgICAgICAgICAgICAgIGFsZ25hbWVzPXthbGduYW1lc31cbiAgICAgICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgICAgICBzaG93X2FjY3VyYWN5PXtzaG93X2FjY3VyYWN5fVxuICAgICAgICAgICAgICAgIHNldEFjY3VyYWN5PXt0aGlzLnNldEFjY3VyYWN5fVxuICAgICAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgICAgICBzZXRDb21wYXJlPXt0aGlzLnNldENvbXBhcmV9XG4gICAgICAgICAgICAgICAgbmJzdm1fZGF0YT17dGhpcy5zdGF0ZS5uYnN2bV9kYXRhfVxuICAgICAgICAgICAgICAgIGhsX29wdGlvbnM9e3t9fVxuICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgPC9Db250YWluZXI+XG4gICAgICAgICAgKSA6IChcbiAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiBncmVtIC8gMixcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IGBjYWxjKDEwMHZoIC0gJHtncmVtICogMn1weGAsXG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIExvYWRpbmcuLi5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2XG4gICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgIHBhZGRpbmc6IHAoZ3JlbSAvIDIsIGdyZW0gLyA0KSxcbiAgICAgICAgICAgIGJhY2tncm91bmQ6ICcjMjIyJyxcbiAgICAgICAgICAgIGNvbG9yOiAnd2hpdGUnLFxuICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLFxuICAgICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJyxcbiAgICAgICAgICB9fVxuICAgICAgICA+XG4gICAgICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiBwKDAsIGdyZW0gLyA0KSB9fT5cbiAgICAgICAgICAgIFRleHRmbGl4IGlzIGEgbmF0dXJhbCBsYW5ndWFnZSBwcm9jZXNzaW5nIHByb3RvdHlwZSBieSBDbG91ZGVyYSBGYXN0XG4gICAgICAgICAgICBGb3J3YXJkIExhYnNcbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9kaXNhZ3JlZW1lbnRzXCI+XG4gICAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgICAgc3R5bGU9e3sgdGV4dERlY29yYXRpb246ICd1bmRlcmxpbmUnLCBwYWRkaW5nOiBwKDAsIGdyZW0gLyA0KSB9fVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgRGlzYWdyZWVtZW50c1xuICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICB7c2hvd19pbmZvID8gKFxuICAgICAgICAgIDxUb3VyXG4gICAgICAgICAgICByb3V0ZXI9e3RoaXMucHJvcHMucm91dGVyfVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGZvbnRfc2l6ZT17Zm9udF9zaXplfVxuICAgICAgICAgICAgbGluZV9oZWlnaHQ9e2xpbmVfaGVpZ2h0fVxuICAgICAgICAgICAgZ3JlbT17Z3JlbX1cbiAgICAgICAgICAgIGFuYWx5emU9e2FuYWx5emV9XG4gICAgICAgICAgICBkYXRhPXtkYXRhfVxuICAgICAgICAgICAgaW5mbz17aW5mb31cbiAgICAgICAgICAgIHNvcnQ9e3NvcnR9XG4gICAgICAgICAgICByZXZpZXdfc29ydD17cmV2aWV3X3NvcnR9XG4gICAgICAgICAgICBzZXRBbmFseXplPXt0aGlzLnNldEFuYWx5emV9XG4gICAgICAgICAgICBzZXRTb3J0PXt0aGlzLnNldFNvcnR9XG4gICAgICAgICAgICBzZXRSZXZpZXdTb3J0PXt0aGlzLnNldFJldmlld1NvcnR9XG4gICAgICAgICAgICBzZXRBbGdvPXt0aGlzLnNldEFsZ299XG4gICAgICAgICAgICBhbGduYW1lcz17YWxnbmFtZXN9XG4gICAgICAgICAgICBkYXRhX3NlbGVjdD17dGhpcy5zdGF0ZS5kYXRhX3NlbGVjdH1cbiAgICAgICAgICAgIHNob3dfYWNjdXJhY3k9e3Nob3dfYWNjdXJhY3l9XG4gICAgICAgICAgICBzZXRBY2N1cmFjeT17dGhpcy5zZXRBY2N1cmFjeX1cbiAgICAgICAgICAgIGNvbXBhcmU9e3RoaXMuc3RhdGUuY29tcGFyZX1cbiAgICAgICAgICAgIHNldENvbXBhcmU9e3RoaXMuc2V0Q29tcGFyZX1cbiAgICAgICAgICAgIG5ic3ZtX2RhdGE9e3RoaXMuc3RhdGUubmJzdm1fZGF0YX1cbiAgICAgICAgICAgIHNob3dJbmZvPXt0aGlzLnNob3dJbmZvfVxuICAgICAgICAgIC8+XG4gICAgICAgICkgOiBudWxsfVxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwXG4iXX0= */\n/*@ sourceURL=/Users/grant.custer/Sites/next-movies/pages/_app.js */")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_parts_Header__WEBPACK_IMPORTED_MODULE_17__["default"], {
         is_front: is_front,
         grem: grem,
         analyze: analyze,
@@ -64240,7 +64256,7 @@ function (_App) {
         showInfo: this.showInfo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 236
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
@@ -64252,13 +64268,13 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 243
         },
         __self: this
       }, data && this.state.nbsvm_data ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_11__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244
+          lineNumber: 251
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Component, {
@@ -64285,7 +64301,7 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 252
         },
         __self: this
       })) : react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
@@ -64296,12 +64312,12 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 276
         },
         __self: this
       }, "Loading...")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
-          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_16__["p"])(grem / 2, grem / 4),
+          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_15__["p"])(grem / 2, grem / 4),
           background: '#222',
           color: 'white',
           display: 'flex',
@@ -64310,52 +64326,52 @@ function (_App) {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 286
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
-          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_16__["p"])(0, grem / 4)
+          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_15__["p"])(0, grem / 4)
         },
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 295
         },
         __self: this
       }, "Textflix is a natural language processing prototype by Cloudera Fast Forward Labs"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 299
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_20___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_19___default.a, {
         href: "/disagreements",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 300
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
         style: {
           textDecoration: 'underline',
-          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_16__["p"])(0, grem / 4)
+          padding: Object(_parts_Utils__WEBPACK_IMPORTED_MODULE_15__["p"])(0, grem / 4)
         },
         className: "jsx-2343230763 " + styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["107552866", [show_info ? 'hidden' : 'auto']]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 301
         },
         __self: this
-      }, "Disagreements")))), show_info ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_parts_Tour__WEBPACK_IMPORTED_MODULE_19__["default"], (_React$createElement = {
+      }, "Disagreements")))), show_info ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_parts_Tour__WEBPACK_IMPORTED_MODULE_18__["default"], (_React$createElement = {
         router: this.props.router,
         grem: grem,
         font_size: font_size,
         line_height: line_height
       }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "grem", grem), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "analyze", analyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "data", data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "info", _data_sample_movie_info_js__WEBPACK_IMPORTED_MODULE_12__["info"]), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "sort", sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "review_sort", review_sort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAnalyze", this.setAnalyze), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setSort", this.setSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setReviewSort", this.setReviewSort), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAlgo", this.setAlgo), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "algnames", algnames), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "data_select", this.state.data_select), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "show_accuracy", show_accuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setAccuracy", this.setAccuracy), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "compare", this.state.compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setCompare", this.setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "nbsvm_data", this.state.nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "showInfo", this.showInfo), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 303
+        lineNumber: 310
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)) : null);
     }
   }]);
