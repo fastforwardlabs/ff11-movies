@@ -556,7 +556,7 @@ class Tour extends React.Component {
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 7. For each review you can see both the model's classification
-                and certainty. We use an interpretability technique called SHAP
+                and certainty. We use an interpretability technique called LIME
                 to determine how each sentence is affecting the classification.
                 We underline the sentences that contribute most strongly to the
                 classification. This added interpretability helps us understand
