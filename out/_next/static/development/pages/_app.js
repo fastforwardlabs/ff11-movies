@@ -67201,7 +67201,7 @@ function (_React$Component) {
           lineNumber: 557
         },
         __self: this
-      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called SHAP to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand how the model is making its decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand how the model is making its decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,

@@ -685,7 +685,7 @@ function (_React$Component) {
       }, "negative"), ". More info about the main model here. Additional analysis options let you see the model's accuracy and compare it to a simpler approach."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 486
+          lineNumber: 488
         },
         __self: this
       }, "You can", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -697,7 +697,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 488
+          lineNumber: 490
         },
         __self: this
       }, "jump in now"), ' ', "or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -707,7 +707,7 @@ function (_React$Component) {
         onClick: this.scrollNext,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 497
+          lineNumber: 499
         },
         __self: this
       }, "scroll to take the interactive tour \u2193"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -716,13 +716,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 507
+          lineNumber: 509
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 508
+          lineNumber: 510
         },
         __self: this
       }, "1. The overview page features an eclectic mix of fifty movie and TV shows. Without analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -731,13 +731,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 515
+          lineNumber: 517
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 518
         },
         __self: this
       }, "2. With sentiment analysis, we can show the user how many of the reviews are positive or negative."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -746,19 +746,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 522
+          lineNumber: 524
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 523
+          lineNumber: 525
         },
         __self: this
       }, "3. With that info uncovered you can sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 525
+          lineNumber: 527
         },
         __self: this
       }, "Just Before Dawn"), ", a slasher horror film from 1981, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -767,25 +767,25 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 530
+          lineNumber: 532
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 531
+          lineNumber: 533
         },
         __self: this
       }, "4. Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 532
+          lineNumber: 534
         },
         __self: this
       }, "The Box"), ", Richard Kelly's disastrous follow-up to ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 533
+          lineNumber: 535
         },
         __self: this
       }, "Donnie Darko"), ", is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -794,19 +794,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 538
+          lineNumber: 540
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 539
+          lineNumber: 541
         },
         __self: this
       }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the movie", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 543
+          lineNumber: 545
         },
         __self: this
       }, "Accepted"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -815,13 +815,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 547
+          lineNumber: 549
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 548
+          lineNumber: 550
         },
         __self: this
       }, "6. With analysis you can immediately see that the reviews are", ' ', "generally (70%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -830,28 +830,28 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 554
+          lineNumber: 556
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 555
+          lineNumber: 557
         },
         __self: this
-      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called SHAP to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand how the model is making its decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand how the model is making its decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 565
+          lineNumber: 567
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 566
+          lineNumber: 568
         },
         __self: this
       }, "8. In addition to underlining important sentences within the review, we use the highest scoring sentences as highlights. Showing, at a glance, what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -860,13 +860,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 574
+          lineNumber: 576
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 575
+          lineNumber: 577
         },
         __self: this
       }, "9. So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at the options that show model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -875,19 +875,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 582
+          lineNumber: 584
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 583
+          lineNumber: 585
         },
         __self: this
       }, "10. The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 584
+          lineNumber: 586
         },
         __self: this
       }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 93% accuracy for the 1,021 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -896,13 +896,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 591
+          lineNumber: 593
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 592
+          lineNumber: 594
         },
         __self: this
       }, "11. On the topic page, you can examine the model's accuracy on a review by review basis."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -911,19 +911,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 598
+          lineNumber: 600
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 599
+          lineNumber: 601
         },
         __self: this
       }, "12. You can sort the reviews by ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 600
+          lineNumber: 602
         },
         __self: this
       }, "inaccurate"), " to focus on the ones it got wrong."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -932,19 +932,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 605
+          lineNumber: 607
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 606
+          lineNumber: 608
         },
         __self: this
       }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 607
+          lineNumber: 609
         },
         __self: this
       }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline model on the left and our main model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -953,13 +953,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 614
+          lineNumber: 616
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 615
+          lineNumber: 617
         },
         __self: this
       }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -968,19 +968,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 622
+          lineNumber: 624
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 623
+          lineNumber: 625
         },
         __self: this
       }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 625
+          lineNumber: 627
         },
         __self: this
       }, "Disagreements"), " page, linked to at the bottom of each page, to see a list of all the reviews where the models disagreed. You'll notice that our model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -989,13 +989,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 632
+          lineNumber: 634
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 633
+          lineNumber: 635
         },
         __self: this
       }, "Fin. That's the end of our tour. Now you're ready to explore Textflix yourself."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -1004,7 +1004,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 637
+          lineNumber: 639
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -1014,7 +1014,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 638
+          lineNumber: 640
         },
         __self: this
       }, "End tour \u2193"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -1024,7 +1024,7 @@ function (_React$Component) {
         trans: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 646
+          lineNumber: 648
         },
         __self: this
       }))));
@@ -1039,4 +1039,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=_app.js.ab2995ef047fc3571143.hot-update.js.map
+//# sourceMappingURL=_app.js.8ece68110e2eb1629864.hot-update.js.map
