@@ -66046,7 +66046,7 @@ function (_React$Component) {
           // boxShadow: '6px 8px #222',
           padding: grem / 2,
           opacity: trans ? 0 : 1
-        }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "background", one_screen ? 'white' : '#333'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "color", one_screen ? 'black' : 'white'), _ref),
+        }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "background", one_screen ? 'white' : '#222'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "color", one_screen ? 'black' : 'white'), _ref),
         onClick: function onClick(e) {
           one_screen ? e.stopPropagation() : null;
         },
@@ -66596,8 +66596,8 @@ function (_React$Component) {
       if (step > 9) index_accuracy = true;
       var reviews_accuracy = false;
       if (step > 9) reviews_accuracy = true;
-      var review_id = 'tt0384793';
-      if (step > 9) review_id = 'tt0069994';
+      var review_id = 'tt0317740';
+      if (step > 9) review_id = 'tt0317740';
       var reviews_sort = 'date';
       if (step > 11) reviews_sort = 'inaccurate';
       if (step > 13) reviews_sort = 'date';
@@ -66611,7 +66611,8 @@ function (_React$Component) {
       var space = 0.75;
       var next = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
-          marginTop: grem * 0
+          marginTop: grem * 0,
+          textIndent: grem
         },
         __source: {
           fileName: _jsxFileName,
@@ -66991,10 +66992,17 @@ function (_React$Component) {
           lineNumber: 458
         },
         __self: this
-      }, "Textflix is a sentiment analysis prototype by Cloudera Fast Forward Labs, built to accompany our report on transfer learning for natural language processing. It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "Textflix is a sentiment analysis prototype by", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "https://www.cloudera.com/products/fast-forward-labs-research.html",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 465
+          lineNumber: 460
+        },
+        __self: this
+      }, "Cloudera Fast Forward Labs"), ", built to accompany our report on transfer learning for natural language processing. It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 468
         },
         __self: this
       }, "Textflix features over 1,000 text reviews for 50 movies and TV shows. The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67003,7 +67011,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 468
+          lineNumber: 471
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67018,16 +67026,23 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 469
+          lineNumber: 472
         },
         __self: this
-      }), ' ', "Analyze"), ' ', "option uses a neural network to classify each review as", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+      }), ' ', "Analyze"), ' ', "option uses a model pretrained with", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "https://github.com/google-research/bert",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 486
+        },
+        __self: this
+      }, "BERT"), " to classify each review as", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         style: {
           background: _parts_Static__WEBPACK_IMPORTED_MODULE_12__["blue"]
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 483
+          lineNumber: 488
         },
         __self: this
       }, "positive"), " or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67036,16 +67051,26 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 484
+          lineNumber: 489
         },
         __self: this
-      }, "negative"), ". More info about the main model here. Additional analysis options let you see the model's accuracy and compare it to a simpler approach."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "negative"), ". Trained on only 500 labeled reviews, the model achieves 92% accuracy. Textflix lets you explore each classification at the sentence level and compare the model's performance to a baseline NB-SVM model."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 488
+          lineNumber: 495
         },
         __self: this
-      }, "You can", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+      }, "We recommend", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        style: {
+          textDecoration: 'underline'
+        },
+        onClick: this.scrollNext,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 497
+        },
+        __self: this
+      }, "scrolling to take the interactive tour \u2193"), ' ', "but you can also", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         style: {
           textDecoration: 'underline'
         },
@@ -67054,50 +67079,25 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 490
+          lineNumber: 504
         },
         __self: this
-      }, "jump in now"), ' ', "or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
-        style: {
-          textDecoration: 'underline'
-        },
-        onClick: this.scrollNext,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 499
-        },
-        __self: this
-      }, "scroll to take the interactive tour \u2193"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "jump right in"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 509
+          lineNumber: 516
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 510
-        },
-        __self: this
-      }, "1. The overview page features an eclectic mix of fifty movie and TV shows. Without analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        grem: grem,
-        spacer: space,
-        wh: wh,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 517
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 518
-        },
-        __self: this
-      }, "2. With sentiment analysis, we can show the user how many of the reviews are positive or negative."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "1. The overview page features an eclectic mix of fifty movie and TV shows. Without sentiment analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67112,61 +67112,49 @@ function (_React$Component) {
           lineNumber: 525
         },
         __self: this
-      }, "3. With that info uncovered you can sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 527
-        },
-        __self: this
-      }, "Just Before Dawn"), ", a slasher horror film from 1981, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "2. With sentiment analysis, we can show the percent of positive reviews for each movie. Now a user can see the general sentiment for a movie without reading every review. Our app is now much more useful to a user trying to decide which movie to see."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 532
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 533
         },
         __self: this
-      }, "4. Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 534
         },
         __self: this
-      }, "The Box"), ", Richard Kelly's disastrous follow-up to ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+      }, "3. We can now do things like sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 535
+          lineNumber: 536
         },
         __self: this
-      }, "Donnie Darko"), ", is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "What Alice Saw"), ", an indie thriller from 2003, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 540
+          lineNumber: 541
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 541
+          lineNumber: 542
         },
         __self: this
-      }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the movie", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+      }, "4. Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 545
+          lineNumber: 543
         },
         __self: this
-      }, "Accepted"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "Flood"), ", a disaster movie that most reviewers found unconvincing, is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67181,37 +67169,43 @@ function (_React$Component) {
           lineNumber: 550
         },
         __self: this
-      }, "6. With analysis you can immediately see that the reviews are", ' ', "generally (70%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the 2003", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 554
+        },
+        __self: this
+      }, "The Italian Job"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 556
+          lineNumber: 558
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 557
+          lineNumber: 559
         },
         __self: this
-      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand how the model is making its decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "6. With analysis you can immediately see that the reviews are", ' ', "generally (68%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 567
+          lineNumber: 565
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568
+          lineNumber: 566
         },
         __self: this
-      }, "8. In addition to underlining important sentences within the review, we use the highest scoring sentences as highlights. Showing, at a glance, what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand the model's decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67226,28 +67220,22 @@ function (_React$Component) {
           lineNumber: 577
         },
         __self: this
-      }, "9. So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at the options that show model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "8. In addition to underlining important sentences within the review, we use the highest scoring sentences as highlights. The highlights provide a summary of what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 584
+          lineNumber: 585
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 585
-        },
-        __self: this
-      }, "10. The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 586
         },
         __self: this
-      }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 93% accuracy for the 1,021 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "9. So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67262,49 +67250,49 @@ function (_React$Component) {
           lineNumber: 594
         },
         __self: this
+      }, "10. The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 595
+        },
+        __self: this
+      }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 92% accuracy for the 1,011 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 602
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 603
+        },
+        __self: this
       }, "11. On the topic page, you can examine the model's accuracy on a review by review basis."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 600
+          lineNumber: 609
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 601
+          lineNumber: 610
         },
         __self: this
       }, "12. You can sort the reviews by ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 602
+          lineNumber: 611
         },
         __self: this
       }, "inaccurate"), " to focus on the ones it got wrong."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        grem: grem,
-        spacer: space,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 607
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 608
-        },
-        __self: this
-      }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 609
-        },
-        __self: this
-      }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline model on the left and our main model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67319,28 +67307,28 @@ function (_React$Component) {
           lineNumber: 617
         },
         __self: this
-      }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 618
+        },
+        __self: this
+      }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline NB-SVM model on the left and the pretrained model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 624
+          lineNumber: 626
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 625
-        },
-        __self: this
-      }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 627
         },
         __self: this
-      }, "Disagreements"), " page, linked to at the bottom of each page, to see a list of all the reviews where the models disagreed. You'll notice that our model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -67355,13 +67343,35 @@ function (_React$Component) {
           lineNumber: 635
         },
         __self: this
+      }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 637
+        },
+        __self: this
+      }, "Disagreements"), " page, linked at the bottom of the page, to see a list of all the reviews where the models disagreed. You'll notice that the pretrained model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 644
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 645
+        },
+        __self: this
       }, "Fin. That's the end of our tour. Now you're ready to explore Textflix yourself."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
-          marginTop: grem * 0
+          marginTop: grem * 0,
+          textIndent: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 639
+          lineNumber: 649
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67371,7 +67381,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 640
+          lineNumber: 650
         },
         __self: this
       }, "End tour \u2193"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67381,7 +67391,7 @@ function (_React$Component) {
         trans: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 648
+          lineNumber: 658
         },
         __self: this
       }))));
