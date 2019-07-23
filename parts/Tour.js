@@ -139,8 +139,8 @@ class Tour extends React.Component {
     let reviews_accuracy = false
     if (step > 9) reviews_accuracy = true
 
-    let review_id = 'tt0384793'
-    if (step > 9) review_id = 'tt0069994'
+    let review_id = 'tt0317740'
+    if (step > 9) review_id = 'tt0317740'
 
     let reviews_sort = 'date'
     if (step > 11) reviews_sort = 'inaccurate'
@@ -158,7 +158,7 @@ class Tour extends React.Component {
     let space = 0.75
 
     let next = (
-      <div style={{ marginTop: grem * 0 }}>
+      <div style={{ marginTop: grem * 0, textIndent: grem }}>
         <button
           onClick={this.scrollNext}
           style={{ textDecoration: 'underline' }}
@@ -456,11 +456,14 @@ class Tour extends React.Component {
               </div>
               <div>
                 <p>
-                  Textflix is a sentiment analysis prototype by Cloudera Fast
-                  Forward Labs, built to accompany our report on transfer
-                  learning for natural language processing. It uses movie
-                  reviews to show how machine learning can unlock the data
-                  embedded in large amounts of unstructured text.
+                  Textflix is a sentiment analysis prototype by{' '}
+                  <a href="https://www.cloudera.com/products/fast-forward-labs-research.html">
+                    Cloudera Fast Forward Labs
+                  </a>
+                  , built to accompany our report on transfer learning for
+                  natural language processing. It uses movie reviews to show how
+                  machine learning can unlock the data embedded in large amounts
+                  of unstructured text.
                 </p>
                 <p>
                   Textflix features over 1,000 text reviews for 50 movies and TV
@@ -479,28 +482,32 @@ class Tour extends React.Component {
                     />{' '}
                     Analyze
                   </span>{' '}
-                  option uses a neural network to classify each review as{' '}
+                  option uses a model pretrained with{' '}
+                  <a href="https://github.com/google-research/bert">BERT</a> to
+                  classify each review as{' '}
                   <span style={{ background: blue }}>positive</span> or{' '}
-                  <span style={{ background: red }}>negative</span>. More info
-                  about the main model here. Additional analysis options let you
-                  see the model's accuracy and compare it to a simpler approach.
+                  <span style={{ background: red }}>negative</span>. Trained on
+                  only 500 labeled reviews, the model achieves 92% accuracy.
+                  Textflix lets you explore each classification at the sentence
+                  level and compare the model's performance to a baseline NB-SVM
+                  model.
                 </p>{' '}
                 <p>
-                  You can{' '}
+                  We recommend{' '}
+                  <button
+                    style={{ textDecoration: 'underline' }}
+                    onClick={this.scrollNext}
+                  >
+                    scrolling to take the interactive tour ↓
+                  </button>{' '}
+                  but you can also{' '}
                   <button
                     style={{ textDecoration: 'underline' }}
                     onClick={() => {
                       showInfo(false)
                     }}
                   >
-                    jump in now
-                  </button>{' '}
-                  or{' '}
-                  <button
-                    style={{ textDecoration: 'underline' }}
-                    onClick={this.scrollNext}
-                  >
-                    scroll to take the interactive tour ↓
+                    jump right in
                   </button>
                   .
                 </p>
@@ -509,31 +516,33 @@ class Tour extends React.Component {
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 1. The overview page features an eclectic mix of fifty movie and
-                TV shows. Without analysis, the only thing we can tell you about
-                their reviews is how many there are.
+                TV shows. Without sentiment analysis, the only thing we can tell
+                you about their reviews is how many there are.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                2. With sentiment analysis, we can show the user how many of the
-                reviews are positive or negative.
+                2. With sentiment analysis, we can show the percent of positive
+                reviews for each movie. Now a user can see the general sentiment
+                for a movie without reading every review. Our app is now much
+                more useful to a user trying to decide which movie to see.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                3. With that info uncovered you can sort by most positive
-                reviews, and find out that <i>Just Before Dawn</i>, a slasher
-                horror film from 1981, is the most liked movie.
+                3. We can now do things like sort by most positive reviews, and
+                find out that <i>What Alice Saw</i>, an indie thriller from
+                2003, is the most liked movie.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
-                4. Or sort by most negative and find out <i>The Box</i>, Richard
-                Kelly's disastrous follow-up to <i>Donnie Darko</i>, is the most
-                disliked.
+                4. Or sort by most negative and find out <i>Flood</i>, a
+                disaster movie that most reviewers found unconvincing, is the
+                most disliked.
               </p>
               {next}
             </Scene>
@@ -541,15 +550,15 @@ class Tour extends React.Component {
               <p>
                 5. Now let's look at an individual movie. Without sentiment
                 analysis you would have to read through the reviews one-by-one
-                to get a sense for how people feel about the movie{' '}
-                <i>Accepted</i>.
+                to get a sense for how people feel about the 2003{' '}
+                <i>The Italian Job</i>.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 6. With analysis you can immediately see that the reviews are{' '}
-                generally (70%) positive.
+                generally (68%) positive.
               </p>
               {next}
             </Scene>
@@ -560,24 +569,24 @@ class Tour extends React.Component {
                 to determine how each sentence is affecting the classification.
                 We underline the sentences that contribute most strongly to the
                 classification. This added interpretability helps us understand
-                how the model is making its decisions.
+                the model's decisions.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 8. In addition to underlining important sentences within the
-                review, we use the highest scoring sentences as highlights.
-                Showing, at a glance, what people most liked and disliked about
-                the movie.
+                review, we use the highest scoring sentences as highlights. The
+                highlights provide a summary of what people most liked and
+                disliked about the movie.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 9. So far we've shown you how analysis can unlock the data
-                embedded within text. Now we're going to look at the options
-                that show model performance.
+                embedded within text. Now we're going to look at model
+                performance.
               </p>
               {next}
             </Scene>
@@ -585,7 +594,7 @@ class Tour extends React.Component {
               <p>
                 10. The <i>show accuracy</i> option exposes how the model's
                 classifications compare to the original rating entered by the
-                reviewer. Our model achieves 93% accuracy for the 1,021 reviews
+                reviewer. Our model achieves 92% accuracy for the 1,011 reviews
                 in the dataset.
               </p>
               {next}
@@ -609,7 +618,8 @@ class Tour extends React.Component {
                 13. Finally, you can use the <i>model comparison</i> option to
                 see how our model compares to one trained without the benefit of
                 transfer learning. This mode introduces a split-screen, with the
-                baseline model on the left and our main model on the right.
+                baseline NB-SVM model on the left and the pretrained model on
+                the right.
               </p>
               {next}
             </Scene>
@@ -625,9 +635,9 @@ class Tour extends React.Component {
               <p>
                 15. If you want to get a more thorough look at the
                 disagreements, check out the <i>Disagreements</i> page, linked
-                to at the bottom of each page, to see a list of all the reviews
-                where the models disagreed. You'll notice that our model is the
-                winner of the majority of the disagreements.
+                at the bottom of the page, to see a list of all the reviews
+                where the models disagreed. You'll notice that the pretrained
+                model is the winner of the majority of the disagreements.
               </p>
               {next}
             </Scene>
@@ -636,7 +646,7 @@ class Tour extends React.Component {
                 Fin. That's the end of our tour. Now you're ready to explore
                 Textflix yourself.
               </p>
-              <div style={{ marginTop: grem * 0 }}>
+              <div style={{ marginTop: grem * 0, textIndent: grem }}>
                 <button
                   onClick={this.scrollNext}
                   style={{ textDecoration: 'underline' }}

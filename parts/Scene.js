@@ -31,7 +31,7 @@ class Scene extends React.Component {
             // boxShadow: '6px 8px #222',
             padding: grem / 2,
             opacity: trans ? 0 : 1,
-            background: one_screen ? 'white' : '#333',
+            background: one_screen ? 'white' : '#222',
             color: one_screen ? 'black' : 'white',
             // boxShadow: trans ? 'none' : '0 2px 8px rgba(0,0,0,0.3)',
             // boxShadow: one_screen ? 'none' : '0 1px 3px #222',
