@@ -467,7 +467,11 @@ class Tour extends React.Component {
                 </p>
                 <p>
                   Textflix features over 1,000 text reviews for 50 movies and TV
-                  shows. The{' '}
+                  shows from the{' '}
+                  <a href="https://www.kaggle.com/iarunava/imdb-movie-reviews-dataset">
+                    IMDB review dataset
+                  </a>
+                  . The{' '}
                   <span style={{ whiteSpace: 'nowrap' }}>
                     <span
                       style={{
