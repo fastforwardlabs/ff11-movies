@@ -65093,7 +65093,6 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: !is_front ? '' : 'no-opacity-hover',
         style: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
-          padding: grem / 2,
           display: 'block',
           textDecoration: 'none',
           fontWeight: 700
@@ -65103,75 +65102,30 @@ function (_React$Component) {
           lineNumber: 18
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, is_front ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         style: {
-          width: grem,
-          height: grem,
-          marginRight: grem / 2,
-          position: 'relative',
-          display: 'none'
+          padding: grem / 2
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        style: {
-          position: 'absolute',
-          left: 0,
-          top: 0,
-          width: grem / 2,
-          height: grem / 2,
-          background: analyze ? _Static__WEBPACK_IMPORTED_MODULE_8__["blue"] : 'white'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        style: {
-          position: 'absolute',
-          left: grem / 2,
-          top: 0,
-          width: grem / 2,
-          height: grem / 2,
-          background: analyze ? _Static__WEBPACK_IMPORTED_MODULE_8__["red"] : 'white'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        style: {
-          position: 'absolute',
-          left: 0,
-          top: grem / 2,
-          width: grem / 2,
-          height: grem / 2,
-          background: show_accuracy ? '#ddd' : 'white'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      })), is_front ? 'Textflix' : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      }, "Textflix") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         style: {
-          textDecoration: 'none'
+          textDecoration: 'none',
+          padding: grem / 2
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 31
         },
         __self: this
       }, "Textflix"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
@@ -65184,7 +65138,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 37
         },
         __self: this
       }, "Info"));
@@ -66596,8 +66550,8 @@ function (_React$Component) {
       if (step > 9) index_accuracy = true;
       var reviews_accuracy = false;
       if (step > 9) reviews_accuracy = true;
-      var review_id = 'tt0317740';
-      if (step > 9) review_id = 'tt0317740';
+      var review_id = 'tt0120786';
+      if (step > 9) review_id = 'tt0120786';
       var reviews_sort = 'date';
       if (step > 11) reviews_sort = 'inaccurate';
       if (step > 13) reviews_sort = 'date';
@@ -66737,7 +66691,7 @@ function (_React$Component) {
         query: {
           id: 'tt0762073'
         }
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "compare", compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
+      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
         fileName: _jsxFileName,
         lineNumber: 248
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)) : null, step > 4 && step < 15 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Topic2__WEBPACK_IMPORTED_MODULE_14__["default"], (_React$createElement2 = {
@@ -66771,7 +66725,7 @@ function (_React$Component) {
           bottom: 0,
           zIndex: 9999,
           overflow: 'auto',
-          background: 'rgba(0,0,0,0.0625)',
+          background: "repeating-linear-gradient(\n              ".concat(0, "deg,\n              rgba(0,0,0,0.1) 0px,\n              rgba(0,0,0,0.1) 2px,\n              rgba(0,0,0,0) 2px,\n              rgba(0,0,0,0) 4px\n            )"),
           cursor: step > 0 ? 's-resize' : 'pointer'
         },
         ref: this.scrollRef,
@@ -66790,7 +66744,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 345
+          lineNumber: 351
         },
         __self: this
       }, step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66803,7 +66757,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 347
+          lineNumber: 353
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -66815,13 +66769,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 356
+          lineNumber: 362
         },
         __self: this
       }, "Quit")) : null), step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 369
+          lineNumber: 375
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66833,7 +66787,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 370
+          lineNumber: 376
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66845,7 +66799,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 371
+          lineNumber: 377
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66854,13 +66808,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 379
+          lineNumber: 385
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 384
+          lineNumber: 390
         },
         __self: this
       }, "Tour")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66869,7 +66823,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 386
+          lineNumber: 392
         },
         __self: this
       }, wh !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66879,7 +66833,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 388
+          lineNumber: 394
         },
         __self: this
       }, step, " of 16") : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66889,13 +66843,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 394
+          lineNumber: 400
         },
         __self: this
       }, "Quit"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 397
+          lineNumber: 403
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66911,7 +66865,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 401
+          lineNumber: 407
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -66919,7 +66873,7 @@ function (_React$Component) {
         one_screen: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 413
+          lineNumber: 419
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66933,7 +66887,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 414
+          lineNumber: 420
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66943,7 +66897,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 424
+          lineNumber: 430
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -66955,7 +66909,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 430
+          lineNumber: 436
         },
         __self: this
       }, "Info"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -66971,47 +66925,61 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 440
+          lineNumber: 446
         },
         __self: this
       }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 455
+          lineNumber: 461
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 457
+          lineNumber: 463
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 458
+          lineNumber: 464
         },
         __self: this
       }, "Textflix is a sentiment analysis prototype by", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://www.cloudera.com/products/fast-forward-labs-research.html",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 460
+          lineNumber: 466
         },
         __self: this
-      }, "Cloudera Fast Forward Labs"), ", built to accompany our report on transfer learning for natural language processing. It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "Cloudera Fast Forward Labs"), ", built to accompany our report on", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "https://blog.fastforwardlabs.com/2019/07/17/new-research-transfer-learning-for-natural-language-processing.html",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 468
+          lineNumber: 470
         },
         __self: this
-      }, "Textflix features over 1,000 text reviews for 50 movies and TV shows. The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+      }, "transfer learning for natural language processing"), ". It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 477
+        },
+        __self: this
+      }, "Textflix features over 1,000 text reviews for 50 movies and TV shows from the", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "https://www.kaggle.com/iarunava/imdb-movie-reviews-dataset",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 480
+        },
+        __self: this
+      }, "IMDB review dataset"), ". The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         style: {
           whiteSpace: 'nowrap'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 471
+          lineNumber: 484
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67026,14 +66994,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 472
+          lineNumber: 485
         },
         __self: this
       }), ' ', "Analyze"), ' ', "option uses a model pretrained with", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://github.com/google-research/bert",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 486
+          lineNumber: 499
         },
         __self: this
       }, "BERT"), " to classify each review as", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67042,7 +67010,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 488
+          lineNumber: 501
         },
         __self: this
       }, "positive"), " or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -67051,13 +67019,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 489
+          lineNumber: 502
         },
         __self: this
       }, "negative"), ". Trained on only 500 labeled reviews, the model achieves 92% accuracy. Textflix lets you explore each classification at the sentence level and compare the model's performance to a baseline NB-SVM model."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 495
+          lineNumber: 508
         },
         __self: this
       }, "We recommend", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67067,7 +67035,7 @@ function (_React$Component) {
         onClick: this.scrollNext,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 497
+          lineNumber: 510
         },
         __self: this
       }, "scrolling to take the interactive tour \u2193"), ' ', "but you can also", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67079,7 +67047,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 504
+          lineNumber: 517
         },
         __self: this
       }, "jump right in"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67088,13 +67056,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 529
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 517
+          lineNumber: 530
         },
         __self: this
       }, "1. The overview page features an eclectic mix of fifty movie and TV shows. Without sentiment analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67103,13 +67071,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 524
+          lineNumber: 537
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 525
+          lineNumber: 538
         },
         __self: this
       }, "2. With sentiment analysis, we can show the percent of positive reviews for each movie. Now a user can see the general sentiment for a movie without reading every review. Our app is now much more useful to a user trying to decide which movie to see."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67118,19 +67086,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 533
+          lineNumber: 546
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 534
+          lineNumber: 547
         },
         __self: this
       }, "3. We can now do things like sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 536
+          lineNumber: 549
         },
         __self: this
       }, "What Alice Saw"), ", an indie thriller from 2003, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67139,19 +67107,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 541
+          lineNumber: 554
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 542
+          lineNumber: 555
         },
         __self: this
       }, "4. Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 543
+          lineNumber: 556
         },
         __self: this
       }, "Flood"), ", a disaster movie that most reviewers found unconvincing, is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67160,49 +67128,49 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 549
+          lineNumber: 562
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 550
+          lineNumber: 563
         },
         __self: this
-      }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the 2003", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+      }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the 1998 Steven Segal movie ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 554
+          lineNumber: 567
         },
         __self: this
-      }, "The Italian Job"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "The Patriot"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 558
+          lineNumber: 571
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 559
+          lineNumber: 572
         },
         __self: this
-      }, "6. With analysis you can immediately see that the reviews are", ' ', "generally (68%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "6. With analysis you can immediately see that the reviews are", ' ', "only (28%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 565
+          lineNumber: 578
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 566
+          lineNumber: 579
         },
         __self: this
       }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand the model's decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67211,13 +67179,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 576
+          lineNumber: 589
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 577
+          lineNumber: 590
         },
         __self: this
       }, "8. In addition to underlining important sentences within the review, we use the highest scoring sentences as highlights. The highlights provide a summary of what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67226,13 +67194,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 585
+          lineNumber: 598
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 586
+          lineNumber: 599
         },
         __self: this
       }, "9. So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67241,19 +67209,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 593
+          lineNumber: 606
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 594
+          lineNumber: 607
         },
         __self: this
       }, "10. The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 595
+          lineNumber: 608
         },
         __self: this
       }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 92% accuracy for the 1,011 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67262,13 +67230,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 602
+          lineNumber: 615
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 603
+          lineNumber: 616
         },
         __self: this
       }, "11. On the topic page, you can examine the model's accuracy on a review by review basis."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67277,19 +67245,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 609
+          lineNumber: 622
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 610
+          lineNumber: 623
         },
         __self: this
       }, "12. You can sort the reviews by ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 611
+          lineNumber: 624
         },
         __self: this
       }, "inaccurate"), " to focus on the ones it got wrong."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67298,19 +67266,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 616
+          lineNumber: 629
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 617
+          lineNumber: 630
         },
         __self: this
       }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 618
+          lineNumber: 631
         },
         __self: this
       }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline NB-SVM model on the left and the pretrained model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67319,13 +67287,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 626
+          lineNumber: 639
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 627
+          lineNumber: 640
         },
         __self: this
       }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67334,19 +67302,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 634
+          lineNumber: 647
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 635
+          lineNumber: 648
         },
         __self: this
       }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 637
+          lineNumber: 650
         },
         __self: this
       }, "Disagreements"), " page, linked at the bottom of the page, to see a list of all the reviews where the models disagreed. You'll notice that the pretrained model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67355,13 +67323,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 644
+          lineNumber: 657
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 645
+          lineNumber: 658
         },
         __self: this
       }, "Fin. That's the end of our tour. Now you're ready to explore Textflix yourself."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67371,7 +67339,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 649
+          lineNumber: 662
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67381,7 +67349,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 650
+          lineNumber: 663
         },
         __self: this
       }, "End tour \u2193"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67391,7 +67359,7 @@ function (_React$Component) {
         trans: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 658
+          lineNumber: 671
         },
         __self: this
       }))));
