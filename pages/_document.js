@@ -13,7 +13,28 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <title>Textflix</title>
+          <meta property="og:title" content="Textflix" />
+          <meta
+            property="description"
+            content="Textflix uses movie reviews to show how machine learning can unlock the data embedded in unstructured text."
+          />
+          <meta
+            property="og:description"
+            content="Textflix uses movie reviews to show how machine learning can unlock the data embedded in unstructured text."
+          />
+          <meta
+            property="og:image"
+            content="https://experiments.fastforwardlabs.com/static/images/textflix-screenshot.png"
+          />
+          <meta
+            property="og:url"
+            content="https://textflix.fastforwardlabs.com"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
+
         <link rel="icon" type="image/png" href="/static/images/textflix.png" />
         <body>
           <Main />
