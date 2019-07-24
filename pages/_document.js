@@ -14,7 +14,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Textflix</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
           <meta property="og:title" content="Textflix" />
           <meta
             property="description"
@@ -34,7 +37,6 @@ class MyDocument extends Document {
           />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-
         <link rel="icon" type="image/png" href="/static/images/textflix.png" />
         <body>
           <Main />
