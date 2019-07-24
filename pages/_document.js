@@ -18,6 +18,7 @@ class MyDocument extends Document {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <title>Textflix</title>
           <meta property="og:title" content="Textflix" />
           <meta
             property="description"
