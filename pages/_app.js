@@ -8,6 +8,7 @@ import { p } from '../parts/Utils'
 import Bar from '../parts/Bar'
 import Header from '../parts/Header'
 import Tour from '../parts/Tour'
+import { initGA, logPageView } from '../parts/Analytics'
 import Link from 'next/Link'
 
 let algnames = ['NBSVM', 'BERT']
@@ -92,6 +93,12 @@ class MyApp extends App {
     const { pathname } = this.props.router
     let is_front = pathname === '/'
     if (is_front) this.setState({ show_info: true })
+
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
   }
 
   setAnalyze(value) {
