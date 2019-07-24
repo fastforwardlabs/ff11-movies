@@ -65475,20 +65475,24 @@ var logException = function logException() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! chroma-js */ "../../node_modules/chroma-js/chroma.js");
-/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(chroma_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Static__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Static */ "./parts/Static.js");
-/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Utils */ "./parts/Utils.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! chroma-js */ "../../node_modules/chroma-js/chroma.js");
+/* harmony import */ var chroma_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(chroma_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Static__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Static */ "./parts/Static.js");
+/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Utils */ "./parts/Utils.js");
+
+
 
 
 
@@ -65501,21 +65505,41 @@ var _jsxFileName = "/Users/grant.custer/Sites/next-movies/parts/Bar.js";
 
 
 
+var infos = {
+  'NB-SVM': 'For text classification problems like sentiment analysis it makes sense to choose a simple model based on bag-of-words as the first baseline. In many text classification problems, like topic classification, these types of baseline models may even be the best choice. NB-SVM treats the text as a bag of words and combines a Naive Bayes model (also a reasonable baseline) with a support vector machine. This model has been shown to produce strong linear baselines for text classification, and sentiment analysis in particular.',
+  BERT: 'We trained the BERT-Large model without making any custom modifications and defined the entire experiment in a JSON configuration file in the AllenNLP style. We trained on a single GPU for 20 epochs, using an Adam optimizer, and used gradual unfreezing for fine-tuning the layers of the model. Overall, we did very little tuning of the model’s hyperparameters. This limited tuning requirement is one of the greatest benefits of transfer learning: the out-of-the-box performance is already very good, and eking out a further 1-2% of accuracy has diminishing returns and would require expensive-to-acquire knowledge of the model architecture. The final BERT model provides accuracy roughly equivalent to the state-of-the-art model, using just 500 labeled examples for training.'
+};
 
 var Bar =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Bar, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Bar, _React$Component);
 
-  function Bar() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Bar);
+  function Bar(props) {
+    var _this;
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Bar).apply(this, arguments));
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Bar);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Bar).call(this, props));
+    _this.state = {
+      show_info: null
+    };
+    _this.showInfo = _this.showInfo.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Bar, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Bar, [{
+    key: "showInfo",
+    value: function showInfo(setting) {
+      this.setState({
+        show_info: setting
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var _this$props = this.props,
           data = _this$props.data,
           nbsvm_data = _this$props.nbsvm_data,
@@ -65533,6 +65557,7 @@ function (_React$Component) {
           hl_options = _this$props.hl_options,
           _this$props$analyze_l = _this$props.analyze_locked,
           analyze_locked = _this$props$analyze_l === void 0 ? false : _this$props$analyze_l;
+      var show_info = this.state.show_info;
       var certainty_array = data.map(function (r) {
         if (r.logits[1] > r.logits[0]) {
           return {
@@ -65557,7 +65582,7 @@ function (_React$Component) {
         return r["class"] === 'neg';
       }), 'certainty');
 
-      var combined = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(pos), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(neg));
+      var combined = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(pos), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(neg));
       var rightwrong = data.reduce(function (counts, r) {
         var slice = counts.slice();
 
@@ -65594,7 +65619,7 @@ function (_React$Component) {
         return r["class"] === 'neg';
       }), 'certainty');
 
-      var ncombined = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(npos), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(nneg));
+      var ncombined = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(npos), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(nneg));
       var nrightwrong = nbsvm_data.reduce(function (counts, r) {
         var slice = counts.slice();
 
@@ -65617,7 +65642,7 @@ function (_React$Component) {
       }).length, ncombined.filter(function (r) {
         return r["class"] === 'pos';
       }).length];
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           background: 'white',
           transition: 'background 0.1s linear',
@@ -65628,39 +65653,39 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 134
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 144
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           display: 'flex',
           flexWrap: 'wrap',
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(grem / 2, grem / 4),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(grem / 2, grem / 4),
           alignItems: 'top'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 145
         },
         __self: this
-      }, !is_front && false ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      }, !is_front && false ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 154
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         className: "hover-block-container no-opacity-hover",
         style: {
           display: 'block',
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(grem / 2 + grem * 0.125, grem / 2),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(grem / 2 + grem * 0.125, grem / 2),
           marginLeft: -grem / 4,
           marginTop: -grem / 4,
           marginRight: grem / 4,
@@ -65672,10 +65697,10 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 155
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           width: grem * 0.75,
           height: grem * 0.75,
@@ -65684,10 +65709,10 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 170
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'absolute',
           left: 0,
@@ -65698,10 +65723,10 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 178
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'absolute',
           left: 0,
@@ -65712,34 +65737,34 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 188
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hover-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 199
         },
         __self: this
-      }))) : null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+      }))) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         onClick: function onClick() {
           if (!analyze_locked) setAnalyze(!analyze);
         },
         style: {
           display: 'flex',
           alignItems: 'center',
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(0, grem / 4),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(0, grem / 4),
           opacity: analyze_locked ? 1 : null,
           cursor: analyze_locked ? 'default' : 'pointer',
           height: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 203
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           width: grem * 0.5,
           height: grem * 0.5,
@@ -65749,28 +65774,28 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 196
+          lineNumber: 216
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 225
         },
         __self: this
-      }, "Analyze", analyze ? ':' : '')), analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "Analyze", analyze ? ':' : '')), analyze ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           display: 'flex'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 215
+          lineNumber: 235
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         onClick: function onClick() {
           if (!analyze_locked) setAccuracy(!show_accuracy);
         },
@@ -65778,16 +65803,16 @@ function (_React$Component) {
           display: 'flex',
           opacity: analyze_locked ? 1 : null,
           cursor: analyze_locked ? 'default' : 'pointer',
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(0, grem / 4),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(0, grem / 4),
           alignItems: 'center',
           height: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 236
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           width: grem * 0.5,
           height: grem * 0.5,
@@ -65797,19 +65822,19 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 249
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 238
+          lineNumber: 258
         },
         __self: this
-      }, "accuracy")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+      }, "accuracy")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         onClick: function onClick() {
           if (!analyze_locked) setCompare(!compare);
         },
@@ -65817,16 +65842,16 @@ function (_React$Component) {
           display: 'flex',
           opacity: analyze_locked ? 1 : null,
           cursor: analyze_locked ? 'default' : 'pointer',
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(0, grem / 4),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(0, grem / 4),
           alignItems: 'center',
           height: grem
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 246
+          lineNumber: 266
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           width: grem * 0.5,
           height: grem * 0.5,
@@ -65836,40 +65861,40 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 280
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           textDecoration: analyze_locked ? 'none' : 'underline'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 289
         },
         __self: this
-      }, "model comparison")))) : null, analyze && !compare ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "model comparison")))) : null, analyze && !compare ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
-          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_10__["p"])(show_accuracy && false ? 0 : 0, grem / 4),
+          padding: Object(_Utils__WEBPACK_IMPORTED_MODULE_12__["p"])(show_accuracy && false ? 0 : 0, grem / 4),
           flexGrow: 1
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 301
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'relative',
           overflow: 'hidden'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 307
         },
         __self: this
       }, combined.map(function (c, i) {
-        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           key: 'certainty_' + i,
           style: {
             position: 'absolute',
@@ -65877,47 +65902,47 @@ function (_React$Component) {
             top: 0,
             bottom: 0,
             width: "".concat(1 / combined.length * 100 + 0.05, "%"),
-            background: c["class"] === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleBlue"])(c.certainty) : Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleRed"])(c.certainty)
+            background: c["class"] === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleBlue"])(c.certainty) : Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleRed"])(c.certainty)
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 289
+            lineNumber: 309
           },
           __self: this
         });
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'relative'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 305
+          lineNumber: 325
         },
         __self: this
-      }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 329
         },
         __self: this
-      }, ' ', "\xB7 ", counts[1], " positive (", Math.round(counts[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, ' ', "\xB7 ", counts[1], " positive (", Math.round(counts[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 318
+          lineNumber: 338
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'relative',
           overflow: 'hidden'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 319
+          lineNumber: 339
         },
         __self: this
       }, combined.map(function (c, i) {
-        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           key: 'certainty2_' + i,
           style: {
             position: 'absolute',
@@ -65925,64 +65950,64 @@ function (_React$Component) {
             bottom: 0,
             height: grem,
             width: "".concat(1 / combined.length * 100 + 0.05, "%"),
-            background: c.label !== c["class"] ? c.label === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleBlue"])(1) : Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleRed"])(1) : 'white'
+            background: c.label !== c["class"] ? c.label === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleBlue"])(1) : Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleRed"])(1) : 'white'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 326
+            lineNumber: 346
           },
           __self: this
         });
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'relative'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 344
+          lineNumber: 364
         },
         __self: this
-      }, rightwrong[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      }, rightwrong[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 346
+          lineNumber: 366
         },
         __self: this
-      }, Math.floor(accuracy * 1000 / 10), "% accuracy (", rightwrong[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      }, Math.floor(accuracy * 1000 / 10), "% accuracy (", rightwrong[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 351
+          lineNumber: 371
         },
         __self: this
-      }, Math.floor(accuracy * 1000 / 10), "% accuracy")))) : null) : null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
+      }, Math.floor(accuracy * 1000 / 10), "% accuracy")))) : null) : null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 382
         },
         __self: this
-      })), compare && analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      })), compare && analyze ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 365
+          lineNumber: 385
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           display: 'grid',
           gridTemplateColumns: '1fr 1fr'
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 366
+          lineNumber: 386
         },
         __self: this
-      }, [['NBSVM'], ['BERT']].map(function (item, i) {
+      }, [['NB-SVM'], ['BERT']].map(function (item, i) {
         var n = i === 0;
         var cert = n ? ncombined : combined;
         var co = n ? ncounts : counts;
         var rw = n ? nrightwrong : rightwrong;
         var acc = n ? naccuracy : accuracy;
-        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           key: 'items_' + item[0],
           style: {
             borderLeft: i === 1 ? 'solid 2px black' : 'none',
@@ -65992,10 +66017,10 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 379
+            lineNumber: 399
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             paddingLeft: grem / 2,
             paddingTop: grem / 2,
@@ -66003,31 +66028,43 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 388
+            lineNumber: 408
           },
           __self: this
-        }, item[0]), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, item[0], ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          onClick: function onClick() {
+            _this2.showInfo(item[0]);
+          },
+          style: {
+            textDecoration: 'underline'
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 416
+          },
+          __self: this
+        }, "?")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             padding: "".concat(show_accuracy && false ? 0 : grem / 2, "px ").concat(grem / 2, "px"),
             flexGrow: 1
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 397
+            lineNumber: 425
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             position: 'relative',
             overflow: 'hidden'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 405
+            lineNumber: 433
           },
           __self: this
         }, cert.map(function (c, i) {
-          return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
             key: 'certaint3_' + i,
             style: {
               position: 'absolute',
@@ -66035,47 +66072,47 @@ function (_React$Component) {
               top: 0,
               bottom: 0,
               width: "".concat(1 / combined.length * 100 + 0.05, "%"),
-              background: c["class"] === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleBlue"])(c.certainty) : Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleRed"])(c.certainty)
+              background: c["class"] === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleBlue"])(c.certainty) : Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleRed"])(c.certainty)
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 407
+              lineNumber: 435
             },
             __self: this
           });
-        }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             position: 'relative'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 423
+            lineNumber: 451
           },
           __self: this
-        }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+        }, combined.length, " ", total ? 'total ' : '', " review", combined.length > 1 ? 's' : '', analyze ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 427
+            lineNumber: 455
           },
           __self: this
-        }, ' ', "\xB7 ", co[1], " positive (", Math.round(co[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, ' ', "\xB7 ", co[1], " positive (", Math.round(co[1] / combined.length * 100), "%)") : null)), show_accuracy ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 437
+            lineNumber: 465
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             position: 'relative',
             overflow: 'hidden'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 438
+            lineNumber: 466
           },
           __self: this
         }, cert.map(function (c, i) {
-          return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
             key: 'accuracy_' + i,
             style: {
               position: 'absolute',
@@ -66083,48 +66120,164 @@ function (_React$Component) {
               bottom: 0,
               height: grem,
               width: "".concat(1 / combined.length * 100 + 0.05, "%"),
-              background: c.label !== c["class"] ? c.label === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleBlue"])(1) : Object(_Static__WEBPACK_IMPORTED_MODULE_9__["scaleRed"])(1) : '#fff'
+              background: c.label !== c["class"] ? c.label === 'pos' ? Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleBlue"])(1) : Object(_Static__WEBPACK_IMPORTED_MODULE_11__["scaleRed"])(1) : '#fff'
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 445
+              lineNumber: 473
             },
             __self: this
           });
-        }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           style: {
             position: 'relative'
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 464
+            lineNumber: 492
           },
           __self: this
-        }, rw[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+        }, rw[0] > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 466
+            lineNumber: 494
           },
           __self: this
-        }, Math.floor(acc * 1000 / 10), "% accuracy (", rw[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+        }, Math.floor(acc * 1000 / 10), "% accuracy (", rw[0], " wrong)") : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 471
+            lineNumber: 499
           },
           __self: this
         }, Math.floor(acc * 1000 / 10), "% accuracy")))) : null));
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_9__["Border"], {
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Static__WEBPACK_IMPORTED_MODULE_11__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 484
+          lineNumber: 512
         },
         __self: this
-      })) : null);
+      })) : null, show_info !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          position: 'fixed',
+          left: 0,
+          top: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 9999,
+          overflow: 'auto',
+          background: "repeating-linear-gradient(\n              ".concat(0, "deg,\n              rgba(0,0,0,0.1) 0px,\n              rgba(0,0,0,0.1) 2px,\n              rgba(0,0,0,0) 2px,\n              rgba(0,0,0,0) 4px\n            )")
+        },
+        onClick: function onClick() {
+          _this2.showInfo(null);
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 516
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          background: 'transparent',
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          right: 0,
+          paddingLeft: grem / 3,
+          paddingRight: grem / 3
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 537
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "scene",
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          marginTop: 'auto',
+          cursor: 'auto'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 548
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          maxWidth: 700,
+          width: '100%',
+          margin: '0 auto',
+          background: 'white',
+          border: 'solid 1px black',
+          // boxShadow: '6px 8px #222',
+          padding: grem / 2
+        }, "background", 'white'),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 559
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: -grem / 2,
+          marginLeft: -grem / 2,
+          marginRight: -grem / 2,
+          marginBottom: grem / 2,
+          background: '#222',
+          color: 'white'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 571
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          display: 'flex',
+          justifyContent: 'space-between'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 581
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          paddingTop: grem / 4,
+          paddingBottom: grem / 4,
+          paddingLeft: grem / 2,
+          paddingRight: grem / 2
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 587
+        },
+        __self: this
+      }, show_info, " Info"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        style: {
+          paddingTop: grem / 4,
+          paddingBottom: grem / 4,
+          paddingLeft: grem / 2,
+          paddingRight: grem / 2,
+          textDecoration: 'underline'
+        },
+        onClick: function onClick() {
+          _this2.showInfo(null);
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 597
+        },
+        __self: this
+      }, "\xD7"))), infos[show_info])))) : null);
     }
   }]);
 
   return Bar;
-}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Bar);
 
@@ -67487,6 +67640,7 @@ function (_React$Component) {
     _this.scrollNext = _this.scrollNext.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     _this.onScroll = _this.onScroll.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     _this.setSize = _this.setSize.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.escFunction = _this.escFunction.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     return _this;
   }
 
@@ -67540,18 +67694,28 @@ function (_React$Component) {
       }
     }
   }, {
+    key: "escFunction",
+    value: function escFunction(event) {
+      if (event.keyCode === 27) {
+        //Do whatever when esc is pressed
+        this.props.showInfo(false);
+      }
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
       var scroller = this.scrollRef.current;
       window.addEventListener('resize', this.setSize);
       this.setSize();
       scroller.addEventListener('scroll', this.onScroll);
+      document.addEventListener('keydown', this.escFunction, false);
     }
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
       window.removeEventListener('scroll', this.onScroll, false);
       window.removeEventListener('resize', this.setSize, false);
+      document.removeEventListener('keydown', this.escFunction, false);
     }
   }, {
     key: "componentDidUpdate",
@@ -67690,7 +67854,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 185
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67700,7 +67864,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 186
         },
         __self: this
       }, "Next \u2193"));
@@ -67715,7 +67879,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 188
+            lineNumber: 198
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67725,7 +67889,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 197
+            lineNumber: 207
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67737,7 +67901,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 203
+            lineNumber: 213
           },
           __self: this
         }, "Screen ", num), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67753,13 +67917,13 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 213
+            lineNumber: 223
           },
           __self: this
         }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 228
+            lineNumber: 238
           },
           __self: this
         }));
@@ -67776,7 +67940,7 @@ function (_React$Component) {
         ref: this.frameRef,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 243
         },
         __self: this
       }, step > 0 && step < 16 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67794,13 +67958,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 255
         },
         __self: this
       }, data !== null && nbsvm_data !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 270
         },
         __self: this
       }, step > 0 && step < 5 || step > 8 && step < 11 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Index__WEBPACK_IMPORTED_MODULE_15__["default"], (_React$createElement = {
@@ -67813,7 +67977,7 @@ function (_React$Component) {
         }
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 262
+        lineNumber: 272
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)) : null, step > 4 && step < 15 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Topic2__WEBPACK_IMPORTED_MODULE_14__["default"], (_React$createElement2 = {
         grem: grem,
         font_size: font_size,
@@ -67824,7 +67988,7 @@ function (_React$Component) {
         }
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "tour", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 286
+        lineNumber: 296
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement2, "__self", this), _React$createElement2)) : null, step === 15 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_pages_Disagreements__WEBPACK_IMPORTED_MODULE_16__["default"], (_React$createElement3 = {
         grem: grem,
         font_size: font_size,
@@ -67835,7 +67999,7 @@ function (_React$Component) {
         }
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "compare", reviews_compare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "setCompare", setCompare), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "nbsvm_data", nbsvm_data), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "hl_options", hl_options), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "__source", {
         fileName: _jsxFileName,
-        lineNumber: 311
+        lineNumber: 321
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement3, "__self", this), _React$createElement3)) : null) : null) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           position: 'fixed',
@@ -67858,13 +68022,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 338
+          lineNumber: 348
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 365
+          lineNumber: 375
         },
         __self: this
       }, step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67877,7 +68041,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 367
+          lineNumber: 377
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -67889,13 +68053,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 376
+          lineNumber: 386
         },
         __self: this
       }, "Quit")) : null), step > 0 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 389
+          lineNumber: 399
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67907,7 +68071,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 390
+          lineNumber: 400
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67919,7 +68083,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 391
+          lineNumber: 401
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67928,13 +68092,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 399
+          lineNumber: 409
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("b", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 404
+          lineNumber: 414
         },
         __self: this
       }, "Tour")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67943,7 +68107,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 406
+          lineNumber: 416
         },
         __self: this
       }, wh !== null ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67953,7 +68117,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 408
+          lineNumber: 418
         },
         __self: this
       }, step, " of 16") : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67963,13 +68127,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 414
+          lineNumber: 424
         },
         __self: this
       }, "Quit"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 417
+          lineNumber: 427
         },
         __self: this
       }))) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -67985,7 +68149,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 421
+          lineNumber: 431
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -67993,7 +68157,7 @@ function (_React$Component) {
         one_screen: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 433
+          lineNumber: 443
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -68007,7 +68171,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 434
+          lineNumber: 444
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -68017,7 +68181,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 444
+          lineNumber: 454
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -68029,7 +68193,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 450
+          lineNumber: 460
         },
         __self: this
       }, "Info"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -68045,52 +68209,52 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 460
+          lineNumber: 470
         },
         __self: this
       }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Static__WEBPACK_IMPORTED_MODULE_12__["Border"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 475
+          lineNumber: 485
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 477
+          lineNumber: 487
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 478
+          lineNumber: 488
         },
         __self: this
       }, "Textflix is a sentiment analysis prototype by", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://www.cloudera.com/products/fast-forward-labs-research.html",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 480
+          lineNumber: 490
         },
         __self: this
       }, "Cloudera Fast Forward Labs"), ", built to accompany our report on", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://blog.fastforwardlabs.com/2019/07/17/new-research-transfer-learning-for-natural-language-processing.html",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 484
+          lineNumber: 494
         },
         __self: this
       }, "transfer learning for natural language processing"), ". It uses movie reviews to show how machine learning can unlock the data embedded in large amounts of unstructured text."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 491
+          lineNumber: 501
         },
         __self: this
       }, "Textflix features over 1,000 text reviews for 50 movies and TV shows from the", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://www.kaggle.com/iarunava/imdb-movie-reviews-dataset",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 494
+          lineNumber: 504
         },
         __self: this
       }, "IMDB review dataset"), ". The", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -68099,7 +68263,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 498
+          lineNumber: 508
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -68114,14 +68278,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 499
+          lineNumber: 509
         },
         __self: this
       }), ' ', "Analyze"), ' ', "option uses a model pretrained with", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "https://github.com/google-research/bert",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 513
+          lineNumber: 523
         },
         __self: this
       }, "BERT"), " to classify each review as", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -68130,7 +68294,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 515
+          lineNumber: 525
         },
         __self: this
       }, "positive"), " or", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
@@ -68139,13 +68303,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 526
         },
         __self: this
-      }, "negative"), ". Trained on only 500 labeled reviews, the model achieves 92% accuracy. Textflix lets you explore each classification at the sentence level and compare the model's performance to a baseline NB-SVM model."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, "negative"), ". Trained on only 500 labeled reviews, the model achieves an accuracy (92%) roughly equivalent to a state-of-the art model. Textflix lets you explore each classification at the sentence level and compare the model's performance to a baseline NB-SVM model."), ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 522
+          lineNumber: 532
         },
         __self: this
       }, "We recommend", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -68155,7 +68319,7 @@ function (_React$Component) {
         onClick: this.scrollNext,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 524
+          lineNumber: 534
         },
         __self: this
       }, "scrolling to take the interactive tour \u2193"), ' ', "but you can also", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -68167,7 +68331,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 531
+          lineNumber: 541
         },
         __self: this
       }, "jump right in"), "."))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68176,13 +68340,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 543
+          lineNumber: 553
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 544
+          lineNumber: 554
         },
         __self: this
       }, "1. The overview page features an eclectic mix of fifty movie and TV shows. Without sentiment analysis, the only thing we can tell you about their reviews is how many there are."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68191,13 +68355,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 551
+          lineNumber: 561
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 552
+          lineNumber: 562
         },
         __self: this
       }, "2. With sentiment analysis, we can show the percent of positive reviews for each movie. Now a user can see the general sentiment for a movie without reading every review. Our app is now much more useful to a user trying to decide which movie to see."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68206,19 +68370,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 560
+          lineNumber: 570
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 561
+          lineNumber: 571
         },
         __self: this
       }, "3. We can now do things like sort by most positive reviews, and find out that ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 563
+          lineNumber: 573
         },
         __self: this
       }, "What Alice Saw"), ", an indie thriller from 2003, is the most liked movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68227,19 +68391,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568
+          lineNumber: 578
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 569
+          lineNumber: 579
         },
         __self: this
       }, "4. Or sort by most negative and find out ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 570
+          lineNumber: 580
         },
         __self: this
       }, "Flood"), ", a disaster movie that most reviewers found unconvincing, is the most disliked."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68248,19 +68412,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 576
+          lineNumber: 586
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 577
+          lineNumber: 587
         },
         __self: this
       }, "5. Now let's look at an individual movie. Without sentiment analysis you would have to read through the reviews one-by-one to get a sense for how people feel about the 1998 Steven Segal movie ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 581
+          lineNumber: 591
         },
         __self: this
       }, "The Patriot"), "."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68269,13 +68433,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 585
+          lineNumber: 595
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 586
+          lineNumber: 596
         },
         __self: this
       }, "6. With analysis you can immediately see that the reviews are", ' ', "only (28%) positive."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68284,13 +68448,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 592
+          lineNumber: 602
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 593
+          lineNumber: 603
         },
         __self: this
       }, "7. For each review you can see both the model's classification and certainty. We use an interpretability technique called LIME to determine how each sentence is affecting the classification. We underline the sentences that contribute most strongly to the classification. This added interpretability helps us understand the model's decisions."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68299,13 +68463,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 603
+          lineNumber: 613
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 604
+          lineNumber: 614
         },
         __self: this
       }, "8. In addition to underlining important sentences within the review, we use the highest scoring sentences as highlights. The highlights provide a summary of what people most liked and disliked about the movie."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68314,13 +68478,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 612
+          lineNumber: 622
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 613
+          lineNumber: 623
         },
         __self: this
       }, "9. So far we've shown you how analysis can unlock the data embedded within text. Now we're going to look at model performance."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68329,19 +68493,19 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 620
+          lineNumber: 630
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 621
+          lineNumber: 631
         },
         __self: this
       }, "10. The ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 622
+          lineNumber: 632
         },
         __self: this
       }, "show accuracy"), " option exposes how the model's classifications compare to the original rating entered by the reviewer. Our model achieves 92% accuracy for the 1,011 reviews in the dataset."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68350,13 +68514,13 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 629
+          lineNumber: 639
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 630
+          lineNumber: 640
         },
         __self: this
       }, "11. On the topic page, you can examine the model's accuracy on a review by review basis."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68365,43 +68529,22 @@ function (_React$Component) {
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 636
+          lineNumber: 646
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 637
+          lineNumber: 647
         },
         __self: this
       }, "12. You can sort the reviews by ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 638
+          lineNumber: 648
         },
         __self: this
       }, "inaccurate"), " to focus on the ones it got wrong."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        grem: grem,
-        spacer: space,
-        wh: wh,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 643
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 644
-        },
-        __self: this
-      }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 645
-        },
-        __self: this
-      }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline NB-SVM model on the left and the pretrained model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -68416,28 +68559,28 @@ function (_React$Component) {
           lineNumber: 654
         },
         __self: this
-      }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "13. Finally, you can use the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 655
+        },
+        __self: this
+      }, "model comparison"), " option to see how our model compares to one trained without the benefit of transfer learning. This mode introduces a split-screen, with the baseline NB-SVM model on the left and the pretrained model on the right."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 661
+          lineNumber: 663
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 662
-        },
-        __self: this
-      }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 664
         },
         __self: this
-      }, "Disagreements"), " page, linked at the bottom of the page, to see a list of all the reviews where the models disagreed. You'll notice that the pretrained model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, "14. You can sort the reviews by recent to get a view of each review side-by-side. Often the underlined sentences can help you understand disagreements between the two models."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
         grem: grem,
         spacer: space,
         wh: wh,
@@ -68452,6 +68595,27 @@ function (_React$Component) {
           lineNumber: 672
         },
         __self: this
+      }, "15. If you want to get a more thorough look at the disagreements, check out the ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 674
+        },
+        __self: this
+      }, "Disagreements"), " page, linked at the bottom of the page, to see a list of all the reviews where the models disagreed. You'll notice that the pretrained model is the winner of the majority of the disagreements."), next), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        grem: grem,
+        spacer: space,
+        wh: wh,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 681
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 682
+        },
+        __self: this
       }, "Fin. That's the end of our tour. Now you're ready to explore Textflix yourself."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           marginTop: grem * 0,
@@ -68459,7 +68623,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 676
+          lineNumber: 686
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
@@ -68469,7 +68633,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 677
+          lineNumber: 687
         },
         __self: this
       }, "End tour \u2193"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_parts_Scene__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -68479,7 +68643,7 @@ function (_React$Component) {
         trans: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 685
+          lineNumber: 695
         },
         __self: this
       }))));
