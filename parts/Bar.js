@@ -4,7 +4,26 @@ import * as chroma from 'chroma-js'
 import { scaleRed, scaleBlue, Border } from './Static'
 import { p } from './Utils'
 
+let infos = {
+  'NB-SVM':
+    'For text classification problems like sentiment analysis it makes sense to choose a simple model based on bag-of-words as the first baseline. In many text classification problems, like topic classification, these types of baseline models may even be the best choice. NB-SVM treats the text as a bag of words and combines a Naive Bayes model (also a reasonable baseline) with a support vector machine. This model has been shown to produce strong linear baselines for text classification, and sentiment analysis in particular.',
+  BERT:
+    'We trained the BERT-Large model without making any custom modifications and defined the entire experiment in a JSON configuration file in the AllenNLP style. We trained on a single GPU for 20 epochs, using an Adam optimizer, and used gradual unfreezing for fine-tuning the layers of the model. Overall, we did very little tuning of the model’s hyperparameters. This limited tuning requirement is one of the greatest benefits of transfer learning: the out-of-the-box performance is already very good, and eking out a further 1-2% of accuracy has diminishing returns and would require expensive-to-acquire knowledge of the model architecture. The final BERT model provides accuracy roughly equivalent to the state-of-the-art model, using just 500 labeled examples for training.',
+}
+
 class Bar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      show_info: null,
+    }
+    this.showInfo = this.showInfo.bind(this)
+  }
+
+  showInfo(setting) {
+    this.setState({ show_info: setting })
+  }
+
   render() {
     let {
       data,
@@ -22,6 +41,7 @@ class Bar extends React.Component {
       hl_options,
       analyze_locked = false,
     } = this.props
+    let { show_info } = this.state
 
     let certainty_array = data.map(r => {
       if (r.logits[1] > r.logits[0]) {
@@ -369,7 +389,7 @@ class Bar extends React.Component {
                 gridTemplateColumns: '1fr 1fr',
               }}
             >
-              {[['NBSVM'], ['BERT']].map((item, i) => {
+              {[['NB-SVM'], ['BERT']].map((item, i) => {
                 let n = i === 0
                 let cert = n ? ncombined : combined
                 let co = n ? ncounts : counts
@@ -392,7 +412,15 @@ class Bar extends React.Component {
                         paddingBottom: grem / 2,
                       }}
                     >
-                      {item[0]}
+                      {item[0]}{' '}
+                      <button
+                        onClick={() => {
+                          this.showInfo(item[0])
+                        }}
+                        style={{ textDecoration: 'underline' }}
+                      >
+                        ?
+                      </button>
                     </div>
                     <div
                       style={{
@@ -482,6 +510,110 @@ class Bar extends React.Component {
               })}
             </div>
             <Border />
+          </div>
+        ) : null}
+        {show_info !== null ? (
+          <div
+            style={{
+              position: 'fixed',
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 9999,
+              overflow: 'auto',
+              background: `repeating-linear-gradient(
+              ${0}deg,
+              rgba(0,0,0,0.1) 0px,
+              rgba(0,0,0,0.1) 2px,
+              rgba(0,0,0,0) 2px,
+              rgba(0,0,0,0) 4px
+            )`,
+            }}
+            onClick={() => {
+              this.showInfo(null)
+            }}
+          >
+            <div
+              style={{
+                background: 'transparent',
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                right: 0,
+                paddingLeft: grem / 3,
+                paddingRight: grem / 3,
+              }}
+            >
+              <div
+                className="scene"
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '100vh',
+                  marginTop: 'auto',
+                  cursor: 'auto',
+                }}
+              >
+                <div
+                  style={{
+                    maxWidth: 700,
+                    width: '100%',
+                    margin: '0 auto',
+                    background: 'white',
+                    border: 'solid 1px black',
+                    // boxShadow: '6px 8px #222',
+                    padding: grem / 2,
+                    background: 'white',
+                  }}
+                >
+                  <div
+                    style={{
+                      marginTop: -grem / 2,
+                      marginLeft: -grem / 2,
+                      marginRight: -grem / 2,
+                      marginBottom: grem / 2,
+                      background: '#222',
+                      color: 'white',
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      <div
+                        style={{
+                          paddingTop: grem / 4,
+                          paddingBottom: grem / 4,
+                          paddingLeft: grem / 2,
+                          paddingRight: grem / 2,
+                        }}
+                      >
+                        {show_info} Info
+                      </div>
+                      <button
+                        style={{
+                          paddingTop: grem / 4,
+                          paddingBottom: grem / 4,
+                          paddingLeft: grem / 2,
+                          paddingRight: grem / 2,
+                          textDecoration: 'underline',
+                        }}
+                        onClick={() => {
+                          this.showInfo(null)
+                        }}
+                      >
+                        &times;
+                      </button>
+                    </div>
+                  </div>
+                  {infos[show_info]}
+                </div>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>

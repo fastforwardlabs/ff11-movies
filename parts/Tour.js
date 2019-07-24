@@ -24,6 +24,7 @@ class Tour extends React.Component {
     this.scrollNext = this.scrollNext.bind(this)
     this.onScroll = this.onScroll.bind(this)
     this.setSize = this.setSize.bind(this)
+    this.escFunction = this.escFunction.bind(this)
   }
 
   setSize() {
@@ -61,16 +62,25 @@ class Tour extends React.Component {
     }
   }
 
+  escFunction(event) {
+    if (event.keyCode === 27) {
+      //Do whatever when esc is pressed
+      this.props.showInfo(false)
+    }
+  }
+
   componentDidMount() {
     let scroller = this.scrollRef.current
     window.addEventListener('resize', this.setSize)
     this.setSize()
     scroller.addEventListener('scroll', this.onScroll)
+    document.addEventListener('keydown', this.escFunction, false)
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll, false)
     window.removeEventListener('resize', this.setSize, false)
+    document.removeEventListener('keydown', this.escFunction, false)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -514,10 +524,10 @@ class Tour extends React.Component {
                   classify each review as{' '}
                   <span style={{ background: blue }}>positive</span> or{' '}
                   <span style={{ background: red }}>negative</span>. Trained on
-                  only 500 labeled reviews, the model achieves 92% accuracy.
-                  Textflix lets you explore each classification at the sentence
-                  level and compare the model's performance to a baseline NB-SVM
-                  model.
+                  only 500 labeled reviews, the model achieves an accuracy (92%)
+                  roughly equivalent to a state-of-the art model. Textflix lets
+                  you explore each classification at the sentence level and
+                  compare the model's performance to a baseline NB-SVM model.
                 </p>{' '}
                 <p>
                   We recommend{' '}
