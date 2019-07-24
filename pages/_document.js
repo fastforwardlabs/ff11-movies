@@ -30,7 +30,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://experiments.fastforwardlabs.com/static/images/textflix-screenshot.png"
+            content="https://textflix.fastforwardlabs.com/static/images/textflix-screenshot.png"
           />
           <meta
             property="og:url"
