@@ -22,22 +22,28 @@ class Tour extends React.Component {
     this.scrollRef = React.createRef()
     this.frameRef = React.createRef()
     this.scrollNext = this.scrollNext.bind(this)
+    this.onScroll = this.onScroll.bind(this)
+    this.setSize = this.setSize.bind(this)
   }
 
-  componentDidMount() {
-    this.setState({ wh: window.innerHeight })
-
+  setSize() {
     let scroller = this.scrollRef.current
-    let framer = this.frameRef.current
-    let wh = this.state.wh || window.innerHeight
-    let offsets =
-      this.state.offsets ||
-      Array.from(scroller.querySelectorAll('.scene')).map(n => n.offsetTop)
+    let offsets = Array.from(scroller.querySelectorAll('.scene')).map(
+      n => n.offsetTop
+    )
     this.setState({
       offsets: offsets,
     })
 
-    scroller.addEventListener('scroll', () => {
+    this.setState({ wh: window.innerHeight, offsets: offsets })
+  }
+
+  onScroll() {
+    let wh = this.state.wh || window.innerHeight
+    let offsets = this.state.offsets
+    if (offsets) {
+      let scroller = this.scrollRef.current
+      let framer = this.frameRef.current
       let last = offsets.length * wh
       for (let i = 0; i < offsets.length; i++) {
         let r = offsets.length - 1 - i
@@ -52,11 +58,19 @@ class Tour extends React.Component {
           break
         }
       }
-    })
+    }
+  }
+
+  componentDidMount() {
+    let scroller = this.scrollRef.current
+    window.addEventListener('resize', this.setSize)
+    this.setSize()
+    scroller.addEventListener('scroll', this.onScroll)
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll, false)
+    window.removeEventListener('resize', this.setSize, false)
   }
 
   componentDidUpdate(prevProps, prevState) {
