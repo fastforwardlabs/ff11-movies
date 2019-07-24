@@ -139,8 +139,8 @@ class Tour extends React.Component {
     let reviews_accuracy = false
     if (step > 9) reviews_accuracy = true
 
-    let review_id = 'tt0317740'
-    if (step > 9) review_id = 'tt0317740'
+    let review_id = 'tt0120786'
+    if (step > 9) review_id = 'tt0120786'
 
     let reviews_sort = 'date'
     if (step > 11) reviews_sort = 'inaccurate'
@@ -261,7 +261,7 @@ class Tour extends React.Component {
                     show_accuracy={index_accuracy}
                     setAccuracy={setAccuracy}
                     router={{ query: { id: 'tt0762073' } }}
-                    compare={compare}
+                    compare={reviews_compare}
                     setCompare={setCompare}
                     nbsvm_data={nbsvm_data}
                     hl_options={hl_options}
@@ -330,7 +330,13 @@ class Tour extends React.Component {
             bottom: 0,
             zIndex: 9999,
             overflow: 'auto',
-            background: 'rgba(0,0,0,0.0625)',
+            background: `repeating-linear-gradient(
+              ${0}deg,
+              rgba(0,0,0,0.1) 0px,
+              rgba(0,0,0,0.1) 2px,
+              rgba(0,0,0,0) 2px,
+              rgba(0,0,0,0) 4px
+            )`,
             cursor: step > 0 ? 's-resize' : 'pointer',
           }}
           ref={this.scrollRef}
@@ -460,10 +466,13 @@ class Tour extends React.Component {
                   <a href="https://www.cloudera.com/products/fast-forward-labs-research.html">
                     Cloudera Fast Forward Labs
                   </a>
-                  , built to accompany our report on transfer learning for
-                  natural language processing. It uses movie reviews to show how
-                  machine learning can unlock the data embedded in large amounts
-                  of unstructured text.
+                  , built to accompany our report on{' '}
+                  <a href="https://blog.fastforwardlabs.com/2019/07/17/new-research-transfer-learning-for-natural-language-processing.html">
+                    transfer learning for natural language processing
+                  </a>
+                  . It uses movie reviews to show how machine learning can
+                  unlock the data embedded in large amounts of unstructured
+                  text.
                 </p>
                 <p>
                   Textflix features over 1,000 text reviews for 50 movies and TV
@@ -554,15 +563,15 @@ class Tour extends React.Component {
               <p>
                 5. Now let's look at an individual movie. Without sentiment
                 analysis you would have to read through the reviews one-by-one
-                to get a sense for how people feel about the 2003{' '}
-                <i>The Italian Job</i>.
+                to get a sense for how people feel about the 1998 Steven Segal
+                movie <i>The Patriot</i>.
               </p>
               {next}
             </Scene>
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 6. With analysis you can immediately see that the reviews are{' '}
-                generally (68%) positive.
+                only (28%) positive.
               </p>
               {next}
             </Scene>
