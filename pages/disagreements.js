@@ -99,7 +99,8 @@ class Disagree extends React.Component {
           }}
         >
           <div style={{}}>
-            Reviews where the NBSVM and BERT classification disagree:
+            Reviews where the NB-SVM model and the pretrained BERT model
+            disagree on the classification.
           </div>
         </div>
 
