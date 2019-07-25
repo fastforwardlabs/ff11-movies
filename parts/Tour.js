@@ -570,7 +570,7 @@ class Tour extends React.Component {
             <Scene grem={grem} spacer={space} wh={wh}>
               <p>
                 3. We can now do things like sort by most positive reviews, and
-                find out that <i>What Alice Saw</i>, an indie thriller from
+                find out that <i>What Alice Found</i>, an indie thriller from
                 2003, is the most liked movie.
               </p>
               {next}
