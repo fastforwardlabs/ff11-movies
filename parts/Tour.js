@@ -354,13 +354,7 @@ class Tour extends React.Component {
             bottom: 0,
             zIndex: 9999,
             overflow: 'auto',
-            background: `repeating-linear-gradient(
-              ${0}deg,
-              rgba(0,0,0,0.1) 0px,
-              rgba(0,0,0,0.1) 2px,
-              rgba(0,0,0,0) 2px,
-              rgba(0,0,0,0) 4px
-            )`,
+            background: 'rgba(0, 0, 0, 0.1)',
             cursor: step > 0 ? 's-resize' : 'pointer',
           }}
           ref={this.scrollRef}
