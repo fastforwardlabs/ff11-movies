@@ -68238,7 +68238,7 @@ function (_React$Component) {
         },
         __self: this
       }, "Cloudera Fast Forward Labs"), ", built to accompany our report on", ' ', react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
-        href: "https://blog.fastforwardlabs.com/2019/07/17/new-research-transfer-learning-for-natural-language-processing.html",
+        href: "https://experiments.fastforwardlabs.com/log/textflix-report/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 488
