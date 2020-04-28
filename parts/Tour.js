@@ -485,7 +485,7 @@ class Tour extends React.Component {
                     Cloudera Fast Forward Labs
                   </a>
                   , built to accompany our report on{' '}
-                  <a href="https://experiments.fastforwardlabs.com/log/textflix-report/">
+                  <a href="https://textflix-report.fastforwardlabs.com">
                     transfer learning for natural language processing
                   </a>
                   . It uses movie reviews to show how machine learning can
